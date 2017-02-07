@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>2だいだけのネットをつくろう - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>2だいだけのネットをつくろう</h1>
+
+<section>
+IchigoJamを2だい、ジャンパーせんを3ほん、よういして、つなぎます。<br>
+<style>
+td {
+	padding: 0px 4px;
+	text-align: center;
+}
+table {
+	border: 2px solid gray;
+	margin: 4px;
+}
+</style>
+<table>
+	<tr><td>IchigoJam1</td><td></td><td>IchigoJam2</td></tr>
+	<tr><td>GND(グランド/0V)</td><td><hr width=30 noshade></td><td>GND(グランド/0V)</td></tr>
+	<tr><td>TXD(トランスファー/そうしん)</td><td><hr width=30 noshade></td><td>RXD(レシーバー/じゅしん)</td></tr>
+	<tr><td>RXD(レシーバー/じゅしん)</td><td><hr width=30 noshade></td><td>TXD(トランスファー/そうしん)</td></tr>
+</table>
+※GNDとVCCをまちがうとショートしてこわれたりするので、きをつけて！<br>
+</section>
+
+<section>
+IchigoJam1でつぎのようにコマンドをうちこんでみましょう。
+<div id="remote-1"></div><script>make15("remote-1", "?\"LED1")</script>
+IchigoJam2になにがおこりましたか？<br>
+なにもおきないときはせんがちゃんとつながっているか、かくにんしよう。
+<div id="remote-2"></div><script>make15("remote-2", "?\"LED0")</script>
+メッセージをおくってみます
+<div id="remote-4"></div><script>make15("remote-4", "?\"HELLO")</script>
+HELLOというコマンドはないので、Syntax error（コマンドまちがい）となり、そのエラーがおくられてまた Syntax error とくりかえします。TXDまたはRXDにさしたジャンパーせんを、いちどぬいてとめましょう。
+</section>
+
+<section>
+コマンドをむこうかするコマンド「'（アポストロフィ、Shift+7）/REM」
+<div id="remote-3"></div><script>make15("remote-3", "?\"'HELLO")</script>
+ローマじでカタカナをつかうには「かな」キーできりかえます。
+<div id="remote-5"></div><script>make15("remote-5", "?\"'ハロー")</script>
+もういちど「かな」キーをおすと、アルファベットモードにもどります。
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ふたりでおしゃべりしてみよう<br>
+2. いちどせんをぬいて、もういちどつないでみよう<br>
+3. TXD-RXDのせんを1ほんぬくとどうなるかじっけんしよう<br>
+4. ともだちのパソコンをえんかくそうさしよう<br>
+5. つうしんたいせんゲームをかんがえよう<br>
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>

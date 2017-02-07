@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ほこうしゃしんごうをつくる</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>ほこうしゃしんごうをつくる - IchigoJam</h1>
+
+<section>
+みどりかあおのLEDを１つ、IchigoJamのピンソケットCN4に、LEDのながいほうのあしをOUT4へ、みじかいほうのあしをOUT3へさしこみます。
+<div id="psignal-1"></div>
+<script>make15("psignal-1", f2s(function() {/*
+OUT4,1
+OK
+OUT4,0
+OK
+*/}))</script>
+ひかりましたか？<br>
+ひからなかったらさしこむばしょをよくかくにんしましょう
+</section>
+
+<section>
+しばらくひからせてけしてみましょう
+<div id="psignal-2"></div>
+<script>make15("psignal-2", f2s(function() {/*
+OUT4,1:WAIT480:OUT4,0
+*/}))</script>
+</section>
+
+<section>
+さいしょはあおしんごう、しばらくたったら、あかしんごう、くりかえし！
+<div id="psignal-3"></div>
+<script>make15("psignal-3", f2s(function() {/*
+10 LED0:OUT4,1
+20 WAIT480
+30 LED1:OUT4,0
+40 WAIT480
+50 GOTO10
+RUN
+*/}))</script>
+</section>
+
+<section>
+おんがくをならしてみましょう
+<div id="psignal-4"></div>
+<script>make15("psignal-4", f2s(function() {/*
+15 PLAY"O4L8 E2E4D4E4ED>B2<F4FFA4FEFEDDE2"
+*/}))</script>
+* O4でオクターブ、L8でひょうじゅんのおとのながさせってい
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. あかしんごうのじかんをながくしてみよう<br>
+2. あおしんごうのてんめつをつくろう<br>
+3. おんがく「とおりゃんせ」のつづきをつくろう<br>
+4. おんがくのながさにあわせて、あおしんごうのじかんをちょうせいしよう<br>
+6. BTN()をつかっておしぼたんしんごうにしてみよう<br>
+7. あおしんごうのながさをせっていできるようにしよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

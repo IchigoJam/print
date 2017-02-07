@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>かわくだりゲーム</title>
+<link rel="stylesheet" type="text/css" href="http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>かわくだりゲーム - IchigoJam</h1>
+
+<section>
+しょうがいぶつをよけて、かわをくだるゲーム。まずは、しょうがいぶつ。<br>
+<div id="kawakudari-1"></div>
+<script>make15("kawakudari-1", f2s(function() {/*
+NEW
+70 LOCATE RND(32),23:PRINT "*"
+80 WAIT 2
+90 GOTO 70
+RUN
+*/}))</script>
+※ かっこ「（」は[shift]をおしながら「8 ゆ」と「9 よ」キー<br>
+※ ダブルクォート「"」は[shift]をおしながら「2 ふ」キー<br>
+※ アスタリスク「*」は[shift]をおしながら「: け」キー<br>
+</section>
+
+<section>
+じぶん、とうじょう。<br>
+プログラムは[esc]キーでとまる。
+<div id="kawakudari-2"></div>
+<script>make15("kawakudari-2", f2s(function() {/*
+10 LET X,16:CLS
+60 LOCATE X,5:PRINT"O"
+90 GOTO 60
+RUN
+*/}))</script>
+</section>
+
+<section>
+カーソルキー左右でうごけるように。
+<div id="kawakudari-3"></div>
+<script>make15("kawakudari-3", f2s(function() {/*
+20 LET K,INKEY()
+30 IF K=RIGHT LET X,X+1
+40 IF K=LEFT LET X,X-1
+90 GOTO 20
+RUN
+*/}))</script>
+</section>
+
+<section>
+あたりはんていとスコアをつけてゲームにする
+<div id="kawakudari-4"></div>
+<script>make15("kawakudari-4", f2s(function() {/*
+15 CLT
+50 IF SCR(X,5) PRINT TICK():END
+RUN
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. LISTをひょうじしてみよう<br>
+2. はやさをちょうせいしよう<br>
+3. じぶんのキャラをネコにかえてみよう（ALTおしながらCをおす）<br>
+4. しょうがいぶつをすきなキャラにかえてみよう<br>
+5. しょうがいぶつを3もじにかえて、はやさをちょうせいしよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

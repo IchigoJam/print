@@ -1,0 +1,43 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>2しんすうをつくるBIN$（バイナリー） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+<h1>2しんすうをつくるBIN$（バイナリー）</h1>
+
+<section>
+すうじ、ひらがな、アルファベット、いろんなもじがありますが、コンピューターがつかうもじは「0」と「1」の2つだけ。
+</p><p>
+ふつう、9に1たすと、10と2もじになりますが、0と1しかないので、1に1をたしただけで、10（いちゼロ）と2もじになります。
+これが2しんすう。
+</p><p>
+かずを2しんすうにかえるBIN$（バイナリー）コマンド<br>
+<div id="bin1-1"></div><script>make15("bin1-1", "?BIN$(2)\n10 \n?BIN$(10)\n1010 ")</script>
+2しんすうをかずにする、きごう「`」(shift+@か1のひだり)<br>
+<div id="bin1-2"></div><script>make15("bin1-2", "?`1111\n15 \n?`10000000\n256 ")</script>
+</section>
+
+<section>
+0,1,2,3,4...2しんすうでかぞえさせてみます。
+<div id="bin1-3"></div><script>make15("bin1-3", f2s(function() {/*
+FOR I=0 TO 256:?BIN$(I),I:WAIT 30:NEXT
+0  0 
+1  1 
+10  2 
+11  3 
+*/}))</script>
+2しんすうは、bit（ビット）でかぞえます。3は11で2bit。8は1000で4bit。
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 16を2しんすうにしてみよう<br>
+2. 2しんすうの101、1010、10100をかずにしてみよう<br>
+3. 40を2しんすうにしてみよう<br>
+4. 5bitであらわせるさいだいのかずは？<br>
+5. -1を2しんすうにしてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

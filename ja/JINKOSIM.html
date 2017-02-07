@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>じんこうシミュレーション - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>じんこうシミュレーション</h1>
+
+<section>
+にほんじんじんこうは、1おく2513まんにん。1ねんで27まんにんへりました。<br>
+（2016.11 そうむしょう、とうけいきょく、じんこうすいけい）
+<div id="jinko-1"></div>
+<script>make15("jinko-1", f2s(function() {/*
+10 P=12536
+20 D=27
+*/}))</script>
+Pにじんこう、Dにへるかずを「まんにん」をたんいとしてセット<br>
+</section>
+
+<section>
+2016ねんから、まいとしおなじようにへりつづけると、2100ねんのじんこうは？
+<div id="jinko-2"></div>
+<script>make15("jinko-2", f2s(function() {/*
+30 FOR Y=2016 TO 2100
+40  ?Y,P;
+50  ?
+60  P=P-D
+70 NEXT
+*/}))</script>
+</section>
+
+<section>
+グラフにしてみよう（'/'はわりざんのきごう）
+<div id="jinko-3"></div>
+<script>make15("jinko-3", f2s(function() {/*
+42  FOR I=0 TO P/1000
+45  ?"*";:NEXT
+*/}))</script>
+</section>
+
+<section>
+へりかたがまいとし2まんにんずつふえると？
+<div id="jinko-4"></div>
+<script>make15("jinko-4", f2s(function() {/*
+55  D=D+2
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ESCキーでとめて、2060ねんのじんこうをかくにんしよう<br>
+2. へりかたをまいとし3まんにんにしてみよう<br>
+3. グラフのもじ"*"をべつのもじにかえてみよう<br>
+4. 42ぎょう、わっている1000を100にかえてみよう<br>
+5. じんこうをふやしてみよう<br>
+6. せかいじんこうは73おくにん、まいとし1おくにんふえると？
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

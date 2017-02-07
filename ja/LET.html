@@ -1,0 +1,40 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>かずをきおくするLET（レット） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>かずをきおくするLET（レット） - IchigoJam</h1>
+
+<section>
+きおくりょくばつぐんのコンピューター、へんすうA〜Zにかずをきおくできる！
+<div id="list1"></div><script>make15("list1", "LET A,1190:LET B,2014:LET C,794")</script>
+OKとでたら、きおくかんりょう！
+</section>
+
+<section>
+がめんをけして、Aは？Bは？Cは？
+<div id="list2"></div><script>make15("list2", "CLS\n?A\n?B\n?C")</script>
+もういちどLETで、きおくをうわがき
+<div id="list3"></div><script>make15("list3", "LET B,2017\n?B")</script>
+かずには、へんすうもつかえます
+<div id="list3-2"></div><script>make15("list3-2", "LET C,A+B\n?C\nLET C,C+1\n?C")</script>
+</section>
+
+<section>
+だんだんひくくなるおと！
+<div id="list4"></div><script>make15("list4", "10 LET A,1\n20 ?A:BEEP A:WAIT 10:LET A,A+1\n30 IF A=10 END\n40 GOTO 20")</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. もっとひくくなるおとをつくろう<br>
+2. だんだんたかくなるおとをつくろう<br>
+3. うまれたとし、つき、ひをおぼえさせ、ぜんぶたしたかずをきおくさせよう<br>
+4. うまれたつきとひをかけざんしたかずを、きおくさせて、ひょうじさせよう<br>
+5. なんけたまできおくできるかためしてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>よるのしんごうをつくる GOTO（ゴートゥー） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>よるのしんごうをつくる GOTO（ゴートゥー）</h1>
+
+<section>
+よるのてんめつしんごう、0.5びょうごとについたりきえたり。
+<div id="btn-1"></div><script>make15("btn-1", "10 LED1:WAIT30:LED0:WAIT30\n20 LED1:WAIT30:LED0:WAIT30\nRUN")</script>
+10ぎょうをうちこんだら、もどって、せんとうの10を20にかえてエンター<br>
+LISTで、20ぎょうにコピーされた10ぎょうをかくにん！
+</section>
+
+<section>
+あさになるまで、やく3まんかい。ずっとてんめつさせる、GOTO（ゴートゥー）コマンド。
+<div id="btn-2"></div><script>make15("btn-2", "10 LED1:WAIT30:LED0:WAIT30\n20 GOTO 10")</script>
+GOTOのうしろのかずは、ジャンプさき<br>
+&gt; 10ぎょう、1かいてんめつ<br>
+&gt; 20ぎょう、10ぎょうへジャンプ！<br>
+とめるときは、[esc]（エスケープ）キー
+</section>
+
+<section>
+こうそくてんめつ
+<div id="btn-3"></div><script>make15("btn-3", "LIST\n10 LED1:WAIT3:LED0:WAIT3")</script>
+LIST(=F4)でひょうじ<br>
+10ぎょうの、2つある30を3にかえて、エンター、RUN(=F5)
+</section>
+
+<section>
+<div id="btn-4"></div><script>make15("btn-4", "15 LED1:WAIT30:LED0:WAIT30")</script>
+10ぎょうと20ぎょうのあいだに15ぎょうをつくろう<br>
+こうごにくりかえす、みじかいてんめつと、ながいてんめつ
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. よるのしんごうプログラムにもどしてみよう<br>
+2. ひかっているじかんだけ、ながくしてみよう<br>
+3. こうそくにてんめつさせて、ひかっているときにとめるゲームにしよう<br>
+4. ぎょうのばんごうを100から100きざみでつくってみよう<br>
+5. すきなてんめつパターンをつくってだれかにじまんしよう<br>
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>

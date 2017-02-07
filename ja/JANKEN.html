@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ジャンケンゲーム＆おみくじ - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>ジャンケンゲーム＆おみくじ</h1>
+
+<section>
+グー、チョキ、パー、3つのて、でたらめにきめるにはランダム3
+<div id="list1"></div><script>make15("list1", "?RND(3)")</script>
+0をグー、1をチョキ、2をパーときめてみます
+</section>
+
+<section>
+<div id="list2"></div><script>make15("list2", f2s(function() {/*
+10 LET A,RND(3)
+20 IF A=0 ?"GU"
+30 IF A=1 ?"CHOKI"
+40 IF A=2 ?"PA"
+RUN
+*/}))</script>
+RUNまたはF5キーをなんどもおしてみよう！<br>
+「じゃんけん」のかけごえのあと、じぶんのてをいいながら、F5キー(RUN)でしょうぶ！
+</section>
+
+<section>
+<div id="list3"></div><script>make15("list3", f2s(function() {/*
+20 IF A=0 ?"DAIKICHI"
+30 IF A=1 ?"KICHI"
+40 IF A=2 ?"KYO"
+*/}))</script>
+LIST(F4キー)でひょうじする、20〜40ぎょう、もじをかえれば「おみくじアプリ」に、はやがわり！
+</section>
+
+<section>
+<div id="list4"></div><script>make15("list4", f2s(function() {/*
+10 LET A,RND(4)
+50 IF A=3 ?"DAIKYO"
+*/}))</script>
+ランダムのかずをふやして、A=3のぎょうをたせば、ひょうじパターンがかわります。<br>
+「かな」キーか「みぎAlt」キーをいちどおして、カタカナをロー文じにゅうりょく。
+もういちどおすとアルファベットモードにもどるよ。
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ジャンケンをカタカナにしてみよう<br>
+2. ともだちのコンピューターどうしでジャンケンさせてみよう<br>
+3. あしたのてんきをうらなうツールをつくってみよう<br>
+4. コインのおもてかうらかアプリをつくってみよう<br>
+5. ガチャガチャをつくってみよう<br>
+6. レア（なかなか、あたらないもの）をつくってみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

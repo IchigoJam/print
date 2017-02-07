@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ばしょをあやつるLOCATE（ロケイト） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src=ichigojamlist.js></script>
+</head><body>
+
+<h1>ばしょをあやつるLOCATE（ロケイト）</h1>
+
+<section>
+していしたばしょにひょうじさせてみよう！<br>
+ばしょをしていするLOCATE（ロケイト）コマンドをつかいます。
+<div id="list1"></div><script>make15("list1", "LOCATE 16,12:PRINT \"*\"")</script>
+エンターキーでまんなかあたりに「＊」とひょうじされます。<br>
+これはいちばんひだりから16すすんだところ、うえから12すすんだところにひょうじされるといういみです。
+</section>
+
+<section>
+ちがうばしょにひょうじさせてみよう。
+<div id="list2"></div><script>make15("list2", "LOCATE 25,5:PRINT \"*\"")</script>
+LOCATEのかずをかえることでひょうじされるばしょがかわります。
+</section>
+
+<section>
+じつは、LOCATEのしょうりゃくで「LC」とうつこともできます。
+<div id="list3"></div><script>make15("list3", "LC 16,14:PRINT \"*\"")</script>
+</section>
+
+<section>
+ふたつのばじょにもじをひょうじすることもできます。
+<div id="red-1"></div><script>make15("red-1", "LC 16,12:PRINT \"@\":LC 10,10:PRINT \"*\"")</script
+</section>
+
+<section>
+けいさんしたこたえをひょうじすることもできます。
+<div id="red-2"></div><script>make15("red-2", "LC 16,14:PRINT 2+3")</script>
+がめんをきれいにするときはF1キーをおすか、「CLS」コマンド。
+<div id="red-3"></div><script>make15("red-3", "CLS")</script>
+
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ひだりから20、うえから10すすんだところに「IchigoJam」をひょうじさせてみよう<br>
+2. ひだりから10、うえから17すすんだところと、ひだりから25、うえから18すすんだところに「＠」とひょうじさせてみよう<br>
+3. ひだりから15、うえから24すすんだところに10-5のけいさんけっかをひょうじさせてみよう<br>
+4. すきなところにすきなもじをひょうじさせてみよう<br>
+5. すきなところにすきなけいさんけっかをひょうじさせてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

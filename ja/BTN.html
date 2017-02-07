@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>おもいをつたえる BTN（ボタン） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>おもいをつたえる BTN（ボタン）</h1>
+
+<section>
+IchigoJamのひだりにあるボタンでコンピューターにおもいをつたえよう。
+<div id="btn-1"></div><script>make15("btn-1", "?BTN()")</script>
+ボタンをおさないでじっこうすると、0 とでる。<br>
+てんめつするしかく（カーソル）を、キーボードのみぎした、「うえ」キーを3かいおして、ボタンをおしながらエンター。1 とでたらせいこう！
+</section>
+
+<section>
+</section>
+
+<section>
+「GOTO」コマンドをつかってくりかえし。
+<div id="btn-2"></div><script>make15("btn-2", "10 ?BTN()\n20 GOTO 10\nRUN")</script>
+ずらっと0がでたら、ボタンをおしたりはなしたりしてみよう。<br>
+とめるときは、[esc]（エスケープ）キー
+</section>
+
+<section>
+ボタンをおしたらLEDがひかるプログラム
+<div id="btn-3"></div><script>make15("btn-3", "10 LED BTN()\n20 GOTO 10")</script>
+RUNコマンドのかわりにF5キーでもOK！<br>
+LEDコマンドは1のときひかって、0のとききえるので、ボタンにあわせてひかるよ。[esc]キーでとまる。
+</section>
+
+<section>
+ボタンをおしたら、こうそくてんめつ！
+<div id="btn-4"></div><script>make15("btn-4", "10 LED 1:WAIT 10-BTN()*5\n20 LED 0:WAIT 10-BTN()*5\n30 GOTO 10")</script>
+WAIT（ウエイト）はまてのコマンド。ボタンがおされていないと、WAIT 10。おされていたらBTN()が1になって、それを「*5」で5ばいしたかずをひくので、WAIT 5。GOTO（ゴートゥー）で10ぎょうにもどってくりかえし。<br>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ボタンがおされたら、もっとはやくてんめつさせよう<br>
+2. ボタンがおされたら、ゆっくりてんめつさせよう<br>
+3. ボタンがおされたら、ずっとひかるようにかいぞうしよう<br>
+4. ボタンをおしていないときは、まったくひからないようにかいぞうしよう<br>
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>

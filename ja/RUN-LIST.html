@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>プログラムのきおく RUN/LIST - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>プログラムのきおく RUN/LIST</h1>
+
+<section>
+LEDのてんめつパターンをきおくしよう
+<div id="run-1"></div><script>make15("run-1", "10 LED1:WAIT10")</script>
+かずではじめると「きおくしろ」というコマンド、まだLEDはひかりません<br>
+うごかすコマンドは「RUN（ラン）」エンター、LEDがひかります
+<div id="run-2"></div><script>make15("run-2", "RUN")</script>
+つぎは20ではじめて、エンターで、きおくをついか
+<div id="run-4"></div><script>make15("run-4", "20 LED0:WAIT10")</script>
+きおくさせたプログラムをうごかすときは、RUN<br>
+もういちど、RUNでひからせよう！
+</section>
+
+<section>
+きおくをよびだす、LIST（リスト）コマンド
+<div id="run-3"></div><script>make15("run-3", "LIST\n10 LED1:WAIT10\n20 LED0:WAIT10")</script>
+10ぎょうと20ぎょうのあいだに、WAITをついか
+<div id="run-5"></div><script>make15("run-5", "15 WAIT50")</script>
+LISTでかくにん、RUNでじっこう！
+<!--
+<div id="run-5"></div><script>make15("run-5", "15 WAIT50\x85")</script>
+バックスペースキーで10をけして、30にかえて、エンター<br>
+カーソルキーしたを2かい、なにもかいてないぎょうまでカーソルをいどう<br>
+RUN、ながくひかる
+
+あたらしいプログラムをつくるまえには、ぜんぶまとめてけすNEW（ニュー）
+<div id="run-7"></div><script>make15("run-7", "NEW")</script>
+-->
+</section>
+
+<section>
+ばんごうがおなじプログラムはうわがき（RUNとLISTでチェック！）
+<div id="run-6"></div><script>make15("run-6", "15 WAIT110")</script>
+</section>
+
+<section>
+かずだけいれてエンターで、そのぎょうをけす
+<div id="run-7"></div><script>make15("run-7", "15\nLIST")</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. RUNのかわりファンクションキーF5キーをつかってみよう<br>
+2. LISTのかわりF4キーをつかってみよう<br>
+3. 2かいひかるプログラムをつくってみよう<br>
+4. かっこいいパターンでひかるプログラムをつくろう！
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>

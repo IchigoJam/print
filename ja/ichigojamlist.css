@@ -1,0 +1,19 @@
+body {
+	font-size: 90%;
+	font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 150%;
+}
+section {
+	margin: 0.5em 0em;
+}
+#credit {
+	text-align: center;
+	font-size: 12px;
+}
+#credit a {
+	color: gray !important;
+}

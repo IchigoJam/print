@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>パソコンをのっとるUART（ユーアート） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>パソコンをのっとるUART（ユーアート）</h1>
+
+<section>
+IchigoJamを2だい、ジャンパーせんを２ほん、よういして、つなぎます。<br>
+<style>
+td {
+	padding: 0px 4px;
+	text-align: center;
+}
+table {
+	border: 2px solid gray;
+	margin: 4px;
+}
+</style>
+<table>
+	<tr><td>IchigoJam1</td><td></td><td>IchigoJam2</td></tr>
+	<tr><td>GND(グランド/0V)</td><td><hr width=30 noshade></td><td>GND(グランド/0V)</td></tr>
+	<tr><td>TXD(トランスファー/そうしん)</td><td><hr width=30 noshade></td><td>RXD(レシーバー/じゅしん)</td></tr>
+</table>
+IchigoJam1でつぎのようにコマンドをうちこんでみましょう。
+<div id="remote-1"></div><script>make15("remote-1", "?\"LED1")</script>
+IchigoJam2になにがおこりましたか？
+<div id="remote-2"></div><script>make15("remote-2", "?\"LED0")</script>
+LEDがきえました。こんなこともできます。
+<div id="remote-4"></div><script>make15("remote-4", "?\"LOAD\n?\"RUN")</script>
+IchigoJam2にきおくされたプログラムがうごきだしてしまいます。
+</section>
+
+<section>
+せっかくつくったプログラムがけされてしまうまえに、IchigoJam2でUART（ユーアート）コマンド。
+<div id="remote-3"></div><script>make15("remote-3", "UART1,0")</script>
+このコマンドをつかうとIchigoJam1からのつうしんはとまります。
+<div id="remote-5"></div><script>make15("remote-5", "UART1,1")</script>
+これでふたたび、じゅしんするようになります。
+</section>
+
+<section>
+IchigoJam1がわで、つうしんをとめることもできます。
+<div id="remote-6"></div><script>make15("remote-6", "UART0,1")</script>
+そうしんするしない、じゅしんするしないを、0か1でしていします。
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. IchigoJam1から「HELLO」とメッセージをおくってみよう<br>
+2. つなぎかえて、IchigoJam2からIchigoJam1へつうしんしよう<br>
+3. ジャンパーせんをもう1ほんつかって、そうごにつうしんしてみよう<br>
+4. UARTコマンドをうまくつかってメッセージをおくりあってみよう<br>
+5. つうしんたいせんゲームをかんがえよう<br>
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>はじめてのかいろ OUT（アウト）</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>はじめてのかいろ OUT（アウト）</h1>
+
+<section>
+でんきのとおりみちのことを「かいろ」といいます。LEDを2つよういして、かいろをつくってひからせてみましょう。
+</section>
+
+<section>
+IchigoJamのほんたいのあるピンソケットCN4、14コのあなのそれぞれのやくめがシールにかいてあります。
+LEDのながいほうのあしをOUT1へ、みじかいほうのあしをGNDへ、それぞれさしこみましょう。
+<div id="out1-1"></div><script>make15("out1-1", "OUT1,1")</script>
+「OK（オーケー）」とでて、さしこんだLEDがひかったら、だいせいこう！<br>
+OUT1のピンの「でんあつ」がたかくなって、LEDのなかを「でんりゅう」がとおり、GND（グランド、でんあつ0）へながれることでひかります。<br>
+</section>
+
+<section>
+OUT1,0（アウト、ゼロ）、エンターでけせます。
+<div id="out1-2"></div><script>make15("out1-2", "OUT1,0")</script>
+</section>
+
+<section>
+もうひとつLEDをさしこんでみましょう。LEDのながいほうのあしをOUT2へ、みじかいほうのあしをOUT3へさしこみます。
+<div id="out1-3"></div><script>make15("out1-3", "OUT2,1")</script>
+OUTコマンド、さいしょのかずがピンのばしょ、つぎのかずでつけるか、けすかをきめます。
+</section>
+
+<section>
+こうごに、てんめつさせてみましょう。
+<div id="out1-4"></div><script>make15("out1-4", "10 OUT1,1:OUT2,0:WAIT30\n20 OUT1,0:OUT2,1:WAIT30\n30 GOTO10\nRUN")</script>
+とめるときは [esc]（エスケープ キー）
+</section>
+
+<!--
+<section>
+※ちゅうい：<br>
+LEDにおおきなでんりゅうをながすと、もえたり、はれつしたり、はつねつして、こわれることがあります！<br>
+IchigoJamのほんたいが、ながれるでんりゅうをせいげんしてくれるので、こんかいのじっけんはあんぜんです。
+</section>
+-->
+<section>
+<b>やってみよう！</b><br>
+1. OUT2,1 でLEDをつけたあと、OUT3,1 とやってみよう<br>
+2. そのあと OUT3,0 でLEDがつくわけをかんがえてみよう<br>
+3. IchigoJamほんたいについているLEDとあわせててんめつさせよう<br>
+4. 3つのLEDがじゅんばんにぜんぶつくプログラムをつくろう<br>
+5. LEDをぜんぶつけてから、OUT0 または F7 をおしてみよう<br>
+6. OUT3,1でLEDがひかるようにかいろをつくりかえてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

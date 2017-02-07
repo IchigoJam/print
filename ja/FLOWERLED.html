@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>おはなLEDでルーレットゲーム</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>おはなLEDでルーレットゲーム</h1>
+
+<section>
+おはなLEDシールド「Flower LED Shiled for IchigoJam」をはんだづけして、くみたてたら、IchigoJamにドッキング！
+（おはなLEDがうえ、ボタンがしたになるように）
+</section>
+
+<section>
+おはなのちゅうおうがひかったらせいこう！
+<div id="out2-1"></div><script>make15("out2-1", "LED1")</script>
+</section>
+
+<section>
+IN1、2、4をアウトプットにきりかえて、OUT8、9、11としてつかおう
+<div id="out2-2"></div><script>make15("out2-2", "OUT8,1:OUT9,1:OUT11,1")</script>
+（もし、もとのインプットにもどしたいときは OUT8,-1 とかでOK）
+</section>
+
+<section>
+ぐるぐるまわって、ボタンでとめるルーレット
+<div id="out2-3"></div><script>make15("out2-3", f2s(function() {/*
+10 LET N,1:OUT0
+20 LET F,0:LET T,2
+30 OUT N,1:WAIT T
+40 IF BTN() F=1
+50 IF F LET T,T+T/2
+60 IF T>60 GOTO 120
+70 OUT N,0
+80 LET N,N+1
+90 IF N=12 LET N,1
+100 IF N=7 OR N=10 LET N,N+1
+110 GOTO 30
+120 LED 1
+130 IF BTN()=0 GOTO 130
+140 IF BTN() GOTO 140
+150 GOTO 20
+*/}))</script>
+RUNするとぐるぐるまわるよ！
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. とまるまでのながさをながくしてみよう<br>
+2. ゆっくりまわるようにしてみよう<br>
+3. いちばんしたにとまったときに「アタリ」とひょうじしよう<br>
+4. まわっているときにも、いちばんしたのときLEDをつけてみよう<br>
+5. ぎゃくかいてんさせてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

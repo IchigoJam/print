@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ナインパズル</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>ナインパズル - IchigoJam</h1>
+
+<section>
+1〜8のパネルをスライドさせてきれいにならべるパズル
+<div id="ninepuzzle-1"></div>
+<script>make15("ninepuzzle-1", f2s(function() {/*
+10 CLS:FOR I=0 TO 7:LC I%3,I/3:?I+1:NEXT
+*/}))</script>
+0から7までのくりかえしで、かんせいパターンをひょうじ<br>
+（%はあまりをけいさんしてくれます）
+</section>
+
+<section>
+パネルのスライドはカーソルで
+<div id="ninepuzzle-2"></div>
+<script>make15("ninepuzzle-2", f2s(function() {/*
+20 X=2:Y=2
+30 LC X,Y:?"*"
+40 K=INKEY():GOSUB 60
+50 GOTO 30
+60 LC X,Y
+70 X=X-(K=28)*(X>0)+(K=29)*(X<2):Y=Y-(K=30)*(Y>0)+(K=31)*(Y<2)
+80 ?CHR$(SCR(X,Y)):RETURN
+*/}))</script>
+（GOSUBはRETURNで「もどる」きのうがついたGOTOです）
+</section>
+
+<section>
+ぐちゃぐちゃに200かいかきまぜよう
+<div id="ninepuzzle-3"></div>
+<script>make15("ninepuzzle-3", f2s(function() {/*
+25 FOR I=1 TO 200:K=RND(4)+28:GOSUB 60:NEXT:CLT
+*/}))</script>
+（RNDでキーのがちゃがちゃをさいげん！）
+</section>
+
+<section>
+クリアしたかどうかのはんていと、クリアタイムをびょうでひょうじ！
+<div id="ninepuzzle-4"></div>
+<script>make15("ninepuzzle-4", f2s(function() {/*
+35 F=0:FOR I=0 TO 7:F=F+(SCR(I%3,I/3)=I+49):NEXT:IF F=8 LC0,4:?"CLEAR! TIME:";TICK()/60;"s":PLAY"O5E16E":END
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. かきまぜるかいすうをかえてみよう<br>
+2. パズルゲームスタートのおとをついかしよう<br>
+3. うごかしたときにこうかおんをならそう<br>
+4. クリアしたときにLEDをピカピカひからせよう<br>
+5. さいこうきろくのきおくとをひょうじをついかしよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

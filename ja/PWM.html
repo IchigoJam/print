@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>サーボをあやつる PWM（ピーダブリューエム）</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>サーボをあやつる PWM（ピーダブリューエム）</h1>
+
+<section>
+ロボットのうでなどでつかう、サーボをあやつろう。サーボと、ジャンパーせん3ほん、ピンソケットCN5がついたIchigoJamをじゅんびしよう。
+</section>
+
+<section>
+・サーボをつかったかいろ<br>
+サーボのあか：IchigoJamのCN5の5V（いちばんうえ）へ<br>
+サーボのちゃ：IchigoJamのCN5のGND（いちばんした）へ<br>
+サーボのオレンジ：IchigoJamのOUT2へ<br>
+<div id="pwm1-1"></div><script>make15("pwm1-1", "PWM2,100")</script>
+「OK（オーケー）」とでて、サーボがギッとうごいたら、だいせいこう！<br>
+さいしょのかずでOUT2（2〜5、OK）、つぎのかずでかくどをしてい。
+</section>
+
+<section>
+かくどは50から200のかずでしていできる。
+<div id="pwm1-2"></div><script>make15("pwm1-2", "PWM2,50:WAIT60:PWM2,200")</script>
+WAITコマンドとあわせてつかって、いろいろじどうでうごかそう！
+</section>
+
+<section>
+ボタンをおしたら、3かいてをふるロボットをつくります。
+<div id="pwm1-3"></div><script>make15("pwm1-3", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 FOR I=1 TO 3
+30  PWM2,50:WAIT30
+40  PWM2,200:WAIT30
+50 NEXT
+60 GOTO 10
+*/}))</script>
+IF（イフ、もし）BTNがおされていなければ、GOTO（ゴートゥー）10でくりかえし、ボタンがおされたらつぎへ。
+FOR（フォー）はかいすうつきくりかえし、NEXT（ネクスト）までを3かいくりかえします。
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. てをゆっくりふるようにかいぞうしよう<br>
+2. てをちいさくふるようにかいぞうしよう<br>
+3. てはどれだけはやくふれるかじっけんしよう<br>
+4. サーボのちゃをOUT3にさしてうごかしてみよう<br>
+5. ボタンをおして3びょうごに、1どてをふるプログラムをつくろう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

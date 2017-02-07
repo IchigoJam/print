@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>はんだんさせる IF（イフ） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>はんだんさせる IF（イフ）</h1>
+
+<section>
+ボールがとんできたらよける。あながあったらジャンプ。<br>
+コンピューターにはんだんさせるIF（イフ）コマンド。<br>
+IFはえいごで「もし」といういみ。<br>
+<div id="if-1"></div><script>make15("if-1", "10 IF BTN()=0 GOTO 10\nRUN")</script>
+もし、ボタンがおされていなかったら10ぎょうをくりかえし<br>
+ボタンをおしたらプログラムはつぎにすすもうとして、しゅうりょう。
+</section>
+
+<section>
+ボタンをおすごとにLEDをつけたりけしたりしてみよう
+<div id="if-2"></div><script>make15("if-2", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 LED1
+30 IF BTN()=0 GOTO 30
+40 LED0
+50 GOTO 10
+*/}))</script>
+おや？ボタンをおしているあいだ、つきっぱなし？<br>
+コンピューターははやいので、ボタンをおしたらLEDをひからせて、すぐつぎのはんだんにいってしまいます。
+</section>
+
+<section>
+すぐにつぎにいかないよう、WAIT（ウェイト）コマンドをついかする
+<div id="if-3"></div><script>make15("if-3", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 LED1:WAIT30
+30 IF BTN()=0 GOTO 30
+40 LED0:WAIT30
+50 GOTO 10
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ボタンをおしっぱなしにしてみよう<br>
+2. WAIT30をWAIT60にかえて、ためしてみよう<br>
+3. WAIT30をWAIT5にかえて、ためしてみよう<br>
+4. IF BTN()=1 にかえて、ためしてみよう<br>
+5. ボタンがおされたら、てんめつしはじめるプログラムをつくろう<br>
+6. LEDをたのしくあやつるプログラムをつくろう<br>
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>

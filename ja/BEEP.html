@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>おとをあやつるBEEP（ビープ） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="http://ichigojam.net/print/ichigojamlist.css">
+<script src=http://fukuno.jig.jp/app/IchigoJam/ichigojamlist.js></script>
+</head><body>
+
+<h1>おとをあやつるBEEP（ビープ） - IchigoJam</h1>
+
+<section>
+サウンダーのあしをIchigoJamのSOUNDとGNDにさして
+<div id="list1"></div><script>make15("list1", "BEEP")</script>
+ピッとなったら、せいこう！
+</section>
+
+<section>
+たかいおと
+<div id="list2"></div><script>make15("list2", "BEEP 5")</script>
+ひくいおと
+<div id="list3"></div><script>make15("list3", "BEEP 20")</script>
+ながいおと
+<div id="list3-2"></div><script>make15("list3-2", "BEEP 10,30")</script>
+</section>
+
+<section>
+リズムをつくろう
+<div id="list4"></div><script>make15("list4", "10 BEEP 5:WAIT 30\n20 BEEP 20:WAIT 30\n30 GOTO 10\nRUN")</script>
+WAIT（ウエイト）はまてのコマンド、かずをおおきくするとゆっくりリズム。GOTO（ゴートゥー）で10ぎょうにもどってくりかえし。[ESC]キーでていし。
+</section><section>
+IchigoJamほんたいのボタンをおしているあいだ、リズムをストップ！<br>
+「(」はシフトおしながら「8」、「)」はシフト「9」でうちこむよ
+<div id="list5"></div><script>make15("list5", "15 IF BTN() GOTO 15")</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. いろんなおとをながしてみよう<br>
+2. とってもはやいリズムをつくってみよう<br>
+3. 「12 BEEP 20:WAIT 30」をくわえて、３びょうしにしてみよう<br>
+4. ４びょうしをつくってみよう<br>
+5. 15行のGOTO 15 を GOTO 10 にかえるとどうなるかな？<br>
+6. オリジナルのリズムをつくってみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
