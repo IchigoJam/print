@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ガチャシミュレーション</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>ガチャシミュレーション - IchigoJam</h1>
+
+<section>
+アルファベットをガチャでコンプリートしよう！
+<div id="gacha-1"></div>
+<script>make15("gacha-1", f2s(function() {/*
+10 A=RND(26)
+20 ?"DRAW:";CHR$(ASC("A")+A)
+*/}))</script>
+アルファベットはAからZまで26しゅるい。RNDをつかってガチャ！
+</section>
+
+<section>
+コレクションをひょうじしよう
+<div id="gacha-2"></div>
+<script>make15("gacha-2", f2s(function() {/*
+30 [A]=[A]+1
+40 FOR I=0 TO 25
+50  LC I%6*5,5+I/6*3
+60  ?CHR$(ASC("A")+I);":";[I]
+70 NEXT
+*/}))</script>
+</section>
+
+<section>
+コンプリートするまで、じどうガチャ！
+<div id="gacha-3"></div>
+<script>make15("gacha-3", f2s(function() {/*
+5 CLS:CLV
+35 N=N+1:C=0
+65  IF [I] C=C+1
+80 ?:?:?"COLLECT:";C;"/26 ";
+90 ?N;"00YEN"
+100 IF C=26 ?"COMPLETE!":END
+110 GOTO 10
+*/}))</script>
+いくらかかるかな？
+</section>
+
+<section>
+Aをレアにしてみよう
+<div id="gacha-4"></div>
+<script>make15("gacha-4", f2s(function() {/*
+15 IF A=0 IF RND(10)>0 A=1
+*/}))</script>
+Aがでても10ぶんの9のかくりつでBにしちゃう
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 3かいためして、くらべてみよう<br>
+2. AからFまでをレアにしてみよう<br>
+3. Zがでないようにしてみよう<br>
+4. 2ぶんの1のかくりつでZをだしてみよう<br>
+5. かぶらないようにしてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
