@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>FLOPY BIRD </title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>FLOPY BIRD - IchigoJam</h1>
+
+<section>
+FLOPY BIRDを作ってみよう
+</section>
+
+<section>
+<div id="source"></div>
+<script>
+var str = "10  X=3\n"                           +
+          "20  Y=3\n"                           +
+          "30  H=0\n"                           +
+          "40  W=31\n"                          +
+          "50  I=0\n"                           +
+          "60  J=0\n"                           +
+          "70  CLS\n"                           +
+          "80  H=RND(14)+3\n"                   +
+          "90  IF J%10<>0 GOTO 150\n"            +
+          "100 LC W,I: ? \"|\"\n"               +
+          "110 IF H=I I=I+5\n"                  +
+          "120 I=I+1\n"                         +
+          "130 IF I<22 GOTO 90\n"               +
+          "140 I=0\n"                           +
+          "150 Y=Y+1-BTN(UP)*2\n"               +
+          "160 IF Y>23 : GOTO 200\n"             +
+          "170 IF Y<0 : Y=0\n"                  +
+          "180 SCROLL LEFT\n"                   +
+          "190 IF SCR(X,Y)=0 GOTO 220\n"        +
+          "200 PRINT \"GAME OVER\" : WAIT 60\n" +
+          "210 END\n"                           +
+          "220 LOCATE X,Y: PRINT \"*\"\n"       +
+          "230 WAIT 6\n"                        +
+          "240 LOCATE X,Y: PRINT \" \"\n"       +
+          "250 J=J+1\n"                         +
+          "260 GOTO 80"
+make15("source", str);
+</script>
+*がじぶんだよ
+うえのキーをおすとジャンプするよ<br>
+みぎからくるかべをうまくよけよう！<br>
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. じぶんのすがたやかべをかえてみよう<br>
+2. かべのはやさをかえてみよう<br>
+3. かべのあなのおおきさをかえてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
