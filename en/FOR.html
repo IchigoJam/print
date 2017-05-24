@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Multiplication by loop FOR/NEXT</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Multiplication by loop FOR/NEXT - IchigoJam</h1>
+
+<section>
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 A=5
+20 FOR I=1 TO A:?"*";:NEXT:?
+*/}))</script>
+You can count up the variable I from 1 to A with FOR/NEXT command. You can get the 5 '*' marks.
+</section>
+
+<section>
+Let's modify to use the number you like with INPUT command.
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+10 INPUT A
+*/}))</script>
+Type any numbers!
+</section>
+
+<section>
+Add a number and loop!
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+15 INPUT B
+17 FOR J=1 TO B
+30 NEXT
+*/}))</script>
+You can calculate the multiplication!
+</section>
+
+<section>
+Count variable C that number of '*' marks.
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+16 C=0
+25 C=C+A
+40 ?C
+*/}))</script>
+C=C+A cause you can get A x '*' marks every loops. LET C,C+1 is OK also. If you don't C=0 or LET C,0, C increse every executions continuously.
+</section>
+
+<section>
+<b>Let's try</b><br>
+1. Calculate 7 multiplications 8<br>
+2. Calculate 8 multiplications 7<br>
+3. Change the mark that you like<br>
+4. Check to change the mark to 2 letters<br>
+5. Check to input zero<br>
+</section>
+
+<div id="credit"><a href=https://github.com/IchigoJam/print>CC BY on GitHub</a> <a href="https://ichigojam.github.io/print/en/">IchigoJam print</a> https://ichigojam.github.io/print/en/ <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a><br>
+</div>
+</body></html>

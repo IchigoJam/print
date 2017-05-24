@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>公約数さがし（算数）</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>公約数さがし（算数） - IchigoJam</h1>
+
+<section>
+182は何で割り切れるかな？
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 N=182
+20 FOR X=2 TO N-1
+30 IF N%X=0 ?X
+40 NEXT
+*/}))</script>
+FOR/NEXT（フォー・ネクスト）コマンドで、変数Xを2から1ずつ増やしながら、くりかえし。
+N=182 は LET N,182 としてもOK！
+</section>
+
+<section>
+でてきた数「約数」をチェックしてみよう
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+?182%91
+0
+?182%26
+0
+*/}))</script>
+ちゃんと割り切れますね！
+</section>
+
+<section>
+455は何で割り切れるかな？
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+10 N=455
+*/}))</script>
+</section>
+
+<section>
+182と455、どちらも共通して、割り切れる数を表示
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+10 N=182:M=455
+20 FOR X=2 TO N-1
+30 IF N%X=0 AND M%X=0 ?X
+40 NEXT
+*/}))</script>
+表示された数 7,13,91 が、182と455の「公約数」<br>
+一番大きな数 91 が、182と455の「最大公約数」
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 3432と2002の「公約数」を表示しよう<br>
+2. 3432を「最大公約数」で割ってみよう<br>
+3. 2で計算した数と、「最大公約数」をかけてみよう<br>
+4. 2002の「約数」がいくつあるか数えよう<br>
+5. 4桁の数で「約数」がない数「素数」をさがそう<br>
+6. 「素数」同士には「公約数」がないことを確認しよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>公倍数さがし（算数）</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>公倍数さがし（算数） - IchigoJam</h1>
+
+<section>
+1から100までの数を表示しよう
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 FOR X=1 TO 100
+20 ?X
+30 WAIT 3
+40 NEXT
+*/}))</script>
+FOR/NEXT（フォー・ネクスト）コマンドで、変数Xを1ずつ増やしながら、100になるまで、くりかえし。
+</section>
+
+<section>
+余りを求める記号「%」を使って、3の倍数だけ、表示しよう
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+20 IF X%3=0 ?X
+*/}))</script>
+</section>
+
+<section>
+5の倍数も表示するとき使う「どちらか」を意味する「OR（オア）」
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+20 IF X%3=0 OR X%5=0 ?X
+*/}))</script>
+</section>
+
+<section>
+3の倍数で、5の倍数でもあるものを表示するとき使う「両方」を意味する「AND（アンド）」
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+20 IF X%3=0 AND X%5=0 ?X
+*/}))</script>
+これが3と5の「公倍数」、はじめの数 15 が「最小公倍数」
+</section>
+
+<section>
+2と3と5の「公倍数」を表示しよう
+<div id="step-5"></div>
+<script>make15("step-5", f2s(function() {/*
+20 IF X%2=0 AND X%3=0 AND X%5=0 ?X
+*/}))</script>
+100までに「公倍数」が3つ、「最小公倍数」は30
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 7の倍数を表示しよう<br>
+2. 13の倍数を表示しよう<br>
+3. 7の倍数と13の倍数、両方表示しよう<br>
+4. 7と13の公倍数を表示しよう<br>
+5. 1から1000までに3と7の公倍数がいくつあるか、すばやく数えよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
