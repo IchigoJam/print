@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Ichigoチョコでめいろだっしゅつ - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Ichigoチョコでめいろだっしゅつ - IchigoJam</h1>
+
+<section>
+くみたてたIchigoチョコを、キーボードとビデオケーブルをつなぐ。<br>
+IchigoJamのスイッチをON、IchigoチョコのスイッチをPROGにする。<br>
+OUT（アウト）コマンドで前にすすむよ！
+<div id="choco-1"></div><script>make15("choco-1", "OUT6")</script>
+とめたいときは、F7キー(OUT0)
+</section>
+
+<section>
+WAITコマンドをつかって、1びょうすすんで、じどうてきにとめよう
+<div id="choco-2"></div><script>make15("choco-2", "OUT6:WAIT60:OUT0")</script>
+WAITのかずをかえると、すすむながさを、ばいにしてみよう
+</section>
+
+<section>
+まっすぐなみちをはしって、ゴールぴったりでとめるプログラムをつくろう
+<div id="choco-6"></div><script>make15("choco-6", f2s(function() {/*
+10 OUT6:WAIT180
+20 OUT0
+*/}))</script>
+F5キー(RUN)でうごきをかくにんしたら、F3キー(SAVE)、0でほぞん！<br>
+IchigoチョコのスイッチをOFFにして、キーボードとビデオケーブルをぬく。<br>
+スタートにIchigoチョコをおいたら、IchigoチョコのスイッチをRUN！<br>
+（IchigoチョコのRESETボタンでリトライ）
+</section>
+
+<section>
+IchigoチョコのスイッチをOFF、ケーブルをつないで、スイッチをPROGへ<br>
+F2キー(LOAD)、0、でよみこんで、プログラムをついかしよう
+<div id="choco-7"></div><script>make15("choco-7", "15 OUT4:OUT60")</script>
+F4キー(LIST)でプログラムがかいぞうできたか、かくにん、F5キー(RUN)！<br>
+<div id="choco-8"></div><script>make15("choco-8", "15")</script>
+プログラムのばんごうだけかいてエンターで、そのぎょうをけせるよ！
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ひだりかいてんOUT2で、5びょうかんまわるロボットをつくろう<br>
+2. ゴールにいったらUターンするロボットをつくろう<br>
+3. OUT6のかわりに、OUT RND(7) とするとどうなるかためそう<br>
+4. OUT2,1 や OUT2,0 や OUT3,1 や OUT3,0 でなにがおきるかかいめいしよう<br>
+5. じぶんでめいろをつくって、かれいにだっしゅつしよう！<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
