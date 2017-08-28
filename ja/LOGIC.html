@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>1たす1は1、ろんりのなぞ - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>1たす1は1、ろんりのなぞ - IchigoJam</h1>
+
+<section>
+0と1しかない「ろんり」のせかいでけいさんしよう。まずはたしざん「|」
+<div id="logic-1"></div><script>make15("logic-1", f2s(function() {/*
+?1|0
+1
+?0|0
+0
+?1|1
+1
+*/}))</script>
+くりあがりはないので、1に1をたしても1のまま。これが「ろんりわ」
+</section>
+
+<section>
+つぎは「&」かけざん（コンマでくぎって、まとめてけいさん）
+<div id="logic-2"></div><script>make15("logic-2", f2s(function() {/*
+?1&1,0&1,1&0,0&0
+ 1   0   0   0
+*/}))</script>
+1をかけたらもとのかずのまま。0をかけると0になる。これが「ろんりせき」
+</section>
+
+<section>
+りょうほう1のときだけ0になる、かわったたしざん「^」
+<div id="logic-3"></div><script>make15("logic-3", f2s(function() {/*
+?1^1,0^1,1^0,0^0
+ 0   1   1   0
+?1|1,0|1,1|0,0|0
+ 1   1   1   0
+*/}))</script>
+1^1のほかは「ろんりわ」といっしょ。これが「はいたてきろんりわ / XOR」
+</section>
+
+<section>
+「ろんり」のけいさんは、いちどにさいだい16コまとめてけいさんできちゃいます！
+<div id="logic-4"></div><script>make15("logic-4", f2s(function() {/*
+?BIN$(`1010|`0011,4)
+1011
+*/}))</script>
+4けたの2しんすうどうしのたしざん。1|0、0|0、1|1、0|1がいちどにけいさんできました！
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 3|1はいくつでしょう？<br>
+2. ?BIN$(1),BIN$(2),BIN$(3) をヒントに、3|1のなぞをとこう<br>
+3. ?8323^35 と ?8323^35^35 をけいさんしてみよう<br>
+4. いろんなかずにかえて、ろんりをつかったあんごうであそぼう<br>
+5. いろんなけいさんをさせて、ろんりのなぞにせまろう<br>
+<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
