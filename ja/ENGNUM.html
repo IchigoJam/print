@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>えいごのかずをマスターしよう</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>えいごのかずをマスターしよう</h1>
+
+<section>
+えいごで1、2、3は、ワン、ツー、スリー！<br>
+<div id="engnum-0"></div><script>make15("engnum-0", f2s(function() {/*
+10 LET[1],"ONE","TWO","THREE"
+20 N=RND(3)+1
+30 ?STR$([N])
+*/}))</script>
+F5をおすたびに、1か2か3がでるよ
+</section>
+
+<section>
+ひょうじされたら、すばやくすうじキーでこたえるゲームにしよう！
+<div id="engnum-1"></div><script>make15("engnum-1", f2s(function() {/*
+15 CLS:WAIT60:LC 0,10:CLT
+40 IF INKEY()-48<>N GOTO40
+50 ?TICK()
+*/}))</script>
+こたえるまでのじかんがでるよ。60、きれるかな？
+</section>
+
+<section>
+なれたら、4から9もくわえよう
+<div id="engnum-2"></div><script>make15("engnum-2", f2s(function() {/*
+11 LET[4],"FOUR","FIVE","SIX","SEVEN","EIGHT","NINE"
+20 N=RND(9)+1
+*/}))</script>
+</section>
+
+<section>
+もんだいを10かいだして、ごうけいタイムをだしてみよう。
+<div id="engnum-3"></div><script>make15("engnum-3", f2s(function() {/*
+14 S=0:FOR I=1 TO 10
+50 T=TICK():?T:WAIT30:S=S+T
+60 NEXT
+70 ?"TIME:";S
+*/}))</script>
+500をきれるかな？
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. タイム、400きれるかな？<br>
+2. もんだいすうを5もんにしてみよう<br>
+3. がめんのまんなかにもんだいをひょうじしてみよう<br>
+4. スコアひょうじのいちをかえてみよう<br>
+5. もんだいにONEしかでないようにしてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
