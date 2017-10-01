@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>WS2812Bでいろあそび</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>WS2812Bでいろあそび</h1>
+
+<section>
+WS2812BはコンピューターつきのフルカラーLED。<br>
+5VをIchigoJamのVCC、DIをIchigoJamのOUT1、GNDをIchigoJamのGNDにつないだら、つぎのマシンごをうちこもう
+<div id="ws2812b-0"></div><script>make15("ws2812b-0", f2s(function() {/*
+10 POKE#700,240,181,114,182,64,24,80,33,9,2,1,49,9,4,4,136,1,48,128,37,1,48,3,120,255,34,74,96,1,39,8,38,43,66,1,208,8,39,1,38
+20 POKE#728,0,240,11,248,0,34,74,96,55,70,0,240,6,248,109,8,238,209,1,60,233,209,98,182,240,189,1,63,253,209,112,71
+*/}))</script>
+まちがえていると、とまってしまうので、SAVEしてからRUNがオススメ！
+</section>
+
+<section>
+1つ、あかくひからせてみよう！
+<div id="ws2812b-1"></div><script>make15("ws2812b-1", f2s(function() {/*
+POKE#800,3,0,0,10,0:?USR(#700,#800)
+*/}))</script>
+みどり
+<div id="ws2812b-2"></div><script>make15("ws2812b-2", f2s(function() {/*
+POKE#802,10,0,0:?USR(#700,#800)
+*/}))</script>
+あお
+<div id="ws2812b-3"></div><script>make15("ws2812b-3", f2s(function() {/*
+POKE#802,0,0,10:?USR(#700,#800)
+*/}))</script>
+</section>
+
+<section>
+3つまとめてみどりいろにひからせよう
+<div id="ws2812b-4"></div><script>make15("ws2812b-4", f2s(function() {/*
+R=0:G=10:B=0
+POKE#800,3*3,0,G,R,B,G,R,B,G,R,B:U=USR(#700,#800)
+*/}))</script>
+2つひからせるときは3*3を3*2にして、R,G,Bは2セットでOK!
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 3つともあかくひからせよう<br>
+2. 3つをしんごういろにひからせよう<br>
+3. むらさき、オレンジ、しろいろにひからせてみよう<br>
+4. きいろてんめつしんごうをつくってみよう<br>
+5. グラデーションさせてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
