@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Light up! / LED - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Light up! / LED - IchigoJam</h1>
+
+<section>
+<img src=key-enter.png height=70 align=right>
+Switch on your IchigoJam. Type "LED1" from your keyboard. And hit the ENTER key. (ENTER key is located right side and big key)
+<div id="list1"></div><script>make15("list1", "LED1")</script>
+It's success if your LED of IchigoJam lighted up and you got "OK" message.
+</section>
+
+<section>
+Type "LED0" to light off.
+<div id="list2"></div><script>make15("list2", "LED0")</script>
+</section>
+
+<section>
+<img src=key-space.png height=24 align=right>
+SPACE key is big and located center and bottom of your keyboard.<br>
+Type "LED 1" and the hit the ENTER key.
+<div id="list3"></div><script>make15("list3", "LED 1")</script>
+You can choice add a space or not.
+</section>
+
+<section>
+Let's type "RED0" and hit the ENTER.
+<div id="red-1"></div><script>make15("red-1", "RED0")</script>
+The LED does not light off with a message "Syntax error".<br>
+Don't worry! The computer naver get angry.
+</section>
+
+<section>
+Let's type "ABD" without hitting the ENTER.<br>
+<div id="red-2"></div><script>make15("red-2", "ABD\x85")</script>
+<img src=key-backspace.png height=40 align=right>
+Once hit the Backspace key.<br>
+The Backspace key located at right and upper side.
+<div id="red-3"></div><script>make15("red-3", "AB\x85")</script>
+You can remove a character! You don't worry about miss typing.
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Type "ABCDEFG"<br>
+2. Try to light off the LED<br>
+3. Try to light up and light off repaidly<br>
+4. Type "BEEP" and hit the ENTER<br>
+5. Type "CLS" and hit the ENTER<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
