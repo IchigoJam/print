@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>にじをつくろう (WS2812Bのつづき2)</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>にじをつくろう (WS2812Bのつづき2)</h1>
+
+<section>
+ひかりのさんげんしょく、あか・みどり・あお。ぜんぶまぜると？<br>
+<div id="rainbow-0"></div><script>make15("rainbow-0", f2s(function() {/*
+V=20:R=V:G=V:B=V:POKE#800,3,0,G,R,B:?USR(#700,#800)
+*/}))</script>
+Vはひかりのつよさ。ちいさくしたり、ちょっとおおきくしたりしてみよう。<br>
+</section>
+
+<section>
+いろのグラデーションきれいな「にじ」は「しきそう」でつくれる！<br>
+<div id="rainbow-1"></div><script>make15("rainbow-1", f2s(function() {/*
+500 D=H/60%6:E=H%60*V/60
+510 IF D=0 R=V:G=E:B=0
+520 IF D=1 R=V-E:G=V:B=0
+530 IF D=2 R=0:G=V:B=E
+540 IF D=3 R=0:G=V-E:B=V
+550 IF D=4 R=E:G=0:B=V
+560 IF D=5 R=V:G=0:B=V-E
+570 RTN
+
+H=40:V=6:GSB500:POKE#800,3,0,G,R,B:?USR(#700,#800)
+*/}))</script>
+Hはいろをかくどであらわす「しきそう」0から360、いろいろかえてみよう。
+</section>
+
+<section>
+にじいろにどんどんかわるプログラム
+<div id="rainbow-2"></div><script>make15("rainbow-2", f2s(function() {/*
+V=20:FOR H=0 TO 990 STEP 10:GSB500:POKE#800,3,0,G,R,B:?H:U=USR(#700,#800):WAIT10:NEXT
+*/}))</script>
+</section>
+
+<section>
+7つのフルカラーLEDで、にじをつくろう
+<div id="rainbow-4"></div><script>make15("rainbow-4", f2s(function() {/*
+POKE#800,7*3,0:V=20:FOR I=0 TO 6:H=I*50:GSB500:POKE#802+I*3,G,R,B:NEXT:U=USR(#700,#800)
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. にじのはじまりのいろをかえてみよう<br>
+2. アニメーションするにじをつくってみよう<br>
+3. にじがだんだんでてくるプログラムをつくってみよう<br>
+4. にじのいろのじゅんばんをぎゃくにしてみよう<br>
+5. オリジナルなでんしょくをつくってみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
