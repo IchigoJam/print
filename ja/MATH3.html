@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>四捨五入（算数）</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>四捨五入（算数） - IchigoJam</h1>
+
+<section>
+切り捨てよう！<br>
+41は40。44は40。45も40。49だって40。1の位を切り捨てるといいます。
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+?44/10
+4
+*/}))</script>
+整数の計算になるので、10で割ったら 4.4 ではなく 4 になります。
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+?44/10*10
+40
+*/}))</script>
+10で割って、10をかけると、なんと切り捨てのできあがり！
+</section>
+
+<section>
+切り上げよう！<br>
+49は50。45は50。44、41も50。40は40。1の位を切り上げるといいます。
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+?44/10*10+10
+50
+*/}))</script>
+切り捨てた後、10を足せば切り上げのできあがり！？
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+?40/10*10+10
+50
+*/}))</script>
+あら、40も50になってしまいました。1の位で判断させてみましょう。
+<div id="step-5"></div>
+<script>make15("step-5", f2s(function() {/*
+10 INPUT N
+20 LET M,N%10
+30 ?M
+*/}))</script>
+「%」は、IchigoJam BASICの世界では、余りを計算する記号。<br>
+もし1の位が0なら切り捨てて、1以上だったら切り上げる。
+<div id="step-6"></div>
+<script>make15("step-6", f2s(function() {/*
+40 IF M=0 ?N/10*10
+50 IF M>=1 ?N/10*10+10
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 72、1の位をプログラムで切り上げよう。<br>
+2. 1の位が4以下で切り捨て、5以上で切り上げる四捨五入プログラムを作ろう<br>
+3. ?(N+9)/10*10 でも1の位の切り上げができることを確認しよう<br>
+4. 1の位を四捨五入するプログラムを作ってみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
