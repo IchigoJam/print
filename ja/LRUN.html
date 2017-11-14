@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>プログラムをつなげる LRUN</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>プログラムをつなげる LRUN - IchigoJam</h1>
+
+<section>
+4つまでほぞんできるIchigoJam。プログラムどうしをつなげて、たいさくに！<br>
+まずはゲームほんぺん、クイズゲームをつくります
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 CLS
+20 LC10,10:INPUT "1+1=?",N
+30 LC12,10:IF N=2 ?"CLEAR!!" ELSE ?"GAME OVER!"
+*/}))</script>
+せいかいでクリア！そうでなければゲームオーバーになります<br>
+これをファイル1にほぞんしておきます
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+SAVE1
+*/}))</script>
+</section>
+
+<section>
+タイトルプログラムをつくるために、まずはさいしょから
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+NEW
+*/}))</script>
+なにかキーがおされたらおわるタイトルプログラム
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+10 CLS
+20 LC6,7:?"=MAGICAL MATH QUIZ="
+30 WAIT 60
+40 LC6,18:?"HIT ANY KEY TO START"
+50 IF INKEY()=0 CONT
+*/}))</script>
+れんけつコマンドLRUNをついかします
+<div id="step-5"></div>
+<script>make15("step-5", f2s(function() {/*
+60 LRUN1
+SAVE0
+RUN
+*/}))</script>
+タイトルプログラムからゲームへつながりました！
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. LRUN0 でリトライ、ゲームオーバーにしてみよう<br>
+2. タイトルをかいぞうしてみよう<br>
+3. クイズをかいぞうしてみよう<br>
+4. ゲームがおわったらタイトルがめんにもどるようにしてみよう<br>
+5. かわくだりゲームにタイトルをつけてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
