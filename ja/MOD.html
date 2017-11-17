@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>じかんわりづくりとあまりのけいさん（さんすう）</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>じかんわりづくりとあまりのけいさん（さんすう）</h1>
+
+<section>
+わりざんさせよう！コンマをつかって、3つまとめてけいさん！<br>
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+?2/1, 10/5, 13/3
+1  2  4
+*/}))</script>
+おや？13わる3は4かな？たしかめてみよう
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+?1*2, 2*5, 4*3
+2  10  12
+*/}))</script>
+4かける3は12、13にはならないね<br>
+IchigoJamのわりざん（/）は、しょうすうをきりすてるよ
+</section>
+
+<section>
+「あまり」をけいさんしよう<br>
+13わる3は、4あまり1。このあまりをけいさんするには？
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+?13-(13/3)*3, 13%3
+1  1
+*/}))</script>
+IchigoJamのあまりをもとめるきごう（%）をつかうとかんたん！<br>
+1じかんは60ふん、0:00から90ふんたつとなんじ、なんぷん？
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+?90/60,90%60
+1  30
+*/}))</script>
+1:30、とけいさんできるよ！<br>
+</section>
+
+<section>
+じぶんだけのじかんわりをつくってみよう！8:50スタート
+<div id="step-5"></div>
+<script>make15("step-5", f2s(function() {/*
+10 H=8:M=50
+20 INPUT T
+30 M=M+T
+40 ?H+M/60;":";M%60
+50 GOTO 20
+*/}))</script>
+さいしょのじゅぎょうが45ふん、45といれてエンター。<br>
+おやすみが10ふん、10といれてエンター。どんどんじこくがひょうじされる！
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. やすみじかんなしだと、なんじにがっこうおわる？<br>
+2. １つのじゅぎょうが30ふんだとすると？<br>
+3. あさはやいじかんからはじめてみよう<br>
+4. どようびのじかんわりをつくってみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
