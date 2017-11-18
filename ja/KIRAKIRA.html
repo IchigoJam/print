@@ -7,13 +7,13 @@
 <h1>きらきらしよう (WS2812Bのつづき1)</h1>
 
 <section>
-32コぜんぶ、ひからせる
+32コつないだWS2812B、ぜんぶ、ひからせる！
 <div id="rainbow-0"></div><script>make15("rainbow-0", f2s(function() {/*
 30 V=10
-40 POKE#800,32*3,0
-50 POKE#802,V,V,V
-60 COPY#805,#802,93
-70 U=USR(#700,#800)
+40 LET[0],V,V,V
+50 FOR I=1 TO 31:LET[I*3],[0],[1],[2]:NEXT
+60 U=USR(#700,0)
+70 END
 */}))</script>
 Vはひかりのつよさ。ちいさくしたり、ちょっとおおきくしたりしてみよう。<br>
 </section>
@@ -21,36 +21,36 @@ Vはひかりのつよさ。ちいさくしたり、ちょっとおおきくし�
 <section>
 いろいろないろで、ひからせる
 <div id="rainbow-1"></div><script>make15("rainbow-1", f2s(function() {/*
-50 POKE#802,RND(V),RND(V),RND(V)
-80 WAIT30:GOTO50
+40 LET[0],RND(V),RND(V),RND(V)
+70 WAIT30:GOTO40
 */}))</script>
 </section>
 
 <section>
-あかくひからせる（50ぎょうは「みどり、あか、あお」のじゅん）
+あかくひからせる（40ぎょうは「みどり、あか、あお」のじゅん）
 <div id="rainbow-2"></div><script>make15("rainbow-2", f2s(function() {/*
-50 POKE#802,0,RND(V),0
-*/}))</script>
-</section>
-
-<section>
-しろいろがふってくる
-<div id="rainbow-5"></div><script>make15("rainbow-5", f2s(function() {/*
-60 N=RND(V):COPY#802,#805,93:POKE#802+93,N,N,N
+40 LET[0],0,RND(V),0
 */}))</script>
 </section>
 
 <section>
 ぜんぶちがういろで、ひからせる
 <div id="rainbow-4"></div><script>make15("rainbow-4", f2s(function() {/*
-60 FOR I=1 TO 31:POKE#802+I*3,RND(V),RND(V),RND(V):NEXT
+50 FOR I=0 TO 31:LET[I*3],RND(V),RND(V),RND(V):NEXT
 */}))</script>
 </section>
 
 <section>
 あおグラデーション
 <div id="rainbow-6"></div><script>make15("rainbow-6", f2s(function() {/*
-60 FOR I=0 TO 31:POKE#802+I*3,0,0,(I+TICK()/30)%V:NEXT
+50 FOR I=0 TO 31:LET[I*3],0,0,(I+TICK()/30)%V:NEXT
+*/}))</script>
+</section>
+
+<section>
+しろいろがふってくる
+<div id="rainbow-5"></div><script>make15("rainbow-5", f2s(function() {/*
+50 FOR I=0 TO 90 STEP 3:LET[I],[I+3],[I+4],[I+5]:NEXT:N=RND(V):LET[93],N,N,N
 */}))</script>
 </section>
 

@@ -9,7 +9,7 @@
 <section>
 ひかりのさんげんしょく、あか・みどり・あお。ぜんぶまぜると？<br>
 <div id="rainbow-0"></div><script>make15("rainbow-0", f2s(function() {/*
-V=20:R=V:G=V:B=V:POKE#800,3,0,G,R,B:?USR(#700,#800)
+V=20:R=V:G=V:B=V:LET[0],G,R,B:?USR(#700,0)
 */}))</script>
 Vはひかりのつよさ。ちいさくしたり、ちょっとおおきくしたりしてみよう。<br>
 </section>
@@ -26,7 +26,7 @@ Vはひかりのつよさ。ちいさくしたり、ちょっとおおきくし�
 560 IF D=5 R=V:G=0:B=V-E
 570 RTN
 
-H=40:V=6:GSB500:POKE#800,3,0,G,R,B:?USR(#700,#800)
+H=40:V=6:GSB500:LET[0],G,R,B:?USR(#700,0)
 */}))</script>
 Hはいろをかくどであらわす「しきそう」0から360、いろいろかえてみよう。
 </section>
@@ -34,14 +34,14 @@ Hはいろをかくどであらわす「しきそう」0から360、いろいろ
 <section>
 にじいろにどんどんかわるプログラム
 <div id="rainbow-2"></div><script>make15("rainbow-2", f2s(function() {/*
-V=20:FOR H=0 TO 990 STEP 10:GSB500:POKE#800,3,0,G,R,B:?H:U=USR(#700,#800):WAIT10:NEXT
+V=20:FOR H=0 TO 990 STEP 10:GSB500:LET[0],G,R,B:?H:U=USR(#700,0):WAIT10:NEXT
 */}))</script>
 </section>
 
 <section>
 7つのフルカラーLEDで、にじをつくろう
 <div id="rainbow-4"></div><script>make15("rainbow-4", f2s(function() {/*
-POKE#800,7*3,0:V=20:FOR I=0 TO 6:H=I*50:GSB500:POKE#802+I*3,G,R,B:NEXT:U=USR(#700,#800)
+V=20:FOR I=0 TO 6:H=I*50:GSB500:LET[I*3],G,R,B:NEXT:U=USR(#700,0)
 */}))</script>
 </section>
 
