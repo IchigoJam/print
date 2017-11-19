@@ -19,16 +19,16 @@ WS2812BはコンピューターつきのフルカラーLED。<br>
 <section>
 1つ、あかくひからせてみよう！（ばんごうつきのへんすう、はいれつ）
 <div id="ws2812b-1"></div><script>make15("ws2812b-1", f2s(function() {/*
-200 [1]=10:?USR(#700,0)
+200 [1]=10:U=USR(#700,0)
 RUN
 */}))</script>
 みどり
 <div id="ws2812b-2"></div><script>make15("ws2812b-2", f2s(function() {/*
-[0]=10:[1]=0:[2]=0:?USR(#700,0)
+[0]=10:[1]=0:[2]=0:U=USR(#700,0)
 */}))</script>
 あお（LETコマンドで3つまとめてセットできる！）
 <div id="ws2812b-3"></div><script>make15("ws2812b-3", f2s(function() {/*
-LET[0],0,0,10:?USR(#700,0)
+LET[0],0,0,10:U=USR(#700,0)
 */}))</script>
 </section>
 
