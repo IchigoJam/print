@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>かずでこたえる INPUT - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>かずでこたえる INPUT</h1>
+
+<section>
+RND（ランダム）をつかって、いろんなたしざんもんだいをだすプログラム<br>
+A〜ZにかずをきおくするLET（レット）をつかうよ
+<div id="input0"></div><script>make15("input0", "10 LET A,RND(10)\n20 LET B,RND(10)\n30 ?A;\"+\";B\nRUN")</script>
+なんどか、RUN（ラン）してみましょう！<br>
+</section>
+
+<section>
+キーボードをつかってかずをきおくさせるにはINPUT（インプット）
+<div id="input1"></div><script>make15("input1", "40 INPUT C\n50 ?C\nRUN")</script>
+ひょうじされた「?」のあとに、キーボードでかずをいれて、エンターキー<br>
+Cに、いれたかずが、きおくされているね！
+</section>
+
+<section>
+こたえあわせには、はんだんさせるIF（イフ）
+<div id="input3"></div><script>make15("input3", "60 IF C=A+B ?\"ATARI\"")</script>
+</section>
+
+<section>
+はずれをひょうじしたいときは、ELSE（エルス）をつかおう
+<div id="input4"></div><script>make15("input4", "60 IF C=A+B ?\"ATARI\" ELSE ?\"HAZURE\"")</script>
+しつもんぶんつきで、きくこともできるよ
+<div id="input5"></div><script>make15("input5", "40 INPUT \"KOTAEHA?\",C")</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ふたけたのたしざんに、かいぞうしてみよう<br>
+2. ちょうかんたんなもんだいに、かいぞうしてみよう<br>
+3. かけざんもんだいに、かいぞうしてみよう<br>
+4. TICKをつかって、こたえるまでのじかんをはかってみよう<br>
+5. かずあてゲームをつくってみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
