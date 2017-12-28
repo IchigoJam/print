@@ -1,0 +1,63 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>あっちむいてほい</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>あっちむいてほい</h1>
+
+<section>
+コンピュータ(CPU)と「あっちむいてほい」するゲーム！<br>
+まずは、かけごえ「あっちむいて」
+<div id="acchimuite-1"></div>
+<script>make15("acchimuite-1", f2s(function() {/*
+10 CLS
+20 ?"ACCHI MUITE"
+*/}))</script>
+</section>
+
+<section>
+あなた(YOU)は、じょうげさゆうのカーソルキーで、むきをきめる。<br>
+<div id="acchimuite-2"></div>
+<script>make15("acchimuite-2", f2s(function() {/*
+30 A=INKEY()
+40 IF A<28 OR A>31 GOTO 30
+*/}))</script>
+※ひだり（←）は28、みぎ（→）は29、うえ（↑）は30、した（↓）は31
+</section>
+
+<section>
+コンピュータ(CPU)のむきはランダムにきめる。<br>
+<div id="acchimuite-3"></div>
+<script>make15("acchimuite-3", f2s(function() {/*
+50 C=RND(4)+28
+*/}))</script>
+</section>
+
+<section>
+あなた(YOU)とコンピュータ(CPU)のむきと、けっかをひょうじ。<br>
+コンピュータ(CPU)とちがうむきなら、あなた(YOU)のかち。<br>
+おなじむきなら、あなた(YOU)のまけ。<br>
+<div id="acchimuite-4"></div>
+<script>make15("acchimuite-4", f2s(function() {/*
+60 ?"HOI!"
+70 ?"YOU:";CHR$(224+A-28)
+80 ?"CPU:";CHR$(224+C-28)
+90 IF A=C ?"LOST!" ELSE ?"WON!"
+*/}))</script>
+※キャラクターコード224：ひだり、225：みぎ、226：うえ、227：した
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. まけるまでゲームがつづくようにしてみよう<br>
+2. たいせんするかずをきめてみよう<br>
+3. かったかずとまけたかずをかぞえてみよう<br>
+4. きめたじかんまでに、カーソルキーをおさなかったらまけにしてみよう<br>
+5. コンピュータどうしでたたかわせてみよう<br>
+6. じゃんけんとくみあわせてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
