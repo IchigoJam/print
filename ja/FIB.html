@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>フィボナッチすうれつ</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>フィボナッチすうれつ - IchigoJam</h1>
+
+<section>
+「かず」が「れつ」のように、つらなったものが「すうれつ」。
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {`
+10 N=0
+20 N=N+1
+30 ?N;" ";
+40 GOTO 20
+`}))</script>
+20ぎょうにいくたびに、まえのかずに1たします。（LET N,N+1 とおなじ）<br>
+いちずつふえる、すうれつのできあがり！
+</section>
+
+<section>
+さいしょは0、つぎは1。<br>
+そのつぎからのかずは、ひとつまえのかずと、ふたつまえのかずをたしたもの。<br>
+という、「フィボナッチすうれつ」をつくってみます。<br>
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+10 A=0:B=1:?"0 1 ";
+20 C=A+B:A=B:B=C
+30 ?C;" ";
+40 GOTO 20
+*/}))</script>
+Aがふたつまえ、Bにひとつまえをいれたので、つぎのかずCはA+B。<br>
+つぎのすうれつをけいさんするために、AにBを、BにCをいれてくりかえし。<br>
+どんどんおおきくなって、おかしくなってしまうところでとめましょう。
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+25 IF C<0 END
+*/}))</script>
+フォボナッチすうれつは、ひまわりのたねや、まきがいなど、しぜんにあわられるふしぎなすうれつ。
+いろんなえにつかってみるとおもしろいかも！？
+</section>
+
+<section>
+0と1でかずをあらわす、2しんすうにしてみましょう
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+30 ?BIN$(C)
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. さいしょが0で、3ずつたすすうれつをつくろう<br>
+2. さいしょが1で、どんどん2ばいにするすうれつをつくろう<br>
+3. 2のすうれつを2しんすうでみてみよう<br>
+4. みっつまえまでたしてつくる、トリボナッチすうれつをつくろう<br>
+5. オリジナルなすうれつをつくって、なまえをつけよう
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
