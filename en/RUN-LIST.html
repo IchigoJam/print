@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Memory of program / RUN/LIST - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Memory of program / RUN/LIST</h1>
+
+<section>
+Let's to memorize a blinking pattern of LED.
+<div id="run-1"></div><script>make15("run-1", "10 LED1:WAIT10")</script>
+Starting with a number is a command meaning "to memorize".<br>
+The LED does not light yet.<br>
+A command to run is "RUN" and ENTER key, the LED will light up.
+<div id="run-2"></div><script>make15("run-2", "RUN")</script>
+Next starts with 20, and add a memory with the ENTER key.
+<div id="run-4"></div><script>make15("run-4", "20 LED0:WAIT10")</script>
+Use the "RUN" when it runs a memorized program.<br>
+Light again with "RUN"!
+</section>
+
+<section>
+Call a memory, "LIST".
+<div id="run-3"></div><script>make15("run-3", "LIST\n10 LED1:WAIT10\n20 LED0:WAIT10")</script>
+Inserting "WAIT" between 10 and 20 lines.
+<div id="run-5"></div><script>make15("run-5", "15 WAIT50")</script>
+Comfirm with "LIST", execute with "RUN"!
+</section>
+
+<section>
+Programs with the same number will be overwritten.<br>
+(Comfirm with "RUN" and "LIST"!)
+<div id="run-6"></div><script>make15("run-6", "15 WAIT110")</script>
+</section>
+
+<section>
+Type only number and press the ENTER key, it  disappears that line.
+<div id="run-7"></div><script>make15("run-7", "15\nLIST")</script>
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Use a function key F5 key instead of "RUN"<br>
+2. Use a F4 key instead of "LIST"<br>
+3. Let's make a program that the LED lights 2 times<br>
+4. Let's make a program that lighting the LED with cool pattern
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

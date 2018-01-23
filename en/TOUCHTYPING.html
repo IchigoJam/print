@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Touch Typing - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Touch Typing</h1>
+
+<section>
+Touch typing to hit without looking at the keyboard is fast! fun! cool!<br>
+<div id="touchtype1"></div>
+<script>make15("touchtype1", f2s(function() {/*
+10 S="JKL"
+20 CLT:FOR I=1 TO 10
+30 N=RND(LEN(S)):C=ASC(S+N)
+40 ?CHR$(C)
+50 K=INKEY():IF K=0 CONT
+60 IF C<>K ?"MISS!":END
+70 NEXT:?TICK()/60
+*/}))</script>
+Position the index finger of the right hand at "J" position, middle finger at "K", ring finger at "L".<br>
+Type quickly J, K or L that displays ramdomly.<br>
+Can you hit 10 times without mistakes? The target time is 8 seconds!
+</section>
+
+<section>
+After you cleared it, let's add the characters gradually.<br>
+Position the index finger of the left hand at "F".<br>
+Can you give out 8-second record with "FJKL"?
+<div id="touchtype2"></div>
+<script>make15("touchtype2", f2s(function() {/*
+10 S="FJKL"
+*/}))</script>
+</section>
+
+<section>
+The middle finger of the left hand at "D", the ring finger at "S" and the little finger at "A".<br>
+This is the home position of the touch typing!
+<div id="touchtype3"></div>
+<script>make15("touchtype3", f2s(function() {/*
+10 S="ASDFJKL"
+*/}))</script>
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's give out 8-second record with "ASDFJKL"<br>
+2. Let's add "H" that press with the index finger of the right hand<br>
+3. Let's add "G" that press with the index finger of the left hand<br>
+4. Let's add "ZXCVBNM" that at bottom of keyboard<br>
+5. Let's add "QWERTYUIOP" that at top of keyboard<br>
+6. Let's give out 8-second record with all alphabet
+</section>
+
+<section>
+<div id="touchtype4"></div>
+<script>make15("touchtype4", f2s(function() {/*
+Q W E RT YU I O P 
+A S D FG HJ K L ; 
+Z X C VB NM , . / 
+*/}))</script>
+Key assignment table of each finger
+</section>
+
+<div id="credit"><a href=https://github.com/IchigoJam/print>CC BY on GitHub</a> <a href="https://ichigojam.github.io/print/en/">IchigoJam print</a> https://ichigojam.github.io/print/en/ <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a><br>
+</div>
+</body></html>

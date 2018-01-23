@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Answer in numbers / INPUT - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Answer in numbers / INPUT</h1>
+
+<section>
+A program that issues various addition problems using "RND"(random).<br>
+Use "LET" to store numbers on A to Z.
+<div id="input0"></div><script>make15("input0", "10 LET A,RND(10)\n20 LET B,RND(10)\n30 ?A;\"+\";B\nRUN")</script>
+Let's "RUN" several times!<br>
+</section>
+
+<section>
+In order to store the numbers using the keyboard, "INPUT".
+<div id="input1"></div><script>make15("input1", "40 INPUT C\n50 ?C\nRUN")</script>
+Behind the "?", type the numbers with the keyboard and press ENTER key.<br>
+The number put in C is memorized!
+</section>
+
+<section>
+For checking answers, "IF" that let it judge.
+<div id="input3"></div><script>make15("input3", "60 IF C=A+B ?\"ATARI\"")</script>
+</section>
+
+<section>
+Let's use "ELSE" when it wants to show a miss.
+<div id="input4"></div><script>make15("input4", "60 IF C=A+B ?\"ATARI\" ELSE ?\"HAZURE\"")</script>
+It can also hear with attaching a question text.
+<div id="input5"></div><script>make15("input5", "40 INPUT \"KOTAEHA?\",C")</script>
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's remodel it to addition of 2 digits<br>
+2. Let's remodel to an extremely easy problem<br>
+3. Let's remodel to the problem of multiplication<br>
+4. Let's measure the time to answer using "TICK"<br>
+5. Let's make a number hitting game<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
