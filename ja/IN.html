@@ -1,54 +1,48 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>スイッチをつなげよう IN（イン）</title>
+<title>0か1かのにゅうりょく IN（イン）</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>スイッチをつなげよう IN（イン）</h1>
+<h1>0か1かのにゅうりょく IN（イン）</h1>
 
 <section>
 ジャンパーせんを2ほんよういしよう。<br>
-IchigoJamのほんたいのよこ、ピンソケットCN3とCN4の14コのあな、シールにやくわりがかいてあります。<br>
-ジャンパーせんを1ぽんつかって、かたほうをIN1へ、もうかたほうをGNDへ、さしこみましょう。
-途中
-
-<div id="in1-1"></div><script>make15("in1-1", "OUT1,1")</script>
-「OK（オーケー）」とでて、さしこんだLEDがひかったら、だいせいこう！<br>
-OUT1のピンの「でんあつ」がたかくなって、LEDのなかを「でんりゅう」がとおり、GND（グランド、でんあつ0）へながれることでひかります。<br>
+IchigoJamのピンソケットCN3とCN4の14コのあな、1ほんをIN1へ、もう1ぽんをGNDへさしこみます。
+<div id="in1-1"></div><script>make15("in1-1", `10 ?IN(1):WAIT10:GOTO10
+RUN`)</script>
+ずっとひょうじされる、1。ジャンパーせんの2ほんのきんぞくぶぶんをくっつけると0にかわります。
 </section>
 
 <section>
-OUT1,0（アウト、ゼロ）、エンターでけせます。
-<div id="in1-2"></div><script>make15("in1-2", "OUT1,0")</script>
+0か1かのにゅうりょくをそのままLEDコマンドにわたしてみましょう。
+<div id="in1-2"></div><script>make15("in1-2", "10 LED IN(1):GOTO10")</script>
+0を1へ、1を0にはんてんする!きごうをつけると、ぎゃくになる。
+<div id="in1-3"></div><script>make15("in1-3", "10 LED !IN(1):GOTO10")</script>
 </section>
 
 <section>
-もうひとつLEDをさしこんでみましょう。LEDのながいほうのあしをOUT2へ、みじかいほうのあしをOUT3へさしこみます。
-<div id="in1-3"></div><script>make15("in1-3", "OUT2,1")</script>
-OUTコマンド、さいしょのかずがピンのばしょ、つぎのかずでつけるか、けすかをきめます。
+0になるまでまってもらおう
+<div id="in1-5"></div><script>make15("in1-5", "10 IF IN(1)=1 GOTO 10")</script>
+はなしているとき、IN(1)が1なので、ずっと10ぎょうをぐるぐるくりかえして、0になったらおわって、OKがでる。
 </section>
 
 <section>
-こうごに、てんめつさせてみましょう。
-<div id="in1-4"></div><script>make15("in1-4", "10 OUT1,1:OUT2,0:WAIT30\n20 OUT1,0:OUT2,1:WAIT30\n30 GOTO10\nRUN")</script>
-とめるときは [esc]（エスケープ キー）
+0になるまでまって、1になるまでまってをくりかえす
+<div id="in1-4"></div><script>make15("in1-4", `10 IF IN(1)=1 GOTO 10
+20 ?"0!"
+30 IF IN(1)=0 GOTO 30
+40 ?"1!"
+50 GOTO 10`)</script>
 </section>
 
-<!--
-<section>
-※ちゅうい：<br>
-LEDにおおきなでんりゅうをながすと、もえたり、はれつしたり、はつねつして、こわれることがあります！<br>
-IchigoJamのほんたいが、ながれるでんりゅうをせいげんしてくれるので、こんかいのじっけんはあんぜんです。
-</section>
--->
 <section>
 <b>やってみよう！</b><br>
-1. OUT2,1 でLEDをつけたあと、OUT3,1 とやってみよう<br>
-2. そのあと OUT3,0 でLEDがつくわけをかんがえてみよう<br>
-3. IchigoJamほんたいについているLEDとあわせててんめつさせよう<br>
-4. 3つのLEDがじゅんばんにぜんぶつくプログラムをつくろう<br>
-5. LEDをぜんぶつけてから、OUT0 または F7 をおしてみよう<br>
-6. OUT3,1でLEDがひかるようにかいろをつくりかえてみよう<br>
+1. ジャンパーせんがふれたら、おとがなるようにしてみよう<br>
+2. ジャンパーせんをふれたじょうたいにしておき、はなれたらけいこくおんをならそう<br>
+3. IN(1)が0のときだけLEDをてんめつさせてみよう<br>
+4. ジャンパーせんをIN4にさしかえ、IN(4)をつかってじっけんしてみよう<br>
+5. IN2とIN3はそのままではうまくうごかないことをたしかめよう（プルアップていこうがひつよう）<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/

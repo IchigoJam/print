@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>りょうのにゅうりょく ANA（アナ）</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>りょうのにゅうりょく ANA（アナ）</h1>
+
+<section>
+ひかりセンサー、おんどセンサー、ボリュームなどをIchigoJamのIN2にせつぞく。<br>
+0から1023までのかずでひょうじされます。
+<div id="ana-1"></div><script>make15("ana-1", `10 ?ANA(2):WAIT10:GOTO10
+RUN`)</script>
+センサーをいろいろいじって、かずがどうかわるかかんさつしてみよう。
+</section>
+
+<section>
+かずが500よりおおきいときにLEDをひからせるには
+<div id="ana-2"></div><script>make15("ana-2", "10 ?ANA(2):LED ANA(2)>500:GOTO10")</script>
+かずが400よりちいさいときにLEDをひからせるには
+<div id="ana-3"></div><script>make15("ana-3", "10 ?ANA(2):LED ANA(2)<400:GOTO10")</script>
+</section>
+
+<section>
+かずが800よりおおきくなるまでまつには
+<div id="ana-5"></div><script>make15("ana-5", "10 ?ANA(2):IF ANA(2)<800 GOTO10")</script>
+ANA(2)が800よりちいさいときは、ずっと10ぎょうをぐるぐるくりかえして、こえたらおわって、OKがでる。
+</section>
+
+<section>
+500よりおおきくなるまでまってBEEP、400よりちいさくなるまってBEEPをくりかえす
+<div id="ana-4"></div><script>make15("ana-4", `10 ?ANA(2):IF ANA(2)<500 GOTO10
+20 BEEP 5
+30 ?ANA(2):IF ANA(2)>400 GOTO30
+40 BEEP 15
+50 GOTO 10`)</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ひかりセンサーをつかって、くらくなったらLEDをつけよう<br>
+2. おんどセンサーをつかって、あたたかくなったらLEDをつけよう<br>
+3. IchigoJamのBTNにセンサーをつないで、ANA(0)であたいがかわるのをみてみよう<br>
+4. 2つのセンサーがりょうほうたかいときにおとをならそう<br>
+5. センサーのあたいでグラフをかいてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
