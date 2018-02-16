@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Make a dice / RND - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Make a dice / RND</h1>
+
+<section>
+Let's make various dice!
+<div id="list1"></div><script>make15("list1", "?RND(3)")</script>
+What kind of number appeared?<br>
+RND (random) is a dice that there are surfaces as much as the number in parenthese.
+</section>
+
+<section>
+Type again and press the ENTER key!
+<div id="list2"></div><script>make15("list2", "?RND(3)")</script>
+Did the displayed number change compared to the beginning?<br>
+Oh? But 3 does not come out?<br>
+This is the mean that three numbers with 0 included will appear.<br>
+If a number in the parenthesis is 3, it is 3 numbers of 0, 1, 2.
+</section>
+
+<section>
+<div id="list3"></div><script>make15("list3", "?RND(5)")</script>
+It can also change the number in parentheses.
+</section>
+
+<section>
+Do not want to put out 0!<br>
+Want to make the smallest number to 1 in the number that comes out!<br>
+In a case like that ...
+<div id="red-1"></div><script>make15("red-1", "?RND(3)+1")</script>
+This is OK!<br>
+By adding 1 for 0 that was the smallest number, the smallest number in the number that comes out becomes 1.<br>
+</section>
+
+<section>
+<div id="red-2"></div><script>make15("red-2", "?RND(3)+3")</script>
+It can also change the smallest number out of the numbers that come out.
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's display randomly any of the numbers from 0 to 6<br>
+2. Let's display randomly any of the numbers from 1 to 6<br>
+3. Let's display randomly any of the numbers from 10 to 20<br>
+4. Let's make a dice that come out a favorite number<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

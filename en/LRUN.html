@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Connect the programs / LRUN</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>Connect the programs / LRUN - IchigoJam</h1>
+
+<section>
+IchigoJam can store up to four.<br>
+Connect programs each other, to be a masterpiece!<br>
+First, make a quiz game, the main part of the game.
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 CLS
+20 LC10,10:INPUT "1+1=?",N
+30 LC12,10:IF N=2 ?"CLEAR!!" ELSE ?"GAME OVER!"
+*/}))</script>
+It clears with correct answer! If not it will be game over.<br>
+Save this in file 1.
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+SAVE1
+*/}))</script>
+</section>
+
+<section>
+To create a title program, first of all from beginning.
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+NEW
+*/}))</script>
+A title program that ends when any key is pressed.
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+10 CLS
+20 LC6,7:?"=MAGICAL MATH QUIZ="
+30 WAIT 60
+40 LC6,18:?"HIT ANY KEY TO START"
+50 IF INKEY()=0 CONT
+*/}))</script>
+Add concatenated command "LRUN".
+<div id="step-5"></div>
+<script>make15("step-5", f2s(function() {/*
+60 LRUN1
+SAVE0
+RUN
+*/}))</script>
+Connected to the game from the title program!
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's make it to be retry/game-over with  "LRUN0"<br>
+2. Let's remodel the title<br>
+3. Let's remodel the quiz<br>
+4. Let's make it to go back to the title screen if the game is over<br>
+5. Let's put a title on "Kawakudari Game"<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
