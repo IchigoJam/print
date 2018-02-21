@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>What day of the week were you born? - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>What day of the week were you born?</h1>
+
+<section>
+Year what month what day, what day of the week?<br>
+Actually, it can be calculated by program.<br>
+First, a program to display day of the week.
+<div id="whatday0"></div><script>make15("whatday0", `10 LET[0],"SUN","MON","TUE","WED","THU","FRI","SAT"
+RUN
+?STR$([0])`)</script>
+Use "STR$" to display the beginning [0] of the string in the array.
+</section>
+
+<section>
+Repeat from Sunday to Saturday with 7 days of the week.
+<div id="whatday3"></div><script>make15("whatday3", `FOR I=0 TO 22:?STR$([I%7]):NEXT`)</script>
+</section>
+
+<section>
+Using "INPUT", put the year in the "Y", the month in the "M" and the day in the "D".
+<div id="whatday1"></div><script>make15("whatday1", `20 INPUT"Y?",Y
+30 INPUT"M?",M
+40 INPUT"D?",D
+RUN`)</script>
+Let's display the inputed year and month and day.
+<div id="whatday4"></div><script>make15("whatday4", `?Y,M,D`)</script>
+</section>
+
+<section>
+A "formula of Zeller" that calculating the day of the week from the year, month, day.<br>
+<div id="whatday2"></div><script>make15("whatday2", `50 IF M<3 M=M+12:Y=Y-1
+60 H=(Y+Y/4-Y/100+Y/400+(13*M+8)/5+D)%7
+70 ?STR$([H])`)</script>
+It is amazing to be able to know the day of the week with this!
+</section>
+
+
+<section>
+<b>Try it!</b><br>
+1. 今日の日付を入れて曜日を確認しよう<br>
+2. What day of the week is my birthday?<br>
+3. What day of the week is the next birthday?<br>
+4. Let's display the days of the week with katakana<br>
+5. Let's make a birth month calendar<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

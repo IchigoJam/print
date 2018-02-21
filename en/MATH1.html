@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Looking for a common multiple(Mathematics)</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>Looking for a common multiple(Mathematics) - IchigoJam</h1>
+
+<section>
+Let's display the numbers from 1 to 100.
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 FOR X=1 TO 100
+20 ?X
+30 WAIT 3
+40 NEXT
+*/}))</script>
+With "FOR"/"NEXT" command, while incrementing a variable X by 1, repeat until it reaches 100.
+</section>
+
+<section>
+Let's display only the multiples of 3 using the symbol "%" what calculating the remainder.
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+20 IF X%3=0 ?X
+*/}))</script>
+</section>
+
+<section>
+When it displays also multiples of 5, use "OR" meaning "either".
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+20 IF X%3=0 OR X%5=0 ?X
+*/}))</script>
+</section>
+
+<section>
+When it displays what it is a multiple of 3 and 5, use "AND" meaning "both".
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+20 IF X%3=0 AND X%5=0 ?X
+*/}))</script>
+This is "common multiple" of 3 and 5.<br>
+The first number 15 is "least common multiple".
+</section>
+
+<section>
+Let's display "common multiples" of 2 and 3 and 5
+<div id="step-5"></div>
+<script>make15("step-5", f2s(function() {/*
+20 IF X%2=0 AND X%3=0 AND X%5=0 ?X
+*/}))</script>
+There are 3 "common multiples" and 30 "least common multiple" between 100.
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's display the multiples of 7<br>
+2. Let's display the multiples of 13<br>
+3. Let's display both the multiples of 7 and multiples of 13<br>
+4. Let's display the multiples of 7 and 13<br>
+5. Let's rapidly count how many are common multiples of 3 and 7 from 1 to 1000<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

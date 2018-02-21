@@ -1,0 +1,44 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Make a binary number / BIN$ - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+<h1>Make a binary number / BIN$</h1>
+
+<section>
+There are numbers, hiragana, alphabet, various characters, but the character using by the computer is only two "0" and "1".
+</p><p>
+Usually, if you add 1 in 9, it will be 10 and 2 characters, but because 0 and 1 only, only adding 1 in 1, will be 10 and 2 characters.
+This is a binary number.
+</p><p>
+"BIN$" command that change the number to binary number.<br>
+<div id="bin1-1"></div><script>make15("bin1-1", "?BIN$(2)\n10 \n?BIN$(10)\n1010 ")</script>
+The symbol "` "(shift + "@" or left of "1") that make a binary number to a number.<br>
+<div id="bin1-2"></div><script>make15("bin1-2", "?`1111\n15 \n?`100000000\n256 ")</script>
+</section>
+
+<section>
+0, 1, 2, 3, 4 ... count it with binary number.
+<div id="bin1-3"></div><script>make15("bin1-3", f2s(function() {/*
+FOR I=0 TO 256:?BIN$(I),I:WAIT 30:NEXT
+0  0 
+1  1 
+10  2 
+11  3 
+*/}))</script>
+Binary numbers count with "bit". <br>
+3 is 2 bits with "11", 8 is 4 bits with "1000".
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's make "16" a binary number<br>
+2. Let' make the binary numbers "101", "1010", "10100"  a number<br>
+3. Let's make "40" to binary number<br>
+4. What is the maximum number that can be represented by 5 bits?<br>
+5. Let's make "-1" a binary number<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

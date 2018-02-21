@@ -1,0 +1,68 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Looking for common divisor(Mathematics)</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>Looking for common divisor(Mathematics) - IchigoJam</h1>
+
+<section>
+What number is divisible by 182?
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 N=182
+20 FOR X=2 TO N-1
+30 IF N%X=0 ?X
+40 NEXT
+*/}))</script>
+With "FOR" / "NEXT" command, whie incrementing a variable X by 1 from 2, and repeat.<br>
+It is OK that "N=182" set as "LET N, 182"!
+</section>
+
+<section>
+Let's check the "divisor", a number that came out.
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+?182%91
+0
+?182%26
+0
+*/}))</script>
+It can divide properly!
+</section>
+
+<section>
+What is the number that can divide 455?
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+10 N=455
+*/}))</script>
+</section>
+
+<section>
+It displays the number that can divide both 182 and 455.
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+10 N=182:M=455
+20 FOR X=2 TO N-1
+30 IF N%X=0 AND M%X=0 ?X
+40 NEXT
+*/}))</script>
+The displayed numbers 7, 13, and 91 are the "common divisor" of 182 and 455.<br>
+The largest number 91 is the "greatest common divisor" of 182 and 455.
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's display the "common divisor" of 3432 and 2002<br>
+2. Let's divide 3432 by "greatest common divisor"<br>
+3. Let's multiply the number calculated above 2 with "greatest common divisor"<br>
+4. Let's count how many "divisors" of 2002<br>
+5. Let's look for the "prime number" that does not have "divisor" in 4 digit number<br>
+6. Let's confirm that there is no "common divisor" between "prime number"<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
