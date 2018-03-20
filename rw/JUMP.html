@@ -1,0 +1,56 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Umukino wo Gusimbuka- IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Umukino wo Gusimbuka</h1>
+
+<section>
+Umukino wo gusimbuka ni umukino wo gukina usimbuka(ukwepa) abanzi.<br>
+Inyuguti yambere iragaragara!
+<div id="jump0"></div><script>make15("jump0", `10 CLS:Y=15:V=0
+20 LC 0,Y:?"M"`)</script>
+</section>
+
+<section>
+Iyo ukanze buto iyo ari yo yose, urasimbuka!
+<div id="jump3"></div><script>make15("jump3", `30 IF Y=15 V=3*(INKEY()!=0)
+40 Y=Y-V:V=V-1
+50 SCROLL LEFT
+60 GOTO 20`)</script>
+</section>
+
+<section>
+Kuraho inyuguti y'umwanzi.
+<div id="jump1"></div><script>make15("jump1", `25 IF RND(10)=0 LC 31,15:?"K"`)</script>
+</section>
+
+<section>
+Hindura umuvuduko.
+<div id="jump2"></div><script>make15("jump2", `35 WAIT 4`)</script>
+</section>
+
+<section>
+Noneho ongeraho itegeko rirangiza umukino, urarangiye!
+<div id="jump4"></div><script>make15("jump4", `37 IF SCR(1,Y) END`)</script>
+</section>
+
+
+<section>
+<b>Gerageza!</b><br>
+1. Hindura Inyuguti y'ibanze ibe "R"<br>
+2. Inyuguti y'ibanze, Kanda ugumisheho kuri buto ya ALT hanyuma ihindike "R"<br>
+3. Hindura "RND(10)" bihinduke "RND(4)"<br>
+4. Noneho Gabanya inyuguti z'umwanzi<br>
+5. Hindura umuvuduko ube mwishi.<br>
+6. "V=3*" hahindure habe "V=4*"<br>
+7. Gabanya imbaraga zo gusimbuka<br>
+8. Ongeraho amanota ukoresheje "CLT" hamwe na "TICK()"<br>
+9. Noneho reka amanota ahinduke incuro na simbutse<br>
+10. Garuka kumukino watangiriyeho, uhindura ibyo wari wahinduye.<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
