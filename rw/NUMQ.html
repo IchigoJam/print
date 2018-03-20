@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Ibazwa ry'Imibare- IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Ibazwa ry'Imibare - IchigoJam</h1>
+
+<section>
+Iyo ni imibare mu kinyarwanda, ururimi rw' Abnyarwanda.
+<div id="numq-1"></div><script>make15("numq-1", f2s(function() {/*
+10 LET[0],"ZERU","RIMWE","KABIRI","GATATU","KANE","GATANU","GATANDATU","KARINDWI","UMUNANI","ICYENDA","ICUMI"
+RUN
+*/}))</script>
+</section>
+
+<section>
+Ni gute wakwerekana imibare mu magambo?
+<div id="numq-2"></div><script>make15("numq-2", f2s(function() {/*
+?STR$([1])
+*/}))</script>
+</section>
+
+<section>
+Reka mudasobwa ibare ijya hasi(imanuka)!
+<div id="numq-3"></div><script>make15("numq-3", f2s(function() {/*
+20 FOR I=10 TO 0 STEP -1
+30 ?I,STR$([I]):WAIT60
+40 NEXT
+*/}))</script>
+</section>
+
+<section>
+Umukino wa Mbere(1): Subiza umukino w'imibare!
+<div id="numq-4"></div><script>make15("numq-4", f2s(function() {/*
+20 N=RND(11):?STR$([N]);
+30 INPUT ". What's this?",M
+40 IF N=M ?"Correct!" ELSE ?"Wrong. The answer is ";N
+50 GOTO 20
+*/}))</script>
+</section>
+
+<section>
+Umukino wa Kabiri(2): Andika kugira ngo usubize umukino w'imibare!
+<div id="numq-5"></div><script>make15("numq-5", f2s(function() {/*
+20 N=RND(11):?"Type ";N
+30 FOR I=0 TO LEN([N])-1
+40 IF INKEY()!=ASC([N]+I) CONT
+50 ?STR$([N]+I,1);:NEXT:?
+60 GOTO 20
+*/}))</script>
+</section>
+
+<section>
+<b>Gerageza!</b><br>
+1. Ongeraho kode zo kurangiza umukino mugihe umukino wa mbere(1) upfuye.<br>
+2. Ongeraho kode za manota ku mukino wa mbere(1)<br>
+3. Nyuma yo gusubiza inshuro icumi(10) erekana igihe ku mukino wa mbere(1)<br>
+4. Ongeraho "kurangiza umukino(GAME OVER)" ku mukino wa Kabiri(2) igihe utasubije(utanditse)<br>
+5. Hindura ururimi, ukoreshe urundi.<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

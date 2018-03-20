@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Kora Inyuguti cyangwa ikimenyetso gishya / PCG - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Kora Inyuguti cyangwa ikimenyetso gishya / PCG - IchigoJam</h1>
+
+<section>
+
+Kugira ngo ubone "Ipusi(cat)" kanda ugumisheho kuri buto ya "Alt" y'ibumoso hanyuma ukande na buto "C".
+<div id="pcg-1"></div><script>make15("pcg-1", "?CHR$(236)")</script>
+Ikimenyetso cy'ipusi ushobora kukibona ukoresheje 236.
+</section>
+
+<section>
+Ushobora guhindura "ipusi" ikaba "Inkoni".
+<div id="pcg-2"></div><script>make15("pcg-2", "POKE 236*8,8,8,8,8,8,8,8,8")</script>
+Yahindutse?<br>
+Aka kanya, tugiye guhinduramo agapira gatoya.
+<div id="pcg-3"></div><script>make15("pcg-3", "POKE 236*8,0,0,0,24,24,0,0,0")</script>
+Umurong uberamye!
+<div id="pcg-4"></div><script>make15("pcg-4", "POKE 236*8,1,2,4,8,16,32,64,128")</script>
+</section>
+
+<section>
+Porogaramuy yo kwandika udushushanyo dukoresheje imibare ya zeru na rimwe.
+<div id="pcg-5"></div><script>make15("pcg-5", f2s(function() {/*
+10 POKE236*8+0,`01111110
+11 POKE236*8+1,`11011011
+12 POKE236*8+2,`11111111
+13 POKE236*8+3,`11000011
+14 POKE236*8+4,`11111111
+15 POKE236*8+5,`11111111
+16 POKE236*8+6,`00011000
+17 POKE236*8+7,`00011000
+RUN
+*/}))</script>
+Ubonye Mr. Ice!
+</section>
+
+<section>
+Niba ushaka kugaruka ku ipusi watangiriyeho, koresha "CLP"(clear pattern).
+<div id="pcg-6"></div><script>make15("pcg-6", "CLP")</script>
+</section>
+
+<section>
+<b>Gerageza!</b><br>
+1. Kora akamenyetso ku mutima<br>
+2. Kora ikimenyetso ushaka<br>
+3. Kora ikivejuru(Alien) ukoresheje ALT+D cyangwa uhindura 236 ikaba 237(Kugeza 224-255!)<br>
+4. Erekana imibare ya zeru na rimwe "?`10000000"<br>
+5. Kora Ikimenyetso cy'umwimere ukoresheje porogaramuigizwe n'imurongo umwe.<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
