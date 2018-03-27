@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Uruhererekane rwa Gacha (Gacha simulation)</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Uruhererekane rwa Gacha - IchigoJam</h1>
+
+<section>
+Twifashishije Gucha reka twerekane Ingombajwi Zose!
+<div id="gacha-1"></div>
+<script>make15("gacha-1", f2s(function() {/*
+10 A=RND(26)
+20 ?"DRAW:";CHR$(ASC("A")+A)
+*/}))</script>
+Inyuguti zose ni 26 kuva kuri A kugera kuri Z. Twifashishije "RND" tugiye gukina Gucha!
+</section>
+
+<section>
+Reka twerekane byose.
+<div id="gacha-2"></div>
+<script>make15("gacha-2", f2s(function() {/*
+30 [A]=[A]+1
+40 FOR I=0 TO 25
+50  LC I%6*5,5+I/6*3
+60  ?CHR$(ASC("A")+I);":";[I]
+70 NEXT
+*/}))</script>
+</section>
+
+<section>
+Gucha yikoresha kugeza irangiye!
+<div id="gacha-3"></div>
+<script>make15("gacha-3", f2s(function() {/*
+5 CLS:CLV
+35 N=N+1:C=0
+65  IF [I] C=C+1
+80 ?:?:?"COLLECT:";C;"/26 ";
+90 ?N;"00YEN"
+100 IF C=26 ?"COMPLETE!":END
+110 GOTO 10
+*/}))</script>
+Ese wabigura angahe?
+</section>
+
+<section>
+Reka noneho "A" ireke kuba hose.
+<div id="gacha-4"></div>
+<script>make15("gacha-4", f2s(function() {/*
+15 IF A=0 IF RND(10)>0 A=1
+*/}))</script>
+Reka dukore porobabiliti ibe "B" 9/10 niba "A" ariyo igaragaye.
+</section>
+
+<section>
+<b>Gerageza gukora ibi:</b><br>
+1. Noneho gerageza inshuro eshatu, hanyuma ugereranye<br>
+2. Noneho tuma A yagaragaraga hose ibe "F"<br>
+3. Kora ku buryo "Z" itagaragara<br>
+4. Noneho reka "Z" igaragare kuri porobability ya 1/2<br>
+5. Reka ntihagire isa n'indi<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

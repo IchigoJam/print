@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Kora isaha y'ifashishwa kubara igihe(stopwatch) / TICK - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Kora isaha y'ifashishwa kubara igihe(stopwatch) / TICK</h1>
+
+<section>
+1,2,3,4,5,6...<br>
+Ishuro 60 mu gihe kisegonda, komeza kubara igihe wifashishije IchigoJam.
+<div id="tick-1"></div><script>make15("tick-1", "?TICK()")</script>
+Uwo mubare uba ari "TICK". Reka twerekane ibihe byinshi.
+<div id="tick-2"></div><script>make15("tick-2", "?TICK()")</script>
+Umubare werekanywe bwa kabiri ni munini ugereranyije n'uwa mbere.
+<div id="tick-3"></div><script>make15("tick-3", "?TICK()/60")</script>
+Ugabanyije 60, urahindura amadakika uyashyira mu masegonda.
+</section>
+
+<section>
+Itegeko "CLT(clear timer)", Ryifashishwa mukongera gutangira kubara.
+<div id="tick-4"></div><script>make15("tick-4", "CLT\nOK\n?TICK()/60")</script>
+Ishobora kumenya igihe mu gihe mwayitangije.
+</section>
+
+<section>
+Stopwtch ibara igihe mu gihe iri gukora "RUN" ukanze buto iri kuri IchigoJam, ku isogonda.
+<div id="tick-5"></div><script>make15("tick-5", f2s(function() {/*
+10 CLT
+20 IF BTN()=0 GOTO 20
+30 ?TICK()/60
+*/}))</script>
+Izategerereza ku murongo wa 20 kugeza igihe uzakandira buto. 
+</section>
+
+<section>
+Kora stopwatch igaragaza igihe buri uko ukanze buto.
+<div id="tick-6"></div><script>make15("tick-6", f2s(function() {/*
+40 IF BTN()=1 GOTO 40
+50 GOTO 10
+*/}))</script>
+</section>
+
+<section>
+<b>Gerageza gukora ibi bikurikira:</b><br>
+1. Reka tubare igihe ushobora kumara uri kwayura.<br>
+2. Ufunga amaso, hanyuma ukande buto mugihe cya masegonda atanu(5).<br>
+3. Siba "/60" kumurongo wa 30 hanyuma ubare umuvuduko uri gukoresha ukanda buto.<br>
+4. Bika porogaramu wifashishje "SAVE0", hanyuma zimya, wongere ufungure IchigoJam mugihe ugikanze buto, irahita itangira ako kanya, noneho kanda buto burikanya!<br>
+5.Noneho bihindure kuburyo uzajya utangira ukanda buto hanyuma ikaragaza amasegonda.<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

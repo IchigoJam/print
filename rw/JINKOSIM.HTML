@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Ikigereranyo cy'abaturage- IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Ikigereranyo cy'abaturage</h1>
+
+<section>
+Abaturage b'Ubuyapani ni miriyoni 125,13. Mu gihe kingana n'umwaka bagabanukaho abaturage 270,000.<br>
+(2016.11 Ministry of Internal Affairs and Communications, Statistics Bureau, Population Estimate)
+<div id="jinko-1"></div>
+<script>make15("jinko-1", f2s(function() {/*
+10 P=12536
+20 D=27
+*/}))</script>
+Shyira abaturage muri "P", Hanyuma umubare wabagabanuka nk'umubare ibihumbi icumi muri "D".<br>
+</section>
+
+<section>
+Niba bakomeje kugabanuka gutyo nkuko bimeze mu mwaka wa 2016, Abaturage bo mu mwaka wa 2100?
+<div id="jinko-2"></div>
+<script>make15("jinko-2", f2s(function() {/*
+30 FOR Y=2016 TO 2100
+40  ?Y,P;
+50  ?
+60  P=P-D
+70 NEXT
+*/}))</script>
+</section>
+
+<section>
+Reka tubishyire ku mbonerahamwe('/' iki ni icyimenyetso cyo kugabanya)
+<div id="jinko-3"></div>
+<script>make15("jinko-3", f2s(function() {/*
+42  FOR I=0 TO P/1000
+45  ?"*";:NEXT
+*/}))</script>
+</section>
+
+<section>
+Niba se umubare wabagabanuka wiyongereyeho 20,000 buri mwaka?
+<div id="jinko-4"></div>
+<script>make15("jinko-4", f2s(function() {/*
+55  D=D+2
+*/}))</script>
+</section>
+
+<section>
+<b>Gerageza gukora ibi:</b><br>
+1. Ukoreshe buto yanditseho ESC uhagarike porogaramu hanyuma urebe abaturege bo muri 2060<br>
+2. Shyira umubare wabagabanuka kuri 30,000 buri mwaka<br>
+3. Hindura inyuguti(ikimenyetso) '*' kugishushanyo kibe indi nyuguti(Ikimenyetso)<br>
+4. Hindura umubare uri kumurongo wa 42, 1000 ugihinduremo 100<br>
+5. Ongeera umubare w'abaturage<br>
+6. Isi ituwe n'abaturage biriyoni 7.3. Byazagenda bite niba ikomeje kwiyongeraho abaturage miriyoni 100 buri kwezi?
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
