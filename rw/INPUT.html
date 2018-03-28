@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Subiza mu mibare / Injiza(INPUT) - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Subiza mu mibare / Injiza(INPUT)</h1>
+
+<section>
+Porogaramu ikora imibare muburyo buhindagurika ukoresheje "RND(random:budahoraho)".<br>
+Koresha "LET" kugirango ubike imibare mububiko kuva kuri A kugeza kuri Z.
+<div id="input0"></div><script>make15("input0", "10 LET A,RND(10)\n20 LET B,RND(10)\n30 ?A;\"+\";B\nRUN")</script>
+Reka noneho porogaramu ikore ubudahagarara, koresha "RUN"!<br>
+</section>
+
+<section>
+Bika imibare ukoresheje "INPUT".
+<div id="input1"></div><script>make15("input1", "40 INPUT C\n50 ?C\nRUN")</script>
+Inyuma ya "?", gira umubare uhandika hanyuma ukande buto ya ENTER.<br>
+Umubare uribika muri C!
+</section>
+
+<section>
+Kugira ngo urebe igisubizo, Turakoresha itegeko "IF"
+<div id="input3"></div><script>make15("input3", "60 IF C=A+B ?\"ATARI\"")</script>
+</section>
+
+<section>
+Mu gihe ushaka kwerekana ibyatakaye cyangwa ibyo wibagiwe koresha "ELSE" kugira ngo ubyerekane.
+<div id="input4"></div><script>make15("input4", "60 IF C=A+B ?\"ATARI\" ELSE ?\"HAZURE\"")</script>
+Niba washyizemo interuro ibaza nayo ntakibazo.
+<div id="input5"></div><script>make15("input5", "40 INPUT \"KOTAEHA?\",C")</script>
+</section>
+
+<section>
+<b>Gerageza gukora ibi:</b><br>
+1. Hindura uteranye imibare ibiri(2)<br>
+2. Hindura prorogaramu ugire akibazo ukora koroshye<br>
+3. Hindura porogaramu ugire ikibazo ukora cyo gukuba imibare<br>
+4. Bara igihe gishira uri gusubiza ukoresheje "TICK"<br>
+5. Kora umukino wogukina ukanda imibare<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

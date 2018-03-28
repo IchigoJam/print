@@ -1,0 +1,54 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Reka duce urubanza(Niba) / IF - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Reka duce urubanza(Niba) / IF</h1>
+
+<section>
+Niba Umupira uguciye hejuru wigirayo. Niba ubonye umwubo imbere yawe urasimbuka.<br>
+Iyo dushaka ko mudasobwa(computer) ica urubanza(ikora ikintu runaka bitewe n'ikindi) dukoresha iri tegeko "IF(Niba)" <br>
+<div id="if-1"></div><script>make15("if-1", "10 IF BTN()=0 GOTO 10\nRUN")</script>
+Niba buto yo kuri IchigoJam utayikanze, Porogaramu irasubiramo umurongo wa 10.<br>
+Niba ukanze buto yo kuri IchigoJam, porogaramu irahita ijya kumurongo ukurikiraho hanyuma irangire(mbese ihagarare).
+</section>
+
+<section>
+Igihe cyose ukanze buto Agatara kazaka guhite kazima.
+<div id="if-2"></div><script>make15("if-2", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 LED1
+30 IF BTN()=0 GOTO 30
+40 LED0
+50 GOTO 10
+*/}))</script>
+Oh! ese igihe wakandaga buto yo kuri IchigoJam itara ryatse?<br>
+Ariko niba mudasobwa yawe yihuta, uzakanda kuri buto itara ryake hanyuma ihite ikomeza kurindi tegeko ako kanya.
+</section>
+
+<section>
+Niba udashaka ko ihita ijya kurindi tegeko ako kanya, ongeramo "WAIT".
+<div id="if-3"></div><script>make15("if-3", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 LED1:WAIT30
+30 IF BTN()=0 GOTO 30
+40 LED0:WAIT30
+50 GOTO 10
+*/}))</script>
+</section>
+
+<section>
+<b>Gerageza gukora ibi:</b><br>
+1. Niba wakanze buto, kora ku buryo mudasobwa ikomeza kumva ko ugikanze kuri buto nubwo waba warekuye.<br>
+2. Gera geza guhindura ahari "WIAT30" habe "WIAT60"<br>
+3. Gera geza guhindura ahari "WIAT30" habe "WIAT5"<br>
+4. Hindura "IF BTN()=1"<br>
+5. Kora porogaramu uzajya ukanda buto, itara rigatangira ryaka rimyasa(rizima ryaka).<br>
+6. Kora porogaramu ituma itara ryaka ritazima!<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

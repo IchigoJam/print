@@ -1,0 +1,69 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Koroshya imibare y'ibice</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>Koroshya imibare y'ibice - IchigoJam</h1>
+
+<section>
+Tworoshye tujya hasi!<br>
+40 ingana na 40.44 ikangana 40.45 nanone ni 40.49 ni 40.<br>
+Ni ukoroshya imibare y'ibice(rounding down).
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+?44/10
+4
+*/}))</script>
+Mu gihe ari imibare y'uzuye ushaka, iyo ugabanyije ni 10 bingana na 4 aho kuba 4.4.
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+?44/10*10
+40
+*/}))</script>
+Iyo ugabanyije ni 10 hanyuma ugakubaho 10, uba umaze gukora round down(koroshya ugana hasi)!
+</section>
+
+<section>
+reka noneho tworoshye tujya heju!<br>
+49 ni 50.45 ni 50.44. 44.41 nanone ni 50.40 ni 40.<br>
+Ni round up(koroshya imibare ujya heju).
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+?44/10*10+10
+50
+*/}))</script>
+nyuma ya rounding down, ese ushobora gukora round up wongeraho 10?
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+?40/10*10+10
+50
+*/}))</script>
+Oh! byiza, 40 yahindutse 50. Reka noneho duce urubanza ahantu hamwe.
+<div id="step-5"></div>
+<script>make15("step-5", f2s(function() {/*
+10 INPUT N
+20 LET M,N%10
+30 ?M
+*/}))</script>
+Muri IchigoJam BASIC kugirango ubone ibyasigaye(remainder) wifashisha "%".<br>
+niba hamwe habaye 0, ubwo byabaye round down, hanyuma niba habye 1 cyangwa hejuru yaho ni ukuvugako habayeho round up.
+<div id="step-6"></div>
+<script>make15("step-6", f2s(function() {/*
+40 IF M=0 ?N/10*10
+50 IF M>=1 ?N/10*10+10
+*/}))</script>
+</section>
+
+<section>
+<b>Gerageza!</b><br>
+1. Wifashshije porogaramu kora round up ya 72<br>
+2. Kora porogara noneho ikora "rounding off" izajya ikora round down niba igice kinyuma ari 4 cyangwa musi yawe, nanone igakora rounr up niba ari 5 cyangwa hejuru yawo.<br>
+3. Noneho emezako izajya ikora round up ahantu hamwe niyo byaba ari "?(N+9)/10*10"<br>
+4. Kora porogaramu izajya ikora rounding off ahantu hamwe<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/rw/ ">IchigoJam print</a> https://ichigojam.github.io/print/rw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

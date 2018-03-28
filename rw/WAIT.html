@@ -1,0 +1,56 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Gena(shyiraho) igihe / WAIT - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Genzura igihe / WAIT</h1>
+
+<section>
+Reka dukore itegeko ryo "Gutegereza=(wait)" muri IchigoJam.<br>
+Agakare kumweru kamyasa muri sikirine(insakazamashusho) gasobanurako keyboard yiteguye gukoreshwa.
+<div id="wait1-1"></div><script>make15("wait1-1", "WAIT60")</script>
+Ese waba warigeze kubura ako gakare kaburaho igihe gitoya? Reka twongere tubigerageze.
+</section>
+
+<section>
+Iyo uhinguye umubare uri imbere ya "WAIT(gutegereza)", igihe cyo gutegereza kirahinduka.<br>
+※ Isegonda 1=60
+<div id="wait1-2"></div><script>make15("wait1-2", "WAIT120")</script>
+Agakare uzakubura igihe kinini ugereranyije na mbere.
+igihe twagenye cyokubura kagakare ni kinini ugereranyije nicya mbere.
+</section>
+
+<section>
+Atsa itara kandi unarizimye muburyo bwikoresha.
+<div id="wait1-3"></div><script>make15("wait1-3", "LED1:WAIT120:LED0")</script>
+
+Use the colon ':'(easy to mistake semicolon ';') to concatenate commands.<br>
+"LED1" to light a LED, "WAIT120" to wait 2 seconds, "LED0" to turn off a LED.
+Light with "LED1", wait with "WAIT120", turn off with"LED0".
+</section>
+
+<section>
+It lights the LED a bit.
+<div id="wait1-5"></div><script>make15("wait1-5", "LED1:WAIT3:LED0")</script>
+If you change the number for "WAIT", changes the light pattern of the LED.
+</section>
+
+<section>
+The LED lights two times..
+<div id="wait1-6"></div><script>make15("wait1-6", "LED1:WAIT3:LED0:WAIT3:LED1:WAIT3:LED0")</script>
+You can connect more and more with the colon ":".
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's do "WAIT" for 10 seconds<br>
+2. Light the LED for 5 seconds and turn it off<br>
+3. After typing "WAIT 10000", in the middle, press the ESCAPE key<br>
+4. Light a bit after lighting for a long time
+5. Try to light the LED with a cool pattern<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
