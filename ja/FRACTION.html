@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>分数の足し算（算数）</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>分数の足し算（算数） - IchigoJam</h1>
+
+<section>
+分数は、割り算。二分の一は、1/2と表します。<br>
+A/B+C/Dを計算するプログラム、まずは分数をINPUTを使ってセットします
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 ?"A/B+C/D="
+20 INPUT "A?",A
+30 INPUT "B?",B
+40 INPUT "C?",C
+50 INPUT "D?",D
+*/}))</script>
+4つの数を入力して、エンター。?A、などで確認しましょう。<br>
+</section>
+
+<section>
+答E/Fを計算してみましょう。分母をそろえて、分子同士を足します。
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+60 F=B*D:E=A*D+B*C
+70 ?E;"/";F
+*/}))</script>
+計算できました！1/2+1/3を計算してみましょう。
+</section>
+
+<section>
+1/3+1/3=6/9、計算は合っていますが約分したいですね
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+65 FOR I=F TO 2 STEP -1
+66  IF F%I=0 AND E%I=0 F=F/I:E=E/I
+67 NEXT
+*/}))</script>
+まず分母の数で分子と分母を割って、割り切れるかチェックして、両方割り切れたら割って通分します。
+これを数を小さくしならが2まで繰り返します。
+</section>
+
+<section>
+1/2+3/2=2/1、分母が1の時は「一分の」を消しましょう。
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+70 IF F=1 ?E ELSE ?E;"/";F
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. いろいろ計算させてみよう<br>
+2. 答がおかしくなる数を調べてみよう（IchigoJamの数は-32768から32767）<br>
+3. 分数の引き算プログラムを作ってみよう<br>
+4. 分数の掛け算、割り算のプログラムを作ってみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
