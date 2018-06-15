@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>sakura.ioでネットにつなごう - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>sakura.ioでネットにつなごう(IchigoSoda版)</h1>
+
+<section>
+<img width=120px src=sabae-cc-sakura.png style="float:right;margin-left:1em;margin-right:-1em">
+IchigoSodaのうえについている、ちいさいスイッチの1ばんをひだりにしておきましょう。<br>
+sakura.ioのLEDがてんめつしはじめ、1ぷんほどまつと、1かいてんめつになってせつぞくかんりょう！<br>
+スマホかPCで http://sabae.cc/sakura/ をひらこう。右のQRコードをよみとればOK！<br>
+</section>
+
+<section>
+ネットへデータをそうしんしよう
+<div id="sakuraio-1"></div><script>make15("sakuraio-1", `800 LET[0],2593,19457,N,0,0,0,N>>8^N^102:?I2CR(79,#800,13,#820,3):RTN
+N=15:GSB800`)</script>
+0とひょうじされればせつぞくOK。PCやスマホで15がとどいていることをかくにんしよう。Nにおくりたいかずをいれて、GSB800！
+</section>
+
+<section>
+ネットからデータをじゅしんしよう<br>
+ネットからせつぞくしたsakura.ioへかずをおくっておきます。
+<div id="sakuraio-3"></div><script>make15("sakuraio-3", `810 LET[0],48,48:?I2CR(79,#800,3,#820,22):F=[16]!=5:N=[18]:RTN
+GSB810:?N`)</script>
+おくったかず、うけとれましたか？<br>
+あたらしいデータをうけとれたときに、へんすうFが1になることをつかって、データをうけとったらBEEPでおとをならす、ネットにつながるがっきのできあがり！
+<div id="sakuraio-4"></div><script>make15("sakuraio-4", `10 GSB810:IF F=0 CONT
+20 BEEP N
+30 GOTO 10`)</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ボタン(BTN)がおされたら、ネットでつたえよう<br>
+2. ネットからさいせいするおんがく(PLAY)をえらんでみよう<br>
+3. ゲームのスコアをネットにそうしんしよう<br>
+4. ドアがあいたらネットにそうしんするモノをつくってみよう<br>
+5. スマホからコントロールするロボットをつくってみよう<br>
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>
