@@ -1,0 +1,36 @@
+body {
+	font-size: 90%;
+	font-family: sans-serif;
+	width: 524px;
+}
+@font-face {
+    font-family: "ichigojam";
+    src: url("IchigoJam-1.2.woff") format('woff'); /* CC BY IchigoJam / BALLOON a.k.a. Fu-sen. */
+}
+.ichigojam {
+	font-family: "ichigojam";
+	white-space: pre-wrap;
+	border: 1px solid;
+	width: 512px;
+	font-size: 16px;
+	line-height: 1.3em;
+	letter-spacing: 0px;
+	padding: 2px 4px;
+	margin: 4px 0px;
+	word-break: break-all;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 150%;
+}
+section {
+	margin: 0.5em 0em;
+}
+#credit {
+	text-align: center;
+	font-size: 12px;
+}
+#credit a {
+	color: gray !important;
+}
