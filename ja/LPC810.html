@@ -20,7 +20,7 @@
 180 ?"P 0 0":GSB@R
 190 ?"E 0 0":GSB@R
 200 ?"P 0 0":GSB@R
-210 ?"C 0 268436096 128":GSB@R
+210 ?"C 0 268436096 256":GSB@R
 220 OUT2,1:OUT1,0:OUT1,1:END
 300 @R:K=INKEY():IF K=13 K=INKEY():WAIT9:RTN ELSE CONT`)</script>
 
@@ -49,9 +49,9 @@ table {
 }
 </style>
 <table id=t1954>
-	<tr><td></td><td>RESET</td><td rowspan=4>LPC810</td><td>RXD</td><td>- TXD</td></tr>
+	<tr><td>OUT1 -</td><td>RESET</td><td rowspan=4>LPC810</td><td>RXD</td><td>- TXD</td></tr>
 	<tr><td>IchigoJamのRXD -</td><td>TXD</td><td>GND</td><td>- GND</td></tr>
-	<tr><td>LEDみじかいほう -</td><td>PIO0_3</td><td>3.3V</td><td>- OUT1</td></tr>
+	<tr><td>LEDみじかいほう -</td><td>PIO0_3</td><td>3.3V</td><td>- VCC</td></tr>
 	<tr><td>LEDながいほう -</td><td>PIO0_2</td><td>ISP</td><td>- OUT2</td></tr>
 </table>
 LPC810にLEDとIchigoJamをつないで、LEDをひからせよう！<br>
