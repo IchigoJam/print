@@ -9,29 +9,28 @@
 <section>
 A blinking signal for the night,it turns on and off every 0.5 seconds.
 <div id="btn-1"></div><script>make15("btn-1", "10 LED1:WAIT30:LED0:WAIT30\n20 LED1:WAIT30:LED0:WAIT30\nRUN")</script>
-Typr line 10, and return, and change the head "10" to "20", and press ENTER key.<br>
-Confirm the line 10 copied to line 20 with "LIST"!
+Type line 10 and press ENTER key, then take back the cursor to line 10 and change the head "10" to "20", and press ENTER key.<br>
+Confirm if the line 10 copied to line 20 with "LIST"!
 </section>
 
 <section>
-About 30,000 times until the morning. Blink all the time with "GOTO".
+Blink all the time with "GOTO". About 30,000 times until morning.
 <div id="btn-2"></div><script>make15("btn-2", "10 LED1:WAIT30:LED0:WAIT30\n20 GOTO 10")</script>
-The number at behind of "GOTO" is jumping destination.<br>
+The number after "GOTO" is a jumping destination.<br>
 &gt; line 10, blink one time<br>
 &gt; line 20, jump to line 10<br>
-When it stops, press [ESC] key.
+To stop, press [ESC] key.
 </section>
 
 <section>
 Fast blink
 <div id="btn-3"></div><script>make15("btn-3", "LIST\n10 LED1:WAIT3:LED0:WAIT3")</script>
-Display a program with "LIST"(=F4 key).<br>
-Change two "30"s in the line 10 to "3", press ENTER key, and  "RUN"(=F5 key).
+Make a line 15 between line 10 and line 20 by changing the line 10's head to 15 and wait 3 to 30, and press ENTER key.<br>
+Display a program with "LIST" (=F4 key), press ENTER key, and execute by "RUN" (=F5 key).
 </section>
 
 <section>
 <div id="btn-4"></div><script>make15("btn-4", "15 LED1:WAIT30:LED0:WAIT30")</script>
-Make a line 15 between line 10 and line 20.<br>
 Repeat alternately between short blink and long blink.
 </section>
 
@@ -40,8 +39,8 @@ Repeat alternately between short blink and long blink.
 1. Let's return to a night signal program<br>
 2. Lengthen only lighting time<br>
 3. Try to fix it to a game that blink at high speed and stop when it is lighting<br>
-4. Make the line numbers from 100 per 100 steps<br>
-5. Let's make a cool flash pattern, and boast to somebody.<br>
+4. Make the line numbers from 100 per 100 steps, e.g. 100,200,300<br>
+5. Let's make a cool blink pattern, and boast to somebody.<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

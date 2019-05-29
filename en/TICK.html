@@ -14,17 +14,17 @@
 <div id="tick-2"></div><script>make15("tick-2", "?TICK()")</script>
 The number displayed for the second time is larger than the first time.
 <div id="tick-3"></div><script>make15("tick-3", "?TICK()/60")</script>
-By dividing by 60, change the time since turing on the power, to second.
+By dividing by 60, change the time since turning on the power, to be in seconds.
 </section>
 
 <section>
-A command "CLT" (clear timer) , to reset a number that is counting.
+Use a command "CLT" (clear timer) , to reset a number that is counting.
 <div id="tick-4"></div><script>make15("tick-4", "CLT\nOK\n?TICK()/60")</script>
-It can know the time since reset.
+You can know the time since reset.
 </section>
 
 <section>
-Stopwatch that measures the time since "RUN" to press button, to seconds.
+Stopwatch that measures the time in seconds since initializing "RUN" comand to pressing the ichigojam button.
 <div id="tick-5"></div><script>make15("tick-5", f2s(function() {/*
 10 CLT
 20 IF BTN()=0 GOTO 20
@@ -43,11 +43,11 @@ To make a stopwatch that displays the time each time with pressing the button.
 
 <section>
 <b>Try it!</b><br>
-1. Let's greatly inbreathe, and measure the time how many seconds you can keep gasping for breath.<br>
-2. Let's close eyes, and push the button for becoming 5 seconds apart.<br>
+1. Let's breath-in deeply, and measure the time how many seconds you can keep gasping for breath.<br>
+2. Let's close eyes, and press the button for becoming 5 seconds apart.<br>
 3. Let's erase "/ 60" on line 30 and measure own button's repeated push speed.<br>
-4. Save with "SAVE0", turn off the power, turn on the power while holding down the button, if it started automatically, let's push repeatedly!<br>
-5. Let's remodel it to start by pressing the button and display by second times button.<br>
+4. Save with "SAVE0", turn off the power, turn on the power while holding down the button, if it started automatically, let's press repeatedly!<br>
+5. Let's remodel it to start by pressing the button, and display by pressing the button second time.<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
