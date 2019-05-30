@@ -1,50 +1,48 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>はじき（はやさ、じかん、きょり）けいさん</title>
+<title>はじき（はやさ、じかん、きょり）けいさんき</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>はじき（はやさ、じかん、きょり）けいさん - IchigoJam</h1>
+<h1>はじき（はやさ、じかん、きょり）けいさんき - IchigoJam</h1>
 
 <section>
-はやさ、じかん、きょりのどれかをけいさん。<br>
-まずは、どれをけいさんしたいかえらぼう。
+はやさのたんいは、メートル/びょう。じかんは、びょう。きょりは、メートル<br>
+まずは、はやさ・じかん・きょりのどれをけいさんしたいかえらぼう。
 <div id="step-1"></div>
 <script>make15("step-1", f2s(function() {`
-10 INPUT "HAYASA:1 JIKAN:2 KYORI:3.....",A
+10 INPUT "HAYASA[m/s]:1 JIKAN[s]:2 KYORI[m]:3.....",A
 20 IF A<1 OR A>3 GOTO 10
 `}))</script>
 </section>
 
 <section>
-はやさは、きょり　わる(÷)　じかん。
+はやさ(メートル/びょう)は、きょり(メートル)　わる(÷)　じかん(びょう)。<br>
 きょりとじかんをいれて、はやさをけいさん。
 <div id="step-2"></div>
 <script>make15("step-2", f2s(function() {/*
-30 IF A=1 INPUT "KYORI?",K:INPUT "JIKAN?",J:?"HAYASA=";K/J
+30 IF A=1 INPUT "KYORI[m]?",K:INPUT "JIKAN[s]?",J:?"HAYASA[m/s]=";K/J
 */}))</script>
-じかんは、きょり　わる(÷)　はやさ。
+じかん(びょう)は、きょり(メートル)　わる(÷)　はやさ(メートル/びょう)。<br>
 きょりとはやさをいれて、じかんをけいさん。
 <div id="step-3"></div>
 <script>make15("step-3", f2s(function() {/*
-40 IF A=2 INPUT "KYORI?",K:INPUT "HAYASA?",H:?"JIKAN=";K/H
+40 IF A=2 INPUT "KYORI[m]?",K:INPUT "HAYASA[m/s]?",H:?"JIKAN[s]=";K/H
 */}))</script>
-きょりは、はやさ　かける(×)　じかん。
+きょり(メートル)は、はやさ(メートル/びょう)　かける(×)　じかん(びょう)。<br>
 はやさとじかんをいれて、きょりをけいさん。
 <div id="step-4"></div>
 <script>make15("step-4", f2s(function() {/*
-50 IF A=3 INPUT "HAYASA?",H:INPUT "JIKAN?",J:?"KYORI=";H*J
+50 IF A=3 INPUT "HAYASA[m/s]?",H:INPUT "JIKAN[s]?",J:?"KYORI[m]=";H*J
 */}))</script>
 </section>
 
 <section>
 <b>やってみよう！</b><br>
-1. はやさをけいさんするときに、じかんを0にしてみよう<br>
-2. じかんをけいさんするときに、はやさを0にしてみよう<br>
-3. はやさとじかんをしょうすうてん1いまでだしてみよう<br>
-4. ランダムではやさとじかんをきめて、きょりをあてるゲームにしよう<br>
-5. ランダムできょりとじかんをきめて、はやさをあてるゲームにしよう<br>
-6. ランダムできょりとはやさをきめて、じかんをあてるゲームにしよう
+1. 200メートルのきょりを、60びょうですすんだときのはやさは？<br>
+2. 3メートル/びょうのはやさで、60メートルのきょりをすすんだときのじかんは？<br>
+3. 10メートル/びょうのはやさで、30びょうすすんだときのきょりは？<br>
+4. ランダムできょりとじかんをきめて、はやさをあてるゲームにしよう
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
