@@ -8,13 +8,13 @@
 
 <section>
 Jump game that avoids enemies by jumping.<br>
-First the main character, appearance!
+First, the main character appearance!
 <div id="jump0"></div><script>make15("jump0", `10 CLS:Y=15:V=0
 20 LC 0,Y:?"M"`)</script>
 </section>
 
 <section>
-If it press any key, jump!
+If you press any key, main character jumps!
 <div id="jump3"></div><script>make15("jump3", `30 IF Y=15 V=3*(INKEY()!=0)
 40 Y=Y-V:V=V-1
 50 SCROLL LEFT
@@ -40,14 +40,14 @@ And add game-over judgment, Completed!
 <section>
 <b>Try it!</b><br>
 1. Let's change the main character to "R"<br>
-2. The main charactor, let's hold ALT and change to "R"<br>
+2. Change main character, let's hold ALT and press "R"<br>
 3. Let's change "RND(10)" to "RND(4)"<br>
 4. Let's reduce enemy characters<br>
 5. Let's make the speed very fast<br>
 6. Let's change "V=3*" to "V=4*"<br>
 7. Let's reduce the jumping power<br>
 8. Let's add a score using "CLT" and "TICK()"<br>
-9. Let's becomes a score the number of jumps<br>
+9. Let's count and put a score of the number of jumps<br>
 10. Let's make original game by remodeling<br>
 </section>
 

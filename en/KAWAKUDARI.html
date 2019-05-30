@@ -8,23 +8,23 @@
 
 <section>
 "Kawakudari Game" is a game that avoid obstacles and go down the river.<br>
-First, own character.
+First, decide your own character.
 <div id="kawakudari-1"></div>
 <script>make15("kawakudari-1", f2s(function() {/*
 10 CLS:X=15
 20 LC X,5:?"O"
 RUN
 */}))</script>
-※「"」 holds down Shift key and press 「'」. 「?」 holds down Shift key and press 「/」.
+※For 「"」 hold down Shift key and press 「'」. For 「?」 hold down Shift key and press 「/」. Sometimes positions can change depending on keyboard type.
 </section>
 
 <section>
-Emeny character, appearance.
+Enemy character, appearance.
 <div id="kawakudari-2"></div>
 <script>make15("kawakudari-2", f2s(function() {/*
 30 LC RND(32),23:?"*"
 */}))</script>
-※ 「(」「)」 holds down Shift key and presses 「8」「9」. <br>
+※ For 「(」「)」, hold down Shift key and press 「8」「9」 respectively. <br>
 Let's press F5 key(same as "RUN") many times.
 </section>
 
@@ -37,7 +37,7 @@ Repeat in program.
 </section>
 
 <section>
-Too early? Stop with ESCAPE key, and insert "WAIT".
+Too fast? Stop with ESCAPE key, and insert "WAIT".
 <div id="kawakudari-4"></div>
 <script>make15("kawakudari-4", f2s(function() {/*
 35 WAIT 3
@@ -45,7 +45,7 @@ Too early? Stop with ESCAPE key, and insert "WAIT".
 </section>
 
 <section>
-To be able to move at the left/right cursor key.
+To be able to move with the left and/or right key.
 <div id="kawakudari-5"></div>
 <script>make15("kawakudari-5", f2s(function() {/*
 36 X=X-BTN(28)+BTN(29)
@@ -53,18 +53,18 @@ To be able to move at the left/right cursor key.
 </section>
 
 <section>
-Attach the hit judgment on, the completion of the game!
+Attach the hit judgment for the completion of the game!
 <div id="kawakudari-6"></div>
 <script>make15("kawakudari-6", f2s(function() {/*
 37 IF SCR(X,5) END
 */}))</script>
 </section>
-
+If no hitting, the game continues.
 <section>
 <b>Try it!</b><br>
 1. Let's ajdust the speed<br>
 2. Let's change own character(hold down ALT key and press one of A to V)<br>
-3. Let's increase the obstacles(ex. "**")<br>
+3. Let's increase the obstacles(ex. "***")<br>
 4. Let's think about game story<br>
 5. Let's look for tricks(bugs)<br>
 6. Let's think how to delete bugs<br>

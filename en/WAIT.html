@@ -7,36 +7,34 @@
 <h1>Control the Time / WAIT</h1>
 
 <section>
-Let's do "wait" to a IchigoJam.<br>
+Let's do "wait" on IchigoJam.<br>
 A blinking square cursor on the screen means that the keyboard is ready for use.
 <div id="wait1-1"></div><script>make15("wait1-1", "WAIT60")</script>
 Did you see that this cursor has disappeared for a short time? Let's try again.
 </section>
 
 <section>
-If you change the number behind "WAIT", the length of "wait" will be able to change.<br>
+If you change the number after "WAIT", the length of time for "wait" will be able to change.<br>
 ※1 second = 60
 <div id="wait1-2"></div><script>make15("wait1-2", "WAIT120")</script>
 The cursor has disappeared longer than before.
-The time it takes for the cursor to return is longer than before.
 </section>
 
 <section>
 Light the LED, and turn off automatically.
 <div id="wait1-3"></div><script>make15("wait1-3", "LED1:WAIT120:LED0")</script>
-Use the colon ':'(easy to mistake semicolon ';') to concatenate commands.<br>
-"LED1" to light a LED, "WAIT120" to wait 2 seconds, "LED0" to turn off a LED.
+Use the colon ':'(easy to mistake with semicolon ';') to concatenate commands.<br>
 Light with "LED1", wait with "WAIT120", turn off with"LED0".
 </section>
 
 <section>
-It lights the LED a bit.
+To light the LED a bit.
 <div id="wait1-5"></div><script>make15("wait1-5", "LED1:WAIT3:LED0")</script>
-If you change the number for "WAIT", changes the light pattern of the LED.
+If you change the number for "WAIT", changes the time of lighting of the LED.
 </section>
 
 <section>
-The LED lights two times..
+Light the LED two times..
 <div id="wait1-6"></div><script>make15("wait1-6", "LED1:WAIT3:LED0:WAIT3:LED1:WAIT3:LED0")</script>
 You can connect more and more with the colon ":".
 </section>
@@ -45,9 +43,9 @@ You can connect more and more with the colon ":".
 <b>Try it!</b><br>
 1. Let's do "WAIT" for 10 seconds<br>
 2. Light the LED for 5 seconds and turn it off<br>
-3. After typing "WAIT 10000", in the middle, press the ESCAPE key<br>
-4. Light a bit after lighting for a long time
-5. Try to light the LED with a cool pattern<br>
+3. Let's do "WAIT 10000", in the middle, press the ESCAPE key to stop<br>
+4. Light for a long time and light a bit<br>
+5. Let's try to make an attractive LED light pattern<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

@@ -7,7 +7,7 @@
 <h1>Make Sounds / BEEP - IchigoJam</h1>
 
 <section>
-The legs of a sounder put in SOUND(SND) and GND of your IchigoJam.
+Ensure the legs of a sounder are inserted in SOUND(SND) and GND of your IchigoJam.
 <div id="list1"></div><script>make15("list1", "BEEP")</script>
 Did you hear a beep sound?
 </section>
@@ -24,19 +24,19 @@ A long tone.
 <section>
 Let's make a rhythm!
 <div id="list4"></div><script>make15("list4", "10 BEEP 5:WAIT 30\n20 BEEP 20:WAIT 30\n30 GOTO 10\nRUN")</script>
-WAIT is the command to wait. A slow rhythm if you put it a big number. GOTO is the command to go back to the line 10 to repeat. [ESC] key to stap.
+WAIT is the command to wait. A slow rhythm results if you put a larger number. GOTO is the command to go back to the line 10 to repeat. Press [ESC] key to stop.
 </section><section>
-The rhythm will stop while pressing the button of your IchigoJam.<br>
+The rhythm will stop while pressing the button of the IchigoJam.<br>
 <div id="list5"></div><script>make15("list5", "15 IF BTN() GOTO 15")</script>
 </section>
 
 <section>
 <b>Let's try!</b><br>
-1. Sounds various sounds!<br>
+1. Make various sounds!<br>
 2. Make a rhythm with fast tempo<br>
-3. Add this program "12 BEEP 20:WAIT 30" to change the three-time race<br>
-4. Make a four-time race rhythm<br>
-5. Chcek the rhythem "GOTO 15" to "GOTO 10" on line 15<br>
+3. Add this program "12 BEEP 20:WAIT 30" to change the tripple time (musical time pattern)<br>
+4. Make a quadruple rhythm<br>
+5. Check the rhythm if change "GOTO 15" to "GOTO 10" on line 15<br>
 6. Make your original rhythm!<br>
 </section>
 
