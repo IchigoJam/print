@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>サーボとセンサーで電子工作 - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+</head><body>
+
+<h1>サーボとセンサーで電子工作</h1>
+
+<section>
+ボタンを押したらサーボの動く速さが変わる （サーボ SG90など）
+<div class=ichigojam>10 PWM 2,80:WAIT 10+BTN()*30
+20 PWM 2,140:WAIT 10+BTN()*30
+30 GOTO10
+</div>
+（PWMへの値は70〜220にする、範囲を超えると壊れちゃうかも）
+</section>
+
+<section>
+ボタンを押したら動き出す
+<div class=ichigojam>1 IF BTN()=0 CONT</div>
+(CONT は GOTO LINE() と同じ、その行を繰り返し）
+</section>
+
+<section>
+センサー(IN2にさした距離センサーなど)の値によって、速さが変わる
+<div class=ichigojam>10 PWM 2,80:WAIT 10+ANA(2)/10
+20 PWM 2,140:WAIT 10+ANA(2)/10
+25 ?ANA(2)/10
+30 GOTO10</div>
+</section>
+
+<section>
+変数(A)をつかってすっきり
+<div class=ichigojam>1 IF BTN()=0 CONT
+20 A=ANA(2)/10
+30 PWM 2,80:WAIT A
+40 PWM 2,140:WAIT A
+50 GOTO 20
+</div>
+</section>
+
+<section>
+センサーの値が400より小さくなったら、ボタン待ちへ
+<div class=ichigojam>25 IF A&lt;400 GOTO1
+</div>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ボタンを押したら、3秒止まるロボをつくろう<br>
+2. くりかえしのコマンドFORを使って、5回動くロボをつくろう<br>
+3. LCとPRINTを使って画面の動きと連動させよう<br>
+4. VIDEO2/VIDEO3/VIEDO5などを使って画面を派手にしよう（F8で戻る）<br>
+5. BEEPやPLAYを使って音と連動させよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

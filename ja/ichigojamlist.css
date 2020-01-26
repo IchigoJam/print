@@ -18,3 +18,22 @@ section {
 #credit a {
 	color: gray !important;
 }
+
+@font-face {
+	font-family: "ichigojam";
+	src: url("IchigoJam-1.4.woff") format('woff');
+}
+.ichigojam {
+	font-family: "ichigojam";
+	white-space: pre-wrap;
+	background: #000;
+	color: white;
+	padding: .5em 1em;
+	margin: 10px 0em;
+	line-height: 1.3em;
+	letter-spacing: 0px;
+	font-size: 85%;
+	width: 590px;
+	word-break: break-all;
+	x-overflow: scroll;
+}
