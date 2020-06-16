@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>かけざん名人（算数）</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+import furigana from "./furigana.mjs";
+window.onload = async () => await furigana.addRuby("ichigojam-kana.csv");
+</script>
+</head><body>
+
+<h1>かけざん名人 - IchigoJam</h1>
+
+<section>
+IchigoJamに九九を見てもらおう！<br>
+6x7 は、記号「*」を使って計算してくれます。
+<div class=ichigojam>?6*7
+42
+</div>
+1〜9、9種類のでたらめな数はRND(ランダム)を使います。
+<div class=ichigojam>?RND(9)+1
+</div>
+それを2つ使って、九九の問題を出してもらおう（xはシフト押しながらX）
+<div class=ichigojam>10 A=RND(9)+1:B=RND(9)+1
+20 ?A;"x";B;"=";
+RUN
+</div>
+RUNするたびに、いろんな問題が出てきます。<br>
+INPUTを使って、答えを入力できるようにします。
+<div class=ichigojam>30 INPUT C
+RUN
+</div>
+IFを使って間違っていたら "BAD!" と出して終了です。
+<div class=ichigojam>40 IF A*B!=C ?"BAD!":END
+</div>
+10回分のタイムを測ってみましょう。
+<div class=ichigojam>5 CLT:FOR I=1 TO 10
+50 NEXT:?TICK()/60
+</div>
+何秒まで縮められるかな！？
+</div>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 問題を5問に減らしてみよう<br>
+2. 問題を20問に増やしてみよう<br>
+3. 1の段は出さないようにしよう<br>
+4. 19の段まで出すインド式にチャレンジしよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.net/print/">IchigoJamプリント</a> https://ichigojam.net/print/
+<a href="https://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
