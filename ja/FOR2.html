@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>くりかえしでわりざん FOR/NEXT（フォー・ネクスト）</title>
+<link rel="stylesheet" type="text/css" href="ichigojamprint.css">
+</head><body>
+
+<h1>くりかえしでわりざん - IchigoJam</h1>
+
+<section>
+12コのイチゴを、3にんでわけてみましょう。<br>
+ひとり1つずつイチゴをとることを1かいとして、とれたかいすうをかぞえます。
+<div class=ichigojam>10 R=14:N=3:C=0
+20 ?"イチゴ:";R
+30 IF R&lt;N GOTO 60
+40 R=R-N:C=C+1
+50 GOTO 20
+60 ?"ヒトリ:";C
+</div>
+F5でRUN、だんだんイチゴがへっていって、ひとり4コと、こたえがでました。
+</section>
+
+<section>
+イチゴのかずを20コにしてみましょう。<br>
+<div class=ichigojam>10 R=20:N=3:C=0</div>
+ひとり6コ、イチゴは2コあまるようです。<br>
+<div class=ichigojam>60 ?"ヒトリ:";C;" アマリ:";R</div>
+こうしてあまったかずをひょうじしておくとわかりやすいです。<br>
+ひとり6コずつ、3にん、あまりが2つ。ぜんぶでイチゴはいくつ？
+<div class=ichigojam>?6*3+2
+20
+</div>
+もとのイチゴのかずです。イチゴのかずを200コや2000コにかえてみましょう。
+</section>
+
+<section>
+30から50までのくりかえしを、しゅんじにやってくれるのがわりざんです。
+<div class=ichigojam>30 C=R/N:R=R%N
+40
+50
+</div>
+「/」はわりきれないぶんはきりすて。「%」はあまりをけいさんします。
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. イチゴのかずを、にんずうよりすくなくするとどうなるでしょう？<br>
+2. わけるにんずうを5にんにかえてみよう（0にんでは？）<br>
+3. イチゴ2000コを7にん、くりかえしをつかったプログラムをつくってみよう<br>
+4. 50000コのイチゴを5にんでわけたらひとりいくつ？<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

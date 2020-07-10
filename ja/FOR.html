@@ -1,11 +1,11 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>くりかえしで掛け算 FOR/NEXT（フォー・ネクスト）</title>
+<title>くりかえしでかけざん FOR/NEXT（フォー・ネクスト）</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 <script src="tokana.js"></script>
 </head><body>
 
-<h1>くりかえしで掛け算 FOR/NEXT（フォー・ネクスト） - IchigoJam</h1>
+<h1>くりかえしでかけざん FOR/NEXT（フォー・ネクスト） - IchigoJam</h1>
 
 <section>
 <div id="step-1"></div>
@@ -13,47 +13,47 @@
 10 A=5
 20 FOR I=1 TO A:?"*";:NEXT:?
 */}))</script>
-FOR/NEXT（フォー・ネクスト）コマンドで、変数Iを1から1ずつ増やしながら、Aになるまでくりかえし。*マークが5つでました。
+FOR/NEXT（フォー・ネクスト）コマンドで、へんすうIを1から1ずつふやしながら、Aになるまでくりかえし。*マークが5つでました。
 </section>
 
 <section>
-INPUT（インプット）コマンドを使って、数を入力できるようにしよう！
+INPUT（インプット）コマンドをつかって、かずをにゅうりょくできるようにしよう！
 <div id="step-2"></div>
 <script>make15("step-2", f2s(function() {/*
 10 INPUT A
 */}))</script>
-いろいろ数をいれてみよう
+いろいろかずをいれてみよう
 </section>
 
 <section>
-もうひとつ数を入力できるようにして、その数の分だけ、更にくりかえして！
+もうひとつかずをにゅうりょくできるようにして、そのかずのぶんだけ、さらにくりかえして！
 <div id="step-3"></div>
 <script>make15("step-3", f2s(function() {/*
 15 INPUT B
 17 FOR J=1 TO B
 30 NEXT
 */}))</script>
-掛け算ができました！
+かけざんができました！
 </section>
 
 <section>
-変数Cを用意して、*マークの数を数えてもらいましょう
+へんすうCをよういして、*マークのかずをかぞえてもらいましょう
 <div id="step-4"></div>
 <script>make15("step-4", f2s(function() {/*
 16 C=0
 25 C=C+A
 40 ?C
 */}))</script>
-くりかえすごとに、*マークがAコずつふえるので、C=C+A。LET C,C+1 としてもOKです。C=0 または LET C,0 としておかないと、実行するたびにCの数がどんどん増えちゃいます！
+くりかえすごとに、*マークがAコずつふえるので、C=C+A。LET C,C+1 としてもOKです。C=0 または LET C,0 としておかないと、じっこうするたびにCのかずがどんどんふえてしまいます！
 </section>
 
 <section>
 <b>やってみよう！</b><br>
-1. 7かける8を計算させてみよう<br>
-2. 8かける7を計算させてみよう<br>
-3. マークを好きなマークに変えてみよう<br>
-4. マークを2文字にするとどうなるでしょう？<br>
-5. 0を入力するとどうなるか実験しよう<br>
+1. 7かける8をけいさんさせてみよう<br>
+2. 8かける7をけいさんさせてみよう<br>
+3. マークをすきなマークに変えてみよう<br>
+4. マークを2もじにするとどうなるでしょう？<br>
+5. 0をにゅうりょくするとどうなるかじっけんしよう<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/

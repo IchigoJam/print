@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>じどううんてんをつくるOUTとANA - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+</head><body>
+
+<h1>じどううんてんをつくるOUTとANA</h1>
+
+<section>
+ロボットをうごかそう（カムロボ、らでぃっしゅ、paprikaなど）
+<div class=ichigojam>1 OUT33</div>
+1. 「F3、0、エンター」で、0にSAVE<br>
+2. IchigoDakeをぬく<br>
+3. ロボットのスイッチオン<br>
+4. ロボットにIchigoDakeをボタンをおしながらさして、てをはなす<br>
+5. とめるときは、ロボットのスイッチをオフ、IchigoDakeをぬく
+</section>
+
+<section>
+3びょうすすんでとまる
+<div class=ichigojam>2 WAIT180:OUT0</div>
+6. 「F2、0、エンター」で、0をLOAD<br>
+7. 「F4」でプログラムをかくにん<br>
+8. プログラムをついか<br>
+9. GOTO 1 （うえでやった、てじゅん1へ）
+</section>
+
+<section>
+「3びょうすすんで1びょうとまる」をGOTOつかって、くりかえし
+<div class=ichigojam>3 WAIT60:GOTO1</div>
+</section>
+
+<section>
+じどうブレーキをつくろう<br>
+センサー(ANA(2))がはんのうするまでまって、OUT0でとめる
+<div class=ichigojam>2 IF ANA(2)&lt;600 GOTO2
+3 OUT0
+</div>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ぜんごにうごかそう（まえ:OUT33、バック:OUT18）<br>
+2. しかくをえがくようにうごかそう（みぎ:OUT17、ひだり:OUT34）<br>
+3. じぐざぐにはしらせよう<br>
+4. センサーにはんのうしたらバックしよう<br>
+5. センサーにはんのうしたらまがってよけよう<br>
+6. かべをみぎやひだりによけながらすすみつづけるロボットをつくろう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
