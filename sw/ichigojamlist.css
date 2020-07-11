@@ -1,0 +1,20 @@
+body {
+	font-size: 90%;
+	font-family: sans-serif;
+	width: 524px;
+}
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 150%;
+}
+section {
+	margin: 0.5em 0em;
+}
+#credit {
+	text-align: center;
+	font-size: 12px;
+}
+#credit a {
+	color: gray !important;
+}
