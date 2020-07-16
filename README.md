@@ -7,3 +7,6 @@ https://ichigojam.github.io/print/en/
 
 IchigoJam print (Rwandan / Kinyarwanda)  
 https://ichigojam.github.io/print/rw/  
+
+IchigoJam print (Swahili)  
+https://ichigojam.github.io/print/sw/  
