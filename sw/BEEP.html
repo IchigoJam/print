@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Tengeneza sauti / BEEP - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Tengeneza sauti / BEEP</h1>
+
+<section>
+Hakikisha miguu ya saketi ya sauti imechomekwa katika SOUND(SND) na GND kwenye IchigoJam yako.
+<div class=ichigojam>BEEP
+</div>
+Je umesikia mlio wa sauti beep?
+</section>
+
+<section>
+Toni ya juu.
+<div class=ichigojam>BEEP 5
+</div>
+Toni ya chini.
+<div class=ichigojam>BEEP 20
+</div>
+Toni ndefu.
+<div class=ichigojam>BEEP 10,30
+</div>
+</section>
+
+<section>
+Hebu tutengeneze mdundo!
+<div class=ichigojam>10 BEEP 5:WAIT 30
+20 BEEP 20:WAIT 30
+30 GOTO 10
+RUN
+</div>
+WAIT ni komandi ya kusubiri. Mdundo wa taratibu utatokea kama utaweka namba kubwa zaidi. GOTO ni komandi ya kurudi nyuma katika mstari wa 10 ili kurudia. Bonyeza kibonye [ESC] kusimamisha.
+</section><section>
+Mdundo utasimama wakati ukibonyeza kitufe cha IchigoJam yako.<br>
+<div class=ichigojam>15 IF BTN() GOTO 15
+</div>
+</section>
+
+<section>
+<b>Hebu Jaribu!</b><br>
+1. Tengeneza sauti mbalimbali!<br>
+2. Tengeneza mdundo wenye tempo ya kasi (fast tempo)<br>
+3. Ongeza programu hii "12 BEEP 20:WAIT 30" ili kubadili iwe tripple time (musical time pattern)<br>
+4. Ifanye ya mdundo wa quadruple<br>
+5. Badili mdundo "GOTO 15" kuwa "GOTO 10" katika mstari wa 15<br>
+6. Tengeneza mdundo wako asili!<br>
+</section>
+
+<div id="credit"><a href=https://github.com/IchigoJam/print>CC BY on GitHub</a> <a href="https://ichigojam.github.io/print/sw/">IchigoJam print</a> https://ichigojam.github.io/print/sw/ <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a><br>
+</div>
+</body></html>
