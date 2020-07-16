@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Julisha mawazo / BTN - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Julisha mawazo / BTN</h1>
+
+<section>
+Hebu iambie kompyuta mawazo yako kwa kutumia kitufe cha upande wa kushoto katika IchigoJam.
+<div class=ichigojam>?BTN()
+</div>
+Kama ukibonyeza kibonye ENTER bila kubonyeza kitufe, itaonyesha sifuri (0). 
+Bonyeza kishale cha juu mara tatu kilicho kwa chini kulia katika kibodi, sogeza kishale cha mraba kinachopepesa, halafu shindilia chini kitufe katika ichigojam na bonyeza kibonye ENTER.<br>
+Ni mafanikio kama itaonyesha "1"!
+</section>
+
+<section>
+</section>
+
+<section>
+Rudia kwa kutumia komandi ya "GOTO".
+<div class=ichigojam>10 ?BTN()
+20 GOTO 10
+RUN
+</div>
+"0" itaonyesha katika safu, hebu tujaribu kubonyeza au kuachia kitufe.<br>
+Kuisimamisha, tumia kibonye ESC(Escape).
+</section>
+
+<section>
+Programu ambayo LED inawaka endapo kitufe kitabonyezwa.
+<div class=ichigojam>10 LED BTN()
+20 GOTO 10
+</div>
+Pia unaweza kutumia kibonye F5 badala ya komandi ya "RUN"!<br>
+Komandi ya "LED" itawasha endapo ni 1 na itapotea endapo ni 0, hivyo inawaka shanjari na kitufe kinavyobonyezwa.<br>
+Simamisha kwa kibonye ESC(Escape).
+</section>
+
+<section>
+Ukibonyeza kitufe, ikonyeze haraka!
+<div class=ichigojam>10 LED 1:WAIT 10-BTN()*5
+20 LED 0:WAIT 10-BTN()*5
+30 GOTO 10
+</div>
+"WAIT" ni komandi ya kusubiri.<br>
+Wakati ambapo kitufe hakijabonyezwa, ni "WAIT 10".<br>
+Kama kikibonyezwa, BTN() itakuwa 1, toa namba inayozidishwa na 5 kwa "* 5", hivyo inakuwa "WAIT 5".<br>
+Rudi nyuma katika mstari wa 10 kwa "GOTO", rudia.
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Hebu tufanye ipepese kwa haraka zaidi, endapo kitufe kitabonyezwa.<br>
+2. Hebu tufanye ipepese taratibu, endapo kitufe kitabonyezwa.<br>
+3. Hebu tuiumbe upya iweze kuwasha wakati wote, endapo kitufe kitabonyezwa.<br>
+4. Hebu tuiumbe upya isiweze kuwasha kabisa, endapo kitufe hakitabonyezwa.<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
