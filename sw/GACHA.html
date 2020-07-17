@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Gacha simulation - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Gacha simulation</h1>
+
+<section>
+Hebu malizia alfabeti kwa gacha!
+<div class=ichigojam>10 A=RND(26)
+20 ?"DRAW:";CHR$(ASC("A")+A)
+</div>
+Alfabeti 26 kutoka A mpaka Z zinatumika kucheza gacha!. Tumia "RND" ili kucheza.
+</section>
+
+<section>
+Hebu onyesha mkusanyiko.
+<div class=ichigojam>30 [A]=[A]+1
+40 FOR I=0 TO 25
+50  LC I%6*5,5+I/6*3
+60  ?CHR$(ASC("A")+I);":";[I]
+70 NEXT
+</div>
+</section>
+
+<section>
+Mpaka imalizike, gacha otomatiki!
+<div class=ichigojam>5 CLS:CLV
+35 N=N+1:C=0
+65  IF [I] C=C+1
+80 ?:?:?"COLLECT:";C;"/26 ";
+90 ?N;"00YEN"
+100 IF C=26 ?"COMPLETE!":END
+110 GOTO 10
+</div>
+Itagharimu kiasi gani?
+</section>
+
+<section>
+Hebu fanya "A" kuwa adimu.
+<div class=ichigojam>15 IF A=0 IF RND(10)>0 A=1
+</div>
+Ifanye 'probability' yake ya kuwa "B" iwe 9/10 hata kama "A" itajitokeza.
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Hebu jaribu mara tatu, na linganisha<br>
+2. Hebu fanya kuwa adimu kutoka "A" mpaka "F"<br>
+3. Hebu tuhakikishe kuwa "Z" haijitokezi<br>
+4. Hebu tuitoe "Z" kwa uwezekano wa 1/2<br>
+5. Hebu tuifanye ipandiane (ziwe tofauti)<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
