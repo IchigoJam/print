@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Mchezo wa Mkono (Janken) - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Mchezo wa Mkono (Janken)</h1>
+
+<section>
+Mchezo wa mkono (maarufu kama Rock-Paper-Scissor) ni mchezo unaotumika haswa kuchagua bila upendeleo baina ya timu fulani.Kwa kutumia mkono kuna ishara tatu rock(jiwe), paper(karatasi) na scissors(mkasi)<br>
+- Gu: (rock) ni kukunja ngumi. (Gu inamshinda Choki)<br>
+- Choki: (scissors) tumia vidole viwili, igiza umbo la mkasi. (scissors inamshinda Pa)<br>
+- Pa: (paper) nyosha chini kiganja chako. (Pa inamshinda Gu)<br>
+<br>
+Tumia komandi ya "Random" yenye namba 3 kama unataka kuamua Gu, Choki au Pa kwa kompyuta yako.
+<div class=ichigojam>?RND(3)
+</div>
+Kwa mfano 0 inamaanisha Gu, 1 inamaanisha Choki, 2 inamaanisha Pa.
+</section>
+
+<section>
+<div class=ichigojam>10 LET A,RND(3)
+20 IF A=0 ?"GU"
+30 IF A=1 ?"CHOKI"
+40 IF A=2 ?"PA"
+RUN
+</div>
+Jaribu kuchapa RUN au bonyeza kibonye F5 kwa kurudia rudia!<br>
+Bonyeza kibonye F5 na sema alama ya mkono wako ili kushindana baada ya kutamka "Jan ken"!
+</section>
+
+<section>
+Jaribu kuamua kwa kompyuta.
+<div class=ichigojam>15 INPUT "YOUR HAND?",B
+16 IF B=0 ?"GU - ";
+17 IF B=1 ?"CHOKI - ";
+18 IF B=2 ?"PA - ";
+50 IF A=B ?"DRAW"
+60 IF A-B=1 OR B-A=2 ?"WON!"
+70 IF B-A=1 OR A-B=2 ?"LOST!"
+</div>
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Jaribu kushindana na programu katika kompyuta ya rafiki yako!<br>
+2. Jaribu kuumba kompyuta dhaifu kabisa!<br>
+3. Jaribu kuumba mchezo wa Janken wenye wachezaji 3, wewe na kompyuta 2!<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="https://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Iache iamue / IF - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Iache iamue / IF</h1>
+
+<section>
+"IF" ni komandi ya kuacha kompyuta iamue.<br>
+<div class=ichigojam>10 IF BTN()=0 GOTO 10
+RUN
+</div>
+kama kitufe hakijabonyezwa, mstari wa 10 utajirudia.<br>
+Pale utakapokibonyeza kitufe, programu itaenda kwa unaofuata, na kumalizika.
+</section>
+
+<section>
+Kila wakati bonyeza kitufe, LED iwake na kuzima.
+<div class=ichigojam>10 IF BTN()=0 GOTO 10
+20 LED1
+30 IF BTN()=0 GOTO 30
+40 LED0
+50 GOTO 10
+</div>
+Oh, wakati unabonyeza kitufe, LED inawaka?<br>
+Kwa kuwa kompyuta ina kasi, unapobonyeza kitufe itawasha LED na kusogea katika maamuzi mengine maramoja.
+</section>
+
+<section>
+Ili isiende katika maamuzi mengine maramoja, ongezea subiri "WAIT".
+<div class=ichigojam>10 IF BTN()=0 GOTO 10
+20 LED1:WAIT30
+30 IF BTN()=0 GOTO 30
+40 LED0:WAIT30
+50 GOTO 10
+</div>
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Endelea tu kubonyeza kitufe<br>
+2. Jaribu kubadili "WAIT30" kuwa "WAIT60"<br>
+3. Jaribu kubadili "WAIT30" kuwa "WAIT5"<br>
+4. Jaribu kubadili "IF BTN()=1"<br>
+5. Tengeneza programu ambayo kitufe kitapobonyezwa itaanza kupepesa LED<br>
+6. Tengeneza programu ambayo itaendesha LED katika hali ya kufurahisha<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
