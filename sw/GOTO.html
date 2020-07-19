@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Tengeneza ishara ya usiku / GOTO - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Tengeneza ishara ya usiku / GOTO</h1>
+
+<section>
+Ishara yenye kupepesa kwa ajili ya usiku, inawaka na kuzima kila sekunde 0.5.
+<div class=ichigojam>10 LED1:WAIT30:LED0:WAIT30
+20 LED1:WAIT30:LED0:WAIT30
+RUN
+</div>
+Chapa mstari wa 10 na bonyeza kibonye ENTER, kisha rejesha kielekezi mstari wa 10 na badili kiongozo "10" kuwa "20", na bonyeza kibonye ENTER.<br>
+Hakiki kama mstari wa 10 umenakiliwa katika mstari wa 20 kwa kutumia "LIST"!
+</section>
+
+<section>
+Pepesa muda wote kwa "GOTO". Takribani mara 30,000 mpaka kunakucha. 
+<div class=ichigojam>10 LED1:WAIT30:LED0:WAIT30
+20 GOTO 10
+</div>
+Namba iliyo baada ya "GOTO" inatoa muelekeo wa fikio.<br>
+&gt; mstari wa 10, pepesa mara moja<br>
+&gt; mstari 20, rukia mstari wa 10<br>
+Kuisimamisha, bonyeza kibonye [ESC].
+</section>
+
+<section>
+Pepesa kwa haraka
+<div class=ichigojam>LIST
+10 LED1:WAIT3:LED0:WAIT3
+</div>
+Tengeneza mstari wa 15 kati ya mstari wa 10 na wa 20, kwa kubadilisha kiongozo "10" kuwa 15 na wait3 kuwa wait30, bonyeza kibonye ENTER.
+Onyesha programu kwa "LIST"(ama kibonye =F4), na kisha tekeleza kwa "RUN"(ama kibonye =F5).<br>
+</section>
+
+<section>
+<div class=ichigojam>15 LED1:WAIT30:LED0:WAIT30
+</div>
+Rudia kwa kubadilishana kati ya pepesa fupi na pepesa refu.
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Hebu turejee katika programu ya ishara ya usiku<br>
+2. Refusha muda wa kuwaka pekee<br>
+3. Jaribu kuitengeneza iwe mchezo wa kupepesa kwa kasi na isimame ambapo inawaka<br>
+4. Tengeneza mistari ya namba, kuanzia 100 kwa hatua 100 m.f. 100,200,300<br>
+5. Hebu tutengeneze ruwaza ya kupepesa yenye kuvutia, na ringishia kwa yoyote.<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
