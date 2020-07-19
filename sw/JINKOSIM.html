@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Population simulation- IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Population simulation</h1>
+
+<section>
+Idadi ya Wajapani ni Milioni 125. Ilipunguwa kwa ndani ya mwaka mmoja270,000.<br>
+(Nov, 2016 Wizara ya Mambo ya Ndani na Mawasiliano, Ofisi ya Takwimu, Uhakikisho wa idadi ya watu)
+<div class=ichigojam>10 P=12536
+20 D=27
+</div>
+Seti idadi ya watu kama "P", na namba inayopungua kama "D", kwa zote uniti iwakilishwe na elfu kumi.<br>
+</section>
+
+<section>
+Endapo ikiendelea kupungua katika hali sawa sawa kila mwaka tokea 2016, Idadi ya watu itakuwaje ifikapo 2100?
+<div class=ichigojam>30 FOR Y=2016 TO 2100
+40  ?Y,P;
+50  ?
+60  P=P-D
+70 NEXT
+</div>
+</section>
+
+<section>
+Hebu tuifanye kuwa jedwali ('/' ni alama ya kugawanya).
+<div class=ichigojam>42  FOR I=0 TO P/1000
+45  ?"*";:NEXT
+</div>
+</section>
+
+<section>
+Vipi kama namba inayopungua ikaongezeka kwa 20,000 kila mwaka?
+<div class=ichigojam>55  D=D+2
+</div>
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Simamisha kwa kibonye ESC na angalia idadi ya watu kwa mwaka 2060<br>
+2. Hebu fanya namba inayopungua kuwa 30,000 kila mwaka<br>
+3. Hebu badili kibambo "*" kuwa kibambo kingine<br>
+4. Hebu badili namba katika mstari wa 42, 1000 kuwa 100<br>
+5. Hebu ongeza idadi ya watu<br>
+6. Idadi ya watu duniani ni Bilioni 7.3. Itakuwaje kama ongezeko ni Milioni 100 kila mwaka?
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
