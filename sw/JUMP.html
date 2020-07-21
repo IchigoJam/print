@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Mchezo wa Kuruka - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Mchezo wa Kuruka</h1>
+
+<section>
+Mchezo wa kuruka ambao unamuepa adui kwa kuruka.<br>
+Kwanza, kibambo kikuu kujitokeza!
+<div class=ichigojam>10 CLS:Y=15:V=0
+20 LC 0,Y:?"M"
+</div>
+</section>
+
+<section>
+Kama utabonyeza kibonye chochote, kibambo kikuu kitaruka!
+<div class=ichigojam>30 IF Y=15 V=3*(INKEY()!=0)
+40 Y=Y-V:V=V-1
+50 SCROLL LEFT
+60 GOTO 20
+</div>
+</section>
+
+<section>
+Kuweka vibambo vya maadui.
+<div class=ichigojam>25 IF RND(10)=0 LC 31,15:?"K"
+</div>
+</section>
+
+<section>
+Rekebisha kasi.
+<div class=ichigojam>35 WAIT 4
+</div>
+</section>
+
+<section>
+Ongeza maamuzi ya mchezo-umekwisha, Umemalizika!
+<div class=ichigojam>37 IF SCR(1,Y) END
+</div>
+</section>
+
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Hebu tubadili kibambo kikuu kuwa "R"<br>
+2. Badili kibambo kikuu, shikilia kibonye ALT na bonyeza "R"<br>
+3. Hebu badili "RND(10)" kuwa "RND(4)"<br>
+4. Hebu punguza vibambo vya adui<br>
+5. Hebu fanya kasi iwe haraka mno<br>
+6. Hebu badili "V=3*" kuwa "V=4*"<br>
+7. Hebu punguza nguvu ya kuruka<br>
+8. Hebu ongeza alama 'score' kwa kutumia "CLT" na "TICK()"<br>
+9. Hebu hesabu na weka alama ya idadi uliyoruka<br>
+10. Hebu tengeneza mchezo wa asili kwa kuumba upya<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
