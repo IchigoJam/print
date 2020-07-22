@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Siku gani katika wiki ulizaliwa? - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Siku gani katika wiki ulizaliwa?</h1>
+
+<section>
+Ingizo Mwaka, mwezi, tarehe, na fahamu ni siku gani katika wiki?<br>
+Kwa hakika, inaweza kukokotolewa kwa programu.<br>
+Kwanza, programu ya kuonyesha siku za wiki.
+<div class=ichigojam>10 LET[0],"SUN","MON","TUE","WED","THU","FRI","SAT"
+RUN
+?STR$([0])
+</div>
+Tumia "STR$" kuonyesha mwanzo [0] wa tungo"string" ndani ya mkusanyiko"array".
+</section>
+
+<section>
+Rudia kutoka Sunday (Jumapili) mpaka Saturday (Jumamosi) kwa siku 7 za wiki.
+<div class=ichigojam>FOR I=0 TO 22:?STR$([I%7]):NEXT
+</div>
+</section>
+
+<section>
+Tumia "INPUT", weka mwaka katika "Y", mwezi katika "M" na tarehe katika "D".
+<div class=ichigojam>20 INPUT"Y?",Y
+30 INPUT"M?",M
+40 INPUT"D?",D
+RUN
+</div>
+Hebu onyesha maingizo ya mwaka, mwezi na tarehe.
+<div class=ichigojam>?Y,M,D
+</div>
+</section>
+
+<section>
+"Kanuni ya Zeller" ambayo inakokotoa siku ya wiki kutokana na mwaka, mwezi na tarehe.<br>
+<div class=ichigojam>50 IF M<3 M=M+12:Y=Y-1
+60 H=(Y+Y/4-Y/100+Y/400+(13*M+8)/5+D)%7
+70 ?STR$([H])
+</div>
+Ni ya kushangaza kuweza kujua siku katika wiki kwa hii!
+</section>
+
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Weka tarehe ya leo na angalia leo ni siku gani<br>
+2. Siku yangu ya kuzaliwa ni siku gani katika wiki?<br>
+3. Siku yangu ya kuzaliwa inayofuata ni siku gani katika wiki?<br>
+4. Hebu onyesha siku za wiki kwa lugha nyingine<br>
+5. Hebu tengeneza kalenda ya miezi ya kuzaliwa<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
