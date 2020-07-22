@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Tengeneza kibambo asili / PCG - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Tengeneza kibambo asili / PCG</h1>
+
+<section>
+"Kinyau" kitajitokeza kama utashikilia kibonye ALT cha kushoto katika kibodi na kubonyeza "C".
+<div class=ichigojam>?CHR$(236)
+</div>
+Msimbo wa kibambo wa "kinyau" ni 236.
+</section>
+
+<section>
+Ili kubadili hiki "kinyau" kuwa "fimbo".
+<div class=ichigojam>POKE 236*8,8,8,8,8,8,8,8,8
+</div>
+Imebadilika!?<br>
+Sasa ni muda wa kubadili kuwa kimpira kidogo.
+<div class=ichigojam>POKE 236*8,0,0,0,24,24,0,0,0
+</div>
+Kuwa mstari mshazari!
+<div class=ichigojam>POKE 236*8,1,2,4,8,16,32,64,128
+</div>
+</section>
+
+<section>
+Programu ya kuandika mchoro uupendao kwa kutumia namba jozi, 0 na 1.
+<div class=ichigojam>10 POKE236*8+0,`01111110
+11 POKE236*8+1,`11011011
+12 POKE236*8+2,`11111111
+13 POKE236*8+3,`11000011
+14 POKE236*8+4,`11111111
+15 POKE236*8+5,`11111111
+16 POKE236*8+6,`00011000
+17 POKE236*8+7,`00011000
+RUN
+</div>
+Bwana barafu anatokea!
+</section>
+
+<section>
+Kurudi kwa "kinyau", tumia "CLP" (kifuta ruwaza).
+<div class=ichigojam>CLP
+</div>
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Hebu tengeneza alama ya moyo<br>
+2. Hebu tengeneza kibambo ukipendacho<br>
+3. Hebu tuandike upya viumbe vigeni katika ALT + D kwa kubadili 236 kuwa 237 (masafa ya msimbo wa kibambo ni 224-255!)<br>
+4. Hebu tuonyeshe namba kwa ajili ya namba jozi "10000000"<br>
+5. Hebu tutengeneze msimbo wa kibambo asili kwa programu ya mstari mmoja .<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

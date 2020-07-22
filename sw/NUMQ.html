@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ChemshaBongo ya Namba - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>ChemshaBongo ya Namba</h1>
+
+<section>
+Hizi ni namba kwa Kiswahili, lugha ya Tanzania.
+<div class=ichigojam>10 LET[0],"SIFURI","MOJA","MBILI","TATU","NNE","TANO","SITA","SABA","NANE","TISA","KUMI"
+RUN
+</div>
+</section>
+
+<section>
+Jinsi ya kuonyesha namba kwa neno.
+<div class=ichigojam>?STR$([1])
+</div>
+</section>
+
+<section>
+Iache kompyuta yako ihesabu!
+<div class=ichigojam>20 FOR I=10 TO 0 STEP -1
+30 ?I,STR$([I]):WAIT60
+40 NEXT
+</div>
+</section>
+
+<section>
+Mchezo wa 1: Jibu mchezo wa namba!
+<div class=ichigojam>20 N=RND(11):?STR$([N]);
+30 INPUT ". What's this?",M
+40 IF N=M ?"Correct!" ELSE ?"Wrong. The answer is ";N
+50 GOTO 20
+</div>
+</section>
+
+<section>
+Mchezo wa 2: Chapa ili kujibu mchezo wa namba!
+<div class=ichigojam>20 N=RND(11):?"Type ";N
+30 FOR I=0 TO LEN([N])-1
+40 IF INKEY()!=ASC([N]+I) CONT
+50 ?STR$([N]+I,1);:NEXT:?
+60 GOTO 20
+</div>
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Ongeza "MCHEZO-UMEKWISHA" katika mchezo wa 1 kama si sahihi<br>
+2. Ongeza alama/maksi katika mchezo wa 1<br>
+3. Onyesha muda baada ya majibu 10 katika mchezo wa 1<br>
+4. Ongeza "MCHEZO-UMEKWISHA" katika mchezo wa 2 kama ukikosea kuchapa<br>
+5. Badili lugha kuwa nyingine<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
