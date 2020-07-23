@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Tengeneza saa ya kupima wakati / TICK - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Tengeneza saa ya kupima wakati / TICK</h1>
+
+<section>
+1,2,3,4,5,6...<br>
+mara 60 kama ni sekunde 1, itaendelea kuhesabu muda, IchigoJam.
+<div class=ichigojam>?TICK()
+</div>
+"TICK" ni hiyo namba. Hebu tufanye ionyeshe mara kadhaa.
+<div class=ichigojam>?TICK()
+</div>
+Namba iliyoonyeshwa kwa mara ya pili ni kubwa kuliko mara ya kwanza.
+<div class=ichigojam>?TICK()/60
+</div>
+Kwa kugawanya kwa 60, itabadili muda tokea ulipowasha kuwa katika mfumo wa sekunde.
+</section>
+
+<section>
+Tumia komandi "CLT" (kifuta wakati), kuweka upya (reset) namba ambayo inahesabu.
+<div class=ichigojam>CLT
+OK
+?TICK()/60
+</div>
+Unaweza kufahamu muda tangu kuwekwa upya (reset).
+</section>
+
+<section>
+Saa ya kupima wakati ambayo inapima muda kwa sekunde tangu ilipoanzishwa komandi ya "RUN" hadi kitakapobonyezwa kitufe cha IchigoJam.
+<div class=ichigojam>10 CLT
+20 IF BTN()=0 GOTO 20
+30 ?TICK()/60
+</div>
+Imekuwa ikisubiri kwa kurudiarudia mpaka ambapo kitufe kilibonyezwa katika mstari wa 20.
+</section>
+
+<section>
+Kutengeneza saa ya kupima wakati ambayo itaonyesha muda kila mara utakapobonyeza kitufe.
+<div class=ichigojam>40 IF BTN()=1 GOTO 40
+50 GOTO 10
+</div>
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Hebu vuta pumzi kubwa, na pima ni sekunde ngapi unaweza kutweta kwa ajili ya pumzi.<br>
+2. Hebu funga macho, na bonyeza kitufe ili kupata tofauti ya sekunde 5.<br>
+3. Hebu tufute "/ 60" katika mstari wa 30 na pima kasi yako mwenyewe ya kubonyeza kitufe tena na tena.<br>
+4. Tunza kwa "SAVE0", zima, washa wakati umeshikilia kitufe, kama ilianza otomatiki, hebu bonyeza tena na tena!<br>
+5. Hebu tengeneza upya ili ianze kwa kubonyeza kitufe, na kuonyesha kwa kubonyeza kitufe kwa mara ya pili.<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

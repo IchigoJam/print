@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Dhibiti muda / WAIT - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Dhibiti muda / WAIT</h1>
+
+<section>
+Hebu tufanye "wait" katika IchigoJam.<br>
+Kielekezi cha mraba kinachopepesa katika skrini kina maana kuwa kibodi iko tayari kutumika.
+<div class=ichigojam>WAIT60
+</div>
+Je umeona kuwa kielekezi kimepotea kwa muda mfupi? Hebu tujaribu tena.
+</section>
+
+<section>
+Kama utabadili namba iliyo mbele ya "WAIT", urefu wa muda katika "wait" utaweza kubadilika.<br>
+※1 second = 60
+<div class=ichigojam>WAIT120
+</div>
+Kielekezi kimepotea kwa muda mrefu zaidi kulinganisha na mwanzo.
+</section>
+
+<section>
+Kuwasha LED, na kuzima otomatiki.
+<div class=ichigojam>LED1:WAIT120:LED0
+</div>
+Tumia alama ya nukta mbili ':'(ni rahisi kuichanganya na ya nuktamkato ';') kuunganisha komandi.<br>
+Washa kwa "LED1", subiri kwa "WAIT120", zima kwa "LED0".
+</section>
+
+<section>
+Kuwasha LED kidogo.
+<div class=ichigojam>LED1:WAIT3:LED0
+</div>
+Kama utabadili namba kwa ajili ya "WAIT", itabadili muda wa uwakaji wa LED.
+</section>
+
+<section>
+Washa LED mara mbili.
+<div class=ichigojam>LED1:WAIT3:LED0:WAIT3:LED1:WAIT3:LED0
+</div>
+Unaweza kuunganisha zaidi na zaidi kwa kutumia alama ya nukta mbili ":".
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Hebu tufanye "WAIT" kwa sekunde 10<br>
+2. Washa LED kwa sekunde 5 na kuizima<br>
+3. Hebu tufanye "WAIT 10000", kuikatisha katikati tumia kibonye ESCAPE<br>
+4. Washa kwa muda mrefu na washa kidogo<br>
+5. Hebu jaribu kutengeneza mwanga wa LED katika ruwaza ya kuvutia<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

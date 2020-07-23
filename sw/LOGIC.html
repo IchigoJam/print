@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>1 + 1 = 1, Fumbo la Mantiki - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>1 + 1 = 1, Fumbo la Mantiki</h1>
+
+<section>
+Tuna 0 na 1 tu (katika ulimwengu wa mantiki), sasa tufanye ukokotozi. Mosi tunaanza na kujumlisha. "|" (mwambaa wima).
+<div class=ichigojam>?1|0
+1
+?0|0
+0
+?1|1
+1
+</div>
+Hakuna ongezeko la tarakimu kwa kujumlisha 1 na 1, bado inabakia kuwa 1, hiyo ni "jumla ya mantiki".
+</section>
+
+<section>
+Ifuatayo ni kuzidisha, tumia "&". (Tumia koma kutenganisha na kukokotoa kwa ujumla)
+<div class=ichigojam>?1&1,0&1,1&0,0&0
+ 1   0   0   0
+</div>
+Kama namba itazidishwa kwa 1, jibu litakuwa namba hiyo hiyo, na litakuwa 0 endapo itazidishwa kwa 0, Hiyo ni "kuzidisha ya mantiki".
+</section>
+
+<section>
+Ili kujumlisha isivyo kawaida tumia "^". Hata kama namba zote mbili ni 1, jibu ni sifuri
+<div class=ichigojam>?1^1,0^1,1^0,0^0
+ 0   1   1   0
+?1|1,0|1,1|0,0|0
+ 1   1   1   0
+</div>
+Ni pekee kwa 1^1, ila kwa nyinginezo zinabakia kuwa hivyo hivyo kama kwenye "jumla ya mantiki". Hiyo ni "XOR" (exclusive OR)
+</section>
+
+<section>
+Ukokotozi wa mantiki unaweza kupangwa kwa ujumla hadi kufikia 16 (nambari ya juu zaidi)！
+<div class=ichigojam>?BIN$(`1010|`0011,4)
+1011
+</div>
+Kujumlisha namba jozi zenye tarakimu nne. Unaweza kukokotoa 1|0, 0|0, 1|1, 0|1 zote kwa mara moja！
+</section>
+
+<section>
+<b>Jaribu sasa！</b><br>
+1. Nini jawabu kwa 3|1？<br>
+2. Tumia kidokezo: ?BIN$(1),BIN$(2),BIN$(3), tatua fumbo 3|1<br>
+3. Hebu tufanye ukokotozi wa ?8323^35 na ?8323^35^35<br>
+4. Badili kuwa namba tofauti, hebu tucheze na namba za siri kwa kutumia mantiki<br>
+5. Hebu tufanye ukokotozi mbalimbali, tufanye mafumbo ya Mantiki<br>
+<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

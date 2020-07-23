@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Mchezo wa Nekonikoban - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ichigojam-print.css">
+<script type="module">
+</script>
+</head><body>
+
+<h1>Mchezo wa Nekonikoban</h1>
+
+<section>
+Maana ya "Neko ni koban" inakaribiana na "Lulu kwa nguruwe"(upotezaji mkubwa wa rasilimali). "Neko"- "Nyau", "Koban"-"Sarafu"
+Nyau atajitokeza katika nafasi ya 10 toka kushoto na 5 toka juu.(msimbo wa kibambo ni 236, ALT + C)
+<div class=ichigojam>10 CLS:X=10:Y=5
+50 LC X,Y:?CHR$(236)
+</div>
+</section>
+
+<section>
+Ifanye iweze kusogea kwa kielekezi.
+<div class=ichigojam>20 K=INKEY()
+30 X=X-(K=28)+(K=29)
+40 Y=Y-(K=30)+(K=31)
+60 WAIT10
+70 LCX,Y:?" "
+80 GOTO20
+</div>
+</section>
+
+<section>
+Tawanya visarafu kwa uhuru, na ongeza alama/score(S).
+<div class=ichigojam>15 S=0:FOR I=1 TO 10:LOCATE RND(30),RND(20):?CHR$(245):NEXT
+45 IF SCR(X,Y)=245 S=S+1:LC0,0:?S
+</div>
+</section>
+
+<section>
+Mchezo unakwisha ndani ya sekunde 10.
+<div class=ichigojam>7 CLT
+47 IF TICK()>600 END
+</div>
+</section>
+
+<section>
+<b>Jaribu sasa!</b><br>
+1. Hebu onyesha "LIST"<br>
+2. Hebu toa idadi kubwa zaidi ya visarafu<br>
+3. Hebu tega iwe mchezo-umekwisha ndani ya sekunde 5<br>
+4. Hebu iwezeshe kusogea kwa haraka<br>
+5. Hebu tufanye alama ziongezeke kwa pointi 10<br>
+6. Hebu rekebisha na hifadhi vile upendavyo<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/sw/ ">IchigoJam print</a> https://ichigojam.github.io/print/sw/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
