@@ -11,21 +11,25 @@
 ヘリコプターを動かしてみよう！
 <div class=ichigojam>10 X=16</div>
 はじまりのばしょをしていしてあげよう<br>
-X=16でがめんのまんなかにヘリコプターがひょうじされるよ<br>
+16でばしょをしていしよう。<br>
 </section>
     
 
 <section>
-
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+がめんにヘリコプターがでてきたかな？
+    つぎにヘリコプターをそうさするためのプログラムをしてみよう！
+<div class=ichigojam>20 CLS
+    30 K=INKEY()
+    40 WAIT 6</div>
+INKEY()でIchigojamがおされたキーをしることができるよ。
 </section>
 
 
-<section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+<section>ヘリコプターをさゆうにうごかすキーをせっていしよう！
+<div class=ichigojam>50 IF K=28 THEN X=X-1
+    60 IF K=29 THEN X=X+1
 </div>
+    28がやじるしキーのひだり、29がやじるしキーのみぎのいみだよ。
 RUNでじっこうしてみると、どうなるかな？
 </section>
 
