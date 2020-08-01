@@ -4,47 +4,46 @@
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>がめんにいたずらしてみよう！　DRAW</h1>
+<h1>ヘリコプターを動かしてみよう！　MOVE</h1>
 
 
 <section>
-ヘリコプターを動かしてみよう！
+はじまりのばしょをしていしてあげよう
 <div class=ichigojam>10 X=16</div>
-はじまりのばしょをしていしてあげよう<br>
 16でばしょをしていしよう。<br>
+<br>
 </section>
     
 
 <section>
-がめんにヘリコプターがでてきたかな？
-    つぎにヘリコプターをそうさするためのプログラムをしてみよう！
+がめんにヘリコプターがでてきたかな？<br>
+つぎにヘリコプターをそうさするためのプログラムをしてみよう！
 <div class=ichigojam>20 CLS
-    30 K=INKEY()
-    40 WAIT 6</div>
+30 K=INKEY()
+40 WAIT 6</div>
 INKEY()でIchigojamがおされたキーをしることができるよ。
 </section>
 
 
 <section>ヘリコプターをさゆうにうごかすキーをせっていしよう！
 <div class=ichigojam>50 IF K=28 THEN X=X-1
-    60 IF K=29 THEN X=X+1
+60 IF K=29 THEN X=X+1
 </div>
-    28がやじるしキーのひだり、29がやじるしキーのみぎのいみだよ。
-RUNでじっこうしてみると、どうなるかな？
+28がやじるしキーのひだり、29がやじるしキーのみぎのいみだよ。
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+おされたキーとヘリコプターをつなげよう！
+<div class=ichigojam>70 LOCATE X,10:PRINT ""
+80 GOTO 20</div>
+RUNでじっこうしてみると、どうなるかな？
 </section>
 
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+1. K=30とK=31にしてみるとどうなるかな？<br>
+2. くふうしてヘリコプターを自由自在に動かしてみよう！<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
