@@ -1,47 +1,40 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>よるのしんごうをつくる GOTO（ゴートゥー） - IchigoJam</title>
+<title>りょこうにいく GOTO（ゴートゥー）とラベル - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>をつくる GOTO（ゴートゥー）</h1>
+<h1>りょこうにいく GOTO（ゴートゥー）とラベル</h1>
 
 <section>
-よるのてんめつしんごう、0.5びょうごとについたりきえたり。
-<div id="btn-1"></div><script>make15("btn-1", "10 LED1:WAIT30:LED0:WAIT30\n20 LED1:WAIT30:LED0:WAIT30\nRUN")</script>
-10ぎょうをうちこんだら、もどって、せんとうの10を20にかえてエンター<br>
-LISTで、20ぎょうにコピーされた10ぎょうをかくにん！
+ラベル(LABEL)ってなに？<br>
+ラベルはにほんごで「ふだ」とか「はりがみ」のこと。<br>
+すきなことばのせんとうに@（アットマーク）をつける。
+<div id="btn-1"></div><script>make15("btn-1", "10 @LABEL")</script>
+このプログラムはにゅうりょくしなくてもいいよ。
 </section>
 
 <section>
-あさになるまで、やく3まんかい。ずっとてんめつさせる、GOTO（ゴートゥー）コマンド。
-<div id="btn-2"></div><script>make15("btn-2", "10 LED1:WAIT30:LED0:WAIT30\n20 GOTO 10")</script>
-GOTOのうしろのかずは、ジャンプさき<br>
-&gt; 10ぎょう、1かいてんめつ<br>
-&gt; 20ぎょう、10ぎょうへジャンプ！<br>
+りょこうのもくてきち「おきなわ」をつくろう。
+<div id="btn-1"></div><script>make15("btn-1", "10 @OKI:?"ｵｷﾅﾜ"\n20 END")</script>
+</section>
+
+<section>
+なんかいでもおきなわにいける、GOTO（ゴートゥー）コマンド。
+<div id="btn-2"></div><script>make15("btn-2", "10 @OKI:?"ｵｷﾅﾜ ";\n20 GOTO @OKI")</script>
+GOTOのうしろにラベルをかく<br>
 とめるときは、[esc]（エスケープ）キー
 </section>
 
 <section>
-こうそくてんめつ
-<div id="btn-3"></div><script>make15("btn-3", "LIST\n10 LED1:WAIT3:LED0:WAIT3")</script>
-LIST(=F4)でひょうじ<br>
-10ぎょうの、2つある30を3にかえて、エンター、RUN(=F5)
-</section>
-
-<section>
-<div id="btn-4"></div><script>make15("btn-4", "15 LED1:WAIT30:LED0:WAIT30")</script>
-10ぎょうと20ぎょうのあいだに15ぎょうをつくろう<br>
-こうごにくりかえす、みじかいてんめつと、ながいてんめつ
+じぶんのすんでいるところからおきなわへいこう。
+<div id="btn-1"></div><script>make15("btn-1", "10 KOKO="FUKUI":GOTO @OKI"\n20 @OKI:?"ｵｷﾅﾜ"\n30 END")</script>
 </section>
 
 <section>
 <b>やってみよう！</b><br>
-1. よるのしんごうプログラムにもどしてみよう<br>
-2. ひかっているじかんだけ、ながくしてみよう<br>
-3. こうそくにてんめつさせて、ひかっているときにとめるゲームにしよう<br>
-4. ぎょうのばんごうを100から100きざみでつくってみよう<br>
-5. すきなてんめつパターンをつくってだれかにじまんしよう<br>
+1. じぶんのすんでいるところをつくろう<br>
+2. とうきょうからおきなわへはいけないようにしよう<br>
 </section>
 
 <div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
