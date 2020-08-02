@@ -10,25 +10,35 @@
 ラベル(LABEL)ってなに？<br>
 ラベルはにほんごで「ふだ」とか「はりがみ」のこと。<br>
 すきなことばのせんとうに@（アットマーク）をつける。
-<div id="btn-1"></div><script>make15("btn-1", "10 @LABEL")</script>
+<div id="btn-1"></div><script>make15("test-1", "10 @LABEL")</script>
 このプログラムはにゅうりょくしなくてもいいよ。
 </section>
 
 <section>
 りょこうのもくてきち「おきなわ」をつくろう。
-<div id="btn-1"></div><script>make15("btn-2", "10 @OKI:?"ｵｷﾅﾜ"\n20 END")</script>
+<div id="btn-1"></div><script>make15("test-2", f2s(function() {/*
+10 @OKI:?"ｵｷﾅﾜ"
+20 END
+*/}))</script>
 </section>
 
 <section>
 なんかいでもおきなわにいける、GOTO（ゴートゥー）コマンド。
-<div id="btn-2"></div><script>make15("btn-3", "10 @OKI:?"ｵｷﾅﾜ ";\n20 GOTO @OKI")</script>
+<div id="btn-2"></div><script>make15("test-3", f2s(function() {/*
+10 @OKI:?"ｵｷﾅﾜ ";
+20 GOTO @OKI
+*/}))</script>
 GOTOのうしろにラベルをかく<br>
 とめるときは、[esc]（エスケープ）キー
 </section>
 
 <section>
 じぶんのすんでいるところからおきなわへいこう。
-<div id="btn-1"></div><script>make15("btn-4", "10 KOKO="FUKUI":GOTO @OKI"\n20 @OKI:?"ｵｷﾅﾜ"\n30 END")</script>
+<div id="btn-1"></div><script>make15("test-4", , f2s(function() {/*
+10 KOKO="FUKUI":GOTO @OKI
+20 @OKI:?"ｵｷﾅﾜ"
+30 END
+*/}))</script>
 </section>
 
 <section>
