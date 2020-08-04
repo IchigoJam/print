@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>16しんすうをつくるHEX$（ヘックス） - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+<h1>16しんすうをつくるHEX$（ヘックス）</h1>
+
+<section>
+コンピューターがつかうもじは「0」と「1」の2つだけ。でもにんげんにはよみにくい。
+そこで16しんすうのでばん
+</p><p>
+16しんすうでつかうすうじは0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+ふつう、9に1たすと、10と2もじになりますが、16しんすうでは9のつぎはAになります。
+これが16しんすう。
+</p><p>
+かずを16しんすうにかえるHEX$（ヘックス）コマンド<br>
+<div id="hex1-1"></div><script>make15("bin1-1", "?HEX$(2)\n8 \n?HEX$(10)\n5 ")</script>
+2しんすうをかずにする、きごう「`」(shift+@か1のひだり)<br>
+<div id="bin1-2"></div><script>make15("bin1-2", "?`1111\n15 \n?`100000000\n256 ")</script>
+</section>
+
+<section>
+0,1,2,3,4...16しんすうでかぞえさせてみます。
+<div id="bin1-3"></div><script>make15("bin1-3", f2s(function() {/*
+FOR I=0 TO 256:?BIN$(I),I:WAIT 30:NEXT
+0  0 
+1  1 
+10  2 
+11  3 
+*/}))</script>
+2しんすうは、bit（ビット）でかぞえます。3は11で2bit。8は1000で4bit。
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 16を2しんすうにしてみよう<br>
+2. 2しんすうの101、1010、10100をかずにしてみよう<br>
+3. 40を16しんすうにしてみよう<br>
+4. 12けたであらわせるさいだいのかずは？<br>
+5. -1を2しんすうにしてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
