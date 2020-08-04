@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ヘリコプターをうごかそう！ MOVE</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>ヘリコプターをうごかそう！ MOVE</h1>
+
+<section>
+ヘリコプターをさゆうにうごかしてみよう！<br>
+<br>
+まずはじまりのばしょをしていしてあげよう！
+<div class=ichigojam>10 X=16</div>
+ヘリコプターがはじめにいるばしょを16にしていしよう。<br>
+</section>
+    
+<section>
+ヘリコプターをそうさするためのじゅんびをしよう！
+<div class=ichigojam>20 CLS
+30 K=INKEY()</div>
+INKEY()でおされたキーをしることができるよ。
+</section>
+
+<section>ヘリコプターをさゆうにうごかすキーをせっていしよう！
+<div class=ichigojam>40 IF K=28 THEN X=X-1
+50 IF K=29 THEN X=X+1
+</div>
+28がやじるしキーのひだり、29がやじるしキーのみぎのいみだよ。
+</section>
+
+<section>
+キーにゅうりょくとヘリコプターそうさをつなげよう！(キャラクターコード243、ALT+J)
+<div class=ichigojam>60 LOCATE X,10:?CHR$(0,243,0)
+70 GOTO 30</div>
+RUNでじっこうしてみると、どうなるかな？
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ヘリコプターいがいのモノをうごかしてみよう！<br>
+2. じょうげにうごかしてみよう！<br>
+3. くふうしてじゆうじざいにうごかしてみよう！<br>
+</section>
+
+<div id="credit">
+  参考:IchigoJamで簡単なゲームを作ってみよう～お父さんが教えるプログラミング実践編⑥ <a href=https://edtechzine.jp/article/detail/675>https://edtechzine.jp/article/detail/675</a><br>
+  <br>
+  <a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+  <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
