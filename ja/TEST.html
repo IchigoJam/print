@@ -19,7 +19,7 @@
 <section>
 ヘリコプターをそうさするためのじゅんびをしよう！
 <div class=ichigojam>20 CLS
-30 K=INKEY()
+30 K=INKEY()</div>
 INKEY()でIchigojamがおされたキーをしることができるよ。
 </section>
 
@@ -32,8 +32,8 @@ INKEY()でIchigojamがおされたキーをしることができるよ。
 </section>
 
 <section>
-おされたキーとヘリコプターをつなげよう！(ヘリコプターをだすにはALT+J)
-<div class=ichigojam>70 LOCATE X,10:PRINT "🚁"
+おされたキーとヘリコプターをつなげよう！(キャラクターコード243、ALT+J)
+<div class=ichigojam>70 LOCATE X,10:?CHR$(0,243,0)
 75 WAIT 5
 80 GOTO 20</div>
 RUNでじっこうしてみると、どうなるかな？
