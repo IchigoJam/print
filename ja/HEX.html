@@ -16,13 +16,13 @@
 かずを16しんすうにかえるHEX$（ヘックス）コマンド<br>
 <div id="hex1-1"></div><script>make15("hex1-1", "?HEX$(2)\n8 \n?HEX$(10)\n5 ")</script>
 2しんすうをかずにする、きごう「`」(shift+@か1のひだり)<br>
-<div id="bin1-2"></div><script>make15("hex1-2", "?`1111\n15 \n?`100000000\n256 ")</script>
+<div id="hex1-2"></div><script>make15("hex1-2", "?`1111\n15 \n?`100000000\n256 ")</script>
 </section>
 
 <section>
 0,1,2,3,4...16しんすうでかぞえさせてみます。
-<div id="bin1-3"></div><script>make15("bin1-3", f2s(function() {/*
-FOR I=0 TO 256:?BIN$(I),I:WAIT 30:NEXT
+<div id="hex1-3"></div><script>make15("hex1-3", f2s(function() {/*
+FOR I=0 TO 256:?HEX$(I),I:WAIT 30:NEXT
 0  0 
 1  1 
 10  2 
@@ -34,7 +34,7 @@ FOR I=0 TO 256:?BIN$(I),I:WAIT 30:NEXT
 <section>
 <b>やってみよう！</b><br>
 1. 12を16しんすうにしてみよう<br>
-2. 16しんすうの1A、6F、BBをかずにしてみよう<br>
+2. 16しんすうの1A、6F、ABCをかずにしてみよう<br>
 3. 40を16しんすうにしてみよう<br>
 4. 12けたであらわせるさいだいのかずは？<br>
 5. -1を16しんすうにしてみよう<br>
