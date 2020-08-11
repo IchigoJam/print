@@ -1,0 +1,58 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>がめんにいたずらしてみよう！　DRAW</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>じんこうシミュレーション改</h1>
+
+
+<section>
+かみさまになったきぶんでじんこうのシミュレーションをしてみよう!
+    
+せかいじんこうは、77おくにん。１ねんでさいだい5600まんにんへって、さいだい6700まんにんふえました。
+(せかいじんこうのすうちのさんこうさき　こくさいれんごうこうほうセンター　2019.7)
+(へるさいだいすうのさんこうさき　せかいはなにでしぬのか　1996.8)
+(ふえるさいだいすうのさんこうさき　こくさいれんごうこうほうセンター　2019.7)
+
+<div class=ichigojam>10 P=770000
+20 D=RND(5600)
+30 U=RND(6700)</div>
+Pにじんこう、Dにへるかず、Uにふえるかずを「まんにん」をたんいとしてセット<br>
+ <br>
+2020年から100年後のじんこうは？<br>
+</section>
+    
+
+<section>
+<div class=ichigojam>40 FOR Y=2020 TO 2120
+50 ?Y,P;
+60 ?
+70 P=P-D
+80 NEXT</div>
+グラフにしてみよう！
+</section>
+
+
+<section>
+<div class=ichigojam>52 FOR I=0 TO P/1000
+55 ?"*";:NEXT
+</div>
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. ESCキーでとめて、2060ねんのじんこうをかくにんしてみよう<br>
+2. はるさいだいすうをかえてみよう<br>
+3. グラフのもじ”✴︎”をべつのもじにかえてみよう<br>
+4. 42ぎょう、わっている1000を100にかえてみよう<br>
+5. じんこうをへんこうしてみよう<br>
+6. まいとし1おくにんふえていくと？<br>
+7. じんこうをへるだけでなく、ふえるようにもしてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
