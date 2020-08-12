@@ -4,46 +4,38 @@
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>テストDRAW</h1>
+<h1>君の肥満度を計算してみよう！</h1>
 
 
 <section>
-がめんにせんをかいてみよう！
-DRAWコマンドでせんをかくことができるよ
-<div class=ichigojam>DRAW 1,1,70,70</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+肥満度の計算式はBMI＝体重kg／（身長m）2。
+まずは、1 INPUT A 2 INPUT B を入力しよう
+<div class=ichigojam>3 C=A/(B*B)</div>
+肥満度の計算式を入力<br>
+Aは体重、Bは身長の二乗<br>
+つぎは計算結果の表示だ！
 </section>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+
+<div class=ichigojam>4 IF C<18 ?"YASESUGI"</div>
+数値が18以下だった場合それは痩せすぎになるから痩せすぎと表示するように入力だ！
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
-</div>
-RUNでじっこうしてみると、どうなるかな？
+次はもし他の数値だった場合の表示も描いていこう
+<div class=ichigojam>6 IF 24>=C ?"HYOUJYUN"
+8 IF 34>=C ?"HIMAN"
+9 IF 35<=C ?"YOU DIDE"
 </section>
-
+RUNでじっこうしてみると、どうなるかな？
 <section>
 FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
-</section>
+<div class=ichigojam>気づいたかな？</div>
+イチゴジャムは範囲設定ができないから全部表示されちゃうんだ。残念！また別のソフトでやってみてくれ！
 
-
-<section>
-<b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
-</section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
 <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
