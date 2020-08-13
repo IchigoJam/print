@@ -40,9 +40,69 @@ FORコマンドをふたつかいて＃をかいてみよう！
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+１０　’SHOOTING<br>
+２０　CLS：CLV<br>
+３０　LOCATE　０，０<br>
+４０　PRINT　S<br>
+
+５０　X＝１５：Y＝２２<br>
+６０　LOCATE　X，Y<br>
+７０　PRINT　”A”；<br>
+７２　U＝RND（３２）：V＝０<br>
+７４　LOCATE　U，V<br>
+７６　PRINT　CHR＄（２４１）；<br>
+<br>
+８０　’GAMELOOP<br>
+９０　LOCATE　X，Y<br>
+１００　PRINT　”　”；<br>
+１１０　IF　BTN（LEFT）＝１　AND　X＞０　THEN　X＝Xー1<br>
+１２０　IF　BTN（RIGHT）＝１　AND　X＜３１　THEN　X＝X＋1<br>
+１３０　LOCATE　X，Y<br>
+１４０　PRINT　”A"<br>
+１４２　IF　BTN（SPACE）＝１　THEN　GOSUB　２４０<br>
+１４５　GOSUB　１６０<br>
+１５０　IF　V＜２２　THEN　GOTO　８０<br>
+１５２　BEEP　３０，３０<br>
+１５４　LOCATE　１２，１２<br>
+１５６　PRINT　”GAMEOVER”<br>
+１５８　END<br>
+<br>
+１６０　’UFO<br>
+１７０　LOCATE　U，V<br>
+１８０　PRINT　”　”<br>
+１９０　U＝U＋RND（３）ー１<br>
+１９２　IF　U＜０　THEN　U＝０<br>
+１９４　IF　U＞３１　THEN　U＝３１<br>
+２００　V＝V＋RND（７）ー１<br>
+２０２　IF　V＜０　THEN　V＝０<br>
+２０４　IF　V＞２２　THEN　V＝２２<br>
+２１０　LOCATE　U，V<br>
+２２０　PRINT　CHR＄（２４１）；<br>
+２３０　RETURN<br>
+<br>
+２４０　’BEAM<br>
+２５０　B＝X<br>
+２６０　FOR　C＝Yー１　TO　V　STEP　ー１<br>
+２７０　LOCATE　B，C<br>
+２８０　PRINT　”｜”<br>
+２８５　WAIT　２<br>
+２９０　LOCATE　B，C<br>
+３００　PRINT　”　”<br>
+３１０　NEXT<br>
+３２０　IF　B＜＞U　THEN　RETURN<br>
+３３０　’HIT<br>
+３４０　BEEP<br>
+３５０　LOCATE　U，V<br>
+３６０　PRINT　”＊”；<br>
+３６２　S＝S＋１０<br>
+３６４　LOCATE　０，０<br>
+３６６　PRINT　S<br>
+３７０　WAIT　２０<br>
+３８０　LOCATE　U，V<br>
+３９０　PRINT　”　”<br>
+３９５　U＝RND（３２）：V＝０<br>
+４００　RETURN<br>
+<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
