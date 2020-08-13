@@ -8,19 +8,21 @@
 
 
 <section>
-がめんにせんをかいてみよう！
-DRAWコマンドでせんをかくことができるよ
-<div class=ichigojam>DRAW 1,1,70,70</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+変数でユニットをコントロールするぞ！
+X＝〇で変数を定義できるぞ！
+<div class=ichigojam>LOCATE　X，Y</div>
+ユニットの位置を決定するぞ！<br>
+値を変えていろんな場所に表示してみよう！
 </section>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+ユニットの位置を決めよう。
+LOCATE　X,Yで位置を決められるぞ！
+<div class=ichigojam>X＝１５：Y＝２２</div>
+変数の値を決定するぞ！<br>
+Xに１５、Yに２が代入されたぞ。<br>
+変数には整数ならどんな数でも代入できるぞ。
 </section>
 
 
@@ -32,19 +34,20 @@ RUNでじっこうしてみると、どうなるかな？
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
+brコマンドで改行してみよう！<br>
 <div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
 20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
 </section>
 
 
 <section>
-<b>やってみよう！</b><br>
+<b>やってみよう！(やれるもんなら)</b><br>
+<br>
 １０　’SHOOTING<br>
 ２０　CLS：CLV<br>
 ３０　LOCATE　０，０<br>
 ４０　PRINT　S<br>
-
+<br>
 ５０　X＝１５：Y＝２２<br>
 ６０　LOCATE　X，Y<br>
 ７０　PRINT　”A”；<br>
