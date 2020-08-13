@@ -10,31 +10,25 @@
 <section>
 天気を占ってみよう！F5でランダムに表示されます！
 <div class=ichigojam>10　LET　A,RND（4） </div>
-<br>hggg
-    さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+ランダムに4つ（晴、雨、曇、雪）に決めるのでランダム4とおこう！<br>
+次に、0を晴、1を雨、2を曇、3を雪に指定してみよう！
 </section>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+<div class=ichigojam>20    IF    A=0   ?”HARE”
+30    IF    A=1   ?”AME”
+40    IF    A=2   ?”KUMORI”
+50    IF    A=3   ?”YUKI”
+    
+/div>
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
-</div>
-RUNでじっこうしてみると、どうなるかな？
+F5で占ってみよう！
 </section>
 
-<section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
-</section>
 
 
 <section>
