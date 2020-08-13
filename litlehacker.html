@@ -1,0 +1,53 @@
+
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>たくさん数字を表示させて、ハッカー気分になろう PRINT</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+https://twitter.com/luca_3am/status/1168519292112920576?s=20
+<h1>数字を表示させよう！</h1>
+
+
+<section>
+がめんに何かを表示させるには、「PRINT」 を使うよ
+<div class=ichigojam>PRINT 1</div>
+このままだと、数字が1つ表示されるだけでおわってしまう。<br>
+ということで、もう一行かいていこう<br>
+ <div class=ichigojam>1 PRINT 1</div> <br>
+ <div class=ichigojam>2 PRINT 2</div> <br>
+しかし、こう書いてしまうとすぐに2つめが表示されてしまい、つまらない。<br>
+たきのように流れる数字を見たくない？
+</section>
+    
+
+<section>
+ばしょのつぎに0とくわえると、せんをけせるよ。
+<div class=ichigojam>DRAW 1,1,70,70,0</div>
+うえのほうのもじがきえたかな？
+</section>
+
+
+<section>
+FORコマンドでくりかえしせんをかこう！
+<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+</div>
+RUNでじっこうしてみると、どうなるかな？
+</section>
+
+<section>
+FORコマンドをふたつかいて＃をかいてみよう！
+<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
+20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
+2. DRAWのI*のよこのかずをかえてみよう<br>
+3. くふうしてもじやえをかいてみよう！<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
