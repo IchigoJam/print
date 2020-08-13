@@ -1,48 +1,57 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>がめんにいたずらしてみよう！　DRAW</title>
+<title>えいごであいさつ　IF</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>テスト TEST</h1>
+<h1>えいごであいさつ　IF</h1>
 
 
 <section>
-がめんにせんをかいてみよう！
-DRAWコマンドでせんをかくことができるよ
-<div class=ichigojam>DRAW 1,1,70,70</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+INPUT（インプット）コマンドをつかって、
+じかん（タイム）をにゅうりょくできるようにしよう！
+<div class=ichigojam>10 INPUT A
+    20 PRINT "TIME:";A</div>
+いまのTIMEをいれてみようか。<br>
+    
+ごぜん・ごごをえいごでおしらせしてくれるようにしよう。<br>
+<div class=ichigojam>30 IF A<12 PRINT"AM"
+40 IF A>=13 ?"PM"</div>
+ごぜんはAM、ごごはPM。
+にほんは、0~24じ（ごぜん0~12じ、ごご13~24じ）と言うことがあるけど、
+えいごでは、AM0~12じ、PM0~12じとひょうきするんだ。ややこしくてごめんね。<br>
 </section>
     
-寝るねうrねウリアvjfにゔぁp０雨frjんfjdなjdbはbファhふい気に入った物hがあったらなん伝もいいと思うおっわらした
+もし、21じ＝AM9じになったらこう表示しよう。　
+<div class=ichigojam>50 IF A=21 ?"MOU9JI!"</div>
+おとなにおこられるよ！もうねよう。
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+かずを、にほんごのあいさつにあてはめよう！
+<div class=ichigojam>60 INPUT "0:OHAYOU 1:KONNICHIHA 2:KONBANHA 3:OYASUMI ",S</div>
+いまのじかんにあった、あいさつはえらべた？
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
-</div>
-RUNでじっこうしてみると、どうなるかな？
+もし、AM 1~5じにゲームをしていたとしたら、どうなるかな？
+<div class=ichigojam>70 IF (A=0 OR A=1 OR A=2 OR A=3 OR A=4 OR A=5) ?"HAYAKUNENASAI!"</div>
+おこられた！ねます！
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+えいごであいさつをかこう！4つにわけてみよう。
+<div class=ichigojam>80 IF (A=6 OR A=7 OR A=8 OR A=9 OR A=10 OR A=11) AND S=0 ?"GOOD MORNING!"
+90 IF (A=12 OR A=13 OR A=１４ OR A=15 OR A=16 OR A=17) AND S=1 ?"GOOD AFTERNOON！🍙"
+100 IF (A=18 OR A=19 OR A=20) AND S=2 ?"GOOD EVENING:)"
+110 IF (A=21 OR A=22 OR A=23) AND S=3 ?"GOOD NIGHT!🚀"</div>
 </section>
 
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+1. じかんごとにちがうメッセージをせっていしてみよう<br>
+2. TODOメモとしてやることをひょうじさせてみよう<br>
+3. にほんごのあいさつをひらがなひょうきにしてみよう<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
