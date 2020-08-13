@@ -1,6 +1,6 @@
 
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>数字の滝を表示させてハッカー気分 PRINT/WAIT/RND</title>
+<title>数字の滝を表示させてハッカー気分</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
@@ -11,43 +11,53 @@
 <section>
 何かを表示させるには、「PRINT」 を使う
 <div class=ichigojam>PRINT 1</div>
-このままだと、数字が1つ表示されるだけでおわってしまう。<br>
-ということで、もう一行かいていこう<br>
- <div class=ichigojam>1 PRINT 1<br>
- 2 PRINT 2</div><br>
+もっと数字が欲しいので、もう一行かいていこう<br>
+ <div class=ichigojam>PRINT 1<br>
+PRINT 2</div><br>
 しかし、こう書いてしまうとすぐに2つめが表示されてしまう。滝ように流れてるとはいえない。<br>
 と、いうわけでちょっと待ってもらおう。
 </section>
     
 
 <section>
-「WAIT」コマンドを使うと次の行に行くまで待たせる事ができる。今回は100にしよう。（WAIT 60で1秒待ってくれる）
-<div class=ichigojam>1 PRINT 1<br>
-2 WAIT 100
-3 PRINT 2</div>
+「WAIT」コマンドを使うと次の行に行くのを待ってくれる。<br>
+ 今回は100にしよう。（WAIT 60で1秒）
+<div class=ichigojam>PRINT 1
+WAIT 100
+PRINT 2</div>
 少し遅れて表示されただろう。
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+どんどん行を増やしていこう。「PRINT 10」までやってみよう
+<div class=ichigojam>PRINT 1
+WAIT 100
+PRINT 2
+WATI 90
+PRINT 3
+WAIT 80
+PTINT 4
+ …
 </div>
-RUNでじっこうしてみると、どうなるかな？
+WAITの時間を10づつ減らして少しずつ早く表示させてみよう
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+何回も書いていってもキリがないし、WAITの時間も0になった。<br>
+と、いうわけで「FOR」を使って繰り返しにしよう。<br>
+さらに、数字をランダムに表示させてハッカーぽくしてみよう
+<div class=ichigojam>PRINT RND(99)+1
+GOTO XX</div>
+GOTOには行数字を。
 </section>
 
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+1. なぜ、RNDが+1なのか説明してみよう<br>
+2. PRINTするものを文字にしてみよう<br>
+3. WAITの時間を自分好みにしてみよう<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
