@@ -1,42 +1,39 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>テスト　TEST</title>
+<title>思いの伝え方</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>てすと　test</h1>
+<h1>思いを伝えてみよう！</h1>
 
 
 <section>
-がめんにせんをかいてみよう！
-DRAWコマンドでせんをかくことができるよ
-<div class=ichigojam>DRAW 1,1,70,70</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+気持ちを乗せて、書いていく！
+<div class=ichigojam>LC 10,9:?"LOVE LETTER"</div>
+文のタイトルを書こう<br>
+さいしょの10,9で位置決め<br>
+その後にタイトルを書く
 </section>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+<div class=ichigojam>IF INKEY()=0 CONT</div>
+ボタンを押したら次に進むようにしてあげる
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+ページの最後にこのコードをいれることでボタンで進むようになるよ
+<div class=ichigojam>LC 10,10:?"イチゴジャムさんへ"
 </div>
-RUNでじっこうしてみると、どうなるかな？
+伝えたい内容を考えて、書いてみよう！
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+どんどん書いていくよ！
+<div class=ichigojam>LC 10,10:?"ずっと前から…"
+</div>
 </section>
-
 
 <section>
 <b>やってみよう！</b><br>
