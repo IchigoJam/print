@@ -4,45 +4,49 @@
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>がめんにいたずらしてみよう！　DRAW</h1>
+<h1>はすのはなをえがこう！DRAW</h1>
 
 
 <section>
-がめんにせんをかいてみよう！
-DRAWコマンドでせんをかくことができるよ
-<div class=ichigojam>DRAW 1,1,70,70</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+DRAWコマンドでせんをひいてはなをかいてみよう！
+<div class=ichigojam>5 CLS:X=1:A=0</div>
+まずはじゅんびから。<br>
+じっこうするたびにがめんをきれいにして、ついでにへんすうもせっていしよう。<br>
 </section>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+<div class=ichigojam>10 A=A+5
+15 B=B-X</div>
+Aのなかのすうじがすこしずつふえるようにしよう。<br>
+Bはすこしずつへるようにしよう。
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+Bのおおきさをちょうせつしよう
+<div class=ichigojam>20 IF B>48 X=1
+25 IF B<10 X=-1
 </div>
-RUNでじっこうしてみると、どうなるかな？
+Bがおおきくなりすぎたり、ちいさくなりすぎないように、Xをつかってふやすかへらすかをちょうせつしよう。
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+いよいよDRAWのでばん！
+<div class=ichigojam>30 DRAW 32+COS(A)/B,24+SIN(A)/B
+35 GOTO 10
+</div>
+コサインやサインをつかうとまるをつくることができるんだ。<br>
+じゅんびしたAやBをつかって、カーブをちょうせいしてはなびらをつくるよ！<br>
+じっこうしてみよう！
 </section>
 
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+1. 10番で足す数字をいじって、いろんなかたちの花をつくってみよう<br>
+2. 20,25の数字を変えてみるとなにがおこるかな？<br>
+3. 30番の32や24を変えてみるとなにがおこるかな？<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
