@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="ichigojamprint.css">
 </head><body>
 
-<h1>AからZまで、はやうちゲーム</h1>
+<h1>ローマ字のべんきょう！　アからンまで、はやうちゲーム</h1>
 
 <section>
 もじをおおきくしてみよう
@@ -13,14 +13,14 @@
 
 <section>
 AからZまで、なんびょうでうてるか、タイムアタック！
-<div class=ichigojam>10 N=65:CLT
+<div class=ichigojam>10 N=177:CLT
 20 ?CHR$(N);
 30 IF INKEY()!=N GOTO 30
-40 N=N+1:IF N!=91 GOTO 20
+40 N=N+1:IF N!=222 GOTO 20
 50 ?:?TICK()/60
 </div>
 うちこみおわったら、F5でRUN<br>
-AからZまで、26コ。うったらタイムをびょうでひょうじするよ<br>
+アからンまで、46コ。うったらタイムをびょうでひょうじするよ<br>
 とちゅうでやめるときは、ESC、もういちどちょうせんは、F5
 </section>
 
@@ -32,18 +32,19 @@ AからZまで、26コ。うったらタイムをびょうでひょうじする�
 </section>
 
 <section>
-こもじをひょうじするかいぞうほう
-<div class=ichigojam>20 ?CHR$(N+32);
+すきなすうじをもじにかえてみよう！
+<div class=ichigojam>?CHR$(100)
+d
 </div>
 もじはコンピューターのなかでは、かずでかんりされてるよ
+100はもじになおすと”d”だね！
+ほかのすうじでもたくさんためしてみよう！
 </section>
 
 <section>
-アルファベットのAは、65
-<div class=ichigojam>?CHR$(65)
-A
-?ASC("A")
-65
+はんたいにすきなもじをすうじにしてみよう！
+<div class=ichigojam>?ASC（”G")
+71
 </div>
 </section>
 
