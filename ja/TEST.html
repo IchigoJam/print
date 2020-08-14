@@ -9,25 +9,26 @@
 
 <section>
 RUNを押したら最初は、グー　ジャンケンポンと表示される。
-    グー、チョキ、パーのどれかがランダムで表示される。
-<div class=ichigojam>10 PRINT”最初は、グー　ジャンケンポン！”</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+    次に何かキーを押すと、グー、チョキ、パーのどれかがランダムで表示される。
+<div class=ichigojam>10 PRINT”さいしょは、グー　ジャンケンポン！”</div>
+RUNを押すと文字が表示されてる<br>
 </section>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+次ジャンケンポン！の後に表示されるグー、チョキ、パーをかく
+<div class=ichigojam>20 IF INKEY()<>0 PRINT"グー”：GOTO60
+    30 IF INKEY()<>0 PRINT"チョキ”：GOTO60
+    40 IF INKEY()<>0 PRINT"パー”：GOTO60
+   </div>
+    このプログラムでグー、チョキ、パーが表示される様になる。
+ 最後に「GOTO60」をつけて、60に戻る様にする。
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
-</div>
+
+<div class=ichigojam>50 GOTO 20</div>
 RUNでじっこうしてみると、どうなるかな？
 </section>
 
