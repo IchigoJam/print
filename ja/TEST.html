@@ -8,7 +8,7 @@
 
 
 <section>
-<div class=ichigojam>１.　おとを流れてみましょう</div>
+<div class=ichigojam>１.おとを流れてみましょう</div>
 BEEPを書いて、エンターを押します。<br>
 ピッとおとがでていたら、成功です。<br>
 「BEEP＋ENTER」を押してみましょう
@@ -17,31 +17,37 @@ BEEPを書いて、エンターを押します。<br>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+<div class=ichigojam>２.おとの高さを調整してみましょう</div>
+BEEP　５＝たかいおと <br>
+BEEP　２０＝ひくいおと <br>
+BEEP　１０、２０＝ながいおと
+
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
-</div>
-RUNでじっこうしてみると、どうなるかな？
-</section>
-
-<section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+<div class=ichigojam>３.モース符号を作ってみましょう</div>
+「SOS」という符号を作ってみましょう。
+SOSのモールス符号は「・・・ーーー・・・」です。
+10　BEEP　10：WAIT　20＋ENTER
+20　BEEP　10：WAIT　20＋ENTER
+30　BEEP　10：WAIT　20＋ENTER
+40　BEEP　10、30：WAIT　40＋ENTER
+50　BEEP　10、30：WAIT　40＋ENTER
+60　BEEP　10、30：WAIT　40＋ENTER
+70　BEEP　10：WAIT　20＋ENTER
+80　BEEP　10：WAIT　20＋ENTER
+90　BEEP　10：WAIT　20＋ENTER
+書いたら、SOSのモールス符号ができると思います
+    
 </section>
 
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+1.モールス符号の表を調べて、自分の名前を書きましょう。<br>
+2.他のエマージェンシーのモールス符号を作ってみましょう <br>
+
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
