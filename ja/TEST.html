@@ -10,7 +10,7 @@
 <section>
 RUNを押したら最初は、グー　ジャンケンポンと表示される。
     次に何かキーを押すと、グー、チョキ、パーのどれかがランダムで表示される。
-<div class=ichigojam>10 PRINT”さいしょは、グー　ジャンケンポン！”</div>
+<div class=ichigojam>10 PRINT”サイショハ、グー　ジャンケンポン！”</div>
 RUNを押すと文字が表示されてる<br>
 </section>
     
@@ -18,8 +18,8 @@ RUNを押すと文字が表示されてる<br>
 <section>
 次ジャンケンポン！の後に表示されるグー、チョキ、パーをかく
 <div class=ichigojam>20 IF INKEY()<>0 PRINT"グー”：GOTO60
-    30 IF INKEY()<>0 PRINT"チョキ”：GOTO60
-    40 IF INKEY()<>0 PRINT"パー”：GOTO60
+30 IF INKEY()<>0 PRINT"チョキ”：GOTO60
+40 IF INKEY()<>0 PRINT"パー”：GOTO60
    </div>
     このプログラムでグー、チョキ、パーが表示される様になる。
  最後に「GOTO60」をつけて、60に戻る様にする。
@@ -33,17 +33,20 @@ RUNでじっこうしてみると、どうなるかな？
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+最初に戻るプログラムを書いてみよう！
+<div class=ichigojam>60 IF INKEY()<>0 GOTO 60
+70 IF INKEY()=0 GOTO 70
+80 IF INKEY()<>0 GOTO 80
+90 GOTO 10</div>
+    
 </section>
 
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+1. ジャンケン以外にもあっち向いてホイでも出来るかも？<br>
+2. プログラムを変えることで、一つしか出ない方法を書いてみよう！<br>
+3. このゲームのプログラムを応用して他のゲームに使えないか考えよう！<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
