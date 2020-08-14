@@ -8,31 +8,33 @@
 
 
 <section>
-⑴調味料を全てボウルにいれて混ぜ合わせよう！
-☆しょうゆ大さじ2
-☆だしの素小さじ1
-☆みりん小さじ1
-☆ごま油小さじ1〜2
-これを混ぜるよ
-<div class=ichigojam>DRAW 1,1,70,70</div>
-⑵混ぜ合わせた調味料にご飯を入れムラがないようにしっかりまぜます♪<br>
-(この時点で味見出来るのもいいですよね)<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+おみくじをしよう！！
+<div class=ichigojam>9 CLS<br>
+10 PRINT"OMIKUZI"
+</div>
+1. おみくじがおわったあと、がめんがきれいになるようにせっていしよう<br>
+2.いちばんうえに”OMIKUZI”とひょうじされるようにしよう
 </section>
     
 
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+<div class=ichigojam>40 I=RND(5)<br>
+50 IF I=1 PRINT"KYO":GOTO 100<br>
+60 IF I=2 PRINT"CHUKICHI":GOTO 100<br>
+61 IF I=3 PRINT"SHOKICHI":GOTO 100<br>
+62 IF I=4 PRINT"KICHI":GOTO 100<br>
+70 PRINT"DAIKICHI"
+</div>
+3.くじがランダムにでるようにしよう<br>
+そのために、”KYO”,”CHUKICHI”,”SHOKICHI”,”KICHI”,”KICHI”,”DAIKICHI”がランダムにどれか一つでるようにする
 </section>
 
 
 <section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+<div class=ichigojam>100 END
 </div>
-RUNでじっこうしてみると、どうなるかな？
+4.くじがでたらおわれるようにしよう<br>
+”KYO”,”CHUKICHI”,”SHOKICHI”,”KICHI”,”KICHI”,”DAIKICHI”それぞれでたばあいにおわれるようにGOTO100にして、100ENDとする
 </section>
 
 <section>
@@ -44,9 +46,26 @@ FORコマンドをふたつかいて＃をかいてみよう！
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+1. ”KYO”,”CHUKICHI”,”SHOKICHI”,”KICHI”,”KICHI”,”DAIKICHI”の部分を違う言葉に変えてみる<br>
+2. 「20 IF INKEY()<>0 GOTO 20<br>
+30 IF INKEY()=0 GOTO 30」と「80 IF INKEY()<>0 GOTO 80<br>
+90 IF INKEY()=0 GOTO 90<br>
+100 GOTO 10」を加えて何回もおみくじができるようにする<br>
+3.「 IF I=◯」を増やして「 I=RND(5)」の５の部分を、大きい数字にするなど違う数字に変える
+</section>
+    
+    
+<section>
+<b>インポート用</b><br>
+9 CLS<br>
+10 PRINT"OMIKUZI"<br>
+40 I=RND(5)<br>
+50 IF I=1 PRINT"KYO":GOTO 100<br>
+60 IF I=2 PRINT"CHUKICHI":GOTO 100<br>
+61 IF I=3 PRINT"SHOKICHI":GOTO 100<br>
+62 IF I=4 PRINT"KICHI":GOTO 100<br>
+70 PRINT"DAIKICHI"<br>
+100 END
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
