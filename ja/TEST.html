@@ -1,51 +1,70 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>あててみて！</title>
+<title>なんのカード？</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>あててみて！</h1>
+<h1>なんのカード？</h1>
 
 
 <section>
-あいてがなんのトランプを引いたかあててみよう！
+あいてがなんのトランプをひいたかあててみよう！
 
-<div class=ichigojam>DRAW 1,1,70,70</div>
-まずはどのマークをひいたのかあててみよう。<br>
-１から４のかずをランダムにせってい。<br>
-わかりやすいように１から４のかずにマークをつけてあげよう。
+まずはどのマークかをあてよう！<br>
+    
+1から4のかずをランダムにせってい。<br>
+わかりやすいように1から4のかずにマークをつけてあげよう。
+
+<div class=ichigojam></div>
+
 </section>
     
 
 <section>
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
 どんなマーク？
+<div class=ichigojam></div>
+
+あたったら、つぎはすうじをあてるよ。
+すうじをあてるぎょうにとぶ。
+<div class=ichigojam>
+はずれたら、ざんねん！もういちど！
+さいしょのぎょうにもどって、すぐにさいチャレンジできるようになるよ。
+<div class=ichigojam>
+</section>
 
 
+
+<section>
+すうじをあてよう！
     
-</section>
-
-
-
-<section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+マークとおなじように、1から13のかずをせってい。
+<div class=ichigojam>
 </div>
-RUNでじっこうしてみると、どうなるかな？
+どんなすうじ？
+<div class=ichigojam>
+
+あたったらクリア！おめでとう！
+はずれたら、おしい！もういちど！
+<div class=ichigojam>
+さいしょにもどろう。
+<div class=ichigojam>
 </section>
 
 <section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+なかなかあたらない！じゃあヒントをつけてみよう。
+マークがあかいろ(つまり1か2)なら"RED"、くろいろ(つまり3か4)なら"BLACK"とひょうじ。
+<div class=ichigojam></div>
 </section>
 
 
 <section>
 <b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
+1. 15ぎょうめにCLSといれるとどうなるかな？<br>
+2. すうじにもヒントをつけてみよう<br>
+3. ヒントをひょうじするかしないかえらべるようにしてみよう<br>
+4. 【むずかしい】クリアしたときにあてたカードをひょうじしてみよう<br>
+5. 【むずかしい】さいチャレンジをしゅどうでおこなえるようにしてみよう<br>
+
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
