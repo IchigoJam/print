@@ -19,12 +19,11 @@
     
  
 <section>
-どんなマーク？
-<div class=ichigojam>30 INPUT "MARK?",B</div>
-
+どんなマーク？<br>
 あたったら、すうじをあてるぎょうにとぶ。<br>
 はずれたら、ざんねん！さいチャレンジ！<br>
-    <div class=ichigojam>40 IF B=A GOTO80
+  <div class=ichigojam>30 INPUT "MARK?",B
+40 IF B=A GOTO80
 50 IF B!=A ?"WRONG!AGAIN!"
 60 WAIT120
 70 GOTO10</div>
@@ -38,10 +37,9 @@
 <div class=ichigojam>80 C=RND(13)+1
 </div>
 どんなすうじ？
-    <div class=ichigojam>90 INPUT "NUMBER?",D</div>
-
 あたったらクリア！はずれたら、おしい！もういちど！
-<div class=ichigojam>100 IF D=C ?"CLEAR!"
+<div class=ichigojam>90 INPUT "NUMBER?",D
+100 IF D=C ?"CLEAR!"
 110 IF D!=C ?"CLOSE!AGAIN!"</div>
 さいしょにもどろう。
 <div class=ichigojam>120 WAIT120
