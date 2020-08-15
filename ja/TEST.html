@@ -18,10 +18,9 @@
 20 ?"SELECT ♥=1 ♦=2 ♣=3 ♠=4"</div>
 
 </section>
+  
     
-    
-    
-
+    <br>
 <section>
 どんなマーク？
 <div class=ichigojam>30 INPUT "MARK?",B</div>
@@ -32,13 +31,12 @@
     <div class=ichigojam>40 IF B=A GOTO80
 50 IF B!=A ?"WRONG!AGAIN!"
 60 WAIT120
-    70 GOTO10</div>
+70 GOTO10</div>
 
 </section>
 
-
+    <br>
     
-
 <section>
 すうじをあてよう！<br>
 マークとおなじように、1から13のかずをせってい。
@@ -50,19 +48,18 @@
 あたったらクリア！おめでとう！<br>
 はずれたら、おしい！もういちど！
 <div class=ichigojam>100 IF D=C ?"CLEAR!"
-    110 IF D!=C ?"CLOSE!AGAIN!"</div>
+110 IF D!=C ?"CLOSE!AGAIN!"</div>
 さいしょにもどろう。
 <div class=ichigojam>120 WAIT120
-    130 GOTO10</div>
+130 GOTO10</div>
 
 </section>
 
-    
-
-    
+    <br>
+      
 <section>
 なかなかあたらない！じゃあヒントをつけてみよう。<br>
-マークがあか(つまり1か2)なら"RED"、くろ(つまり3か4)なら"BLACK"とひょうじ。
+マークがあか(1か2)なら"RED"、くろ(3か4)なら"BLACK"とひょうじ。
 <div class=ichigojam>25 IF A<=2 ?"HINT:RED"
 26 IF A>=3 ?"HINT:BLACK"</div>
 </section>
