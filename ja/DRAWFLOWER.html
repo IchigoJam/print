@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>はすのはなをえがこう！ SIN/COS</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>はすのはなをえがこう！</h1>
+
+
+<section>
+DRAWコマンドでせんをひいて、はなをかいてみよう！
+<div class=ichigojam>5 CLS:X=1:A=0:B=48</div>
+まずはじゅんびから。<br>
+じっこうするたびにがめんをきれいにして、ついでにへんすうもせっていしよう。<br>
+</section>
+    
+
+<section>
+<div class=ichigojam>10 A=A+5
+15 B=B-X</div>
+Aのなかのすうじがすこしずつふえるようにしよう。<br>
+Bはすこしずつへるようにしよう。
+</section>
+
+
+<section>
+Bのおおきさをちょうせつしよう
+<div class=ichigojam>20 IF B>48 X=1
+25 IF B<10 X=-1
+</div>
+Bがおおきくなりすぎたり、ちいさくなりすぎないように、Xをつかってふやすかへらすかをちょうせつしよう。
+</section>
+
+<section>
+いよいよDRAWのでばん！
+<div class=ichigojam>30 DRAW 32+COS(A)/B,24+SIN(A)/B
+35 GOTO 10
+</div>
+コサインやサインをつかうとまるをつくることができるんだ。<br>
+じゅんびしたAやBをつかって、カーブをちょうせいしてはなびらをつくるよ！<br>
+じっこうしてみよう！
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. 10ぎょうで、たすすうじをいじって、いろんなかたちのはなをつくってみよう<br>
+2. 20,25ぎょうのすうじをかえてみるとなにがおこるかな？<br>
+3. 30ぎょうの32や24をかえてみるとなにがおこるかな？<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

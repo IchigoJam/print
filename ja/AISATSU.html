@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>えいごのあいさつをマスターしよう IF</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>えいごのあいさつをマスターしよう IF</h1>
+
+
+<section>
+INPUT（インプット）コマンドをつかって、じかん（TIME）をにゅうりょく！
+<div class=ichigojam>10 INPUT A
+20 PRINT "TIME:";A</div>
+</section>
+    
+    
+<section>
+ごぜん・ごごをえいごでおしらせしてくれるようにしよう。<br>
+<div class=ichigojam>30 IF A<12 PRINT"AM"
+40 IF A>=13 ?"PM"</div>
+ごぜんはAM、ごごはPM。にほんごは、0~24じ（ごぜん0~12じ、ごご13~24じ）だけど、えいごでは、AM0~12じ、PM0~12じとひょうきするんだ。
+</section>
+    
+    
+   <section> 
+もし、21じ＝PM9じになったらこうひょうじしよう。　
+<div class=ichigojam>50 IF A=21 ?"MOU9JI!"</div>
+おきていると、おとなにおこられるよ！もうねよう。<br>
+    </section>
+   
+    
+<section>
+    かずを、にほんごのあいさつにあてはめよう！
+    4つにわかれるよ。
+<div class=ichigojam>60 INPUT "0:OHAYOU 1:KONNICHIHA 2:KONBANHA 3:OYASUMI ",S</div>
+</section>
+
+    
+<section>
+もし、AM0~5じにゲームをしていたとしたら、どうなるかな？
+<div class=ichigojam>70 IF A>=0 AND A<=5 ?"HAYAKUNENASAI!"</div>
+おこられた！ねます！　でもあとちょっと！えいごであいさつできるかな？
+<div class=ichigojam>80 IF A>=6 AND A<=11 AND S=0 ?"GOOD MORNING!"
+90 IF A>=12 AND A<=17 AND S=1 ?"GOOD AFTERNOON🍙"
+100 IF A>=18 AND A<=20 AND S=2 ?"GOOD EVENING:)"
+110 IF A>=21 AND A<=23 AND S=3 ?"GOOD NIGHT!🚀"</div>
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. じかんごとにちがうメッセージをせっていしてみよう<br>
+2. TODOメモとして、やることをひょうじさせてみよう<br>
+3. にほんごのあいさつをカタカナひょうきにしてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
