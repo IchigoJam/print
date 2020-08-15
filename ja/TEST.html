@@ -8,44 +8,46 @@
 
 
 <section>
-あいてがなんのトランプをひいたかあててみよう！
+あいてがなんのトランプをひいたかあててみよう！<br>
 
 まずはどのマークかをあてよう！<br>
     
 1から4のかずをランダムにせってい。<br>
 わかりやすいように1から4のかずにマークをつけてあげよう。
-
 <div class=ichigojam>10 A=RND(4)+1
 20 ?"SELECT ♥=1 ♦=2 ♣=3 ♠=4"</div>
 
 </section>
+    
+    
     
 
 <section>
 どんなマーク？
 <div class=ichigojam>30 INPUT "MARK?",B</div>
 
-あたったら、すうじをあてるぎょうにとぶ。
-    <div class=ichigojam>40 IF B=A GOTO80</div>
-はずれたら、ざんねん！もういちど！
+あたったら、すうじをあてるぎょうにとぶ。<br>
+はずれたら、ざんねん！もういちど！<br>
 さいしょのぎょうにもどって、すぐにさいチャレンジできるようにする。
-<div class=ichigojam>50 IF B!=A ?"WRONG!AGAIN!"
+    <div class=ichigojam>40 IF B=A GOTO80
+50 IF B!=A ?"WRONG!AGAIN!"
 60 WAIT120
     70 GOTO10</div>
+
 </section>
 
 
+    
 
 <section>
-すうじをあてよう！
-    
+すうじをあてよう！<br>
 マークとおなじように、1から13のかずをせってい。
 <div class=ichigojam>80 C=RND(13)+1
 </div>
 どんなすうじ？
     <div class=ichigojam>90 INPUT "NUMBER?",D</div>
 
-あたったらクリア！おめでとう！
+あたったらクリア！おめでとう！<br>
 はずれたら、おしい！もういちど！
 <div class=ichigojam>100 IF D=C ?"CLEAR!"
     110 IF D!=C ?"CLOSE!AGAIN!"</div>
@@ -55,8 +57,11 @@
 
 </section>
 
+    
+
+    
 <section>
-なかなかあたらない！じゃあヒントをつけてみよう。
+なかなかあたらない！じゃあヒントをつけてみよう。<br>
 マークがあか(つまり1か2)なら"RED"、くろ(つまり3か4)なら"BLACK"とひょうじ。
 <div class=ichigojam>25 IF A<=2 ?"HINT:RED"
 26 IF A>=3 ?"HINT:BLACK"</div>
