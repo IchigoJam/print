@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>ローマじ、アからンまではやうちゲーム</title>
+<link rel="stylesheet" type="text/css" href="ichigojamprint.css">
+</head><body>
+
+<h1>ローマじ、アからンまではやうちゲーム</h1>
+
+<section>
+もじをおおきくしてみよう
+<div class=ichigojam>VIDEO3
+</div>
+</section>
+
+<section>
+アからンまで、なんびょうでうてるか、タイムアタック！
+<div class=ichigojam>10 N=177:CLT
+20 ?CHR$(N);
+30 IF INKEY()!=N GOTO 30
+40 N=N+1:IF N!=222 GOTO 20
+50 ?:?TICK()/60
+</div>
+うちこみおわったら、F5でRUN<br>
+アからンまで、46コ。うったらタイムをびょうでひょうじするよ<br>
+とちゅうでやめるときは、ESC、もういちどちょうせんは、F5
+</section>
+
+<section>
+きわどいあらそい、じかんをこまかくひょうじしたいなら
+<div class=ichigojam>50 T=TICK()
+60 ?:?T/60;".";T/6%10
+</div>
+</section>
+
+<section>
+すきなすうじをもじにかえてみよう！
+<div class=ichigojam>?CHR$(100)
+d
+</div>
+もじはコンピューターのなかでは、かずでかんりされてるよ
+  
+100はもじになおすと”d”だね！
+  
+ほかのすうじでもたくさんためしてみよう！
+</section>
+
+<section>
+はんたいにすきなもじをすうじにしてみよう！
+<div class=ichigojam>?ASC（”G")
+71
+</div>
+Gはすうじになおすと71だね！　ほかにもたくさんためしてみよう！
+  
+  なにかすうじともじのあいだにかんけいせいがあるかも！？
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ローマ字をべんきょうしながらやってみよう<br>
+2. じぶんのきろくをメモしよう<br>
+3. ともだちとヨーイドンでたいせんしてみよう<br>
+4. コンピューターのなかのすうじともじのかんけいをしらべよう<br>
+5. りょうてをつかったブラインドタッチができるとかっこいい<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
