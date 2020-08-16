@@ -7,13 +7,37 @@
 <h1>ハイアンドロー</h1><br>
 
 <section>
-BのかずはAよりおおきいか、ちいさいかをあてるゲーム！
-まずは0~9のらんすうを2つつくろう！
+BのかずはAよりおおきいか、ちいさいかをあてるゲーム！<br>
+まずは0~10のランダムのかずを2つつくろう！
 <div class=ichigojam>LET A,RND(10)</div>
 <div class=ichigojam>LET B,RND(10)</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
+</section>
+    
+<section>   
+「BのかずがAよりもおおきかったら１、ちいさかったら０をにゅうりょくする」というひょうじをさせよう！
+<div class=ichigojam>30 ?"B=";B ;" is A HIGH(1) OR LOW(0)?"</div>
+</section>
+    
+<section>
+かずをにゅうりょくできるようにしよう！
+<div class=ichigojam>40 INPUT "BはAより?", C</div>
+</section>
+    
+<section>
+AとBのかずをひょうじさせよう！
+<div class=ichigojam>50 ?"A=";A</div>
+<div class=ichigojam>55 ?"B=";B</div>
+</section>
+    
+<section>
+AとBにはどのすうじがはいっていたかな・・・？
+つぎはにゅうりょくしたかずがhighかlowか、はんていできるようにしよう！
+<div class=ichigojam>60 IF A<B D=1 ELSE D=0</div>
+</section>
+
+<section>
+つぎはせいかいなら「セイカイ！」まちがえていたら「ハズレ！」をひょうじさせよう！
+<div class=ichigojam>55 ?"B=";B</div>   
 </section>
     
 
