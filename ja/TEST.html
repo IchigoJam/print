@@ -1,10 +1,10 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>TEST DRAW</title>
+<title>High&Low</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>ハイアンドロー</h1><br>
+<h1>High&low</h1><br>
 
 <section>
 BのかずはAよりおおきいか、ちいさいかをあてるゲーム！<br>
@@ -30,44 +30,16 @@ AとBのかずをひょうじさせよう！
 </section>
     
 <section>
-AとBにはどのすうじがはいっていたかな・・・？
+AとBにはどのかずがはいっていたかな・・・？<br>
 つぎはにゅうりょくしたかずがhighかlowか、はんていできるようにしよう！
 <div class=ichigojam>60 IF A<B D=1 ELSE D=0</div>
 </section>
 
 <section>
 つぎはせいかいなら「セイカイ！」まちがえていたら「ハズレ！」をひょうじさせよう！
-<div class=ichigojam>55 ?"B=";B</div>   
+<div class=ichigojam>55 ?"B=";B</div> 
 </section>
     
-
-<section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
-</section>
-
-
-<section>
-FORコマンドでくりかえしせんをかこう！
-<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
-</div>
-RUNでじっこうしてみると、どうなるかな？
-</section>
-
-<section>
-FORコマンドをふたつかいて＃をかいてみよう！
-<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
-20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
-</section>
-
-
-<section>
-<b>やってみよう！</b><br>
-1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
-2. DRAWのI*のよこのかずをかえてみよう<br>
-3. くふうしてもじやえをかいてみよう！<br>
-</section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
 <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
