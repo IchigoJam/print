@@ -9,10 +9,10 @@
 
 <section>
 何かを表示させるには、「PRINT」 を使う
-<div class=ichigojam>PRINT 1</div>
+<div class=ichigojam>1 PRINT 1</div>
 もっと数字が欲しいので、もう一行かいていこう<br>
- <div class=ichigojam>PRINT 1<br>
-PRINT 2</div><br>
+ <div class=ichigojam>1 PRINT 1<br>
+2 PRINT 2</div><br>
 しかし、こう書いてしまうとすぐに2つめが表示されてしまう。滝ように流れてるとはいえない。<br>
 と、いうわけでちょっと待ってもらおう。
 </section>
@@ -29,25 +29,36 @@ PRINT 2</div>
 
 
 <section>
-どんどん行を増やしていこう。「PRINT 10」までやってみよう
-<div class=ichigojam>PRINT 1
-WAIT 100
-PRINT 2
-WATI 90
-PRINT 3
-WAIT 80
-PRINT 4
- …
-</div>
-WAITの時間を10づつ減らして少しずつ早く表示させてみよう
+どんどん行を増やしていこう。「PRINT 10」までやってみよう<br>
+「WAIT」を100から10ずつへらしていこう
+<div class=ichigojam>1 PRINT 1
+2 WAIT 100
+3 PRINT 2
+4 WAIT 90
+5 PRINT 3 
+6 WAIT 80
+7 PRINT 4
+8 WAIT 70
+9 PRINT 5
+10 WAIT 60
+11 PRINT 6
+12 WAIT 50
+13 PRINT 7
+14 WAIT 40
+15 PRINT 8
+16 WAIT 30
+17 PRINT 9
+18 WAIT 20
+19 PRINT 10
+20 WAIT 10</div>
 </section>
 
 <section>
 PRINT10まで書いてくともう早くしようがない。<br>
 「GOTO」を使って繰り返しにしよう。<br>
 さらに、数字をランダムに表示してみよう
-<div class=ichigojam>PRINT RND(99)+1
-GOTO XX</div>
+<div class=ichigojam>21 PRINT RND(99)+1
+22 GOTO 21</div>
 GOTOには行数字を。
 </section>
 
