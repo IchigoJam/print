@@ -11,7 +11,7 @@
 何かを表示させるには、「PRINT」 を使う
 <div class=ichigojam>1 PRINT 1</div>
 もっと数字が欲しいので、もう一行かいていこう<br>
- <div class=ichigojam>1 PRINT 1<br>
+ <div class=ichigojam>1 PRINT 1
 2 PRINT 2</div><br>
 しかし、こう書いてしまうとすぐに2つめが表示されてしまう。滝ように流れてるとはいえない。<br>
 と、いうわけでちょっと待ってもらおう。
@@ -21,9 +21,9 @@
 <section>
 「WAIT」コマンドを使うと次の行に行くのを待ってくれる。<br>
  今回は100にしよう。（WAIT 60で1秒）
-<div class=ichigojam>PRINT 1
-WAIT 100
-PRINT 2</div>
+<div class=ichigojam>1 PRINT 1
+2 WAIT 100
+3 PRINT 2</div>
 少し遅れて表示されただろう。
 </section>
 
@@ -31,10 +31,7 @@ PRINT 2</div>
 <section>
 どんどん行を増やしていこう。「PRINT 10」までやってみよう<br>
 「WAIT」を100から10ずつへらしていこう
-<div class=ichigojam>1 PRINT 1
-2 WAIT 100
-3 PRINT 2
-4 WAIT 90
+<div class=ichigojam>4 WAIT 90
 5 PRINT 3 
 6 WAIT 80
 7 PRINT 4
