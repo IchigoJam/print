@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>なんのカード？</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>なんのカード？</h1>
+
+
+<section>
+あいてがなんのトランプをひいたかあててみよう！まずはマーク！<br>   
+1から4のかずをランダムにせってい。<br>
+わかりやすいように、それぞれのかずにマークをつけてあげよう。
+<div class=ichigojam>10 A=RND(4)+1
+20 ?"SELECT ♥=1 ♦=2 ♣=3 ♠=4"</div>
+
+</section>
+  
+    
+ 
+<section>
+どんなマーク？<br>
+あたったら、すうじをあてるぎょうにとぶ。<br>
+はずれたら、ざんねん！さいチャレンジ！<br>
+  <div class=ichigojam>30 INPUT "MARK?",B
+40 IF B=A GOTO80
+50 IF B!=A ?"WRONG!AGAIN!"
+60 WAIT120
+70 GOTO10</div>
+
+</section>
+
+   
+    
+<section>
+つぎはすうじ！マークとおなじように、1から13のかずをせってい。
+<div class=ichigojam>80 C=RND(13)+1
+</div>
+どんなすうじ？
+あたったらクリア！はずれたら、おしい！もういちど！
+<div class=ichigojam>90 INPUT "NUMBER?",D
+100 IF D=C ?"CLEAR!"
+110 IF D!=C ?"CLOSE!AGAIN!"</div>
+さいしょにもどろう。
+<div class=ichigojam>120 WAIT120
+130 GOTO10</div>
+
+</section>
+
+  
+<section>
+<b>やってみよう！</b><br>
+1. 15ぎょうめにCLSといれるとどうなるかな？<br>
+2. マークとすうじにヒントをつけてみよう<br>
+3. ヒントをひょうじするかしないかえらべるようにしてみよう<br>
+4. 【むずかしい】クリアしたときにあてたカードをひょうじしてみよう<br>
+
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
