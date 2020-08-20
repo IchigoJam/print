@@ -7,8 +7,12 @@
 
 <section>
 今日のご飯は何かな？
-食べたいものを入力していこう！
-<div class=ichigojam>DRAW 1,1,70,70</div>
+食べたいものを入力していこう。たくさん入力するとバリエーションが豊富に！
+<div class=ichigojam>20 IF INKEY()<>0 PRINT"ｵﾑﾗｲｽ":GOTO 60
+30 IF INKEY()<>0 PRINT"ｳﾄﾞﾝ":GOTO 60
+40 IF INKEY()<>0 PRINT"ｶﾗｱｹﾞ":GOTO 60
+45 IF INKEY()<>0 PRINT"ｵﾆｷﾞﾘ":GOTO 60
+50 IF INKEY()<>0 PRINT"ﾗｰﾒﾝ":GOTO 60</div>
 ２つばしょをしていしてあげよう<br>
 さいしょの1,1でさいしょのばしょ。<br>
 つぎの70,70,でつぎのばしょをしていしよう。
