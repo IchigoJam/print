@@ -13,15 +13,14 @@
 40 IF INKEY()<>0 PRINT"ｶﾗｱｹﾞ":GOTO 60
 45 IF INKEY()<>0 PRINT"ｵﾆｷﾞﾘ":GOTO 60
 50 IF INKEY()<>0 PRINT"ﾗｰﾒﾝ":GOTO 60</div>
-２つばしょをしていしてあげよう<br>
-さいしょの1,1でさいしょのばしょ。<br>
-つぎの70,70,でつぎのばしょをしていしよう。
-</section>
-
 <section>
-ばしょのつぎに0とくわえると、せんをけせるよ。
-<div class=ichigojam>DRAW 1,1,70,70,0</div>
-うえのほうのもじがきえたかな？
+  
+<section>
+ランダムにメニューが表示される様にしよう<br>
+<div class=ichigojam>55 GOTO 20
+60 IF INKEY()<>0 GOTO 60
+70 IF INKEY()=0 GOTO 70
+80 IF INKEY()<>0 GOTO 80</div>
 </section>
 
 <section>
