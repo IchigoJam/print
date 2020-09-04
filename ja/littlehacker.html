@@ -6,7 +6,6 @@
 
 <h1>数字の滝でハッカー気分</h1>
 
-
 <section>
 何かを表示させるには、「PRINT」 を使う
 <div class=ichigojam>1 PRINT 1</div>
@@ -17,20 +16,16 @@
 と、いうわけでちょっと待ってもらおう。
 </section>
     
-
 <section>
 「WAIT」コマンドを使うと次の行に行くのを待ってくれる。<br>
- 今回は100にしよう。（WAIT 60で1秒）
+ 今回は100にしよう。（WAIT 60で1秒） 少し遅れて表示される。
 <div class=ichigojam>1 PRINT 1
 2 WAIT 100
 3 PRINT 2</div>
-少し遅れて表示されただろう。
 </section>
 
-
 <section>
-どんどん行を増やしていこう。「PRINT 10」までやってみよう<br>
-「WAIT」を100から10ずつへらしていこう
+どんどん行を増やしていこう。「PRINT 10」までやってみよう。「WAIT」を100から10ずつへらしていこう。
 <div class=ichigojam>4 WAIT 90
 5 PRINT 3 
 6 WAIT 80
@@ -52,8 +47,7 @@
 
 <section>
 PRINT10まで書いてくともう早くしようがない。<br>
-「GOTO」を使って繰り返しにしよう。<br>
-さらに、数字をランダムに表示してみよう
+「GOTO」を使って繰り返しにし、さらに数字をランダムに表示してみよう
 <div class=ichigojam>21 PRINT RND(99)+1
 22 GOTO 21</div>
 </section>
