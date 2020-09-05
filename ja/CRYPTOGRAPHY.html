@@ -6,12 +6,12 @@
 <h1>ひみつのあんごうをつくってみよう！</h1>
 
 <section>
-<a href="./CHR.html">もじのしょうたい</a>がわかったら
+<x-a href="./CHR.html">もじのしょうたい</x-a>がわかったら
 もじをべつのもじにかえてあそんでみよう
 <div class=ichigojam>10 S="IchigoJam"
 40 ?STR$(S)</div>
 RUNでじっこうしても、もとの IchigoJam がひょうじされるだけだね。<br>
-「もじこーど」をいじって、べつのもじにかえちゃおう。
+「もじコード」をいじって、べつのもじにかえちゃおう。
 <div class=ichigojam>20 K=1
 30 FOR I=0 TO LEN(S)-1:?CHR$(ASC(S+I)+K);:NEXT:?
 </div>
