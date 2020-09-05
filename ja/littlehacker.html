@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>数字の滝でハッカー気分</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>数字の滝でハッカー気分</h1>
+
+<section>
+何かを表示させるには、「PRINT」 を使う
+<div class=ichigojam>1 PRINT 1</div>
+もっと数字が欲しいので、もう一行かいていこう<br>
+ <div class=ichigojam>1 PRINT 1
+2 PRINT 2</div><br>
+しかし、こう書いてしまうとすぐに2つめが表示されてしまう。滝ように流れてるとはいえない。
+と、いうわけでちょっと待ってもらおう。
+</section>
+    
+<section>
+「WAIT」コマンドを使うと次の行に行くのを待ってくれる。<br>
+ 今回は100にしよう。（WAIT 60で1秒） 少し遅れて表示される。
+<div class=ichigojam>1 PRINT 1
+2 WAIT 100
+3 PRINT 2</div>
+</section>
+
+<section>
+どんどん行を増やしていこう。「PRINT 10」までやってみよう。「WAIT」を100から10ずつへらしていこう。
+<div class=ichigojam>4 WAIT 90
+5 PRINT 3 
+6 WAIT 80
+7 PRINT 4
+8 WAIT 70
+9 PRINT 5
+10 WAIT 60
+11 PRINT 6
+12 WAIT 50
+13 PRINT 7
+14 WAIT 40
+15 PRINT 8
+16 WAIT 30
+17 PRINT 9
+18 WAIT 20
+19 PRINT 10
+20 WAIT 10</div>
+</section>
+
+<section>
+PRINT10まで書いてくともう早くしようがない。<br>
+「GOTO」を使って繰り返しにし、さらに数字をランダムに表示してみよう
+<div class=ichigojam>21 PRINT RND(99)+1
+22 GOTO 21</div>
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. なぜ、RNDに+1をするのか説明してみよう<br>
+2. WAITの時間を自分好みにしてみよう<br>
+3. 他のコマンドでもっとスマートに書いてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
