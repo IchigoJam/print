@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>たいせん、ばとろわゲーム</title>
+<link rel="stylesheet" type="text/css" href="ichigojamprint.css">
+</head><body>
+
+<h1>たいせん、ばとろわゲーム</h1>
+
+<section>
+ふたりたいせんゲームのプレイヤーをひょうじしよう
+<div class=ichigojam>10 CLS:X=5:Y=10:V=1:W=0:A=26:B=10:C=-1:D=0:F=0
+20 LC X,Y:?"1":LC A,B:?"2"
+</div>
+V,W,C,Dはすすむほうこう、Fはフラグ
+<div class=ichigojam>30 X=X+V:Y=Y+W:A=A+C:B=B+D
+40 WAIT 3
+50 GOTO 20
+</div>
+ひだりプレイヤーはWASD、みぎプレイヤーはカーソルキーでそうさ
+<div class=ichigojam>21 K=INKEY()
+22 IF K=65 V=-1:W=0
+23 IF K=68 V=1:W=0
+24 IF K=87 V=0:W=-1
+25 IF K=83 V=0:W=1
+26 IF K=28 C=-1:D=0
+27 IF K=29 C=1:D=0
+28 IF K=30 C=0:D=-1
+29 IF K=31 C=0:D=1
+</div>
+じょうがいはんていと、あたりはんていをつけよう
+<div class=ichigojam>45 IF X&lt;0 OR X&gt;31 OR Y&lt;0 OR Y&gt;22 OR SCR(X,Y) F=F+2
+46 IF A&lt;0 OR A&gt;31 OR B&lt;0 OR B&gt;22 OR SCR(A,B) F=F+1
+50 IF F=0 GOTO 20
+</div>
+しょうしゃをたたえよう
+<div class=ichigojam>60 IF F=1 ?"P1 OME!"
+70 IF F=2 ?"P2 OME!"
+80 IF F=3 ?"DRAW..."
+</div>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. キャラや、はやさをかえてみよう！<br>
+2. メッセージをかえてみよう！<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
