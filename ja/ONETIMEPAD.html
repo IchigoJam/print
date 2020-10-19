@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>さいきょうのあんごうワンタイムパッド</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ja/ichigojamlist.css">
+</head><body>
+
+<h1>さいきょうのあんごうワンタイムパッド</h1>
+
+<section>
+かぎをいちどしかつかわない「あんごう」ワンタイムパッドは、げんりてきにやぶることがふかのうらしい。
+<div class=ichigojam>10 LET[0],8,30,100,38,10,20,5
+</div>
+でたらめなかずを、つたえたいもじすうぶんつくって、たいせつなひとにかぎをこっそりわたしておこう。
+（さいだい102もじ）
+</section>
+
+<section>
+ひともじずつキーをおして、あんごうかされたかずをメモしよう。
+<div class=ichigojam>30 FOR I=0 TO 101
+40  K=INKEY():IF K=0 CONT
+50  A=K^[I]
+60  ?CHR$(K);"&lt;";CHR$(A),A
+70 NEXT
+</div>
+きごう「^」はXOR（はいたてきろんりわ）、2かいXORするともとどおりになる。
+</section>
+
+<section>
+ふくごう（あんごうをもとにもどすこと）プログラムは、かずをいれて、もじをひょうじ。
+<div class=ichigojam>100 FOR I=0 TO 101
+110  INPUT N
+120  A=N^[I]
+130  ?CHR$(A),A
+140 NEXT
+</div>
+あんごうかされたメモに、かかれたかずをひとつずついれてみよう
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. かぎのながさいじょうにキーをおすとどうなるかためしてみよう<br>
+2. XOR「^」を2かいするともとにもどることをかくにんしてみよう<br>
+3. BIN$をつかってXORのなぞにせまってみよう<br>
+4. かぎなしに、メモからふくごうするほうほうをかんがえてみよう<br>
+5. かぎがだれかにばれたらどうなるかそうぞうしてみよう<br>
+6. かぎをつかいまわしたらどうなるかそうぞうしてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
