@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>あんごうのかぎをあいてにわたすには？</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ja/ichigojamlist.css">
+</head>
+<body>
+
+<h1>あんごうのかぎをあいてにわたすには？</h1>
+
+<section>
+あんぜんにあんごうをつかうには「かぎ」はほかのひとにしられてはいけないよね。
+「かぎ」そのものをあいてにつたえなくても、おなじ「かぎ」をつかえる<br>
+とくべつなけいさんをプログラミングでつくってみよう！
+</section>
+
+<section>
+まずはとくべつなすうじをじゅんびしよう。ひとつえらんでつかうよ。
+<div class="ichigojam">10 LET[0],53,59,61,67,83
+20 FOR I=0 TO 4:?[I];" ";:NEXT:? 
+30 INPUT"P=? ",P
+</div>
+つぎはじぶんだけのひみつのすうじをにゅうりょく。
+<div class="ichigojam">40 INPUT"ｽｳｼﾞ? ",A
+</div>
+かぎのあたいをしょきかして、けいさんをじっこう！
+<div class="ichigojam">50 K=1
+60 GSB@CALC
+</div>
+けいさんするぶぶんをつくるよ。
+<div class="ichigojam">500 @CALC
+510 FOR I=0 TO A
+520  K=K*2
+530  K=K%P
+540 NEXT
+550 RTN
+</div>
+けいさんのけっかをあいてにつたえよう。<br>
+このすうじはほかのひとにしられてもだいじょうぶだよ。
+<div class="ichigojam">70 ?"ﾜﾀｽｽｳｼﾞ ";K
+</div>
+おなじプログラムでけいさんした、あいてからうけとったすうじをいれる。<br>
+このときのあいてとは、おなじ P をつかってね。
+<div class="ichigojam">100 INPUT"ｳｹﾄｯﾀｽｳｼﾞ? ",K
+110 GSB@CALC
+120 ?"ｶｷﾞﾉｽｳｼﾞ ";K
+130 END
+</div>
+でてきたすうじはあいてとおなじになっているよね！<br>
+このすうじを「かぎ」としてつかおう！
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. ひみつのすうじをいろいろとかえてためしてみよう<br>
+2. けいさんぶぶんの % というけいさんはどんなけいさんかな？しらべてみよう<br>
+3. とくべつなすうじは「そすう」というよ。どんなとくちょうがあるかな？<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body>
+</html>
