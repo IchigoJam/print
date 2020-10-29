@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>角度と多角形</title>
+<link rel="stylesheet" type="text/css" href="ichigojamprint.css">
+<script src="tokana.js"></script>
+</head><body>
+
+<h1>角度と多角形</h1>
+
+<section>
+座標(0,0)から(63,47)へ、線を引いてみよう
+<div class=ichigojam>DRAW 0,0,63,47
+</div>
+画面の真ん中から、上に向かって10だけ歩こう
+<div class=ichigojam>10 CLS:X=32:Y=24:L=10
+20 A=X
+30 B=Y-L
+40 DRAW X,Y,A,B
+</div>
+角度T、まっすぐ右を0度、時計回りに大きくすると上は-90度<br>
+<div class=ichigojam>15 T=-90
+</div>
+角度から横方向の距離を教えてくれるCOS<br>
+角度から縦方向の距離を教えてくれるSIN<br>
+<div class=ichigojam>20 A=X+COS(T)*L/256
+30 B=Y+SIN(T)*L/256
+</div>
+一歩ごとに右に90度曲がってみよう
+<div class=ichigojam>16 D=90
+50 X=A:Y=B:T=T+D
+60 WAIT 30:GOTO 20
+</div>
+4回曲がると元の場所
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. 16行のD、-90にするとどうなるかためそう<br>
+2. Dをいろんな数に変えてみよう<br>
+3. 星を描いてみよう<br>
+4. 15行のTを変えると何が変わるかためそう<br>
+5. 好きな図形を好きな場所に描いてみよう<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
