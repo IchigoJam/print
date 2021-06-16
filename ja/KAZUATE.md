@@ -11,16 +11,17 @@
 
 ```ij
 20 INPUT N
-30 IF A=N ?"BINGO!":END
+30 IF A=N GOTO 50
 40 GOTO 20
+50 ?"BINGO!"
 ```
 
 ## スコアをつけよう
 
 ```ij
 15 S=100
-30 IF A=N ?"BINGO! S=";S:END
 39 S=S/2
+60 ?"S:";S
 ```
 まちがえるごとにスコアははんぶん！
 
@@ -36,7 +37,7 @@
 ## わかりやすく
 
 ```ij
-20 INPUT "KAZUATE 0-99?",N
+19 ?"KAZUATE INPUT 0-99"
 ```
 
 ## チャレンジ
