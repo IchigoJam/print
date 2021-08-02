@@ -2,23 +2,23 @@
 
 ## Japanese / 日本語
 
-- https://ichigojam.github.io/print/ja/
-- [PDF](ichigojam_print_ja.pdf)
+- [HTML](https://ichigojam.github.io/print/ja/)
+- [PDF](https://ichigojam.github.io/print/ichigojam_print_ja.pdf)
 
 ## English / 英語
 
-- https://ichigojam.github.io/print/en/
-- [PDF](ichigojam_print_en.pdf)
+- [HTML](https://ichigojam.github.io/print/en/)
+- [PDF](https://ichigojam.github.io/print/ichigojam_print_en.pdf)
 
 ## Rwandan Kinyarwanda / ルワンダ語
 
-- https://ichigojam.github.io/print/rw/
-- [PDF]ichigojam_print_rw.pdf)
+- [HTML](https://ichigojam.github.io/print/rw/)
+- [PDF](https://ichigojam.github.io/print/ichigojam_print_rw.pdf)
 
 ## Swahili / スワヒリ語
 
-- https://ichigojam.github.io/print/sw/
-- [PDF](ichigojam_print_sw.pdf)
+- [HTML](https://ichigojam.github.io/print/sw/)
+- [PDF](https://ichigojam.github.io/print/ichigojam_print_sw.pdf)
 
 # How to contribute
 
