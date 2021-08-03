@@ -40,16 +40,21 @@ const makePDF = async (browser, url, dstfn) => {
 
   await mergeAsync(pdfs, dstfn);
   fs.rmSync("temp", { recursive: true });
+  return pdfs.length;
 };
 
 
 const browser = await puppeteer.launch();
 
 const langs = ["ja", "en", "rw", "sw"];
+const len = {};
 for (const lang of langs) {
   const url = `https://ichigojam.github.io/print/${lang}/`;
   const dstfn = `ichigojam_print_${lang}.pdf`;
-  await makePDF(browser, url, dstfn);
+  const cnt = await makePDF(browser, url, dstfn);
+  len[lang] = cnt;
 }
 
 await browser.close();
+console.log(len);
+console.log("all", Object.values(len).reduce((pre, n) => n + pre, 0));
