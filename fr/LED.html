@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Allumer! / LED - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Allumer! / LED - IchigoJam</h1>
+
+<section>
+<img src=key-enter.png height=70 align=right>
+Allumez l'interrupteur de votre IchigoJam. Tapez "LED1" à partir de votre clavier. Et appuyez sur la touche ENTRÉE. (La touche ENTRÉE est située sur le côté droit et la grosse touche)
+<div id="list1"></div><script>make15("list1", "LED1")</script>
+C'est un succès si votre LED d'IchigoJam s'est allumée et que vous avez le message "OK".
+</section>
+
+<section>
+Tapez "LED0" pour éteindre.
+<div id="list2"></div><script>make15("list2", "LED0")</script>
+</section>
+
+<section>
+<img src=key-space.png height=24 align=right>
+La touche ESPACE est grande touche et est située au centre et en bas du clavier.<br>
+Tapez "LED 1" et appuyez sur la touche ENTRÉE.
+<div id="list3"></div><script>make15("list3", "LED 1")</script>
+C'est BON de toute façon, que l'espace soit là ou non.
+</section>
+
+<section>
+Tapons "RED0" et appuyez sur la touche ENTRÉE.
+<div id="red-1"></div><script>make15("red-1", "RED0")</script>
+La LED ne s'éteindra pas. Vous obtiendrez un message "Erreur de syntaxe".<br>
+Ne vous inquiétez pas de faire des erreurs à plusieurs reprises ! L'ordinateur ne se fâche jamais.
+</section>
+
+<section>
+Tapons "ABD" sans appuyer sur la touche ENTRÉE.<br>
+<div id="red-2"></div><script>make15("red-2", "ABD\x85")</script>
+<img src=key-backspace.png height=40 align=right>
+Appuyez une fois sur la touche "RETOUR".<br>
+La touche "RETOUR" située à droite et en haut.
+<div id="red-3"></div><script>make15("red-3", "AB\x85")</script>
+Vous pouvez supprimer le caractère ! Donc, ne vous inquiétez pas des erreurs de frappe.
+</section>
+
+<section>
+<b>Essayez-le !</b><br>
+1. Tapez "ABCDEFG"<br>
+2. Essayez d'éteindre la LED<br>
+3. Essayez d'allumer et d'éteindre rapidement<br>
+4. Tapez « BEEP » et appuyez sur la touche ENTRÉE<br>
+5. Tapez "CLS" et appuyez sur la touche ENTRÉE<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/fr/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
