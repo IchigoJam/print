@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Tell a thought / BTN - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Convey thoughts / BTN</h1>
+
+<section>
+Let's tell your thoughts to the computer with the button on the left of IchigoJam.
+<div id="btn-1"></div><script>make15("btn-1", "?BTN()")</script>
+If you press ENTER key without pressing the button, it will display zero (0).
+Press the UP key three times on the lower right of the keyboard, move a blinking square (cursor) , then hold down the button and press ENTER key.<br>
+It is succeed if it displayed a "1"!
+</section>
+
+<section>
+</section>
+
+<section>
+Repeat using "GOTO" command.
+<div id="btn-2"></div><script>make15("btn-2", "10 ?BTN()\n20 GOTO 10\nRUN")</script>
+"0" displays in a row, let's try to press or release a button.<br>
+To stop, use the ESC(Escape) key.
+</section>
+
+<section>
+The program that LED lights when button is pressed.
+<div id="btn-3"></div><script>make15("btn-3", "10 LED BTN()\n20 GOTO 10")</script>
+Even F5 key is OK instead of "RUN" command!<br>
+The "LED" command lights when it is 1 and disappears when it is 0, so it lights in line with the button press.<br>
+Stop with the ESC key.
+</section>
+
+<section>
+You press the button, it blinks fast!
+<div id="btn-4"></div><script>make15("btn-4", "10 LED 1:WAIT 10-BTN()*5\n20 LED 0:WAIT 10-BTN()*5\n30 GOTO 10")</script>
+"WAIT" is a command for waiting.<br>
+When the button is not pressed, it is "WAIT 10".<br>
+If pressed, BTN() will be 1, subtract a number which is multiplied by 5 with "* 5", so it becomes "WAIT 5".<br>
+Go back to line 10 with "GOTO", repeat.
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's make it blink more quickly, if the button is pressed.<br>
+2. Let's make it blink slowly, if the button is pressed.<br>
+3. Let's remodel to always light, if the button is pressed.<br>
+4. Let's remodel so as not to light at all when not pressing the button.<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
