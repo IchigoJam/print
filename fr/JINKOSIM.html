@@ -1,0 +1,61 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Population simulation- IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Population simulation</h1>
+
+<section>
+The Japanese population is 125.13 million. It decreased by 270,000 in one year.<br>
+(Nov, 2016 Ministry of Internal Affairs and Communications, Statistics Bureau, Population Estimate)
+<div id="jinko-1"></div>
+<script>make15("jinko-1", f2s(function() {/*
+10 P=12536
+20 D=27
+*/}))</script>
+Set the population as "P", the reducing number as "D" and let the unit for both be ten thousand.<br>
+</section>
+
+<section>
+When keep decreasing in the same way every year since 2016, the population at 2100?
+<div id="jinko-2"></div>
+<script>make15("jinko-2", f2s(function() {/*
+30 FOR Y=2016 TO 2100
+40  ?Y,P;
+50  ?
+60  P=P-D
+70 NEXT
+*/}))</script>
+</section>
+
+<section>
+Let's make it into a graph ('/' is the symbol of division).
+<div id="jinko-3"></div>
+<script>make15("jinko-3", f2s(function() {/*
+42  FOR I=0 TO P/1000
+45  ?"*";:NEXT
+*/}))</script>
+</section>
+
+<section>
+What if the reducing number is increased by 20,000 every year?
+<div id="jinko-4"></div>
+<script>make15("jinko-4", f2s(function() {/*
+55  D=D+2
+*/}))</script>
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Stop with the ESC key and check the population of 2060<br>
+2. Let's set the reducing number to 30,000 per every year<br>
+3. Let's change the character "*" in the graph to another character<br>
+4. Let's change a number at line 42, 1000 to 100<br>
+5. Let's increase the population<br>
+6. The world population is 7.3 billion people. How if will increase by 100 million every year?
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

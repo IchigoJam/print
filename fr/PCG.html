@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Make an Original Character / PCG - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Make an Original Character / PCG - IchigoJam</h1>
+
+<section>
+A "cat" appears if you hold down a left Alt on the keyboard and press "C".
+<div id="pcg-1"></div><script>make15("pcg-1", "?CHR$(236)")</script>
+The character code of "cat" is 236.
+</section>
+
+<section>
+To change this "cat" to a "stick".
+<div id="pcg-2"></div><script>make15("pcg-2", "POKE 236*8,8,8,8,8,8,8,8,8")</script>
+Changed!?<br>
+Now time, to change to a small ball.
+<div id="pcg-3"></div><script>make15("pcg-3", "POKE 236*8,0,0,0,24,24,0,0,0")</script>
+To a slanted line!
+<div id="pcg-4"></div><script>make15("pcg-4", "POKE 236*8,1,2,4,8,16,32,64,128")</script>
+</section>
+
+<section>
+Program to write a favorite painting using binary number, 0 and 1.
+<div id="pcg-5"></div><script>make15("pcg-5", f2s(function() {/*
+10 POKE236*8+0,`01111110
+11 POKE236*8+1,`11011011
+12 POKE236*8+2,`11111111
+13 POKE236*8+3,`11000011
+14 POKE236*8+4,`11111111
+15 POKE236*8+5,`11111111
+16 POKE236*8+6,`00011000
+17 POKE236*8+7,`00011000
+RUN
+*/}))</script>
+Mr. Ice appears!
+</section>
+
+<section>
+To return to a "cat", use "CLP" (clear pattern).
+<div id="pcg-6"></div><script>make15("pcg-6", "CLP")</script>
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Let's make a heart mark<br>
+2. Let's make a favorite character<br>
+3. Let's rewrite a alien of ALT + D by changing 236 to 237 (Characted code range is 224-255!)<br>
+4. Let's display the number for the binary number "10000000"<br>
+5. Let's make original character with 1 line program .<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

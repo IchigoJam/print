@@ -1,0 +1,57 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Let's chat on a network! - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Let's chat on a network!</h1>
+
+<section>
+Prepare 2 IchigoJam, 3 jumper wires. Connect that.<br>
+<style>
+td {
+	padding: 0px 4px;
+	text-align: center;
+}
+table {
+	border: 2px solid gray;
+	margin: 4px;
+}
+</style>
+<table>
+	<tr><td>IchigoJam1</td><td></td><td>IchigoJam2</td></tr>
+	<tr><td>GND(ground/0V)</td><td><hr width=30 noshade></td><td>GND(Ground/0V)</td></tr>
+	<tr><td>TXD(transfer)</td><td><hr width=30 noshade></td><td>RXD(receiver)</td></tr>
+	<tr><td>RXD(receiver)</td><td><hr width=30 noshade></td><td>TXD(transfer)</td></tr>
+</table>
+※ Be careful! IchigoJam will break if you connect wrong pins.<br>
+</section>
+
+<section>
+On IchigoJam1: Type the followings.
+<div id="remote-1"></div><script>make15("remote-1", "?\"LED1")</script>
+What's up on IchigoJam2?<br>
+Check the wires if it doesn't work.
+<div id="remote-2"></div><script>make15("remote-2", "?\"LED0")</script>
+Let's send a message.
+<div id="remote-4"></div><script>make15("remote-4", "?\"HELLO")</script>
+You got many errors "Syntax error" continuly because "HELLO" is not a IchigoJam command. IchigoJam1 will send a error to IchigoJam2, IchigoJam2 will send a error.<br>
+Pick up a wire from TXD to RXD once to stop.
+</section>
+
+<section>
+REM and "'" is command to ignore.
+<div id="remote-3"></div><script>make15("remote-3", "?\"'HELLO")</script>
+</section>
+
+<section>
+<b>Let's try!</b><br>
+1. Talk on IchigoJam<br>
+2. Pick up all wires and connect again<br>
+3. Try to use 2 wires<br>
+4. Manipulate your friend's computer via the network<br>
+5. Make a idea to make game with the network<br>
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>

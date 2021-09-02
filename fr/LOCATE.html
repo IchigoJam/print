@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Exploiter le lieu / LOCATE - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Exploiter le lieu / LOCATE</h1>
+
+<section>
+Affichons à un endroit spécifique!<br>
+Utilisez "LOCATE" pour préciser un endroit.
+<div id="list1"></div><script>make15("list1", "LOCATE 16,12:PRINT \"*\"")</script>
+Appuyez sur la touche ENTREE, '*' s'affichera autour du centre.<br>
+Cela signifie que '*' s'affichera sur 16 espaces à partir de l'extrémité gauche et 12 espaces à partir de l'extrémité supérieure.
+</section>
+
+<section>
+Affichons à un endroit différent.
+<div id="list2"></div><script>make15("list2", "LOCATE 25,5:PRINT \"*\"")</script>
+Changez les numéros dans la commande "LOCATE", l'endroit à afficher changera.
+</section>
+
+<section>
+En fait, vous pouvez également utiliser "LC" comme abréviation de "LOCATE".
+<div id="list3"></div><script>make15("list3", "LC 16,14:PRINT \"*\"")</script>
+</section>
+
+<section>
+Les caractères peuvent également être affichés à deux endroits différents.
+<div id="red-1"></div><script>make15("red-1", "LC 16,12:PRINT \"@\":LC 10,10:PRINT \"*\"")</script
+</section>
+
+<section>
+La réponse calculée peut également être affichée.
+<div id="red-2"></div><script>make15("red-2", "LC 16,14:PRINT 2+3")</script>
+Lorsque vous souhaitez effacer le moniteur (l'écran), appuyez sur la touche F1 ou "CLS".
+<div id="red-3"></div><script>make15("red-3", "CLS")</script>
+</section>
+
+<section>
+<b>Essayez-le!</b><br>
+1. Afficher à "IchigoJam" sur 20 espaces à partir de l'extrémité gauche et sur 10 espaces à partir de l'extrémité supérieure<br>
+2. Afficher un '@' à deux endroits différents, c'est-à-dire sur 10 à partir de l'extrémité gauche, sur 17 à partir de l'extrémité supérieure et sur 25 à partir de l'extrémité gauche, sur 18 à partir de l'extrémité supérieure<br>
+3. Afficher un résultat de "10-5" sur 15 à partir de l'extrémité gauche et 24 à partir de l'extrémité supérieure<br>
+4. Afficher un charatère préféré à un endroit préféré<br>
+5. Afficher le résultat d'un calcul préféré à un endroit préféré<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

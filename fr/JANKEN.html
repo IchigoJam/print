@@ -1,0 +1,54 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Janken Game - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Hand Game (Janken)</h1>
+
+<section>
+Janken famously known as Rock Paper Scissor often used as a fair choosing method is a hand game using three hand signs.<br>
+- Gu: (rock) simply ball your hand up into a fist. (Gu wins Choki)<br>
+- Choki: (scissors) use two fingers to mimic the shape. (Choki wins Pa)<br>
+- Pa: (paper) extend your hand palm down.. (Pa wins Gu)<br>
+<br>
+Use random command with number 3 if you want to decide Gu, Choki or Pa by your computer.
+<div id="list1"></div><script>make15("list1", "?RND(3)")</script>
+For instance 0 means Gu, 1 means Choki, 2 means Pa.
+</section>
+
+<section>
+<div id="list2"></div><script>make15("list2", f2s(function() {/*
+10 LET A,RND(3)
+20 IF A=0 ?"GU"
+30 IF A=1 ?"CHOKI"
+40 IF A=2 ?"PA"
+RUN
+*/}))</script>
+Try to type RUN or press F5 key repeatedly!<br>
+Press F5 key and say your hand sign to fight after your call "Jan ken"!
+</section>
+
+<section>
+Try to judge by computer.
+<div id="list3"></div><script>make15("list3", f2s(function() {/*
+15 INPUT "YOUR HAND?",B
+16 IF B=0 ?"GU - ";
+17 IF B=1 ?"CHOKI - ";
+18 IF B=2 ?"PA - ";
+50 IF A=B ?"DRAW"
+60 IF A-B=1 OR B-A=2 ?"WON!"
+70 IF B-A=1 OR A-B=2 ?"LOST!"
+*/}))</script>
+</section>
+
+<section>
+<b>Let's try!</b><br>
+1. Try to fight your friend's computer program!<br>
+2. Try to create the weakest computer!<br>
+3. Try to create Janken game with 3 players, you and 2 computers!<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://github.com/IchigoJam/print/">IchigoJam print</a> https://github.com/IchigoJam/print/ 
+<a href="https://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

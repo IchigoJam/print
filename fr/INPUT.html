@@ -1,0 +1,46 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Répondre avec des Chiffres / INPUT - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Répondre avec des Chiffres / INPUT</h1>
+
+<section>
+Un programme qui résout divers problèmes d'addition en utilisant "RND" (aléatoire).<br>
+Utilisez "LET" pour stocker des nombres de A à Z.
+<div id="input0"></div><script>make15("input0", "10 LET A,RND(10)\n20 LET B,RND(10)\n30 ?A;\"+\";B\nRUN")</script>
+Exécutons « RUN » plusieurs fois !<br>
+</section>
+
+<section>
+Pour entrer les chiffres à l'aide du clavier, utilisez la commande "INPUT".
+<div id="input1"></div><script>make15("input1", "40 INPUT C\n50 ?C\nRUN")</script>
+Devant le "?", tapez un nombre avec le clavier et appuyez sur la touche ENTREE.<br>
+Le nombre entré pour C est mémorisé !
+</section>
+
+<section>
+Pour vérifier les réponses, "IF" est utilisé pour juger.
+<div id="input3"></div><script>make15("input3", "60 IF C=A+B ?\"GOT IT!\"")</script>
+</section>
+
+<section>
+Utilisons "ELSE" lorsque vous voulez montrer un échec.
+<div id="input4"></div><script>make15("input4", "60 IF C=A+B ?\"GOT IT!\" ELSE ?\"WRONG\"")</script>
+Il peut également apparaître avec un texte de question.
+<div id="input5"></div><script>make15("input5", "40 INPUT \"ANSWER IS?\",C")</script>
+</section>
+
+<section>
+<b>Essayez-le!</b><br>
+1. Modifions-le pour faire l'addition de 2 chiffres.<br>
+2. Modifions-le pour résoudre un problème extrêmement facile<br>
+3. Modifions-le pour résoudre un problème de multiplication<br>
+4. Mesurons le temps de réponse en utilisant "TICK"<br>
+5. Faisons un jeu de frappe de nombre<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

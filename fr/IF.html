@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Décider / IF - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Décider / IF</h1>
+
+<section>
+A éviter si les balles volent vers vous. Sautez s'il y a un trou.<br>
+"IF" est une commande pour laisser l'ordinateur juger et prendre des décision.<br>
+<div id="if-1"></div><script>make15("if-1", "10 IF BTN()=0 GOTO 10\nRUN")</script>
+Si le bouton n'est pas enfoncé, la ligne 10 se répète.<br>
+En appuyant sur le bouton, le programme passe au suivant et termine.
+</section>
+
+<section>
+Chaque fois que vous appuyez sur le bouton, la LED s'allume et s'éteint.
+<div id="if-2"></div><script>make15("if-2", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 LED1
+30 IF BTN()=0 GOTO 30
+40 LED0
+50 GOTO 10
+*/}))</script>
+Oh, en appuyant sur le bouton, la LED s'allume?<br>
+Étant donné que l'ordinateur est rapide, une pression sur le bouton allumera la LED et passera immédiatement au jugement suivant.
+</section>
+
+<section>
+Pour ne pas passer immédiatement au jugement suivant, ajoutez la commande "WAIT".
+<div id="if-3"></div><script>make15("if-3", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 LED1:WAIT30
+30 IF BTN()=0 GOTO 30
+40 LED0:WAIT30
+50 GOTO 10
+*/}))</script>
+</section>
+
+<section>
+<b>Essayez-le!</b><br>
+1. Continuez à appuyer sur le bouton<br>
+2. Changez "WAIT30" à "WAIT60"<br>
+3. Changez "WAIT30" à "WAIT5"<br>
+4. Essayez de changer "IF BTN()=1"<br>
+5. Faire un programme qui en appuyant sur le bouton commence à faire clignoter la LED<br>
+6. Faire un programme qui exploite la LED de façon agréable<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
