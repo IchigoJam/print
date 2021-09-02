@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Manipuler le Temps/ WAIT - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Contrôler le temps / WAIT</h1>
+
+<section>
+Apprenons "wait" sur IchigoJam.<br>
+Un curseur carré clignotant à l'écran signifie que le clavier est prêt être utilisé.
+<div id="wait1-1"></div><script>make15("wait1-1", "WAIT60")</script>
+Avez-vous vu que ce curseur a disparu depuis peu de temps ? Essayons encore.
+</section>
+
+<section>
+Si vous modifiez le nombre après "WAIT", la durée de "wait" pourra changer.<br>
+※1 second = 60
+<div id="wait1-2"></div><script>make15("wait1-2", "WAIT120")</script>
+Le curseur a disparu plus longtemps qu'avant.
+</section>
+
+<section>
+Allumez la LED et éteignez automatiquement.
+<div id="wait1-3"></div><script>make15("wait1-3", "LED1:WAIT120:LED0")</script>
+Utilisez les deux points ' : ' (facile à confondre avec le point-virgule ' ; ') pour concaténer(joindre) les commandes.<br>
+Allumez avec "LED1", attendez avec "WAIT120", éteignez avec "LED0".
+</section>
+
+<section>
+Pour allumer pour peu de temps LED.
+<div id="wait1-5"></div><script>make15("wait1-5", "LED1:WAIT3:LED0")</script>
+Si vous modifiez le nombre pour "WAIT", cela modifie le temps d'allumage de la LED.
+</section>
+
+<section>
+Allumez la LED deux fois..
+<div id="wait1-6"></div><script>make15("wait1-6", "LED1:WAIT3:LED0:WAIT3:LED1:WAIT3:LED0")</script>
+Vous pouvez vous joindre plus de commandes avec les deux points " : ".
+</section>
+
+<section>
+<b>Essayez-le!</b><br>
+1. Faisons "WAIT" pour 10 secondes<br>
+2. Allumez la LED pendant 5 secondes et éteignez-la<br>
+3. Faisons "WAIT 10000", au milieu, appuyez sur la touche ESCAPE pour arrêter<br>
+4. Allumez pour longtemps et allumez pour peu de temps<br>
+5. Essayons de créer un motif lumineux LED attrayant<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>

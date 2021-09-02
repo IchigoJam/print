@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Let it judge / IF - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Let it judge / IF</h1>
+
+<section>
+Avoid if balls flew to you. Jump if there is hole.<br>
+"IF" is a command to let the computer judge.<br>
+<div id="if-1"></div><script>make15("if-1", "10 IF BTN()=0 GOTO 10\nRUN")</script>
+If the button is not pressed, line 10 repeats.<br>
+Upon pressing the button, the program goes to next, and finish.
+</section>
+
+<section>
+Each time press the button, the LED light and turn off.
+<div id="if-2"></div><script>make15("if-2", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 LED1
+30 IF BTN()=0 GOTO 30
+40 LED0
+50 GOTO 10
+*/}))</script>
+Oh, while pressing the button, the LED is lighting?<br>
+Since the computer is fast, pressing the button will light the LED and go to the next judgment immediately.
+</section>
+
+<section>
+To not go to next judgement immediately, add "WAIT".
+<div id="if-3"></div><script>make15("if-3", f2s(function() {/*
+10 IF BTN()=0 GOTO 10
+20 LED1:WAIT30
+30 IF BTN()=0 GOTO 30
+40 LED0:WAIT30
+50 GOTO 10
+*/}))</script>
+</section>
+
+<section>
+<b>Try it!</b><br>
+1. Keep pressing the button<br>
+2. Try to change "WAIT30" to "WAIT60"<br>
+3. Try to change "WAIT30" to "WAIT5"<br>
+4. Try to change "IF BTN()=1"<br>
+5. Make a program that pressing the button starts to blink the LED<br>
+6. Make a program that operates the LED enjoyable<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
