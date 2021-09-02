@@ -46,7 +46,7 @@ const makePDF = async (browser, url, dstfn) => {
 
 const browser = await puppeteer.launch();
 
-const langs = ["ja", "en", "rw", "sw"];
+const langs = ["ja", "en", "rw", "sw", "fr"];
 const len = {};
 for (const lang of langs) {
   const url = `https://ichigojam.github.io/print/${lang}/`;
