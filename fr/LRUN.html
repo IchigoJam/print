@@ -1,24 +1,24 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Connect the programs / LRUN</title>
+<title>Connectez les programmes/ LRUN</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 <script src="tokana.js"></script>
 </head><body>
 
-<h1>Connect the programs / LRUN - IchigoJam</h1>
+<h1>Connectez les programmes / LRUN - IchigoJam</h1>
 
 <section>
-IchigoJam can store up to four programs.<br>
-Connect one program to  another, to be a masterpiece!<br>
-First, make a quiz game, the main part of the game.
+IchigoJam peut garder en mémoire jusqu'à 4 programmes.<br>
+Connectez un programme à un autre, pour être un chef-d'œuvre!<br>
+Tout d'abord, faites un jeu-questionnaire, la partie principale du jeu.
 <div id="step-1"></div>
 <script>make15("step-1", f2s(function() {/*
 10 CLS
 20 LC10,10:INPUT "1+1=?",N
 30 LC12,10:IF N=2 ?"CLEAR!!" ELSE ?"GAME OVER!"
 */}))</script>
-It displays "clear" with correct answer input! If not, it will display game over!.<br>
-Save this in file 1.
+Il affiche « clear »(Claire) avec une entrée de réponse correcte ! Sinon, il affichera game over!.<br>
+Enrégistrez cela dans file 1.
 <div id="step-2"></div>
 <script>make15("step-2", f2s(function() {/*
 SAVE1
@@ -26,12 +26,12 @@ SAVE1
 </section>
 
 <section>
-To create a  program title, first of all from beginning.
+Pour créer un nouveau programme, tout d'abord depuis le début, tapez:
 <div id="step-3"></div>
 <script>make15("step-3", f2s(function() {/*
 NEW
 */}))</script>
-A program title that ends when any key is pressed.
+Un programme qui se termine lorsque n'importe quelle touche est enfoncée.
 <div id="step-4"></div>
 <script>make15("step-4", f2s(function() {/*
 10 CLS
@@ -40,23 +40,23 @@ A program title that ends when any key is pressed.
 40 LC6,18:?"HIT ANY KEY TO START"
 50 IF INKEY()=0 CONT
 */}))</script>
-Add concatenated command "LRUN".
+Ajouter la commande concaténée "LRUN".
 <div id="step-5"></div>
 <script>make15("step-5", f2s(function() {/*
 60 LRUN1
 SAVE0
 RUN
 */}))</script>
-Connected to the game from the title program!
+Connecté au jeu depuis le titre du programme  !
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's make it to be retry/game-over with  "LRUN0"<br>
-2. Let's remodel the title<br>
-3. Let's remodel the quiz<br>
-4. Let's make it to go back to the title screen if the game is over<br>
-5. Let's put a title on "Kawakudari Game"<br>
+<b>Essayez-le!</b><br>
+1. Faisons en sorte qu'il rééssaie le jeu encore et encore avec "LRUN0"<br>
+2. Remodifions le titre<br>
+3. Remodifions le questionnaire<br>
+4. Revenons à l'écran titre si le jeu est terminé<br>
+5. Mettons un titre sur le jeu "Kawakudari Game"<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

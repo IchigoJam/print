@@ -1,10 +1,10 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Multiplication by loop FOR/NEXT</title>
+<title>Multiplication avec la boucle FOR/NEXT</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Multiplication by loop FOR/NEXT - IchigoJam</h1>
+<h1>Multiplication avec la boucle FOR/NEXT - IchigoJam</h1>
 
 <section>
 <div id="step-1"></div>
@@ -12,47 +12,47 @@
 10 A=5
 20 FOR I=1 TO A:?"*";:NEXT:?
 */}))</script>
-You can count up the variable I from 1 to A with FOR/NEXT command. You can get the 5 '*' marks.
+Vous pouvez compter la variable I de 1 à A avec la commande FOR/NEXT. Vous pouvez obtenir les 5 étoiles '*'.
 </section>
 
 <section>
-Let's modify to use the number you like with INPUT command.
+Modifions pour utilisons le numéro que vous voudriez avec la commande INPUT.
 <div id="step-2"></div>
 <script>make15("step-2", f2s(function() {/*
 10 INPUT A
 */}))</script>
-Type any numbers!
+Entrez n'importe quel nombre!
 </section>
 
 <section>
-Add a number and loop!
+Ajoutez un nombre et faites la boucle!
 <div id="step-3"></div>
 <script>make15("step-3", f2s(function() {/*
 15 INPUT B
 17 FOR J=1 TO B
 30 NEXT
 */}))</script>
-You can do the multiplication!
+Vous pouvez faire la multiplication!
 </section>
 
 <section>
-Count variable C that counts number of '*' marks.
+Comptez la variable C qui compte le nombre d'étoiles '*'.
 <div id="step-4"></div>
 <script>make15("step-4", f2s(function() {/*
 16 C=0
 25 C=C+A
 40 ?C
 */}))</script>
-C=C+A cause you can get A x '*' marks every loops. Using LET C,C+1 is OK also. If you don't input C=0 or LET C,0, then C will increase in every executions continuously.
+C=C+A vous permet d'avoir A x '*' à chaque boucle (ittération). L'utilisation de LET C,C+1 est également OK. Si vous n'entrez pas C=0 ou LET C,0, alors C augmentera continuellement à chaque exécution.
 </section>
 
 <section>
-<b>Let's try</b><br>
-1. Calculate 7 multiply by 8<br>
-2. Calculate 8 multiply by 7<br>
-3. Change to the mark that you like<br>
-4. Check to change the mark to 2 letters<br>
-5. Check if input zero<br>
+<b>Essayons- le!</b><br>
+1. Calcule 7 multiplié par 8<br>
+2. Calcule 8 multiplié par 7<br>
+3. Changes le programme avec le symbole/marque(étoile) que tu veux<br>
+4. Vérifiez et changez la marque à 2 lettres<br>
+5. Vérifiez si on entre zéro<br>
 </section>
 
 <div id="credit"><a href=https://github.com/IchigoJam/print>CC BY on GitHub</a> <a href="https://ichigojam.github.io/print/en/">IchigoJam print</a> https://ichigojam.github.io/print/en/ <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a><br>

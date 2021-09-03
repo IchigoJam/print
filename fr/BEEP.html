@@ -1,43 +1,43 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Make Sounds / BEEP - IchigoJam</title>
+<title>Faire des sons / BEEP - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Make Sounds / BEEP - IchigoJam</h1>
+<h1>Faire des sons / BEEP - IchigoJam</h1>
 
 <section>
-Ensure the legs of a sounder are inserted in SOUND(SND) and GND of your IchigoJam.
+Assurez-vous que les pattes d'un haut-parleur sont insérées dans SOUND (SND) et GND de votre IchigoJam.
 <div id="list1"></div><script>make15("list1", "BEEP")</script>
-Did you hear a beep sound?
+Avez vous entendu un son de BIP?
 </section>
 
 <section>
-A high tone.
+Un ton aigu.
 <div id="list2"></div><script>make15("list2", "BEEP 5")</script>
-A low tone.
+Un ton faible.
 <div id="list3"></div><script>make15("list3", "BEEP 20")</script>
-A long tone.
+Un ton long.
 <div id="list3-2"></div><script>make15("list3-2", "BEEP 10,30")</script>
 </section>
 
 <section>
-Let's make a rhythm!
+Faisons un rythme!
 <div id="list4"></div><script>make15("list4", "10 BEEP 5:WAIT 30\n20 BEEP 20:WAIT 30\n30 GOTO 10\nRUN")</script>
-WAIT is the command to wait. A slow rhythm results if you put a larger number. GOTO is the command to go back to the line 10 to repeat. Press [ESC] key to stop.
+WAIT est la commande d'attente. Un rythme est faible si vous mettez un nombre plus grand. GOTO est la commande pour revenir à la ligne 10 à répéter. Appuyez sur la touche [ECHAPE] pour arrêter.
 </section><section>
-The rhythm will stop while pressing the button of the IchigoJam.<br>
+Le rythme s'arrêtera en appuyant sur le bouton de l'IchigoJam.<br>
 <div id="list5"></div><script>make15("list5", "15 IF BTN() GOTO 15")</script>
 </section>
 
 <section>
-<b>Let's try!</b><br>
-1. Make various sounds!<br>
-2. Make a rhythm with fast tempo<br>
-3. Add this program "12 BEEP 20:WAIT 30" to change the tripple time (musical time pattern)<br>
-4. Make a quadruple rhythm<br>
-5. Check the rhythm if change "GOTO 15" to "GOTO 10" on line 15<br>
-6. Make your original rhythm!<br>
+<b>Essayez-le!</b><br>
+1. Faites des sons différents!<br>
+2. Faire un rythme avec un tempo rapide<br>
+3. Ajoutez à ce programme "12 BEEP 20:WAIT 30" pour changer le temps triple (modèle de temps musical)<br>
+4. Faire un rythme quadruple<br>
+5. Vérifie le rhythme si tu changes "GOTO 15" en "GOTO 10" à la ligne 15<br>
+6. Faites votre rythme original!<br>
 </section>
 
 <div id="credit"><a href=https://github.com/IchigoJam/print>CC BY on GitHub</a> <a href="https://ichigojam.github.io/print/en/">IchigoJam print</a> https://ichigojam.github.io/print/en/ <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a><br>
