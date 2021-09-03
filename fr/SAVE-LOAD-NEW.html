@@ -1,46 +1,46 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Save a Program / SAVE/LOAD/NEW - IchigoJam</title>
+<title> Enregistrer un Programme/ SAVE/LOAD/NEW- IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Save a Program / SAVE/LOAD/NEW</h1>
+<h1> Enregistrer un Programme/ SAVE/LOAD/NEW</h1>
 
 <section>
-A program that lights LED. Save the program with "SAVE".
+Un programme qui allume des LED. Enregistrez le programme avec la commande "SAVE".
 <div id="save-1"></div><script>make15("save-1", "SAVE0\nSaved 30byte\nOK")</script>
-When the capacity and "OK" are displayed, saving of the program is completed.<br>
-IchigoJam can save 4 programs.(0～3)
+Lorsque la capacité et "OK" sont affichés, la sauvegarde du programme est terminée.<br>
+IchigoJam peut enregistrer 4 programmes.(0～3)
 </section>
 
 <section>
-Let's turn off the power and load the program with "LOAD".
+Eteignons IchigoJam, Rallumons le et chargeons le programme avec la commande "LOAD".
 <div id="save-3"></div><script>make15("save-3", "LOAD0\nLoaded 30byte\nOK")</script>
-Confirm with "LIST"! Execute with "RUN"!
+Confirme le programme with la commande "LIST"! Exécute le avec la commande "RUN"!
 </section>
 
 <section>
-To confirm the saved program, use "FILES".
+Pour confirmer le programme enregistré, utilisez la commande "FILES".
 <div id="save-5"></div><script>make15("save-5", "FILES")</script>
-Be careful not to erase your favorite program by mistake.
+Attention à ne pas effacer votre programme préféré par erreur.
 </section>
 
 <section>
-To create a new program, use "NEW".
+Pour créér un nouveau programme, utilises la commande "NEW".
 <div id="save-6"></div><script>make15("save-6", "NEW\nOK\nLIST\nOK")</script>
-If you type "LIST", nothing will be displayed.
+Si tu tapes la commande "LIST", rien ne sera affiché.
 </section>
 
 <section>
-The program saved at No. 0 starts automatically when you turn on the power switch while holding down the button on the IchigoJam.<br>
-(Even if IchigoJam is disconnected from keyboard or screen, it can be used for electronic operations etc.)
+Le programme enregistré au n°0 démarre automatiquement lorsque vous allumez l'interrupteur d'alimentation tout en maintenant enfoncé le bouton de l'IchigoJam.<br>
+(Même si IchigoJam est déconnecté du clavier ou de l'écran, il peut être utilisé pour des opérations électroniques, etc.)
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's save the program that lights 3 times<br>
-2. Let's do automatically start<br>
-3. Check what happens when use "SAVE" after "NEW"<br>
+<b>Essayez-le!</b><br>
+1. Enrégissons le programme qui allume 3 fois<br>
+2. Faisons un démarrage automatique<br>
+3. Vérifiez ce qui se passe lorsque vous utilisez "SAVE" après "NEW"<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

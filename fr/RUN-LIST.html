@@ -1,49 +1,49 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Memory of program / RUN/LIST - IchigoJam</title>
+<title> La mémoire d'un programme / RUN/LIST - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Memory of program / RUN/LIST</h1>
+<h1> La mémoire d'un programme / RUN/LIST</h1>
 
 <section>
-Let's memorize a blinking pattern of LED.
+Mémorisons un motif clignotant de LED.
 <div id="run-1"></div><script>make15("run-1", "10 LED1:WAIT10")</script>
-Starting with a number is a command meaning "to memorize".<br>
-But the LED does not light.<br>
-A command to execute the program is "RUN" and ENTER key, the LED will light up.
+Commencer par un nombre est une commande signifiant « mémoriser ».<br>
+Mais la LED ne s'allume pas.<br>
+La commande pour éxécuter le programme est "RUN" et la touche ENTREE, la LED s'allumera.
 <div id="run-2"></div><script>make15("run-2", "RUN")</script>
-Next starts with 20, and add a memory with ENTER key.
+Ensuite commence par 20, et ajoutez une mémoire et la touche ENTREE.
 <div id="run-4"></div><script>make15("run-4", "20 LED0:WAIT10")</script>
-Use "RUN" to run a memorized program.<br>
-Light again with "RUN"!
+Utilises "RUN" pour exécute un programme enregistré.<br>
+Rallumez encore avec la commande "RUN"!
 </section>
 
 <section>
-Call a memory with "LIST".
+Ramenez un enregistrement en mémoire avec la commande "LIST".
 <div id="run-3"></div><script>make15("run-3", "LIST\n10 LED1:WAIT10\n20 LED0:WAIT10")</script>
-Inserting "WAIT" between line 10 and line 20.
+Insertion de "WAIT" entre la ligne 10 et la ligne 20.
 <div id="run-5"></div><script>make15("run-5", "15 WAIT50")</script>
-Confirm with "LIST", execute with "RUN"!
+Confirmez avec "LIST", et exécutez avec "RUN"!
 </section>
 
 <section>
-Programs with the same number will be overwritten.<br>
-(Confirm with "LIST"!)
+Les programmes portant le même numéro seront écrasés.<br>
+(Confirmez avec "LIST"!)
 <div id="run-6"></div><script>make15("run-6", "15 WAIT110")</script>
 </section>
 
 <section>
-Type only number and press the ENTER key, it deletes the respective line.
+Tapez seulement le numéro et appuyez sur la touche ENTREE, cela éfface la ligne correspondante.
 <div id="run-7"></div><script>make15("run-7", "15\nLIST")</script>
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Use a function key F5 instead of "RUN" command<br>
-2. Use F4 key instead of "LIST"<br>
-3. Let's make a program that the LED lights 2 times<br>
-4. Let's make a program that lights the LED with cool pattern
+<b>Essayez-le!</b><br>
+1. Utilisez une touche de fonction F5 au lieu de la commande "RUN"<br>
+2. Utilisez la touche F4 au lieu de "LIST"<br>
+3. Faisons un programme pour que la LED s'allume 2 fois<br>
+4. Faisons un programme qui allume la LED avec un motif cool
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
