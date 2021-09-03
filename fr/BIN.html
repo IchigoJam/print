@@ -1,24 +1,24 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Make a binary number / BIN$ - IchigoJam</title>
+<title>Faire un nombre binaire / BIN$ - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
-<h1>Make a binary number / BIN$</h1>
+<h1>Faire un nombre binaire / BIN$</h1>
 
 <section>
-There are numbers, syllables, alphabet, various characters, but the character used by the computer is only two "0" and "1".
+Il y a des chiffres, des syllabes, de l'alphabet, divers caractères, mais le caractère utilisé par l'ordinateur n'est que deux "0" et "1".
 </p><p>
-Usually, if you add 1 in 9, it will be 10 and 2 characters, but because there is only 0 and 1, only 1 will be added to 1, so it will be 10 (one zero) and 2 characters.
-This is a binary number.
+Habituellement, si vous ajoutez 1 sur 9, ce sera 10 et 2 caractères, mais comme il n'y a que 0 et 1, seul 1 sera ajouté à 1, donc ce sera 10 (un zéro) et 2 caractères.
+C'est un nombre binaire.
 </p><p>
-"BIN$" command that change the number to binary number.<br>
+"BIN$" la commande qui change un nombre décimal en un nombre binaire.<br>
 <div id="bin1-1"></div><script>make15("bin1-1", "?BIN$(2)\n10 \n?BIN$(10)\n1010 ")</script>
-The symbol "` "(shift + "@" or left of "1") converts a binary number to a number.<br>
+Le symbole "` "(shift + "@" ou à gauche de "1") convertit un nombre binaire en un nombre décimal.<br>
 <div id="bin1-2"></div><script>make15("bin1-2", "?`1111\n15 \n?`100000000\n256 ")</script>
 </section>
 
 <section>
-0, 1, 2, 3, 4 ... count it with binary number.
+0, 1, 2, 3, 4 ... comptez-les avec des nombres binaires.
 <div id="bin1-3"></div><script>make15("bin1-3", f2s(function() {/*
 FOR I=0 TO 256:?BIN$(I),I:WAIT 30:NEXT
 0  0 
@@ -26,17 +26,17 @@ FOR I=0 TO 256:?BIN$(I),I:WAIT 30:NEXT
 10  2 
 11  3 
 */}))</script>
-Binary numbers count with "bit". <br>
-3 is 2 bits with "11", 8 is 4 bits with "1000".
+Les nombres binaires comptent avec "bit".<br>
+3 est 2 bits avec "11", 8 est 4 bits avec "1000".
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's make "16" a binary number<br>
-2. Let' make the binary numbers "101", "1010", "10100"  a number<br>
-3. Let's make "40" to binary number<br>
-4. What is the maximum number that can be represented by 5 bits?<br>
-5. Let's make "-1" a binary number<br>
+<b>Essayez-le!</b><br>
+1. Faisons de "16" un nombre binaire<br>
+2. Faisons des nombres binaires "101", "1010", "10100" un nombre décimal<br>
+3. Faisons "40" en nombre binaire<br>
+4. Quel est le nombre maximum qui peut être représenté par 5 bits ?<br>
+5. Faisons de "-1" un nombre binaire<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
