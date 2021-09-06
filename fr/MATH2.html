@@ -1,14 +1,14 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Looking for common divisor(Mathematics)</title>
+<title>Recherche de diviseur commun(Mathématiques)</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 <script src="tokana.js"></script>
 </head><body>
 
-<h1>Looking for common divisor(Mathematics) - IchigoJam</h1>
+<h1>Recherche de diviseur commun(Mathématiques) - IchigoJam</h1>
 
 <section>
-What number is divisible by 182?
+Quel nombre est divisible par 182 ?
 <div id="step-1"></div>
 <script>make15("step-1", f2s(function() {/*
 10 N=182
@@ -16,12 +16,12 @@ What number is divisible by 182?
 30 IF N%X=0 ?X
 40 NEXT
 */}))</script>
-With "FOR" / "NEXT" command, while incrementing a variable X by 1 from 2, and repeat.<br>
-It is OK that "N=182" be also written as "LET N, 182"!
+Avec la commande "FOR"/"NEXT", en incrémentant une variable X de 1 à partir de 2, et répéter.<br>
+C'est OK si à la place de "N=182", vous écrivez "LET N, 182" !
 </section>
 
 <section>
-Let's check the "divisor", a number that came out.
+Vérifions les "diviseurs", les nombres qui sont sortis.
 <div id="step-2"></div>
 <script>make15("step-2", f2s(function() {/*
 ?182%91
@@ -29,11 +29,11 @@ Let's check the "divisor", a number that came out.
 ?182%26
 0
 */}))</script>
-It can divide properly!
+Il peut les diviser correctement!
 </section>
 
 <section>
-What is the number that can divide 455?
+Quel est le nombre qui peut diviser 455 ?
 <div id="step-3"></div>
 <script>make15("step-3", f2s(function() {/*
 10 N=455
@@ -41,7 +41,7 @@ What is the number that can divide 455?
 </section>
 
 <section>
-It displays the number that can divide both 182 and 455.
+Il affiche le/les nombre(s) qui peut/peuvent diviser à la fois 182 et 455.
 <div id="step-4"></div>
 <script>make15("step-4", f2s(function() {/*
 10 N=182:M=455
@@ -49,18 +49,18 @@ It displays the number that can divide both 182 and 455.
 30 IF N%X=0 AND M%X=0 ?X
 40 NEXT
 */}))</script>
-The displayed numbers 7, 13, and 91 are the "common divisor" of 182 and 455.<br>
-The largest number 91 is the "greatest common divisor" of 182 and 455.
+Les nombres affichés 7, 13 et 91 sont les « diviseurs communs » de 182 et 455.<br>
+Le plus grand nombre 91 est le « plus grand diviseur commun » de 182 et 455.
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's display the "common divisor" of 3432 and 2002.<br>
-2. Let's divide 3432 by "greatest common divisor" from (1).<br>
-3. Let's multiply the number calculated above (2) with "greatest common divisor".<br>
-4. Let's count how many "divisors" of 2002.<br>
-5. Let's look for the "prime numbers" that do not have "divisor" in a 4 digit number.<br>
-6. Let's confirm that there is no "common divisor" between "prime numbers" from (5).<br>
+<b>Essayez-le!</b><br>
+1. Affichons les « diviseurs communs » de 3432 et 2002.<br>
+2. Divisons 3432 par le "plus grand commun diviseur" obtenu dans (1).<br>
+3. Multiplions le nombre calculé ci-dessus (2) par le "plus grand commun diviseur".<br>
+4. Comptons combien de "diviseurs" il y a pour 2002.<br>
+5. Cherchons les "nombres premiers" qui n'ont pas de "diviseur" dans un nombre à 4 chiffres.<br>
+6. Vérifions qu'il n'y a pas de « diviseur commun » entre les « nombres premiers » obtenus de (5).<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

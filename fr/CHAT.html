@@ -1,13 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Let's chat on a network! - IchigoJam</title>
+<title>Discutons en réseau! - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Let's chat on a network!</h1>
+<h1>Discutons en réseau!</h1>
 
 <section>
-Prepare 2 IchigoJam, 3 jumper wires. Connect that.<br>
+Préparez 2 IchigoJam, 3 fils de liaison. Connectez les.<br>
 <style>
 td {
 	padding: 0px 4px;
@@ -24,33 +24,33 @@ table {
 	<tr><td>TXD(transfer)</td><td><hr width=30 noshade></td><td>RXD(receiver)</td></tr>
 	<tr><td>RXD(receiver)</td><td><hr width=30 noshade></td><td>TXD(transfer)</td></tr>
 </table>
-※ Be careful! IchigoJam will break if you connect wrong pins.<br>
+※ Faites beaucoup attention! IchigoJam se brisera si vous connectez mal les fils.<br>
 </section>
 
 <section>
-On IchigoJam1: Type the followings.
+Sur IchigoJam1: Tapez ce qui suit.
 <div id="remote-1"></div><script>make15("remote-1", "?\"LED1")</script>
-What's up on IchigoJam2?<br>
-Check the wires if it doesn't work.
+Que se passe-t-il sur IchigoJam2 ?<br>
+Vérifiez les fils si cela ne fonctionne pas.
 <div id="remote-2"></div><script>make15("remote-2", "?\"LED0")</script>
-Let's send a message.
+Envoyons un message.
 <div id="remote-4"></div><script>make15("remote-4", "?\"HELLO")</script>
-You got many errors "Syntax error" continuly because "HELLO" is not a IchigoJam command. IchigoJam1 will send a error to IchigoJam2, IchigoJam2 will send a error.<br>
-Pick up a wire from TXD to RXD once to stop.
+Vous avez de nombreuses erreurs "Erreur de syntaxe" en permanence car "HELLO" ("BONJOUR") n'est pas une commande IchigoJam. IchigoJam1 enverra une erreur à IchigoJam2, IchigoJam2 enverra aussi une erreur.<br>
+Enlevez un fil de TXD à RXD une fois pour arrêter.
 </section>
 
 <section>
-REM and "'" is command to ignore.
+REM et " ' " est la commande à ignorer.
 <div id="remote-3"></div><script>make15("remote-3", "?\"'HELLO")</script>
 </section>
 
 <section>
-<b>Let's try!</b><br>
-1. Talk on IchigoJam<br>
-2. Pick up all wires and connect again<br>
-3. Try to use 2 wires<br>
-4. Manipulate your friend's computer via the network<br>
-5. Make a idea to make game with the network<br>
+<b>Essayez-le!</b><br>
+1. Discutez sur IchigoJam<br>
+2. Enlevez tous les fils et reconnectez-les encore<br>
+3. Essayez d'utiliser 2 fils<br>
+4. Manipulez l'ordinateur de votre ami via le réseau<br>
+5. Ayez une idée pour faire du jeu avec le réseau<br>
 </section>
 
 <div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>

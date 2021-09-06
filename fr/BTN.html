@@ -1,52 +1,52 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Tell a thought / BTN - IchigoJam</title>
+<title>Dire une pensée / BTN - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Convey thoughts / BTN</h1>
+<h1>Transmettre des pensées / BTN</h1>
 
 <section>
-Let's tell your thoughts to the computer with the button on the left of IchigoJam.
+Dites vos pensées à l'ordinateur avec le bouton à gauche d'IchigoJam.
 <div id="btn-1"></div><script>make15("btn-1", "?BTN()")</script>
-If you press ENTER key without pressing the button, it will display zero (0).
-Press the UP key three times on the lower right of the keyboard, move a blinking square (cursor) , then hold down the button and press ENTER key.<br>
-It is succeed if it displayed a "1"!
+Si vous appuyez sur la touche ENTREE sans appuyer sur le bouton, il affichera zéro (0).
+Appuyez trois fois sur la touche HAUT en bas à droite du clavier, déplacez un carré clignotant (curseur), puis maintenez le bouton enfoncé et appuyez sur la touche ENTREE.<br>
+C'est réussi s'il affiche un "1" !
 </section>
 
 <section>
 </section>
 
 <section>
-Repeat using "GOTO" command.
+Utilisez la commande "GOTO" pour répéter.
 <div id="btn-2"></div><script>make15("btn-2", "10 ?BTN()\n20 GOTO 10\nRUN")</script>
-"0" displays in a row, let's try to press or release a button.<br>
-To stop, use the ESC(Escape) key.
+0" s'affiche dans une ligne, essayons d'appuyer ou de relâcher un bouton.<br>
+Pour arrêter, utilisez la touche "ECHAPE".
 </section>
 
 <section>
-The program that LED lights when button is pressed.
+Le programme qui allume la LED lorsque le bouton est enfoncé.
 <div id="btn-3"></div><script>make15("btn-3", "10 LED BTN()\n20 GOTO 10")</script>
-Even F5 key is OK instead of "RUN" command!<br>
-The "LED" command lights when it is 1 and disappears when it is 0, so it lights in line with the button press.<br>
-Stop with the ESC key.
+Au lieu de la commande "RUN" !, Vous pouvez utiliser la touche F5<br>
+La commande "LED" s'allume lorsqu'elle est à 1 et disparaît lorsqu'elle est à 0, elle s'allume donc en fonction de l'appui sur le bouton.<br>
+Arrêtez avec la touche ECHAPE.
 </section>
 
 <section>
-You press the button, it blinks fast!
+Vous appuyez sur le bouton, il clignote rapidement !
 <div id="btn-4"></div><script>make15("btn-4", "10 LED 1:WAIT 10-BTN()*5\n20 LED 0:WAIT 10-BTN()*5\n30 GOTO 10")</script>
-"WAIT" is a command for waiting.<br>
-When the button is not pressed, it is "WAIT 10".<br>
-If pressed, BTN() will be 1, subtract a number which is multiplied by 5 with "* 5", so it becomes "WAIT 5".<br>
-Go back to line 10 with "GOTO", repeat.
+"WAIT" est la commande d'attente.<br>
+Lorsque le bouton n'est pas enfoncé, c'est "WAIT 10".<br>
+Si vous appuyez sur, BTN() sera 1, soustrayez un nombre qui est multiplié par 5 avec "* 5", donc il devient "WAIT 5".<br>
+Revenez à la ligne 10 avec "GOTO", et répétez.
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's make it blink more quickly, if the button is pressed.<br>
-2. Let's make it blink slowly, if the button is pressed.<br>
-3. Let's remodel to always light, if the button is pressed.<br>
-4. Let's remodel so as not to light at all when not pressing the button.<br>
+<b>Essayez-le!</b><br>
+1. Faisons-le clignoter plus rapidement, si le bouton est enfoncé.<br>
+2. Faisons-le clignoter lentement, si le bouton est enfoncé.<br>
+3. Remodifions le pour toujours s'allumer, si le bouton est enfoncé.<br>
+4. Remodifions le pour ne pas allumer du tout quand on n'appuie pas sur le bouton.<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

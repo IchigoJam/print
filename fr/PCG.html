@@ -1,29 +1,29 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Make an Original Character / PCG - IchigoJam</title>
+<title>Faire un personnage original / PCG - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Make an Original Character / PCG - IchigoJam</h1>
+<h1>Faire un personnage original / PCG - IchigoJam</h1>
 
 <section>
-A "cat" appears if you hold down a left Alt on the keyboard and press "C".
+Un "chat" apparaît si vous maintenez la touche Alt gauche du clavier enfoncée et appuyez sur "C".
 <div id="pcg-1"></div><script>make15("pcg-1", "?CHR$(236)")</script>
-The character code of "cat" is 236.
+Le code de caractère de "chat" est 236.
 </section>
 
 <section>
-To change this "cat" to a "stick".
+Pour changer ce "chat" en "bâton".
 <div id="pcg-2"></div><script>make15("pcg-2", "POKE 236*8,8,8,8,8,8,8,8,8")</script>
-Changed!?<br>
-Now time, to change to a small ball.
+Changé!?<br>
+Il est maintenant temps de passer à une petite boule.
 <div id="pcg-3"></div><script>make15("pcg-3", "POKE 236*8,0,0,0,24,24,0,0,0")</script>
-To a slanted line!
+Vers une ligne inclinée !
 <div id="pcg-4"></div><script>make15("pcg-4", "POKE 236*8,1,2,4,8,16,32,64,128")</script>
 </section>
 
 <section>
-Program to write a favorite painting using binary number, 0 and 1.
+Programme pour écrire une peinture préférée en utilisant un nombre binaire, 0 et 1.
 <div id="pcg-5"></div><script>make15("pcg-5", f2s(function() {/*
 10 POKE236*8+0,`01111110
 11 POKE236*8+1,`11011011
@@ -35,21 +35,21 @@ Program to write a favorite painting using binary number, 0 and 1.
 17 POKE236*8+7,`00011000
 RUN
 */}))</script>
-Mr. Ice appears!
+M. Yeux et Bouche apparaît !
 </section>
 
 <section>
-To return to a "cat", use "CLP" (clear pattern).
+Pour revenir à un "chat", utilisez "CLP" (éfface le modèle).
 <div id="pcg-6"></div><script>make15("pcg-6", "CLP")</script>
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's make a heart mark<br>
-2. Let's make a favorite character<br>
-3. Let's rewrite a alien of ALT + D by changing 236 to 237 (Characted code range is 224-255!)<br>
-4. Let's display the number for the binary number "10000000"<br>
-5. Let's make original character with 1 line program .<br>
+<b>Essayez-le!</b><br>
+1. Faisons une marque de coeur<br>
+2. Faisons un personnage préféré<br>
+3. Réécrivons un extraterrestre, ALT + D en changeant 236 en 237 (la plage de codes de caractères est 224-255 !)<br>
+4. Affichons le nombre décimale pour le nombre binaire "10000000"<br>
+5. Créons un personnage original avec un programme en une ligne.<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
