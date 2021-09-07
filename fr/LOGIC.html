@@ -1,13 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>1 + 1 = 1, LOGIC PUZZLE - IchigoJam</title>
+<title>1 + 1 = 1, LOGIQUE PUZZLE - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>1 + 1 = 1, LOGIC PUZZLE - IchigoJam</h1>
+<h1>1 + 1 = 1, LOGIQUE PUZZLE - IchigoJam</h1>
 
 <section>
-We have 0 and 1 only (in logic world), now let's do calculations. First we start with addition. "|" (vertical bar).
+Nous n'avons que 0 et 1 (dans le monde logique), faisons maintenant les calculs. Nous commençons d'abord par la somme logique. "|" (barre verticale).
 <div id="logic-1"></div><script>make15("logic-1", f2s(function() {/*
 ?1|0
 1
@@ -16,45 +16,45 @@ We have 0 and 1 only (in logic world), now let's do calculations. First we start
 ?1|1
 1
 */}))</script>
-There is no increase in digit with 1 adding by 1, still remains to be 1, that's the "logical sum".
+Il n'y a pas d'augmentation de chiffre avec 1 en additionnant 1, reste toujours à 1, c'est la "somme logique".
 </section>
 
 <section>
-Next is the multiplication, use "&". (Use comma to separate and calculate collectively)
+Vient ensuite la multiplication logique, utilisez "&". (Utilisez une virgule pour séparer et calculer collectivement)
 <div id="logic-2"></div><script>make15("logic-2", f2s(function() {/*
 ?1&1,0&1,1&0,0&0
  1   0   0   0
 */}))</script>
-If number multiplied by 1, answer is that same number, and it becomes zero when it is multiplied by 0, that's the "logical multiplication".
+Si nombre multiplié par 1, la réponse est ce même nombre, et il devient zéro lorsqu'il est multiplié par 0, c'est la "multiplication logique".
 </section>
 
 <section>
-To perform unusual addition use "^". Even when both numbers are 1, the answer is zero
+Pour effectuer une somme exclusive, utilisez "^". Même lorsque les deux nombres sont 1, la réponse est zéro
 <div id="logic-3"></div><script>make15("logic-3", f2s(function() {/*
 ?1^1,0^1,1^0,0^0
  0   1   1   0
 ?1|1,0|1,1|0,0|0
  1   1   1   0
 */}))</script>
-It is only for 1^1, but the rest remain same as "logic sum". That's "XOR" (exclusive OR)
+Seul pour 1^1 est différent, mais le reste est identique à la "somme logique". C'est "XOR" (OU exclusif)
 </section>
 
 <section>
-Logic calculations can be put collectively up to maximum of 16！
+Les calculs logiques peuvent être mis collectivement jusqu'à un maximum de 16！
 <div id="logic-4"></div><script>make15("logic-4", f2s(function() {/*
 ?BIN$(`1010|`0011,4)
 1011
 */}))</script>
-Addition of binary numbers with 4 digits. You can calculate 1|0, 0|0, 1|1, 0|1 all at once！
+Addition de nombres binaires à 4 chiffres. Vous pouvez calculer 1|0, 0|0, 1|1, 0|1 à la fois！
 </section>
 
 <section>
-<b>Try it！</b><br>
-1. What is the answer for 3|1？<br>
-2. Use hint: ?BIN$(1),BIN$(2),BIN$(3), solve the puzzle 3|1<br>
-3. Lets do calculations of ?8323^35 and ?8323^35^35<br>
-4. Change to different numbers, let's play with secret numbers using logic<br>
-5. Let's do various calculations, let's make logic puzzles<br>
+<b>Essayez-le！</b><br>
+1. Quelle est la réponse pour 3|1？<br>
+2. Utilisez l'astuce : ?BIN$(1),BIN$(2),BIN$(3), résolvez le puzzle 3|1<br>
+3. Faisons les calculs de ?8323^35 et de ?8323^35^35<br>
+4. Changez de nombres, jouons avec des nombres secrets en utilisant la logique<br>
+5. Faisons divers calculs, faisons des puzzles logiques<br>
 <br>
 </section>
 

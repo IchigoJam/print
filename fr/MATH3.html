@@ -1,54 +1,54 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Rounding off(Mathematics)</title>
+<title>Arrondir(Mathématiques)</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 <script src="tokana.js"></script>
 </head><body>
 
-<h1>Rounding off(Mathematics) - IchigoJam</h1>
+<h1>Arrondir(Mathématiques)- IchigoJam</h1>
 
 <section>
-Let's round down!<br>
-41 is 40, 44 is 40, 45 is also 40, 49 is 40.<br>
-It is called round down the ones place.
+Arrondissons à l'inférieur!<br>
+41 donne 40, 44 donne 40, 45 donne aussi 40, 49 donne 40.<br>
+On l'appelle arrondir à l'inférieur.
 <div id="step-1"></div>
 <script>make15("step-1", f2s(function() {/*
 ?44/10
 4
 */}))</script>
-Since it is an integer calculation, if you divide by 10, it will be 4 instead of 4.4.
+Comme il s'agit d'un calcul entier, si vous divisez 44 par 10, ce sera 4 au lieu de 4,4.
 <div id="step-2"></div>
 <script>make15("step-2", f2s(function() {/*
 ?44/10*10
 40
 */}))</script>
-Divide by 10, and multiply by 10, completed to round down!
+Divisez par 10, et multipliez par 10, complétez pour arrondir à l'inférieur !
 </section>
 
 <section>
-Let's round it up!<br>
-49 is 50, 45 is 50, 44 & 41 is also 50, 40 is 40.<br>
-It is called round up the ones place.
+Arrondissons au supérieur!<br>
+Avec le programme ci-dessous 49 donne 50, 45 donne 50, 44 & 41 donne aussi 50, 40 donne 40.<br>
+C'est ce qu'on appelle arrondir au supérieur.
 <div id="step-3"></div>
 <script>make15("step-3", f2s(function() {/*
 ?44/10*10+10
 50
 */}))</script>
-After rounding down, can it round up by adding 10!?
+Après avoir arrondi à l'inférieur, peut-il arrondir en ajoutant 10 !?
 <div id="step-4"></div>
 <script>make15("step-4", f2s(function() {/*
 ?40/10*10+10
 50
 */}))</script>
-Oh well, 40 has also turned to 50. Let's judge by the ones place.
+Eh bien, 40 est également devenu 50. Jugeons-en nous même.
 <div id="step-5"></div>
 <script>make15("step-5", f2s(function() {/*
 10 INPUT N
 20 LET M,N%10
 30 ?M
 */}))</script>
-"%" is a symbol for calculating the remainder in the world of IchigoJam BASIC.<br>
-If the ones place is 0, it rounds down, and if it is 1 or more it rounds up.
+"%" est un symbole pour calculer le reste dans le monde d'IchigoJam BASIC.<br>
+Si la place des uns est 0, il arrondit à l'inférieur, et s'il est de 1 ou plus, il arrondit au supérieur.
 <div id="step-6"></div>
 <script>make15("step-6", f2s(function() {/*
 40 IF M=0 ?N/10*10
@@ -57,11 +57,11 @@ If the ones place is 0, it rounds down, and if it is 1 or more it rounds up.
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's round up the ones place of 72 by the program.<br>
-2. Let's make a "rounding off" program that rounds down the ones place if it is 4 or less and rounds up if it is 5 or more.<br>
-3. Let's confirm that it can round up the ones place even with "?(N+9)/10*10".<br>
-4. Let's make the program for rounding off to the ones place.<br>
+<b>Essayons-le!</b><br>
+1. Arrondissons 72 par le programme.<br>
+2. Faisons un programme "d'arrondi" qui arrondit à l'inférieur la place des uns si c'est 4 ou moins et arrondit au supérieur si c'est 5 ou plus.<br>
+3. Confirmons qu'il peut arrondir au supérieur à la place des uns même avec "?(N+9)/10*10".<br>
+4. Faisons le programme pour arrondir à la place des uns.<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

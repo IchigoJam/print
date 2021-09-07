@@ -1,14 +1,14 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Nekonikoban Game</title>
+<title>Jeu Nekonikoban</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Nekonikoban Game - IchigoJam</h1>
+<h1>Jeu Nekonikoban - IchigoJam</h1>
 
 <section>
-"Neko ni koban" meaning relates with "casting pearls before swine"(big waste of resources). "Neko"- "Cat", "Koban"-"Coin"
-A cat appears at the horizontal 10 and the vertical 5.(character code 236, ALT + C)
+Le sens "Neko ni koban" se rapporte à "jeter des perles avant les porcs" (grand gaspillage de ressources). "Neko"-"Chat", "Koban"-"Pièce de monnaie"
+Un chat apparaît au 10 horizontal et au 5 vertical (code de caractère 236, ALT + C)
 <div id="neko-1"></div>
 <script>make15("neko-1", f2s(function() {/*
 10 CLS:X=10:Y=5
@@ -17,7 +17,7 @@ A cat appears at the horizontal 10 and the vertical 5.(character code 236, ALT +
 </section>
 
 <section>
-Make it to be able to move with cursor.
+Faites en sorte de pouvoir le déplacer avec le curseur.
 <div id="neko-2"></div>
 <script>make15("neko-2", f2s(function() {/*
 20 K=INKEY()
@@ -30,7 +30,7 @@ Make it to be able to move with cursor.
 </section>
 
 <section>
-Scatter the koban freely, and add score(S).
+Dispersez le koban (Pièces de monnaie) librement et ajoutez un score(S).
 <div id="neko-3"></div>
 <script>make15("neko-3", f2s(function() {/*
 15 S=0:FOR I=1 TO 10:LOCATE RND(30),RND(20):?CHR$(245):NEXT
@@ -39,7 +39,7 @@ Scatter the koban freely, and add score(S).
 </section>
 
 <section>
-Game over in 10 seconds.
+Jeu terminé en 10 secondes.
 <div id="neko-4"></div>
 <script>make15("neko-4", f2s(function() {/*
 7 CLT
@@ -48,13 +48,13 @@ Game over in 10 seconds.
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's display "LIST"<br>
-2. Let's give out a large number of koban<br>
-3. Let's set to be gameover in 5 seconds<br>
-4. Let's be able to move fast<br>
-5. Let's make the score increase by 10 points<br>
-6. Let's modify and save it as you like<br>
+<b>Essayez-le!</b><br>
+1. Affichez la "LIST"<br>
+2. Donnez un grand nombre de koban (Pièces de monnaies)<br>
+3. Finissez le jeu dans 5 secondes<br>
+4. Rendez capable d'aller vite<br>
+5. Faites augmenter le score de 10 points<br>
+6. Modifiez et enregistrez-le comme vous le souhaitez<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

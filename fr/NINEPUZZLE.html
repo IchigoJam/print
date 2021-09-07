@@ -1,23 +1,23 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Nine Puzzle/title>
+<title>Neuf casse-tête (9 Puzzle)</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Nine Puzzle - IchigoJam</h1>
+<h1>Neuf casse-tête (Puzzle) - IchigoJam</h1>
 
 <section>
-A puzzle that slide the 1 to 8 panels and sort cleanly.
+Un puzzle qui fait glisser les 1 à 8 panneaux et les trie(classe) proprement.
 <div id="ninepuzzle-1"></div>
 <script>make15("ninepuzzle-1", f2s(function() {/*
 10 CLS:FOR I=0 TO 7:LC I%3,I/3:?I+1:NEXT
 */}))</script>
-Repeat from 0 to 7, display a completed pattern.<br>
-("%" will calculate the remainder)
+Répétez de 0 à 7, affichez un motif terminé.<br>
+("%" calculera le reste)
 </section>
 
 <section>
-Slide the panel with the cursor
+Faites glisser le panneau avec le curseur.
 <div id="ninepuzzle-2"></div>
 <script>make15("ninepuzzle-2", f2s(function() {/*
 20 X=2:Y=2
@@ -28,20 +28,20 @@ Slide the panel with the cursor
 70 X=X-(K=28)*(X>0)+(K=29)*(X<2):Y=Y-(K=30)*(Y>0)+(K=31)*(Y<2)
 80 ?CHR$(SCR(X,Y)):RETURN
 */}))</script>
-("GOSUB" is the "GOTO" that attached a "returning" function by the "RETURN")
+("GOSUB" est le "GOTO" auquel est attachée une fonction de "retour" par le "RETURN")
 </section>
 
 <section>
-Let's stir randomly for 200 times.
+Remuons au hasard 200 fois.
 <div id="ninepuzzle-3"></div>
 <script>make15("ninepuzzle-3", f2s(function() {/*
 25 FOR I=1 TO 200:K=RND(4)+28:GOSUB 60:NEXT:CLT
 */}))</script>
-(Reproduce with "RND" for the clatter of keys!)
+(Reproduisez avec "RND" pour le cliquetis des clés !)
 </section>
 
 <section>
-Display the judgment as to whether it cleared, and a clear-time with seconds!
+Affichez le jugement pour savoir s'il s'est effacé et un temps d'effacement en secondes !
 <div id="ninepuzzle-4"></div>
 <script>make15("ninepuzzle-4", f2s(function() {/*
 35 F=0:FOR I=0 TO 7:F=F+(SCR(I%3,I/3)=I+49):NEXT:IF F=8 LC0,4:?"CLEAR! TIME:";TICK()/60;"s":PLAY"O5E16E":END
@@ -49,12 +49,12 @@ Display the judgment as to whether it cleared, and a clear-time with seconds!
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's change the number of stirring<br>
-2. Let's add the sound of the puzzle game start<br>
-3. Let's play a sound effects when it moved<br>
-4. Let's make a blink the LED when cleared it<br>
-5. Let's add memorying and displaying of highest record<br>
+<b>Essayez-le!</b><br>
+1. Modifions le nombre de remuement<br>
+2. Ajoutons le son du début du jeu de puzzle<br>
+3. Jouons un effet sonore quand il a bougé<br>
+4. Faisons un clignotement de la LED c'est terminé<br>
+5. Ajoutons la mémoire et l'affichage du record le plus élevé<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

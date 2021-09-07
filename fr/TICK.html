@@ -1,40 +1,40 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Make a stopwatch / TICK - IchigoJam</title>
+<title>Faire un Chronomètre / TICK - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Make a stopwatch / TICK</h1>
+<h1>Faire un Chronomètre / TICK</h1>
 
 <section>
 1,2,3,4,5,6...<br>
-60 times while 1 second, keeps counting time, IchigoJam.
+60 fois pendant 1 seconde, continue de compter le temps, IchigoJam.
 <div id="tick-1"></div><script>make15("tick-1", "?TICK()")</script>
-"TICK" is that number. Let's make displaying several times.
+"TICK" est ce nombre. Faisons l'affichage plusieurs fois.
 <div id="tick-2"></div><script>make15("tick-2", "?TICK()")</script>
-The number displayed for the second time is larger than the first time.
+Le nombre affiché pour la deuxième fois est plus grand que la première fois.
 <div id="tick-3"></div><script>make15("tick-3", "?TICK()/60")</script>
-By dividing by 60, change the time since turning on the power, to be in seconds.
+En divisant par 60, changez le temps écoulé depuis la mise sous tension, en secondes.
 </section>
 
 <section>
-Use a command "CLT" (clear timer) , to reset a number that is counting.
+Utilisez une commande "CLT" (éffacer le compteur de temps) , pour réinitialiser un nombre qui compte.
 <div id="tick-4"></div><script>make15("tick-4", "CLT\nOK\n?TICK()/60")</script>
-You can know the time since reset.
+Vous pouvez connaître le temps écoulé depuis la réinitialisation.
 </section>
 
 <section>
-Stopwatch that measures the time in seconds since initializing "RUN" comand to pressing the ichigojam button.
+Un Chronomètre qui mesure le temps en secondes depuis l'initialisation de la commande "RUN" jusqu'à l'appui sur le bouton ichigojam.
 <div id="tick-5"></div><script>make15("tick-5", f2s(function() {/*
 10 CLT
 20 IF BTN()=0 GOTO 20
 30 ?TICK()/60
 */}))</script>
-It has been waiting repeatedly until the button is pressed at line 20.
+Il attend à plusieurs reprises jusqu'à ce que le bouton soit enfoncé à la ligne 20.
 </section>
 
 <section>
-To make a stopwatch that displays the time each time with pressing the button.
+Faire un chronomètre qui affiche la durée à chaque fois en appuyant sur le bouton.
 <div id="tick-6"></div><script>make15("tick-6", f2s(function() {/*
 40 IF BTN()=1 GOTO 40
 50 GOTO 10
@@ -42,12 +42,12 @@ To make a stopwatch that displays the time each time with pressing the button.
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's breath-in deeply, and measure the time how many seconds you can keep gasping for breath.<br>
-2. Let's close eyes, and press the button for becoming 5 seconds apart.<br>
-3. Let's erase "/ 60" on line 30 and measure own button's repeated push speed.<br>
-4. Save with "SAVE0", turn off the power, turn on the power while holding down the button, if it started automatically, let's press repeatedly!<br>
-5. Let's remodel it to start by pressing the button, and display by pressing the button second time.<br>
+<b>Essayez-le!</b><br>
+1. Inspirons profondément et mesurons le temps pendant combien de secondes vous pouvez continuer à respirer.<br>
+2. Fermons les yeux, et appuyez sur le bouton pour 5 secondes d'intervalle.<br>
+3. Effacons "/60" sur la ligne 30 et mesurons la vitesse de poussée répétée de votre propre bouton.<br>
+4. Enregistrez avec "SAVE0", coupez l'alimentation, allumez tout en maintenant le bouton enfoncé, s'il a démarré automatiquement, appuyez plusieurs fois !<br>
+5. Remodifions le programme pour commencer en appuyant sur le bouton et affichons-le en appuyant une deuxième fois sur le bouton.<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

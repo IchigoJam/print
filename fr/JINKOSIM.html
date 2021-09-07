@@ -1,24 +1,24 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Population simulation- IchigoJam</title>
+<title>Simulation de population- IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Population simulation</h1>
+<h1>Simulation de population</h1>
 
 <section>
-The Japanese population is 125.13 million. It decreased by 270,000 in one year.<br>
-(Nov, 2016 Ministry of Internal Affairs and Communications, Statistics Bureau, Population Estimate)
+La population japonaise est de 125,13 millions d'habitants. Elle a diminué de 270 000 en un an.<br>
+(Nov 2016, Ministère de l'Intérieur et des Communications, Bureau des statistiques, Estimation de la population)
 <div id="jinko-1"></div>
 <script>make15("jinko-1", f2s(function() {/*
-10 P=12536
+10 P=12513
 20 D=27
 */}))</script>
-Set the population as "P", the reducing number as "D" and let the unit for both be ten thousand.<br>
+Définissez la population comme "P", le nombre réducteur comme "D" et laissez l'unité pour les deux être dix mille.<br>
 </section>
 
 <section>
-When keep decreasing in the same way every year since 2016, the population at 2100?
+Si la population continue à diminuer de la même manière chaque année depuis 2016, Quelle sera la population en 2100 ?
 <div id="jinko-2"></div>
 <script>make15("jinko-2", f2s(function() {/*
 30 FOR Y=2016 TO 2100
@@ -30,7 +30,7 @@ When keep decreasing in the same way every year since 2016, the population at 21
 </section>
 
 <section>
-Let's make it into a graph ('/' is the symbol of division).
+Faisons-en un graphique ('/' est le symbole de la division).
 <div id="jinko-3"></div>
 <script>make15("jinko-3", f2s(function() {/*
 42  FOR I=0 TO P/1000
@@ -39,7 +39,7 @@ Let's make it into a graph ('/' is the symbol of division).
 </section>
 
 <section>
-What if the reducing number is increased by 20,000 every year?
+Et si le nombre réducteur augmentait de 20 000 chaque année ?
 <div id="jinko-4"></div>
 <script>make15("jinko-4", f2s(function() {/*
 55  D=D+2
@@ -47,13 +47,13 @@ What if the reducing number is increased by 20,000 every year?
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Stop with the ESC key and check the population of 2060<br>
-2. Let's set the reducing number to 30,000 per every year<br>
-3. Let's change the character "*" in the graph to another character<br>
-4. Let's change a number at line 42, 1000 to 100<br>
-5. Let's increase the population<br>
-6. The world population is 7.3 billion people. How if will increase by 100 million every year?
+<b>Essayez-le!</b><br>
+1. Arrêtez avec la touche ECHAPE et vérifiez la population en 2060<br>
+2. Fixons le nombre de réduction à 30 000 par an<br>
+3. Changeons le caractère "*" dans le graphique en un autre caractère<br>
+4. Changeons un nombre à la ligne 42, 1000 à 100<br>
+5. Augmentons la population<br>
+6. La population mondiale est de 7,3 milliards de personnes. Et si elle augmenterait de 100 millions chaque année ?
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
