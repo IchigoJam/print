@@ -1,23 +1,9 @@
-import puppeteer from "puppeteer";
-import HTMLParser from "node-html-parser";
-import fetch from "node-fetch";
-import merge from "easy-pdf-merge";
-import fs from "fs";
-
-const mergeAsync = async (pdfs, dstfn) => {
-  return new Promise((resolve, reject) => {
-    merge(pdfs, dstfn, (err) => {
-      if (err) {
-        reject(err);
-        return;
-      }
-      resolve();
-    });
-  });
-};
+import puppeteer from "https://deno.land/x/puppeteer@9.0.1/mod.ts";
+import { HTMLParser } from "https://js.sabae.cc/HTMLParser.js";
+import { mergePDF } from "https://taisukef.github.io/easy-pdf-merge-deno/PDFMerger.js";
 
 const makePDF = async (browser, url, dstfn) => {
-  fs.mkdirSync("temp", { recursive: true });
+  await Deno.mkdir("temp", { recursive: true });
 
   const html = await (await fetch(url)).text();
   const dom = HTMLParser.parse(html);
@@ -38,8 +24,8 @@ const makePDF = async (browser, url, dstfn) => {
     await page.pdf({ path, format });
   }
 
-  await mergeAsync(pdfs, dstfn);
-  fs.rmSync("temp", { recursive: true });
+  await mergePDF(pdfs, dstfn);
+  await Deno.remove("temp", { recursive: true });
   return pdfs.length;
 };
 

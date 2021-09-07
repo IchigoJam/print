@@ -12,8 +12,7 @@
 
 ## How to make PDFs
 
-install Java runtime ([AdoptOpenJDK - Open source, prebuilt OpenJDK binaries](https://adoptopenjdk.net/))
+install [Deno](https://deno.land/) and Java runtime ([AdoptOpenJDK - Open source, prebuilt OpenJDK binaries](https://adoptopenjdk.net/))
 ```bash
-npm i
-node makepdf.mjs
+deno run -A --unstable makepdf.js
 ```
