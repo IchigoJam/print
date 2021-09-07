@@ -1,20 +1,20 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Jump game - IchigoJam</title>
+<title>Jeu de Saut - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Jump game</h1>
+<h1>Jeu de Saut</h1>
 
 <section>
-Jump game that avoids enemies by jumping.<br>
-First, the main character appearance!
+Jeu de saut qui évite les ennemis en sautant.<br>
+Tout d'abord, l'apparence du personnage principal !
 <div id="jump0"></div><script>make15("jump0", `10 CLS:Y=15:V=0
 20 LC 0,Y:?"M"`)</script>
 </section>
 
 <section>
-If you press any key, main character jumps!
+Si vous appuyez sur n'importe quelle touche, le personnage principal saute !
 <div id="jump3"></div><script>make15("jump3", `30 IF Y=15 V=3*(INKEY()!=0)
 40 Y=Y-V:V=V-1
 50 SCROLL LEFT
@@ -22,33 +22,33 @@ If you press any key, main character jumps!
 </section>
 
 <section>
-Put out enemy characters.
+Éliminez les personnages ennemis.
 <div id="jump1"></div><script>make15("jump1", `25 IF RND(10)=0 LC 31,15:?"K"`)</script>
 </section>
 
 <section>
-Adjust speed.
+Ajustez la vitesse.
 <div id="jump2"></div><script>make15("jump2", `35 WAIT 4`)</script>
 </section>
 
 <section>
-And add game-over judgment, Completed!
+Et ajoutez un jugement de fin de partie, terminé !
 <div id="jump4"></div><script>make15("jump4", `37 IF SCR(1,Y) END`)</script>
 </section>
 
 
 <section>
-<b>Try it!</b><br>
-1. Let's change the main character to "R"<br>
-2. Change main character, let's hold ALT and press "R"<br>
-3. Let's change "RND(10)" to "RND(4)"<br>
-4. Let's reduce enemy characters<br>
-5. Let's make the speed very fast<br>
-6. Let's change "V=3*" to "V=4*"<br>
-7. Let's reduce the jumping power<br>
-8. Let's add a score using "CLT" and "TICK()"<br>
-9. Let's count and put a score of the number of jumps<br>
-10. Let's make original game by remodeling<br>
+<b>Essayez-le!</b><br>
+1. Changeons le personnage principal en "R"<br>
+2. Changez de personnage principal, maintenez ALT et appuyez sur "R"<br>
+3. Changeons "RND(10)" en "RND(4)"<br>
+4. Réduisons les personnages ennemis<br>
+5. Faisons à la vitesse très rapide<br>
+6. Changeons "V=3*" en "V=4*"<br>
+7. Réduisons la puissance de saut<br>
+8. Ajoutons un score en utilisant "CLT" et "TICK()"<br>
+9. Comptons et mettons un score du nombre de sauts<br>
+10. Faisons un jeu original en remodelant<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

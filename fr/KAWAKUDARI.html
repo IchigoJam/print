@@ -1,35 +1,35 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Kawakudari Game</title>
+<title>Jeu Kawakudari</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Kawakudari Game - IchigoJam</h1>
+<h1>Jeu Kawakudari - IchigoJam</h1>
 
 <section>
-"Kawakudari Game" is a game that avoid obstacles and go down the river.<br>
-First, decide your own character.
+"KJeu Kawakudari" est un jeu qui évite les obstacles et descend la rivière.<br>
+Tout d'abord, décidez de votre propre personnage.
 <div id="kawakudari-1"></div>
 <script>make15("kawakudari-1", f2s(function() {/*
 10 CLS:X=15
 20 LC X,5:?"O"
 RUN
 */}))</script>
-※For 「"」 hold down Shift key and press 「'」. For 「?」 hold down Shift key and press 「/」. Sometimes positions can change depending on keyboard type.
+※Pour 「"」 maintenez la touche Maj enfoncée et appuyez sur 「'」. Pour 「?」 maintenez la touche Maj enfoncée et appuyez sur 「/」. Parfois, les positions peuvent changer en fonction du type de clavier.
 </section>
 
 <section>
-Enemy character, appearance.
+Apparence du Personnage ennemi.
 <div id="kawakudari-2"></div>
 <script>make15("kawakudari-2", f2s(function() {/*
 30 LC RND(32),23:?"*"
 */}))</script>
-※ For 「(」「)」, hold down Shift key and press 「8」「9」 respectively. <br>
-Let's press F5 key(same as "RUN") many times.
+※ Pour 「(」「)」, maintenez la touche Maj enfoncée et appuyez respectivement sur 「8」「9」. <br>
+Appuyons plusieurs fois sur la touche F5 (identique à "RUN").
 </section>
 
 <section>
-Repeat in program.
+Répéter dans le programme.
 <div id="kawakudari-3"></div>
 <script>make15("kawakudari-3", f2s(function() {/*
 40 GOTO 20
@@ -37,7 +37,7 @@ Repeat in program.
 </section>
 
 <section>
-Too fast? Stop with ESCAPE key, and insert "WAIT".
+Trop vite? Arrêtez avec la touche ESCAPE et insérez "WAIT".
 <div id="kawakudari-4"></div>
 <script>make15("kawakudari-4", f2s(function() {/*
 35 WAIT 3
@@ -45,7 +45,7 @@ Too fast? Stop with ESCAPE key, and insert "WAIT".
 </section>
 
 <section>
-To be able to move with the left and/or right key.
+Pouvoir se déplacer avec la touche gauche et/ou droite.
 <div id="kawakudari-5"></div>
 <script>make15("kawakudari-5", f2s(function() {/*
 36 X=X-BTN(28)+BTN(29)
@@ -53,21 +53,21 @@ To be able to move with the left and/or right key.
 </section>
 
 <section>
-Attach the hit judgment for the completion of the game!
+Attachez le jugement de coup pour l'achèvement du jeu !
 <div id="kawakudari-6"></div>
 <script>make15("kawakudari-6", f2s(function() {/*
 37 IF SCR(X,5) END
 */}))</script>
 </section>
-If no hitting, the game continues.
+S'il n'y a pas de frappe (de cogne), le jeu continue.
 <section>
-<b>Try it!</b><br>
-1. Let's ajdust the speed<br>
-2. Let's change own character(hold down ALT key and press one of A to V)<br>
-3. Let's increase the obstacles(ex. "***")<br>
-4. Let's think about game story<br>
-5. Let's look for tricks(bugs)<br>
-6. Let's think how to delete bugs<br>
+<b>Essayez-le!</b><br>
+1. Ajustons la vitesse<br>
+2. Changeons notre propre personnage (maintenez la touche ALT enfoncée et appuyez sur l'une des touches de A à V)<br>
+3. Augmentons les obstacles (ex. "***")<br>
+4. Pensons à l'histoire du jeu<br>
+5. Cherchons des astuces (bugs)<br>
+6. Réfléchissons à comment supprimer les bogues<br>
 </section>
 
 <div id="credit"><a href=https://github.com/IchigoJam/print>CC BY on GitHub</a> <a href="https://ichigojam.github.io/print/en/">IchigoJam print</a> https://ichigojam.github.io/print/en/ <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a><br>

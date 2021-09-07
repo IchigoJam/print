@@ -1,28 +1,28 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Number Quiz - IchigoJam</title>
+<title>Questionnaire sur les Nombres - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Number Quiz - IchigoJam</h1>
+<h1>Questionnaire sur les Nombres - IchigoJam</h1>
 
 <section>
-These are numbers in Kinyarwanda, the language of Rwanda.
+Ces nombres sont en FONGBE, la langue locale au Bénin.
 <div id="numq-1"></div><script>make15("numq-1", f2s(function() {/*
-10 LET[0],"ZERU","RIMWE","KABIRI","GATATU","KANE","GATANU","GATANDATU","KARINDWI","UMUNANI","ICYENDA","ICUMI"
+10 LET[0],"ZElO","ODE","OWE","ATON","ENIN","ATON ON","AYIZIN","TEIN WOUE","TEN TON","TEIN NEIN","OWO"
 RUN
 */}))</script>
 </section>
 
 <section>
-How to show a number word.
+Comment afficher un nombre.
 <div id="numq-2"></div><script>make15("numq-2", f2s(function() {/*
 ?STR$([1])
 */}))</script>
 </section>
 
 <section>
-Let your computer count down!
+Laissez votre ordinateur faire le compte!
 <div id="numq-3"></div><script>make15("numq-3", f2s(function() {/*
 20 FOR I=10 TO 0 STEP -1
 30 ?I,STR$([I]):WAIT60
@@ -31,17 +31,17 @@ Let your computer count down!
 </section>
 
 <section>
-Game 1: Answer the number game!
+Jeu 1 : Répondez au jeu des nombres !
 <div id="numq-4"></div><script>make15("numq-4", f2s(function() {/*
 20 N=RND(11):?STR$([N]);
-30 INPUT ". What's this?",M
-40 IF N=M ?"Correct!" ELSE ?"Wrong. The answer is ";N
+30 INPUT ". Devinez?",M
+40 IF N=M ?"Correcte!" ELSE ?"Faux. La reponse est: ";N
 50 GOTO 20
 */}))</script>
 </section>
 
 <section>
-Game 2: Type to answer the number game!
+Jeu 2 : Tapez pour répondre au jeu de nombres !
 <div id="numq-5"></div><script>make15("numq-5", f2s(function() {/*
 20 N=RND(11):?"Type ";N
 30 FOR I=0 TO LEN([N])-1
@@ -52,12 +52,12 @@ Game 2: Type to answer the number game!
 </section>
 
 <section>
-<b>Let's try!</b><br>
-1. Add "GAMEOVER" to Game 1 if wrong<br>
-2. Add the score to Game 1<br>
-3. Show the time after 10 answers on Game 1<br>
-4. Add "GAMEOVER" to Game 2 if mistyping<br>
-5. Change the language to another<br>
+<b>Essayez-le!</b><br>
+1. Ajoutez "GAMEOVER" (FIN) au Jeu 1 si la réponse est fausse<br>
+2. Ajouter le score au Jeu 1<br>
+3. Afficher le temps après 10 réponses sur le Jeu 1<br>
+4. Ajoutez "GAMEOVER" (FIN) au Jeu 2 en cas de faute de frappe<br>
+5. Changer la langue en une autre<br>
 </section>
 
 <div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>

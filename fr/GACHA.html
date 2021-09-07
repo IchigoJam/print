@@ -1,23 +1,23 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Gacha simulation</title>
+<title>Simulation de Gacha</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Gacha simulation - IchigoJam</h1>
+<h1>Simulation de Gacha - IchigoJam</h1>
 
 <section>
-Let's complete the alphabet with gacha!
+Complétons l'alphabet avec le gacha !
 <div id="gacha-1"></div>
 <script>make15("gacha-1", f2s(function() {/*
 10 A=RND(26)
 20 ?"DRAW:";CHR$(ASC("A")+A)
 */}))</script>
-The 26 alphabets from A to Z are used to play gacha!. Use "RND" to play.
+Les 26 alphabets de A à Z sont utilisés pour jouer au gacha !. Utilisez " RND " pour jouer.
 </section>
 
 <section>
-Let's display the collection.
+Affichons la collection.
 <div id="gacha-2"></div>
 <script>make15("gacha-2", f2s(function() {/*
 30 [A]=[A]+1
@@ -29,36 +29,36 @@ Let's display the collection.
 </section>
 
 <section>
-Until complete, automatic gacha!
+Jusqu'à la fin, gacha automatique !
 <div id="gacha-3"></div>
 <script>make15("gacha-3", f2s(function() {/*
 5 CLS:CLV
 35 N=N+1:C=0
 65  IF [I] C=C+1
-80 ?:?:?"COLLECT:";C;"/26 ";
-90 ?N;"00YEN"
-100 IF C=26 ?"COMPLETE!":END
+80 ?:?:?"RAMASSER:";C;"/26 ";
+90 ?N;"00CFA"
+100 IF C=26 ?"TERMINE!":END
 110 GOTO 10
 */}))</script>
-How much will it cost?
+Combien ça coûtera -t-il?
 </section>
 
 <section>
-Let's make "A" to be rare.
+Faisons "A" pour être rare.
 <div id="gacha-4"></div>
 <script>make15("gacha-4", f2s(function() {/*
 15 IF A=0 IF RND(10)>0 A=1
 */}))</script>
-Make a probability of it becoming "B" be 9/10 even if "A" comes out.
+Faites en sorte que la probabilité qu'il devienne « B » soit de 9/10 même si « A » sort.
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let' try three times, and compare<br>
-2. Let's make it to be rare from "A" to "F"<br>
-3. Let's make sure that "Z" does not come out<br>
-4. Let's come out "Z" by a probability of 1/2<br>
-5. Let's make it to not go onto each other (not become same)<br>
+<b>Essayez-le!</b><br>
+1. Essayons trois fois et comparons<br>
+2. Faisons en sorte qu'il soit rare de "A" à "F"<br>
+3. Assurons-nous que "Z" ne sort pas<br>
+4. Sortons "Z" avec une probabilité de 1/2<br>
+5. Faisons en sorte de ne pas chevaucher (ne pas devenir les mêmes)<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  

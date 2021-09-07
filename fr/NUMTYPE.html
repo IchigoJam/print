@@ -1,13 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>Number Typing Game</title>
+<title>Jeu de saisie de Nombres</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>Number Typing Game</h1>
+<h1>Jeu de saisie de Nombres</h1>
 
 <section>
-Name typing game(type your name at line 20!)
+Jeu de saisie de nom (tapez votre nom à la ligne 20 !)
 <div id="numtype-1"></div><script>make15("numtype-1", f2s(function() {/*
 10 CLS
 20 ?"TAISUKE FUKUNO"
@@ -18,40 +18,40 @@ Name typing game(type your name at line 20!)
 70 ?CHR$(C);:P=P+1
 80 GOTO 40
 */}))</script>
-Got used to?<br>
+En Avez-vous pris l'habitude?<br>
 </section>
 
 <section>
-Remodel to a ABC alphabet typing game!
+Transformez-le en un jeu de frappe de l'alphabet ABC !
 <div id="numtype-2"></div><script>make15("numtype-2", f2s(function() {/*
 10 FOR I=1 TO 10:?CHR$(65+RND(3));:NEXT
 */}))</script>
-Can you cut off at 20 seconds?
+Pouvez-vous stopper à 20 secondes?
 </section>
 
 <section>
-Remodel to a number typing game!
+Transformez-le en un jeu de saisie de nombres !
 <div id="numtype-3"></div><script>make15("numtype-3", f2s(function() {/*
 20 FOR I=2 TO 5:?RND(256);",";:NEXT:?RND(256)
 */}))</script>
-Can you cut off 10 seconds?
+Pouvez-vous stopper à 10 secondes?
 </section>
 
 <section>
-How can a score be displayed up to first decimal place?
+Comment afficher un score jusqu'à la première décimale ?
 <div id="numtype-4"></div><script>make15("numtype-4", f2s(function() {/*
 T=TICK():?T/60;".";T%60/6
 */}))</script>
-Per 0.1 second, compete!
+En 0,1 seconde, Terminé !
 </section>
 
 <section>
-<b>Try it!</b><br>
-1. Let's remodel to a favorite word typing game<br>
-2. Let's learn hard English words with a typing game<br>
-3. Let's remodel to binary number typing game<br>
-4. Let's remodel to a random alphabet typing game<br>
-5. Let's remodel to a emoji typing game<br>
+<b>Essayez-le!</b><br>
+1. Modifions en un jeu de saisie de mots préféré<br>
+2. Apprenons des mots anglais difficiles avec un jeu de dactylographie<br>
+3. Modifions en un jeu de saisie de nombres binaires<br>
+4. Modifions en un jeu de saisie alphabétique aléatoire<br>
+5. Modifions en un jeu de saisie d'emoji<br>
 </section>
 
 <div id="credit"><a href=https://github.com/IchigoJam/print>CC BY on GitHub</a> <a href="https://ichigojam.github.io/print/en/">IchigoJam print</a> https://ichigojam.github.io/print/en/ <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a><br>

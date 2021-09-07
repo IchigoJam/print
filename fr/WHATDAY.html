@@ -1,52 +1,52 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
-<title>What day of the week were you born? - IchigoJam</title>
+<title>Quel jour de la semaine êtes-vous né ? - IchigoJam</title>
 <link rel="stylesheet" type="text/css" href="ichigojamlist.css">
 <script src="ichigojamlist.js"></script>
 </head><body>
 
-<h1>What day of the week were you born?</h1>
+<h1>Quel jour de la semaine êtes-vous né ?</h1>
 
 <section>
-Input Year, month, date, and know what day of the week?<br>
-Actually, it can be calculated by program.<br>
-First, a program to display days of the week.
-<div id="whatday0"></div><script>make15("whatday0", `10 LET[0],"SUN","MON","TUE","WED","THU","FRI","SAT"
+Saisissez l'année, le mois, la date et determinez quel est le jour de la semaine?<br>
+En fait, il peut être calculé par programme.<br>
+Tout d'abord, un programme pour afficher les jours de la semaine.
+<div id="whatday0"></div><script>make15("whatday0", `10 LET[0],"DIMANCHE","LUNDI","MARDI","MERCREDI","JEUDI","VENDREDI","SAMEDI"
 RUN
 ?STR$([0])`)</script>
-Use "STR$" to display the beginning [0] of the string in the array.
+Utilisez "STR$" pour afficher le début [0] de la chaîne dans le tableau.
 </section>
 
 <section>
-Repeat from Sunday to Saturday with 7 days of the week.
+Répétez du dimanche au samedi avec 7 jours de la semaine.
 <div id="whatday3"></div><script>make15("whatday3", `FOR I=0 TO 22:?STR$([I%7]):NEXT`)</script>
 </section>
 
 <section>
-Using "INPUT", put the year in the "Y", the month in the "M" and the date in the "D".
+A l'aide de "INPUT", mettez l'année dans le "A", le mois dans le "M" et la date dans le "D".
 <div id="whatday1"></div><script>make15("whatday1", `20 INPUT"Y?",Y
 30 INPUT"M?",M
 40 INPUT"D?",D
 RUN`)</script>
-Let's display the fed data of year, month and date.
+Affichez les données entrées de l'année, du mois et de la date.
 <div id="whatday4"></div><script>make15("whatday4", `?Y,M,D`)</script>
 </section>
 
 <section>
-A "formula of Zeller" that calculates the day of the week from the year, month and date.<br>
+Une "formule de Zeller" qui calcule le jour de la semaine à partir de l'année, du mois et de la date.<br>
 <div id="whatday2"></div><script>make15("whatday2", `50 IF M<3 M=M+12:Y=Y-1
 60 H=(Y+Y/4-Y/100+Y/400+(13*M+8)/5+D)%7
 70 ?STR$([H])`)</script>
-It is amazing to be able to know the day of the week with this!
+C'est incroyable de pouvoir connaître le jour de la semaine avec ça !
 </section>
 
 
 <section>
-<b>Try it!</b><br>
-1. Put today's date and check what is the day today<br>
-2. What day of the week is my birthday?<br>
-3. What day of the week is the next birthday?<br>
-4. Let's display the days of the week with a different language<br>
-5. Let's make a birth month calendar<br>
+<b>Essayez-le!</b><br>
+1. Mettez la date d'aujourd'hui et vérifiez quel est le jour d'aujourd'hui<br>
+2. Quel jour de la semaine est mon anniversaire ?<br>
+3. Quel jour de la semaine est mon prochain anniversaire?<br>
+4. Affichons les jours de la semaine dans une autre langue<br>
+5. Faisons un calendrier du mois de naissance<br>
 </section>
 
 <div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="https://ichigojam.github.io/print/en/ ">IchigoJam print</a> https://ichigojam.github.io/print/en/  
