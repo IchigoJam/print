@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>あなたのラッキーカラーをしろう！</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>このときはこうなる　IF</h1>
+
+
+<section>
+あなたのうまれたつきで
+ラッキーカラーをしることができるよ
+<div class=ichigojam>10 CLS:LC 10,12:?"ﾀﾝｼﾞｮｳﾂﾞｷｦｵｼｴﾃﾈ"</div>
+まずはタイトルがめんをつくろう<br>
+さいしょのCLS：LCでがめんをきれいにしよう。<br>
+？”のなかにしつもんないようをかこう！
+</section>
+    
+
+<section>
+<div class=ichigojam>20 IF INKEY()=0 GOTO 20</div>
+なにかボタンをおすまではじまらないしくみだよ！
+</section>
+
+
+<section>
+<div class=ichigojam>100 INPUT G
+110 ?"BIRTHDAYMONTH:";G
+</div>
+これでたんじょうづきがおされるとひょうじされるよ。
+</section>
+
+<section>
+1がつから１２がつまでのラッキーカラーをえらぼう！
+<div class=ichigojam>120 IF G=1 ?"ﾗｯｷｰｶﾗｰRED"
+130 IF G=2 ?"ﾗｯｷｰｶﾗｰORANGE"
+140 IF G=3 ?"ﾗｯｷｰｶﾗｰYELLOW"
+150 IF G=4 ?"ﾗｯｷｰｶﾗｰGREEN"
+160 IF G=5 ?"ﾗｯｷｰｶﾗｰBLUE"
+170 IF G=6 ?"ﾗｯｷｰｶﾗｰPURPLE"
+180 IF G=7 ?"ﾗｯｷｰｶﾗｰWHITE"
+190 IF G=8 ?"ﾗｯｷｰｶﾗｰBLACK"
+200 IF G=9 ?"ﾗｯｷｰｶﾗｰPINK"
+210 IF G=10 ?"ﾗｯｷｰｶﾗｰNAVY BLUE"
+220 IF G=11 ?"ﾗｯｷｰｶﾗｰGOLD"
+230 IF G=12 ?"ﾗｯｷｰｶﾗｰSILVER"
+</div>
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. ラッキーカラーだけじゃなくてアイテムなどもついかしてみよう！<br>
+2. ランダムにでてくるようにするにはどうしたらいいかな？<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
