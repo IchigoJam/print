@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>High&Low</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>High&Low</h1><br>
+
+<section>
+BのかずはAよりおおきいか、ちいさいかをあてるゲーム！<br>
+まずは0~10のランダムのかずを2つつくろう！
+<div class=ichigojam>10LET A,RND(10)</div>
+<div class=ichigojam>20LET B,RND(10)</div>
+</section>
+    
+<section>   
+BのかずがAよりもおおきかったら１、ちいさかったら０をにゅうりょくする」というひょうじをさせよう！
+<div class=ichigojam>30 ?"B=";B ;" is A HIGH(1) OR LOW(0)?"</div>
+</section>
+    
+<section>
+かずをにゅうりょくできるようにしよう！
+<div class=ichigojam>40 INPUT "BはAより?", C</div>
+</section>
+    
+<section>
+AとBのかずをひょうじさせよう！
+<div class=ichigojam>50 ?"A=";A</div>
+<div class=ichigojam>55 ?"B=";B</div>
+</section>
+    
+<section>
+AとBにはどのかずがはいっていたかな・・・？<br>
+つぎはにゅうりょくしたかずがhighかlowか、はんていできるようにしよう！
+<div class=ichigojam>60 IF A&lt;B D=1 ELSE D=0　</div>
+<div class=ichigojam>70 IF D=1 ?"HIGH" ELSE ?"LOW"</div>
+</section>
+
+<section>
+つぎはせいかいなら「セイカイ！」まちがえていたら「ハズレ！」をひょうじさせよう！
+<div class=ichigojam>80 IF C=D ?"セイカイ！" ELSE ?"ハズレ！"</div> 
+</section>
+    
+    
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
