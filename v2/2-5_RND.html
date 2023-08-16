@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<link rel="stylesheet" type="text/css" href="ichigojam-print.css">
+<script type="module" src="ichigojam-print.js"></script>
+<title>2-5 がめんをランダムにうめよう</title>
+</head><body><main>
+
+<h1>2-5 がめんをランダムにうめよう</h1>
+
+<section>
+ゲームでもよくつかう、でたらめで、よそくできないかずがでる、ランダム。
+<p class=ij>?RND(2)</p>
+0がでましたか？1がでましたか？
+</section>
+
+<section>
+RNDにしていしたかずみまんのせいすうが、でたらめにでます。
+<p class=ij>?RND(6)+1</p>
+6しゅるいのランダムに1をたすと、サイコロ！
+<p class=ij>?RND(10000)</p>
+4けたのでたらめなかず！
+</section>
+
+<section>
+3けたのかず、777がでるまでくりかえしてみよう
+<p class=ij>10 N=RND(1000):?N
+20 IF N=777 END
+30 GOTO 10
+</p>
+ランダムなかずを、へんすうNにいれています
+</section>
+
+<section>
+がめんないをランダムなかずでうめてみましょう
+<p class=ij>10 LC RND(32),RND(22)
+20 ?RND(10)
+30 GOTO 10
+</p>
+</section>
+
+<section>
+たのしい、えもじでがめんをうめてみる？
+<p class=ij>20 ?CHR$(RND(32)+224)</p>
+</section>
+  
+<section>
+<h2>やってみよう！</h2><ol>
+<li>10 LC RND(32),RND(23) ならどうなるでしょう？</li>
+<li>10 LC RND(32),RND(24) ならどうなるでしょう？</li>
+<li>0か1でがめんをうめてみましょう</li>
+<li>サイコロ2つをランダムでひょうげんしてみましょう</li>
+</ol></section>
+
+</main></body></html>

@@ -28,7 +28,39 @@
     "title": "1-7 プログラムをほぞんしよう、SAVE"
   },
   {
-    "fn": "1-8_TEST.html",
+    "fn": "1-8_QUIZ.html",
     "title": "1-8 IchigoJamクイズ、レベル1"
+  },
+  {
+    "fn": "2-1_KAWAKUDARI.html",
+    "title": "2-1 かわくだりゲーム"
+  },
+  {
+    "fn": "2-2_LC.html",
+    "title": "2-2 ざひょうとひょうじ"
+  },
+  {
+    "fn": "2-3_LET.html",
+    "title": "2-3 へんすうというきおく"
+  },
+  {
+    "fn": "2-4_CALC.html",
+    "title": "2-4 しそくけいさん"
+  },
+  {
+    "fn": "2-5_RND.html",
+    "title": "2-5 がめんをランダムにうめよう"
+  },
+  {
+    "fn": "2-6_BTN.html",
+    "title": "2-6 おもいをつたえるボタン"
+  },
+  {
+    "fn": "2-7_IF.html",
+    "title": "2-7 はんだんさせよう、IF"
+  },
+  {
+    "fn": "2-8_QUIZ.html",
+    "title": "2-8 IchigoJamクイズ、レベル2"
   }
 ]

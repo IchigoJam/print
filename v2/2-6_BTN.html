@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<link rel="stylesheet" type="text/css" href="ichigojam-print.css">
+<script type="module" src="ichigojam-print.js"></script>
+<title>2-6 おもいをつたえるボタン</title>
+</head><body><main>
+
+<h1>2-6 おもいをつたえるボタン</h1>
+  
+<section>
+IchigoJamふぞくのボタンでコンピューターにおもいをつたえよう（IchigoJam webではがめんをタップまたはクリック）。BTN（ボタン）かんすうをつかいます。
+<p class=ij>?BTN()</p>
+0とひょうじされます。カーソルキーのうえを2かいおし、こんどはIchigoJamのボタンをおしながら、エンター。1とひょうじされるはず。
+</section>
+
+<section>
+GOTOでくりかえし。
+<p class=ij>10 ?BTN()
+20 GOTO 10</p>
+BTNかんすうは、ボタンがおされているときは0、おされていないときに1をかえします。<br>
+とめるときは、[esc]（エスケープ）キー
+</section>
+
+<section>
+BTNをつかって、カーソルキーやスペースキーのじょうたいもチェックできます。
+<p class=ij>10 ?BTN(),BTN(28),BTN(29),BTN(32)</p>
+28はひだりキー、29はみぎキー、32はスペースキーをいみします。<br>
+<p class=ij>10 ?BTN(),BTN(LEFT),BTN(RIGHT),BTN(SPACE)</p>
+と、えいごで、かくこともできます。
+</p><p>
+  
+<section>
+ボタンをおしたらLEDがひかるプログラム
+<p class=ij>10 LED BTN()
+20 GOTO 10</p>
+LEDコマンドは1のときひかって、0のとききえるので、ボタンにあわせてひかります。
+</section>
+
+<section>
+つぎのようにかいぞうすると、どうなるでしょう？
+<p class=ij>10 LED 1-BTN()</p>
+1-1は0、1-0は1、つまり、ボタンをおしていないときにLEDがひかります。
+</section>
+
+<section>
+<h2>やってみよう！</h2><ol>
+<li>ひだりボタンをおしているときにひかるようにかいぞうしよう</li>
+<li>カーソルキーうえ UP、カーソルキーした DOWNもチェックしてみよう</li>
+<li>ボタンがおされているときは10、はなしているときは0をひょうじしてみよう</li>
+<li>ボタンがおされているあいだ、LEDがてんめつするプログラムをつくってみよう</li>
+</ol></section>
+
+</main></body></html>
+  

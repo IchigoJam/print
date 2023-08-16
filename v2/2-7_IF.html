@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<link rel="stylesheet" type="text/css" href="ichigojam-print.css">
+<script type="module" src="ichigojam-print.js"></script>
+<title>2-7 はんだんさせよう、IF</title>
+</head><body><main>
+
+<h1>2-7 はんだんさせよう、IF</h1>
+  
+<section>
+IF（イフ）とTHEN（ゼン）をつかって、IchigoJamに、はんだんしてもらいます。
+<p class=ij>IF BTN() THEN LED1 ELSE LED0</p>
+ふつうにエンターをおすと、OKとしかでず、なにもおきません。<br>
+カーソルキーうえでもどって、ボタンをおしながら、エンターでLEDがつきます。<br>
+もういちど、ボタンをおさずにエンターでLEDがきえます。<br>
+もし、ボタンがおされていたら、THENのあとを、そうでなければ、ELSEのあとをじっこうします。
+</section>
+
+<section>
+IFは、とうごうや、ふとうごうをつかったじょうけんしきも、かくことができます
+<p class=ij>IF RND(5)=0 ?"ATARI!"</p>
+5ぶんの1のかくりつで、アタリとひょうじ
+<p class=ij>IF RND(5)&lt;2 ?"ATARI!"</p>
+5ぶんの2のかくりつで、アタリとひょうじ
+</section>
+
+<section>
+がめんひだりうえに「ABC」とひょうじします。
+<p class=ij>CLS:?"ABC"</p>
+がめんをチェックするかんすう、SCR（スクリーン）をつかってみます。
+<p class=ij>?SCR(0,0)</p>
+65とかえってきています。ざひょう0,0にあるAのキャラクターコードがじつは65です。
+<p class=ij>?SCR(3,0)</p>
+なにもひょうじされていないところは0がかえります。
+</section>
+
+<section>
+かわくだりゲームのあたりはんていは、これをつかっています。
+<p class=ij>10 CLS:X=15
+20 LC X,5:?"O"
+30 LC RND(32),23:?"*"
+39 IF SCR(X,5) END
+40 GOTO 20</p>
+END（エンド）めいれいは、プログラムをしゅうりょうさせます。
+</section>
+
+<section>
+<h2>やってみよう！</h2><ol>
+<li>あたっても、ITA! とひょうじするだけで、おわらないかわくだりゲームにしてみよう</li>
+<li>チェックするざひょうをかえて、どのようにかわるかためしてみよう</li>
+<li>がめんはじにでそうになったら、すぐゲームオーバーになるようにかいぞうしよう</li>
+<li>がめんはじまでいったら、うごけないように、かいぞうしてみよう</li>
+</ol></section>
+
+</main></body></html>
+  
