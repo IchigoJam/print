@@ -9,7 +9,6 @@ const footer = `
 `;
 onload = async () => {
 	const foot = document.createElement("footer");
-	foot.id = "credit";
 	foot.innerHTML = footer;
 	const main = document.querySelector("main");
 	main.appendChild(foot);

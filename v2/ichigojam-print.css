@@ -1,42 +1,98 @@
 body {
-	font-size: 90%;
+	font-size: 1.5vh;
 	font-family: sans-serif;
-	max-width: 100vw;
-	x-width: 524px;
+	margin: 0.705em 0.5em;
+	padding: 0;
+	text-align: center;
 	box-sizing: border-box;
+	x-font-feature-settings: "palt" 1;
+}
+@media (max-aspect-ratio: 1 / 1.41) {
+  body {
+		font-size: 2.4vw;
+  }
+}
+main {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	display: inline-block;
+	aspect-ratio: 1 / 1.41;
+	x-background-color: #f00;
+	overflow: hidden;
+	max-width: 95vw;
+	height: calc(100vh - 1.81em);
+}
+@page {
+	size: A5 portrait;
+}
+@media print {
+	body {
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+@font-face {
+	font-family: "ichigojam";
+	src: url("./IchigoJam-1.4.woff") format('woff');
+}
+.ij {
+	font-family: "ichigojam";
+}
+@font-face {
+	font-family: "ichigojam-g";
+	src: url("./IchigoJam-GRAPH.woff") format('woff');
+}
+.ijg {
+	font-family: "ichigojam-g";
+}
+.ij, .ijg {
+	white-space: pre-wrap;
+	border: 0.15em solid black;
+	color: black;
+	padding: .4em .4em .25em .4em;
+	margin: .35em 0;
+	line-height: 1.3em;
+	letter-spacing: 0;
+	font-size: 90%;
+	word-break: break-all;
+	x-overflow: scroll;
 }
 h1 {
 	margin: 0;
 	padding: 0;
 	font-size: 150%;
 }
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 120%;
+}
+ol {
+	margin: 0.15em 0;
+	padding: 0 2em;
+}
+ol li {
+	line-height: 2.0em;
+}
 section {
-	margin: 0.5em 0em;
+	margin: .8em 0em;
 }
-#credit {
+footer {
+	/*
+	display: inline-block;
+	white-space: nowrap;
+	position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+	bottom: .5em;
+	*/
 	text-align: center;
-	font-size: 12px;
+	font-size: 0.8em;
 }
-#credit a {
+footer a {
 	color: gray !important;
-}
-
-@font-face {
-	font-family: "ichigojam";
-	src: url("IchigoJam-1.4.woff") format('woff');
-}
-.ichigojam {
-	font-family: "ichigojam";
-	white-space: pre-wrap;
-	background: #fff;
-	color: #000;
-	border: .2em solid #000;
-	padding: .5em 1em;
-	margin: 10px 0em;
-	line-height: 1.3em;
-	letter-spacing: 0px;
-	font-size: 85%;
-	x-width: 590px;
-	word-break: break-all;
-	x-overflow: scroll;
 }
