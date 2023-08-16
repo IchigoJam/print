@@ -3,7 +3,7 @@ import { setSwipe } from "./setSwipe.js";
 const footer = `
 <div id="credit">
 	<a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a>
-	<a href="../">IchigoJamプリント v2</a>
+	<a href="./">IchigoJamプリント v2</a>
 	<a href="https://ichigojam.net/">IchigoJam&reg;jig.jp</a>
 </div>
 `;
