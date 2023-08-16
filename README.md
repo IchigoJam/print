@@ -6,6 +6,8 @@
 - Rwandan Kinyarwanda / ルワンダ語 [HTML](https://ichigojam.github.io/print/rw/) [PDF](https://ichigojam.github.io/print/ichigojam_print_rw.pdf)
 - Swahili / スワヒリ語 [HTML](https://ichigojam.github.io/print/sw/) [PDF](https://ichigojam.github.io/print/ichigojam_print_sw.pdf)
 
+- v2 Japanese / 日本語 [HTML](https://ichigojam.github.io/print/v2/)
+
 ## How to contribute
 
 [33ステップで解説、GitHubオープンソース貢献入門、IchigoJamプリントをつくってみよう！「もじのしょうたい CHR$/ASC」](https://fukuno.jig.jp/2929)
