@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>IchigoJamプリント v2</title>
+</head><body>
+<h1>IchigoJamプリント v2</h1>
+<div class="desc">
+左右スワイプで進んだり戻ったりできるよ<br>
+（左右カーソルでもOK）
+</div>
+<ul id=ol_list>
+</ul>
+
+<script type="module">
+const data = await (await fetch("list.json")).json();
+for (const d of data) {
+  const li = document.createElement("li");
+  li.innerHTML = `<a href=${d.fn}>${d.title}</a>`;
+  ol_list.appendChild(li);
+}
+</script>
+
+<hr>
+<div id="credit">
+	<a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a>
+	<a href="../">IchigoJamプリント v2</a>
+	<a href="https://ichigojam.net/">IchigoJam&reg;jig.jp</a>
+</div>
+
+
+<style>
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+body {
+  text-align: center;
+}
+a {
+  color: gray !important;
+}
+</style>
+
+</body></html>

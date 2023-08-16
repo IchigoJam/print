@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script type="module" src="ichigojam-print.js"></script>
+<title>1-6 エルチカゲーム、GOTO</title>
+</head><body><main>
+
+<h1>1-6 エルチカゲーム、GOTO</h1>
+
+<section>
+ピカッとひかるプログラム。
+<p class=ij>1 LED1:WAIT10
+2 LED0:WAIT10
+RUN</p>
+「F5」でなんどでもひかりますが、1000回やっていわれたらこまりますね。
+</section>
+
+<section>
+そこであたらしい「めいれい」GOTO（ゴートゥー）。
+<p class=ij>3 GOTO1</p>
+3、ジー、オー、ティー、オー、1、エンター、F5 でうごしてみよう。<br>
+LEDが、ずっとチカチカしてますね！
+</section>
+
+<section>
+じつはこれはエルチカゲーム、ひかっているときにとめられたらかち！<br>
+キーボードひだりうえ「ESC（エスケープ）」キーをおそう。
+<p class=ij>Break in 1
+1 LED1:WAIT10
+</p>
+まけてもだいじょうぶ。「F5」でなんどもチャレンジできるよ。
+</section>
+
+<section>
+「F4」でプログラムをチェックしよう
+<p class=ij>LIST
+1 LED1:WAIT10
+2 LED0:WAIT10
+3 GOTO1
+OK</p>
+1ぎょうのWAITでひかってるじかん、2ぎょうのWAITはきえてるじかん。1のWAIT10をWAIT30にかいぞうして、エンター。「F5」であそんでみよう！
+</section>
+
+<section>
+<h2>やってみよう！</h2><ol>
+<li>エルチカゲーム、かんたん？むずかしい？</li>
+<li>ちょうどいい、なんいどに、かいぞうしてみよう</li>
+<li>0.5びょうごと、てんめつしんごうにしてみよう</li>
+<li>ちょうこうそくエルチカにしてみよう！</li>
+</ol></section>
+
+</main></body></html>
