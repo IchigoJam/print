@@ -6,7 +6,7 @@
 - Rwandan Kinyarwanda / ルワンダ語 [HTML](https://ichigojam.github.io/print/rw/) [PDF](https://ichigojam.github.io/print/ichigojam_print_rw.pdf)
 - Swahili / スワヒリ語 [HTML](https://ichigojam.github.io/print/sw/) [PDF](https://ichigojam.github.io/print/ichigojam_print_sw.pdf)
 
-- v2 Japanese / 日本語 [HTML](https://ichigojam.github.io/print/v2/)
+- v2 Japanese / 日本語 [HTML](https://ichigojam.github.io/print/v2/) [PDF](https://ichigojam.github.io/print/ichigojam_print_v2.pdf)
 
 ## How to contribute
 

@@ -28,7 +28,7 @@ main {
 }
 @media print {
 	body {
-		margin: 0;
+		margin: 0.705em 0.5em;
 	}
 	a {
 		text-decoration: none;
