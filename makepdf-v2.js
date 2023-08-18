@@ -37,8 +37,8 @@ const browser = await puppeteer.launch();
 const langs = ["v2"];
 const len = {};
 for (const lang of langs) {
-//  const url = "https://ichigojam.github.io/print/v2/";
-  const url = "https://t.xgc.jp/";
+  const url = "https://ichigojam.github.io/print/v2/";
+  //const url = "https://t.xgc.jp/";
   const list = await CSV.fetchJSON("v2/list.csv");
   console.log(list);
   const dstfn = `ichigojam_print_${lang}.pdf`;

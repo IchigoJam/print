@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<link rel="stylesheet" type="text/css" href="ichigojam-print.css">
+<script type="module" src="ichigojam-print.js"></script>
+<title>3-4 パルスでサーボせいぎょ、PWM</title>
+</head><body><main>
+
+<h1>3-4 パルスでサーボせいぎょ、PWM</h1>
+
+<section>
+かくどをしていしてうごかすモーター、サーボモーターは、PWM（ピーダブリューエム）でせいぎょできます。
+サーボについている3ほんのせん、あかとちゃいろのでんげんはべつでよういした5Vにつなぎ、オレンジのしんごうせんをOUT4へつなぎます。
+<p class=ij>PWM 4,200:WAIT 60:PWM 4,70</p>
+ギッとサーボがうごきましたか？<br>
+</section>
+
+<section>
+PWMとは、いっていじかんでんあつをかける、パルスのはばをしていするめいれいです。パルスのはばにあわせて、うでのかくどをへんこうするようにサーボモーターはできています。
+<p class=ij>10 PWM 4,200:WAIT 60
+20 PWM 4,70:WAIT 60
+30 GOTO 10</p>
+ギッ、ギッと1びょうおきにうごきます。
+</section>
+
+<section>
+ESCキーでとめて、サーボのうでをかるくさわってみてください。だいぶかたくなっています。これは、IchigoJamからパルスがでつづけていて、サーボはそのかくどをたもとうとがんばっているからです。<br>
+<br>
+この、せいぎょちゅうのサーボを、むりにうごかしてしまうとサーボがこわれます。うごかしたいときは、でんげんをきるか、つぎのコマンドでパルスをOFFにしましょう。
+<p class=ij>PWM 4,0</p>
+</section>
+
+<section>
+<h2>やってみよう！</h2><ol>
+<li>もっとはやくうごかしてみよう</li>
+<li>もっとこきざみにうごかしてみよう</li>
+<li>かずをどれだけかえると、90ど、うごくでしょう？</li>
+<li>ボタンをおしたら1かいサーボがうごくようにかいぞうしよう</li>
+<li>みのまわりのサーボがさがしてみよう</li>
+</ol></section>
+
+</main></body></html>
+  

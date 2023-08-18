@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<link rel="stylesheet" type="text/css" href="ichigojam-print.css">
+<script type="module" src="ichigojam-print.js"></script>
+<title>3-2 ONかOFFかをチェックする、IN</title>
+</head><body><main>
+
+<h1>3-2 ONかOFFかをチェックする、IN</h1>
+
+<section>
+BTN（ボタン）をつかって、IchigoJamふぞくのボタンがおされているどうかチェックできました。
+<p class=ij>?BTN()</p>
+</section>
+
+<section>
+IN（イン）をつかうと、そとからつながるなにかをON/OFFをチェックできます。
+<p class=ij>10 ?IN(1);:CONT</p>
+ずらずらっと1がひょうじされます。ジャンパーワイヤーで、IchigoJamのいずれかのGNDと、IN1とかかれたソケットをつないでみましょう。がめんは0にかわっています。ぬいたり、つないだりすると、かわります。CONT（コンティニュー）は、じっこうちゅうのぎょうばんごうを、せんとうから、くりかえします。
+</section>
+
+<section>
+おすとでんきてきにつながる、でんしパーツ、タクトスイッチをIN1につないでみましょう。かたほうのあしをIN1へ、もうかたほうのあしをGNDへせつぞくします。カチカチおすと、がめんのようす、かわりますか？
+</section>
+
+<section>
+INめいれいで、IN1からIN4までかかれたソケットに、でんあつがかっているか（ON）、かかっていないか（
+OFF）がチェックできます。IN1とIN4は、なにもつながっていないとき、ないぶてきにでんあつをかけるようになっています（プルアップとよびます）。
+<p class=ij>10 LED 1:WAIT 10
+20 IF IN(1)=0 END
+30 LED 0:WAIT 10
+40 IF IN(1)=0 END
+50 GOTO 10
+</p>
+タクトスイッチをおすととまる、LEDのてんめつ。ひかっていたら、かち！
+</section>
+
+<section>
+<h2>やってみよう！</h2><ol>
+<li>タクトスイッチをもうひとつ、IN4につないで IN(4) でチェックしよう</li>
+<li>IN1をおしたらLEDがつき、IN4をおしたらLEDがきえるようにしてみよう</li>
+<li>IN1がスタート、IN4をストップとして、エルチカゲームをつくってみよう</li>
+</ol></section>
+
+</main></body></html>
+  

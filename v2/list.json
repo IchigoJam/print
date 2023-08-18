@@ -62,5 +62,21 @@
   {
     "fn": "2-8_QUIZ.html",
     "title": "2-8 IchigoJamクイズ、レベル2"
+  },
+  {
+    "fn": "3-1_OUT.html",
+    "title": "3-1 ON/OFFコントロールする、OUT"
+  },
+  {
+    "fn": "3-2_IN.html",
+    "title": "3-2 ONかOFFかをチェックする、IN"
+  },
+  {
+    "fn": "3-3_ANA.html",
+    "title": "3-3 でんあつをはかる、ANA"
+  },
+  {
+    "fn": "3-4_PWM.html",
+    "title": "3-2 ONかOFFかをチェックする、IN"
   }
 ]

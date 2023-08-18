@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<link rel="stylesheet" type="text/css" href="ichigojam-print.css">
+<script type="module" src="ichigojam-print.js"></script>
+<title>3-1 ON/OFFコントロールする、OUT</title>
+</head><body><main>
+
+<h1>3-1 ON/OFFコントロールする、OUT</h1>
+
+<section>
+LED（エルイーディー）をつかって、IchigoJamふぞくのLEDをコントロールできました。
+<p class=ij>LED1:WAIT180:LED0</p>
+</section>
+
+<section>
+OUT（アウト）をつかうと、そとにつながるなにかをON/OFFコントロールできます。
+<p class=ij>OUT 1,1:WAIT180:OUT 1,0</p>
+でんしパーツ、LEDをひとつよういして、IchigoJamのCPUのひだりがわにならぶ14ピン、OUT1とかかれたソケットに、LEDのながいあし、OUT2とかかれたソケットに、LEDのみじかいあしをつないで、うごかしてみましょう。
+</section>
+
+<section>
+OUTめいれいで、OUT1からOUT6までかかれたソケットに、3.3Vのでんあつをかけたり（ON）、きったり（
+OFF）できます。ながいあしにでんあつをかけるとひかる、LEDをつなぐことでコントロールできます。OUT３とOUT4のソケットをつかって、もうひとつLEDをつないで、こうごにてんめつさせましょう。
+<p class=ij>10 OUT 1,1:OUT 3,0:WAIT 60
+20 OUT 1,0:OUT 3,1:WAIT60
+30 GOTO 10
+</p>
+どちらかをアタリだとすれば、ゲームにもなりますね！<br>
+</section>
+
+<section>
+とめたとき、どちらかのLEDがついています。キーボードのショートカット F7、OUT0 をつかうと、すべてのOUTをいったんOFFにできます。
+<p class=ij>OUT0</p>
+いろんなものをON/OFFしたくなりますね！
+</section>
+
+<section>
+IchigoJamのソケットからのコントロールはでんりょくがよわいので、モーターをまわしたり、あかるいでんきをつけたりするばあいは、でんりょくをおおきくするトランジスタや、MapleSyrupなどがひつようです。
+</section>
+
+<section>
+<h2>やってみよう！</h2><ol>
+<li>2つのLEDをりょうほうあわせて、てんめつさせてみよう</li>
+<li>1つめのLEDだけつく、2つめのLEDもつく、どちらもきえる、の3パターンをくりかえそう</li>
+<li>ほかのOUTたんしをつかって、LEDをもうひとつくわえて、コントロールしよう</li>
+<li>3つのLEDをつかって、しんごうきプログラムをつくろう</li>
+<li>OUT 7,1 で、なにがひかるでしょう？</li>
+</ol></section>
+
+</main></body></html>
+  

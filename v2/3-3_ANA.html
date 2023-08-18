@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<link rel="stylesheet" type="text/css" href="ichigojam-print.css">
+<script type="module" src="ichigojam-print.js"></script>
+<title>3-3 でんあつをはかる、ANA</title>
+</head><body><main>
+
+<h1>3-3 でんあつをはかる、ANA</h1>
+
+<section>
+IN（イン）はでんあつがかかっているか、どうか、0か1かのチェックでしたが、ANA（アナログ）をつかうと、かかっているでんあつのおおきさを、1024だんかいで、けいそくできます。
+<p class=ij>?ANA(2)</p>
+かかっていないとき0。3.3Vでさいだいの1023がかえってきます。でんあつにひれいしてふえるので、1Vで310となります。
+</section>
+
+<section>
+ANA（アナログ）つかうと、そとからつながる、でんあつのおおきさでけっかをだす、アナログセンサーをかつようできます。あかるさセンサーをIN2にせつぞくしてみます。
+<p class=ij>10 ?ANA(2):WAIT10:CONT</p>
+てで、あかるさセンサーをおおってみたり、あかるくしてみたりしましょう。
+</section>
+
+<section>
+くらくなったらLEDをつける
+<p class=ij>10 LED 0
+20 A=ANA(2):?A
+30 IF A&lt;600 CONT
+40 LED 1
+</p>
+CONT（コンティニュー）は、じっこうちゅうのぎょうばんごうを、せんとうから、くりかえします。
+</section>
+
+<section>
+<h2>やってみよう！</h2><ol>
+<li>とてもくらくなるまでねばる、もっとエコなしょうめいにしてみよう</li>
+<li>あかるくなったらLEDをじどうてきにけすきのうを、くわえよう</li>
+<li>ほかにどんなものがはかれたらべんりか、かんがえてみよう</li>
+<li>みのまわりのアナログセンサーをさがしてみよう</li>
+</ol></section>
+
+</main></body></html>
+  
