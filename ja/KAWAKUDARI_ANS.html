@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>かわくだりゲーム - ANSWER</title>
+<link rel="stylesheet" type="text/css" href="./ichigojamlist.css" xhref="https://ichigojam.github.io/print/ja/ichigojamlist.css">
+</head><body>
+
+<h1>かわくだりゲーム - ANSWER</h1>
+
+<section>
+<b>1. はやさをちょうせいしよう</b><br>
+35ぎょうのWAITのあとのかずで、はやさがちょうせいできる<br>
+<div class=ichigojam>35 WAIT 1</div>
+れい）3から1にかえるとスピードアップ！3から5にかえるとスピードダウン。<br>
+</section>
+
+<section>
+<b>2. じぶんのキャラをかえてみよう</b><br>
+20ぎょうの「"（ダブルクォート）」でかこったキャラは、じゆうにかえてOK！
+<div class=ichigojam>20 LC X,5:?"V"</div>
+じぶんのキャラがVに。ALTキー(optionキー)をおしながら「C」をおすとネコ。
+</section>
+
+<section>
+<b>3. しょうがいぶつを"***"とふやしてみよう</b><br>
+30ぎょうの「"」でかこったキャラも、じゆうにかえてOK！
+<div class=ichigojam>30 LC RND(32),23:?"***"</div>
+ふやすとむずかしくなる。はやさをちょうせいしてあそびやすくしてみよう。
+</section>
+
+<section>
+<b>4. ゲームのストーリーをかんがえてみよう</b><br>
+れい）ちきゅうをとびだし、ついにたどりついた、こうどぶんめいわくせいXに、せまりくるスペースデブリをよけつつ、とつにゅうせよ！
+</section>
+
+<section>
+<b>5. うらわざ（＝バグ）をさがそう</b><br>
+さゆうがめんはじににげこむと、がめんじょうではあたってみえてもおわらない
+</section>
+
+<section>
+<b>6. バグをつぶすほうほうをかんがえよう</b><br>
+ほうほう1）はんたいがわにとばす（かずを0から31までにまるめる）
+<div class=ichigojam>37 X=X&amp;31</div>
+ほうほう2）はじにいったら、すぐおわり
+<div class=ichigojam>37 IF X&lt;0 OR X&gt;31 END</div>
+ほうほう3）はじにいったら、そこでとまる
+<div class=ichigojam>37 IF X&lt;0 X=0
+38 IF X&gt;31 X=31</div>
+ほうほう4）キャラではなく、がめんぜんたいをうごかす
+<div class=ichigojam>35 IF BTN(28) SCROLL 1
+36 IF BTN(29) SCROLL 3</div>
+
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
