@@ -1,63 +1,45 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
 <title>かわくだりゲーム</title>
-<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
-<script src="ichigojamlist.js"></script>
+<link rel="stylesheet" type="text/css" href="./ichigojamlist.css">
 </head><body>
 
 <h1>かわくだりゲーム - IchigoJam</h1>
 
 <section>
 しょうがいぶつをよけて、かわをくだるゲーム。まずは、じぶんキャラ。<br>
-<div id="kawakudari-1"></div>
-<script>make15("kawakudari-1", f2s(function() {/*
-10 CLS:X=15
+<div class=ichigojam>10 CLS:X=15
 20 LC X,5:?"O"
 RUN
-*/}))</script>
+</div>
 ※ " は[shift]をおしながら「2 ふ」、? は[shift]をおしながら「/ め」<br>
 </section>
 
 <section>
 てきキャラ、とうじょう。<br>
-<div id="kawakudari-2"></div>
-<script>make15("kawakudari-2", f2s(function() {/*
-30 LC RND(32),23:?"*"
-*/}))</script>
+<div class=ichigojam>30 LC RND(32),23:?"*"</div>
 ※ () は[shift]をおしながら「8 ゆ」と「9 よ」<br>
 F5キー（＝RUNとおなじいみ）をレンダしてみよう！
 </section>
 
 <section>
 プログラムでくりかえし
-<div id="kawakudari-3"></div>
-<script>make15("kawakudari-3", f2s(function() {/*
-40 GOTO 20
-*/}))</script>
+<div class=ichigojam>40 GOTO 20</div>
 </section>
 
 <section>
 はやすぎた？ [esc]キーでとめて、WAITコマンドをいれる
-<div id="kawakudari-4"></div>
-<script>make15("kawakudari-4", f2s(function() {/*
-35 WAIT 3
-*/}))</script>
+<div class=ichigojam>35 WAIT 3</div>
 </section>
 
 <section>
 さゆうキーでうごくように
-<div id="kawakudari-5"></div>
-<script>make15("kawakudari-5", f2s(function() {/*
-36 X=X-BTN(28)+BTN(29)
-*/}))</script>
+<div class=ichigojam>36 X=X-BTN(28)+BTN(29)</div>
 </section>
 
 <section>
 あたりはんていをつけて、ゲームのできあがり！
-<div id="kawakudari-6"></div>
-<script>make15("kawakudari-6", f2s(function() {/*
-40 IF SCR(X,5)=0 GOTO 20
-*/}))</script>
-あたっていないときだけ、くりかえし！
+<div class=ichigojam>39 IF SCR(X,5) END</diV>
+あたっていたら、END、ゲームオーバー！
 </section>
 
 <section>
