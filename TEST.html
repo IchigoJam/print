@@ -1,0 +1,50 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>がめんにいたずらしてみよう！　DRAW</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>がめんにいたずらしてみよう！　DRAW</h1>
+
+
+<section>
+がめんにせんをかいてみよう！
+DRAWコマンドでせんをかくことができるよ
+<div class=ichigojam>DRAW 1,1,70,70</div>
+２つばしょをしていしてあげよう<br>
+さいしょの1,1でさいしょのばしょ。<br>
+つぎの70,70,でつぎのばしょをしていしよう。
+</section>
+    
+
+<section>
+ばしょのつぎに0とくわえると、せんをけせるよ。
+<div class=ichigojam>DRAW 1,1,70,70,0</div>
+うえのほうのもじがきえたかな？
+</section>
+
+
+<section>
+FORコマンドでくりかえしせんをかこう！
+<div class=ichigojam>10 FOR I=1TO11 STEP 3:DRAW I,1,i*10,70:NEXT
+</div>
+RUNでじっこうしてみると、どうなるかな？
+</section>
+
+<section>
+FORコマンドをふたつかいて＃をかいてみよう！
+<div class=ichigojam>10 FOR I=1TO10 STEP 3:DRAW I*10,1,10*I,70:NEXT
+20 FOR I=2TO8 STEP 3:DRAW 1,I*5,70,i*5:NEXT</div>
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. STEPのかずをもっとちいさくしてみるとどうなるかな？<br>
+2. DRAWのI*のよこのかずをかえてみよう<br>
+3. くふうしてもじやえをかいてみよう！<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
