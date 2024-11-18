@@ -1,49 +1,61 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
 <title>もじのしょうたい CHR$/ASC</title>
-<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ja/ichigojamlist.css">
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
 </head><body>
 
 <h1>もじのしょうたい CHR$/ASC</h1>
 
 <section>
 ASCをつかって、もじのしょうたいをあばいてみよう！<br>
-<div class=ichigojam>?ASC("A")
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+?ASC("A")
 65
 ?ASC("B")
 66
 ?ASC("C")
 67
-</div>
+*/}))</script>
 Aは65、Bは66、Cは67、1ずつちがう
 </section>
 
 <section>
 CHR$をつかうと、かずからもじにぎゃくへんかん
-<div class=ichigojam>?CHR$(65)
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+?CHR$(65)
 A
 ?CHR$(66)
 B
 ?CHR$(67)
 C
-</div>
+*/}))</script>
 もじにたいおうするかずを「もじコード」をいうよ
 </section>
 
 <section>
 FORコマンドでアルファベットのおおもじをならべよう
-<div class=ichigojam>FOR I=65 TO 90:?CHR$(I);:NEXT:?
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+FOR I=65 TO 90:?CHR$(I);:NEXT:?
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
-</div>
-32をたすとこもじがならぶよ
-<div class=ichigojam>FOR I=65 TO 90:?CHR$(I+32);:NEXT:?
+*/}))</script>
+32をたすと、こもじがならぶよ
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+FOR I=65 TO 90:?CHR$(I+32);:NEXT:?
 abcdefghijklmnopqrstuvwxyz
-</div>
+*/}))</script>
 </section>
 
 <section>
 えもじのもじコードをしらべたい？<br>
 プログラムですぐかいけつ！
-<div class=ichigojam>FOR I=224 TO 255:?CHR$(I);I;:NEXT</div>
+<div id="step-5"></div>
+<script>make15("step-5", f2s(function() {/*
+FOR I=224 TO 255:?CHR$(I);I;:NEXT
+*/}))</script>
 </section>
 
 <section>
