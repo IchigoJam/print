@@ -1,4 +1,7 @@
-import puppeteer from "https://deno.land/x/puppeteer@9.0.1/mod.ts";
+// first
+// PUPPETEER_PRODUCT=chrome deno run -A --unstable https://deno.land/x/puppeteer@16.2.0/install.ts
+// deno run -A --unstable makepdf-v2.js
+import puppeteer from "https://deno.land/x/puppeteer/mod.ts";
 import { HTMLParser } from "https://js.sabae.cc/HTMLParser.js";
 import { mergePDF } from "https://taisukef.github.io/easy-pdf-merge-deno/PDFMerger.js";
 
