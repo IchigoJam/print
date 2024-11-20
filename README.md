@@ -16,5 +16,6 @@
 
 install [Deno](https://deno.land/) and Java runtime ([AdoptOpenJDK - Open source, prebuilt OpenJDK binaries](https://adoptopenjdk.net/))
 ```bash
+PUPPETEER_PRODUCT=chrome deno run -A --unstable https://deno.land/x/puppeteer@16.2.0/install.ts
 deno run -A --unstable makepdf.js
 ```
