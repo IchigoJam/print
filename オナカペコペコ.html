@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>オナカペコペコ</title>
+<link rel="stylesheet" type="text/css" href="https://ichigojam.github.io/print/ja/ichigojamlist.css">
+</head><body>
+
+<h1>オナカペコペコ</h1>
+
+<section>
+今日のご飯は何かな？
+食べたいものを入力していこう。たくさん入力するとバリエーションが豊富に！
+<div class=ichigojam>20 IF INKEY()<>0 PRINT"ｵﾑﾗｲｽ":GOTO 60
+30 IF INKEY()<>0 PRINT"ｳﾄﾞﾝ":GOTO 60
+40 IF INKEY()<>0 PRINT"ｶﾗｱｹﾞ":GOTO 60
+45 IF INKEY()<>0 PRINT"ｵﾆｷﾞﾘ":GOTO 60
+50 IF INKEY()<>0 PRINT"ﾗｰﾒﾝ":GOTO 60</div>
+</section>
+  
+<section>
+ランダムにメニューが表示される様にしよう<br>
+<div class=ichigojam>55 GOTO 20
+60 IF INKEY()<>0 GOTO 60
+70 IF INKEY()=0 GOTO 70
+80 IF INKEY()<>0 GOTO 80</div>
+</section>
+
+<section>
+メニューが表示されたあとはその都度リセットできる様にしよう
+<div class=ichigojam>90 GOTO 10</div>
+RUNでじっこうしてみると、どうなるかな？
+</section>
+
+
+<section>
+<b>食べルものが決まったら、さっそくお母さんのところへ行こう！</b><br>
+たまにプログラミングを見直してメニューを変えてみよう。
+どんどん増やしてたくさんの料理を表示できる様にしてみよう。
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
