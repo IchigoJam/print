@@ -10,28 +10,39 @@
 ヘリコプターをさゆうにうごかしてみよう！<br>
 <br>
 まずはじまりのばしょをしていしてあげよう！
-<div class=ichigojam>10 X=16</div>
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+10 X=16
+*/}))</script>
 ヘリコプターがはじめにいるばしょを16にしていしよう。<br>
 </section>
     
 <section>
 ヘリコプターをそうさするためのじゅんびをしよう！
-<div class=ichigojam>20 CLS
-30 K=INKEY()</div>
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+20 CLS
+30 K=INKEY()
+*/}))</script>
 INKEY()でおされたキーをしることができるよ。
 </section>
 
 <section>ヘリコプターをさゆうにうごかすキーをせっていしよう！
-<div class=ichigojam>40 IF K=28 THEN X=X-1
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+40 IF K=28 THEN X=X-1
 50 IF K=29 THEN X=X+1
-</div>
+*/}))</script>
 28がやじるしキーのひだり、29がやじるしキーのみぎのいみだよ。
 </section>
 
 <section>
 キーにゅうりょくとヘリコプターそうさをつなげよう！(キャラクターコード243、ALT+J)
-<div class=ichigojam>60 LOCATE X,10:?CHR$(0,243,0)
-70 GOTO 30</div>
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+60 LOCATE X,10:?CHR$(0,243,0)
+70 GOTO 30
+*/}))</script>
 RUNでじっこうしてみると、どうなるかな？
 </section>
 

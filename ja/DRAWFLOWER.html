@@ -9,15 +9,21 @@
 
 <section>
 DRAWコマンドでせんをひいて、はなをかいてみよう！
-<div class=ichigojam>5 CLS:X=1:A=0:B=48</div>
+<div id="step-1"></div>
+<script>make15("step-1", f2s(function() {/*
+5 CLS:X=1:A=0:B=48
+*/}))</script>
 まずはじゅんびから。<br>
 じっこうするたびにがめんをきれいにして、ついでにへんすうもせっていしよう。<br>
 </section>
     
 
 <section>
-<div class=ichigojam>10 A=A+5
-15 B=B-X</div>
+<div id="step-2"></div>
+<script>make15("step-2", f2s(function() {/*
+10 A=A+5
+15 B=B-X
+*/}))</script>
 Aのなかのすうじがすこしずつふえるようにしよう。<br>
 Bはすこしずつへるようにしよう。
 </section>
@@ -25,17 +31,21 @@ Bはすこしずつへるようにしよう。
 
 <section>
 Bのおおきさをちょうせつしよう
-<div class=ichigojam>20 IF B>48 X=1
+<div id="step-3"></div>
+<script>make15("step-3", f2s(function() {/*
+20 IF B>48 X=1
 25 IF B<10 X=-1
-</div>
+*/}))</script>
 Bがおおきくなりすぎたり、ちいさくなりすぎないように、Xをつかってふやすかへらすかをちょうせつしよう。
 </section>
 
 <section>
 いよいよDRAWのでばん！
-<div class=ichigojam>30 DRAW 32+COS(A)/B,24+SIN(A)/B
+<div id="step-4"></div>
+<script>make15("step-4", f2s(function() {/*
+30 DRAW 32+COS(A)/B,24+SIN(A)/B
 35 GOTO 10
-</div>
+*/}))</script>
 コサインやサインをつかうとまるをつくることができるんだ。<br>
 じゅんびしたAやBをつかって、カーブをちょうせいしてはなびらをつくるよ！<br>
 じっこうしてみよう！
