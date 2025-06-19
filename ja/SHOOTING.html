@@ -10,30 +10,30 @@
 UFOがせめてくるメインループ (ひこうき=ALT+G、UFO=ALT+H)<br>
 <div class=ichigojam>10 CLS:X=15
 20 LC X,23:?"🚀";
-40 LC RND(32),0:?"🛸"
-50 SCROLL2
-60 GOTO20
+30 LC RND(32),0:?"🛸"
+40 SCROLL DOWN
+50 GOTO20
 </div>
 </section>
     
 <section>
 はやすぎ？
-<div class=ichigojam>45 WAIT 3</div>
+<div class=ichigojam>35 WAIT 3</div>
 テキおおすぎ？
-<div class=ichigojam>40 IF RND(10)=0 LC RND(32),0:?"🛸"</div>
+<div class=ichigojam>30 IF RND(10)=0 LC RND(32),0:?"🛸"</div>
 カーソルさゆうで、そうさきるようにしよう
-<div class=ichigojam>55 X=X-BTN(28)+BTN(29)</div>
+<div class=ichigojam>45 X=X-BTN(LEFT)+BTN(RIGHT)</div>
 あたりはんていをつけよう
-<div class=ichigojam>51 IF SCR(X,23) END</div>
+<div class=ichigojam>41 IF SCR(X,23) ?"GAMEOVER":END</div>
 スペースキーで、たまはっしゃ！
-<div class=ichigojam>35 IF BTN(32) FORI=22TO0STEP-1:LCX,I:?"|":WAIT1:LCX,I:?CHR$(0):NEXT</div>
+<div class=ichigojam>34 IF BTN(32) FORI=22TO0STEP-1:LCX,I:?"|":WAIT1:LCX,I:?CHR$(0):NEXT</div>
 </section>
 
 <section>
 15びょういないになんてんとれるか？スコアきのうついか！
 <div class=ichigojam>15 S=0:CLT
-35 IF BTN(32) FORI=22TO0STEP-1:LCX,I:S=S+(SCR()>0):?"|":WAIT1:LCX,I:?CHR$(0):NEXT
-52 IF TICK()>900 ?"SC:";S:END
+34 IF BTN(32) FORI=22TO0STEP-1:LCX,I:S=S+(SCR()>0):?"|":WAIT1:LCX,I:?CHR$(0):NEXT
+42 IF TICK()>900 ?"SC:";S:END
 </div>
 </section>
 
