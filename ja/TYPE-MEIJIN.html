@@ -1,0 +1,53 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>タイプめいじんゲーム</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>タイプめいじんゲーム</h1>
+
+<section>
+みぎからとうじょう、アルファベットのA<br>
+<div class=ichigojam>10 CLS
+20 LC31,10:?"A"
+30 SCROLL LEFT
+40 WAIT10
+50 GOTO30
+</div>
+しゅじんこう「ねこ」とうじょう！
+<div class=ichigojam>35 LC0,10:?"🐱"
+</div>
+いちばんひだりにきたらゲームオーバー（F:せんとうのいち）
+<div class=ichigojam>15 F=31
+34 F=F-1:IF F=0 END
+</div>
+AからZまでの26もじからランダムにひょうじするようにかいぞう
+<div class=ichigojam>20 LC31,10:?CHR$(RND(26)+65)
+</div>
+たいおうするキーをおしたらけして、つぎのもじ
+<div class=ichigojam>45 LCF,10:IF SCR()=INKEY() ?" ":GOTO15
+</div>
+たおすたびに、たいれつをながくする（L:ながさ、R:のこり）
+<div class=ichigojam>11 L=0
+16 L=L+1:R=L
+45 LCF,10:IF SCR()=INKEY() ?" ":F=F+1:R=R-1:IF M=0 GOTO15
+49 IF F+R>31 GOTO20
+</div>
+ゲームオーバーまえに、スコアをひょうじするようにかいぞう
+<div class=ichigojam>34 F=F-1:IF F=0 ?:?"SCORE:";L:END
+</div>
+
+<section>
+<b>やってみよう！</b><br>
+1. はやさをかえてみよう！<br>
+2. AからFまでしかでないようにかいぞうしてみよう！<br>
+3. 「17 SRND S」とくわえてみよう！<br>
+4. 「12 S=TICK()」とくわえてみよう！<br>
+5. うったもじすうをカウントしてひょうじしてみよう！<br>
+</section>
+
+<div id="credit">
+  <a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+  <a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a>
+</div>
+</body></html>
