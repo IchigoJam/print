@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>アルファベット早打ちゲーーーム！</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>テスト　TEST</h1>
+
+
+<section>
+ゲームタイトルを入れよう！<br>
+前回のスコアも見れるようにしよう
+<div class=ichigojam>1 REM HAYAUCHI TITLE-----
+10 CLS:LC 10,12:?"HAYAUCHI GAME"
+15 LC 10,14:?"HIGH SCORE:";H
+20 IF INKEY()=0 GOTO 20
+30 ?CHR$(I);
+35 IF INKEY()!=I GOTO 35
+40 ?:?TICK()/60
+</div>    
+任意のキーを押せばゲームスタート！<br>
+タイマー機能をつけてみよう<br>
+</section>
+    
+
+<section>
+ゲームの内容をきめていこう
+<div class=ichigojam>90 REM GAME MAIN----------
+100 A=RND(26):B=RND(26):S=100
+110 CLS:WAIT60
+120 LC 15,8:?CHR$(A+65)
+125 CLT
+130 IF INKEY()=A+65:GOTO 200
+150 GOTO 130
+</div>
+問題の文字はランダムに出るように設定しよう
+</section>
+
+
+<section>
+早打ちが成功したらスコアを表示
+<div class=ichigojam>200 REM MACHT--------------
+205 S=S-TICK()
+210 CLS:BEEP
+220 VIDEO2:WAIT10:VIDEO1
+240 LC 10,14:?"SCORE:";S
+241 IF S>H H=S:LC 10,16:?"CONGRAD!"
+250 WAIT 60:GOTO 10
+</div>
+記録が更新できたときのコメントもつけてみよう
+</section>
+
+<section>
+スコアによるリアクションの違いも出してみよう
+<div class=ichigojam>230 IF S<40:LC 10,12:?"GOOD"
+231 IF S>=40 AND S<60:LC 10,12:?"NICE!"
+232 IF S>=60 AND S<80:LC 10,12:?"GREAT!"
+233 IF S>=80:LC 10,12:?"EXCELLENT!!"</div>
+</section>
+
+
+<section>
+<b>やってみよう！</b><br>
+1. 問題の文字数を増やしてみよう<br>
+2. 大文字と小文字を混ぜてみよう<br>
+3. 間違えたら問題がリセットされるようにしてみよう<br>
+4. 文字を日本語にするには？
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
