@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>りょこうにいく GOTO（ゴートゥー）とラベル - IchigoJam</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>りょこうにいく GOTO（ゴートゥー）とラベル</h1>
+
+<section>
+ラベル(LABEL)ってなに？<br>
+ラベルはにほんごで「ふだ」とか「はりがみ」のこと。<br>
+すきなことばのせんとうに@（アットマーク）をつける。
+<div id="test-1"></div><script>make15("test-1", "10 @LABEL")</script>
+このプログラムはにゅうりょくしなくてもいいよ。
+</section>
+
+<section>
+りょこうのもくてきち「おきなわ」をつくろう。
+<div id="test-2"></div><script>make15("test-2", f2s(function() {/*
+10 @OKI:?"ｵｷﾅﾜ"
+20 END
+*/}))</script>
+</section>
+
+<section>
+なんかいでもおきなわにいける、GOTO（ゴートゥー）コマンド。
+<div id="test-3"></div><script>make15("test-3", f2s(function() {/*
+10 @OKI:?"ｵｷﾅﾜ ";
+20 GOTO @OKI
+*/}))</script>
+GOTOのうしろにラベルをかく<br>
+とめるときは、[esc]（エスケープ）キー
+</section>
+
+<section>
+じぶんのすんでいるところからおきなわへいこう。
+<div id="test-4"></div><script>make15("test-4", f2s(function() {/*
+10 KOKO="FUKUI":GOTO @OKI
+20 @OKI:?"ｵｷﾅﾜ"
+30 END
+*/}))</script>
+</section>
+
+<section>
+<b>やってみよう！</b><br>
+1. じぶんのすんでいるところをつくろう<br>
+2. とうきょうからおきなわへはいけないようにしよう<br>
+</section>
+
+<div id="credit">CC BY IchigoJam <a href='http://ichigojam.net/'>http://ichigojam.net/</a></div>
+</body></html>
