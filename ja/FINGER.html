@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>手遊び</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>指スマ</h1>
+
+<section>
+指スマを一人でもできるようにします。<br>
+数字は自分で言ってください。<br>
+つまり、負けることはないので勝ちにいってください。<br>
+<div class=ichigojam>10 CLS
+20 ?"ｲｯｾｯｾｰﾉ"
+</div>
+掛け声って地域性出ますよね。
+</section>
+    
+<section>
+WAITがないと先にCPUの数が見えてしまうので、2秒待ちます。
+<div class=ichigojam>30 WAIT 120
+</div>
+</section>
+    
+<section>
+ランダムで数字を出してもらいます。
+<div class=ichigojam>40 PRINT RND(3)
+</div>
+CPUの出した数字と自分の立てた指の合計が、自分の言った数字になっていれば勝ちです。
+</section>
+    
+<section>
+やってみよう！<br>
+1. 自分だけじゃなくCPUも数字を設定できるようにしよう<br>
+2. 数字を入力して勝ち負けの表示を出してもいいかも！<br>
+3. 残りの指も残機みたいに表示してもいいかも！<br>
+</section>    
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
