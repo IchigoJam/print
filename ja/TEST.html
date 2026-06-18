@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>がめんにいたずらしてみよう！　DRAW</title>
+<link rel="stylesheet" type="text/css" href="ichigojamlist.css">
+<script src="ichigojamlist.js"></script>
+</head><body>
+
+<h1>Test テスト　DRAW</h1><br>
+インベーダーゲーム<br>
+<br>
+
+<section>
+ユニットの位置を決めよう。
+変数でユニットをコントロールするぞ！
+LOCATE　X,Yで位置を決められるぞ！
+<div class=ichigojam>X＝１５：Y＝２２</div>
+変数の値を決定するぞ！<br>
+Xに１５、Yに２が代入されたぞ。<br>
+変数には整数ならどんな数でも代入できるぞ。
+</section>
+    
+
+<section>
+X＝〇で変数を定義できるぞ！
+<div class=ichigojam>LOCATE　X，Y</div>
+ユニットの位置を決定するぞ！<br>
+値を変えていろんな場所に表示してみよう！
+</section>
+
+
+<section>
+動かしてみよう！
+<div class=ichigojam>１１０　IF　BTN（LEFT）＝１　THEN　X＝Xー1<br>
+</div>
+BTN（〇〇）＝でボタンの種類を決めるぞ！<br>
+更にIFをつけてボタンが押されているかを確認しよう。<br>
+＝１なら押されているということだ。<br>
+THEN　〇〇でIFの内容が成り立つ時に何をするのかを決められるぞ！<br>
+X=Xー1ならXがい１ずつ減るということだ。<br>
+ユニットの位置はXで決められているから、これで左矢印ボタンが押されている間<br>
+ユニットが左に動くようになるぞ！
+</section>
+
+
+<section>
+<b>やってみよう！(やれるもんなら)</b><br>
+<br>
+１０　’SHOOTING<br>
+２０　CLS：CLV<br>
+３０　LOCATE　０，０<br>
+４０　PRINT　S<br>
+<br>
+５０　X＝１５：Y＝２２<br>
+６０　LOCATE　X，Y<br>
+７０　PRINT　”A”；<br>
+７２　U＝RND（３２）：V＝０<br>
+７４　LOCATE　U，V<br>
+７６　PRINT　CHR＄（２４１）；<br>
+<br>
+８０　’GAMELOOP<br>
+９０　LOCATE　X，Y<br>
+１００　PRINT　”　”；<br>
+１１０　IF　BTN（LEFT）＝１　AND　X＞０　THEN　X＝Xー1<br>
+１２０　IF　BTN（RIGHT）＝１　AND　X＜３１　THEN　X＝X＋1<br>
+１３０　LOCATE　X，Y<br>
+１４０　PRINT　”A"<br>
+１４２　IF　BTN（SPACE）＝１　THEN　GOSUB　２４０<br>
+１４５　GOSUB　１６０<br>
+１５０　IF　V＜２２　THEN　GOTO　８０<br>
+１５２　BEEP　３０，３０<br>
+１５４　LOCATE　１２，１２<br>
+１５６　PRINT　”GAMEOVER”<br>
+１５８　END<br>
+<br>
+１６０　’UFO<br>
+１７０　LOCATE　U，V<br>
+１８０　PRINT　”　”<br>
+１９０　U＝U＋RND（３）ー１<br>
+１９２　IF　U＜０　THEN　U＝０<br>
+１９４　IF　U＞３１　THEN　U＝３１<br>
+２００　V＝V＋RND（７）ー１<br>
+２０２　IF　V＜０　THEN　V＝０<br>
+２０４　IF　V＞２２　THEN　V＝２２<br>
+２１０　LOCATE　U，V<br>
+２２０　PRINT　CHR＄（２４１）；<br>
+２３０　RETURN<br>
+<br>
+２４０　’BEAM<br>
+２５０　B＝X<br>
+２６０　FOR　C＝Yー１　TO　V　STEP　ー１<br>
+２７０　LOCATE　B，C<br>
+２８０　PRINT　”｜”<br>
+２８５　WAIT　２<br>
+２９０　LOCATE　B，C<br>
+３００　PRINT　”　”<br>
+３１０　NEXT<br>
+３２０　IF　B＜＞U　THEN　RETURN<br>
+３３０　’HIT<br>
+３４０　BEEP<br>
+３５０　LOCATE　U，V<br>
+３６０　PRINT　”＊”；<br>
+３６２　S＝S＋１０<br>
+３６４　LOCATE　０，０<br>
+３６６　PRINT　S<br>
+３７０　WAIT　２０<br>
+３８０　LOCATE　U，V<br>
+３９０　PRINT　”　”<br>
+３９５　U＝RND（３２）：V＝０<br>
+４００　RETURN<br>
+<br>
+</section>
+
+<div id="credit"><a href=https://creativecommons.org/licenses/by/4.0/deed.ja>CC BY</a> <a href="http://ichigojam.net/print/">IchigoJamプリント</a> http://ichigojam.net/print/ 
+<a href="http://ichigojam.net/">IchigoJam&reg;jig.jp</a></div>
+</body></html>
